@@ -15,7 +15,8 @@
 #include <shaders/color_vert_glsl.h>
 #include <shaders/color_frag_glsl.h>
 
-const unsigned int SIZE = 512;
+const unsigned int SIZEx = 1280;
+const unsigned int SIZEy = 720;
 
 class Camera {
 public:
@@ -99,7 +100,7 @@ public:
 
     void render(const Camera& camera) override {
         shader->use();
-        shader->setUniform("OverallColor", glm::vec3(0.5f, 0.5f, 0.5f));
+        shader->setUniform("OverallColor", glm::vec3(0.05f, 0.5f, 0.0f));
         glm::mat4 modelMatrix = glm::mat4(1.0f);
         modelMatrix = glm::rotate(modelMatrix, glm::radians(90.0f), glm::vec3(1, 0, 0));
         modelMatrix = glm::scale(modelMatrix, glm::vec3(30.0f));
@@ -148,7 +149,7 @@ public:
             return false;
 
         // Update modelMatrix
-        float scale = 0.1f * (1.0f - age / lifetime);
+        float scale = 0.05f * (1.0f - age / lifetime);
         modelMatrix = glm::translate(glm::mat4(1.0f), position);
         modelMatrix = glm::scale(modelMatrix, glm::vec3(scale));
         return true;
@@ -257,7 +258,7 @@ private:
     float sensitivity = 0.1f;
 
 public:
-    ParticleWindow() : Window{"task7_particles", SIZE, SIZE} {
+    ParticleWindow() : Window{"task7_particles", SIZEx, SIZEy} {
         // Initialize OpenGL state
         // Enable Z-buffer
         glEnable(GL_DEPTH_TEST);
@@ -368,7 +369,7 @@ public:
         }
 
         // Handle camera movement
-        float cameraSpeed = 5.0f; // Adjust speed as necessary
+        float cameraSpeed = 10.0f; // Adjust speed as necessary
         glm::vec3 forward = glm::normalize(camera.target - camera.position);
         glm::vec3 right = glm::normalize(glm::cross(forward, camera.up));
 
