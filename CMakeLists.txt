@@ -228,7 +228,19 @@ add_custom_command(TARGET playground POST_BUILD COMMAND  ${CMAKE_COMMAND} -E cop
 # project
 add_executable(1projekt
         src/1projekt/main.cpp
-        )
+        src/1projekt/camera.cpp
+        src/1projekt/camera.h
+        src/1projekt/renderable.cpp
+        src/1projekt/renderable.h
+        src/1projekt/plane.cpp
+        src/1projekt/plane.h
+        src/1projekt/particle.cpp
+        src/1projekt/particle.h
+        src/1projekt/splash_particle.cpp
+        src/1projekt/splash_particle.h
+        src/1projekt/particle_window.cpp
+        src/1projekt/particle_window.h
+)
 target_link_libraries(1projekt ppgso shaders)
 install(TARGETS 1projekt DESTINATION .)
 add_custom_command(TARGET 1projekt POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_SOURCE_DIR}/data/ ${CMAKE_CURRENT_BINARY_DIR})

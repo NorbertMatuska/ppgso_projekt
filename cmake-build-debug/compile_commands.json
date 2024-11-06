@@ -280,5 +280,41 @@
   "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\1projekt.dir\\src\\1projekt\\main.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\main.cpp",
   "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\main.cpp",
   "output": "CMakeFiles\\1projekt.dir\\src\\1projekt\\main.cpp.obj"
+},
+{
+  "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\1projekt.dir\\src\\1projekt\\camera.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\camera.cpp",
+  "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\camera.cpp",
+  "output": "CMakeFiles\\1projekt.dir\\src\\1projekt\\camera.cpp.obj"
+},
+{
+  "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\1projekt.dir\\src\\1projekt\\renderable.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\renderable.cpp",
+  "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\renderable.cpp",
+  "output": "CMakeFiles\\1projekt.dir\\src\\1projekt\\renderable.cpp.obj"
+},
+{
+  "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\1projekt.dir\\src\\1projekt\\plane.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\plane.cpp",
+  "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\plane.cpp",
+  "output": "CMakeFiles\\1projekt.dir\\src\\1projekt\\plane.cpp.obj"
+},
+{
+  "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\1projekt.dir\\src\\1projekt\\particle.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\particle.cpp",
+  "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\particle.cpp",
+  "output": "CMakeFiles\\1projekt.dir\\src\\1projekt\\particle.cpp.obj"
+},
+{
+  "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\1projekt.dir\\src\\1projekt\\splash_particle.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\splash_particle.cpp",
+  "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\splash_particle.cpp",
+  "output": "CMakeFiles\\1projekt.dir\\src\\1projekt\\splash_particle.cpp.obj"
+},
+{
+  "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\1projekt.dir\\src\\1projekt\\particle_window.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\particle_window.cpp",
+  "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\particle_window.cpp",
+  "output": "CMakeFiles\\1projekt.dir\\src\\1projekt\\particle_window.cpp.obj"
 }
 ]

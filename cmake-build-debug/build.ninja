@@ -1032,6 +1032,54 @@ build CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj: CXX_COMPILER__1projekt_
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
 
+build CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/camera.cpp || cmake_object_order_depends_target_1projekt
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\camera.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
+
+build CMakeFiles/1projekt.dir/src/1projekt/renderable.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/renderable.cpp || cmake_object_order_depends_target_1projekt
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\renderable.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
+
+build CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/plane.cpp || cmake_object_order_depends_target_1projekt
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\plane.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
+
+build CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/particle.cpp || cmake_object_order_depends_target_1projekt
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\particle.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
+
+build CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/splash_particle.cpp || cmake_object_order_depends_target_1projekt
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\splash_particle.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
+
+build CMakeFiles/1projekt.dir/src/1projekt/particle_window.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/particle_window.cpp || cmake_object_order_depends_target_1projekt
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\particle_window.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1projekt
@@ -1040,7 +1088,7 @@ build CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj: CXX_COMPILER__1projekt_
 #############################################
 # Link the executable 1projekt.exe
 
-build 1projekt.exe: CXX_EXECUTABLE_LINKER__1projekt_Debug CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build 1projekt.exe: CXX_EXECUTABLE_LINKER__1projekt_Debug CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/renderable.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/particle_window.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
   LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1projekt.dir
