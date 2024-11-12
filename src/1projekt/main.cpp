@@ -1,4 +1,4 @@
-#include "particle_window.h"
+#include "window.h"
 
 int main() {
     auto window = ParticleWindow{};

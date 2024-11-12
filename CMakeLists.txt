@@ -169,8 +169,14 @@ add_executable(1projekt
         src/1projekt/particle.h
         src/1projekt/splash_particle.cpp
         src/1projekt/splash_particle.h
-        src/1projekt/particle_window.cpp
-        src/1projekt/particle_window.h
+        src/1projekt/window.cpp
+        src/1projekt/window.h
+        src/1projekt/building.cpp
+        src/1projekt/building.h
+        src/1projekt/scene.cpp
+        src/1projekt/scene.h
+        src/1projekt/object.cpp
+        src/1projekt/object.h
 )
 target_link_libraries(1projekt ppgso shaders)
 install(TARGETS 1projekt DESTINATION .)

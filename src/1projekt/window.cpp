@@ -1,7 +1,8 @@
-#include "particle_window.h"
+#include "window.h"
 #include "plane.h"
 #include "particle.h"
 #include "splash_particle.h"
+#include "building.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/random.hpp>
 
@@ -81,6 +82,8 @@ void ParticleWindow::onIdle() {
     static auto time = (float)glfwGetTime();
     float dTime = (float)glfwGetTime() - time;
     time = (float)glfwGetTime();
+    auto building = std::make_unique<Building>();
+    //scene.push_back(std::move(building));
 
     glClearColor(.1f, .1f, .1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
