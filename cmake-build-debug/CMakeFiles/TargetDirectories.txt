@@ -1,5 +1,6 @@
 C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/shaders.dir
 C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/ppgso.dir
+C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/1projekt.dir
 C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/raw1_gradient.dir
 C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/raw2_raycast.dir
 C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/raw3_raytrace.dir
@@ -21,7 +22,6 @@ C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/task5_3d
 C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/task6_bezier_surface.dir
 C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/task7_particles.dir
 C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/playground.dir
-C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/1projekt.dir
 C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/list_install_components.dir

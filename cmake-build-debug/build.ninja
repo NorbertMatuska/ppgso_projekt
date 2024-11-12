@@ -50,6 +50,7 @@ cmake_ninja_workdir = C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-de
 build cmake_object_order_depends_target_shaders: phony || shaders/color_frag_glsl.cpp shaders/color_frag_glsl.h shaders/color_vert_glsl.cpp shaders/color_vert_glsl.h shaders/convolution_frag_glsl.cpp shaders/convolution_frag_glsl.h shaders/convolution_vert_glsl.cpp shaders/convolution_vert_glsl.h shaders/diffuse_frag_glsl.cpp shaders/diffuse_frag_glsl.h shaders/diffuse_vert_glsl.cpp shaders/diffuse_vert_glsl.h shaders/texture_frag_glsl.cpp shaders/texture_frag_glsl.h shaders/texture_vert_glsl.cpp shaders/texture_vert_glsl.h
 
 build CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/color_vert_glsl.cpp || cmake_object_order_depends_target_shaders
+  DEFINES = -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\shaders.dir\shaders\color_vert_glsl.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -57,6 +58,7 @@ build CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: CXX_COMPILER__shad
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
 
 build CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/color_frag_glsl.cpp || cmake_object_order_depends_target_shaders
+  DEFINES = -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\shaders.dir\shaders\color_frag_glsl.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -64,6 +66,7 @@ build CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: CXX_COMPILER__shad
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
 
 build CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/convolution_vert_glsl.cpp || cmake_object_order_depends_target_shaders
+  DEFINES = -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\shaders.dir\shaders\convolution_vert_glsl.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -71,6 +74,7 @@ build CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: CXX_COMPILER
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
 
 build CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/convolution_frag_glsl.cpp || cmake_object_order_depends_target_shaders
+  DEFINES = -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\shaders.dir\shaders\convolution_frag_glsl.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -78,6 +82,7 @@ build CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: CXX_COMPILER
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
 
 build CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/diffuse_vert_glsl.cpp || cmake_object_order_depends_target_shaders
+  DEFINES = -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\shaders.dir\shaders\diffuse_vert_glsl.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -85,6 +90,7 @@ build CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: CXX_COMPILER__sh
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
 
 build CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/diffuse_frag_glsl.cpp || cmake_object_order_depends_target_shaders
+  DEFINES = -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\shaders.dir\shaders\diffuse_frag_glsl.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -92,6 +98,7 @@ build CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: CXX_COMPILER__sh
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
 
 build CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/texture_vert_glsl.cpp || cmake_object_order_depends_target_shaders
+  DEFINES = -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\shaders.dir\shaders\texture_vert_glsl.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -99,6 +106,7 @@ build CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: CXX_COMPILER__sh
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
 
 build CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/texture_frag_glsl.cpp || cmake_object_order_depends_target_shaders
+  DEFINES = -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\shaders.dir\shaders\texture_frag_glsl.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -130,16 +138,16 @@ build libshaders.a: CXX_STATIC_LIBRARY_LINKER__shaders_Debug CMakeFiles/shaders.
 
 build cmake_object_order_depends_target_ppgso: phony || CMakeFiles/ppgso.dir
 
-build CMakeFiles/ppgso.dir/ppgso/mesh.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/mesh.cpp || cmake_object_order_depends_target_ppgso
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
-  DEP_FILE = CMakeFiles\ppgso.dir\ppgso\mesh.cpp.obj.d
+build CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/Mesh_Assimp.cpp || cmake_object_order_depends_target_ppgso
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
+  DEP_FILE = CMakeFiles\ppgso.dir\ppgso\Mesh_Assimp.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\ppgso.dir
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
 
 build CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/tiny_obj_loader.cpp || cmake_object_order_depends_target_ppgso
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -147,7 +155,7 @@ build CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj: CXX_COMPILER__ppgso_un
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
 
 build CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/shader.cpp || cmake_object_order_depends_target_ppgso
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\ppgso.dir\ppgso\shader.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -155,7 +163,7 @@ build CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj: CXX_COMPILER__ppgso_unscanned_D
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
 
 build CMakeFiles/ppgso.dir/ppgso/image.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/image.cpp || cmake_object_order_depends_target_ppgso
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\ppgso.dir\ppgso\image.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -163,7 +171,7 @@ build CMakeFiles/ppgso.dir/ppgso/image.cpp.obj: CXX_COMPILER__ppgso_unscanned_De
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
 
 build CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/image_bmp.cpp || cmake_object_order_depends_target_ppgso
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -171,7 +179,7 @@ build CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj: CXX_COMPILER__ppgso_unscanne
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
 
 build CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/image_raw.cpp || cmake_object_order_depends_target_ppgso
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -179,7 +187,7 @@ build CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj: CXX_COMPILER__ppgso_unscanne
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
 
 build CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/texture.cpp || cmake_object_order_depends_target_ppgso
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\ppgso.dir\ppgso\texture.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -187,7 +195,7 @@ build CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj: CXX_COMPILER__ppgso_unscanned_
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
 
 build CMakeFiles/ppgso.dir/ppgso/window.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/window.cpp || cmake_object_order_depends_target_ppgso
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\ppgso.dir\ppgso\window.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -202,13 +210,88 @@ build CMakeFiles/ppgso.dir/ppgso/window.cpp.obj: CXX_COMPILER__ppgso_unscanned_D
 #############################################
 # Link the static library libppgso.a
 
-build libppgso.a: CXX_STATIC_LIBRARY_LINKER__ppgso_Debug CMakeFiles/ppgso.dir/ppgso/mesh.cpp.obj CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj CMakeFiles/ppgso.dir/ppgso/image.cpp.obj CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj CMakeFiles/ppgso.dir/ppgso/window.cpp.obj
+build libppgso.a: CXX_STATIC_LIBRARY_LINKER__ppgso_Debug CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj CMakeFiles/ppgso.dir/ppgso/image.cpp.obj CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj CMakeFiles/ppgso.dir/ppgso/window.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
   OBJECT_DIR = CMakeFiles\ppgso.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = libppgso.a
   TARGET_PDB = ppgso.a.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1projekt
+
+
+#############################################
+# Order-only phony target for 1projekt
+
+build cmake_object_order_depends_target_1projekt: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
+
+build CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/main.cpp || cmake_object_order_depends_target_1projekt
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
+  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\main.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
+
+build CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/camera.cpp || cmake_object_order_depends_target_1projekt
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
+  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\camera.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
+
+build CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/plane.cpp || cmake_object_order_depends_target_1projekt
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
+  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\plane.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
+
+build CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/particle.cpp || cmake_object_order_depends_target_1projekt
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
+  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\particle.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
+
+build CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/splash_particle.cpp || cmake_object_order_depends_target_1projekt
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
+  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\splash_particle.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
+
+build CMakeFiles/1projekt.dir/src/1projekt/particle_window.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/particle_window.cpp || cmake_object_order_depends_target_1projekt
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
+  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\particle_window.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1projekt
+
+
+#############################################
+# Link the executable 1projekt.exe
+
+build 1projekt.exe: CXX_EXECUTABLE_LINKER__1projekt_Debug CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/particle_window.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  POST_BUILD = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory C:/Users/matus/Desktop/PPGSO/ppgso_projekt/data/ C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug"
+  PRE_LINK = cd .
+  TARGET_FILE = 1projekt.exe
+  TARGET_IMPLIB = lib1projekt.dll.a
+  TARGET_PDB = 1projekt.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target raw1_gradient
@@ -220,7 +303,7 @@ build libppgso.a: CXX_STATIC_LIBRARY_LINKER__ppgso_Debug CMakeFiles/ppgso.dir/pp
 build cmake_object_order_depends_target_raw1_gradient: phony || cmake_object_order_depends_target_ppgso
 
 build CMakeFiles/raw1_gradient.dir/src/raw1_gradient/raw1_gradient.cpp.obj: CXX_COMPILER__raw1_gradient_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/raw1_gradient/raw1_gradient.cpp || cmake_object_order_depends_target_raw1_gradient
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\raw1_gradient.dir\src\raw1_gradient\raw1_gradient.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -235,9 +318,9 @@ build CMakeFiles/raw1_gradient.dir/src/raw1_gradient/raw1_gradient.cpp.obj: CXX_
 #############################################
 # Link the executable raw1_gradient.exe
 
-build raw1_gradient.exe: CXX_EXECUTABLE_LINKER__raw1_gradient_Debug CMakeFiles/raw1_gradient.dir/src/raw1_gradient/raw1_gradient.cpp.obj | libppgso.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a
+build raw1_gradient.exe: CXX_EXECUTABLE_LINKER__raw1_gradient_Debug CMakeFiles/raw1_gradient.dir/src/raw1_gradient/raw1_gradient.cpp.obj | libppgso.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\raw1_gradient.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -255,7 +338,7 @@ build raw1_gradient.exe: CXX_EXECUTABLE_LINKER__raw1_gradient_Debug CMakeFiles/r
 build cmake_object_order_depends_target_raw2_raycast: phony || cmake_object_order_depends_target_ppgso
 
 build CMakeFiles/raw2_raycast.dir/src/raw2_raycast/raw2_raycast.cpp.obj: CXX_COMPILER__raw2_raycast_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/raw2_raycast/raw2_raycast.cpp || cmake_object_order_depends_target_raw2_raycast
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\raw2_raycast.dir\src\raw2_raycast\raw2_raycast.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -270,9 +353,9 @@ build CMakeFiles/raw2_raycast.dir/src/raw2_raycast/raw2_raycast.cpp.obj: CXX_COM
 #############################################
 # Link the executable raw2_raycast.exe
 
-build raw2_raycast.exe: CXX_EXECUTABLE_LINKER__raw2_raycast_Debug CMakeFiles/raw2_raycast.dir/src/raw2_raycast/raw2_raycast.cpp.obj | libppgso.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a
+build raw2_raycast.exe: CXX_EXECUTABLE_LINKER__raw2_raycast_Debug CMakeFiles/raw2_raycast.dir/src/raw2_raycast/raw2_raycast.cpp.obj | libppgso.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\raw2_raycast.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -290,7 +373,7 @@ build raw2_raycast.exe: CXX_EXECUTABLE_LINKER__raw2_raycast_Debug CMakeFiles/raw
 build cmake_object_order_depends_target_raw3_raytrace: phony || cmake_object_order_depends_target_ppgso
 
 build CMakeFiles/raw3_raytrace.dir/src/raw3_raytrace/raw3_raytrace.cpp.obj: CXX_COMPILER__raw3_raytrace_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/raw3_raytrace/raw3_raytrace.cpp || cmake_object_order_depends_target_raw3_raytrace
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\raw3_raytrace.dir\src\raw3_raytrace\raw3_raytrace.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -305,9 +388,9 @@ build CMakeFiles/raw3_raytrace.dir/src/raw3_raytrace/raw3_raytrace.cpp.obj: CXX_
 #############################################
 # Link the executable raw3_raytrace.exe
 
-build raw3_raytrace.exe: CXX_EXECUTABLE_LINKER__raw3_raytrace_Debug CMakeFiles/raw3_raytrace.dir/src/raw3_raytrace/raw3_raytrace.cpp.obj | libppgso.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a
+build raw3_raytrace.exe: CXX_EXECUTABLE_LINKER__raw3_raytrace_Debug CMakeFiles/raw3_raytrace.dir/src/raw3_raytrace/raw3_raytrace.cpp.obj | libppgso.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\raw3_raytrace.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -325,7 +408,7 @@ build raw3_raytrace.exe: CXX_EXECUTABLE_LINKER__raw3_raytrace_Debug CMakeFiles/r
 build cmake_object_order_depends_target_raw4_raster: phony || cmake_object_order_depends_target_ppgso
 
 build CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj: CXX_COMPILER__raw4_raster_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/raw4_raster/raw4_raster.cpp || cmake_object_order_depends_target_raw4_raster
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\raw4_raster.dir\src\raw4_raster\raw4_raster.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -340,9 +423,9 @@ build CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj: CXX_COMPIL
 #############################################
 # Link the executable raw4_raster.exe
 
-build raw4_raster.exe: CXX_EXECUTABLE_LINKER__raw4_raster_Debug CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj | libppgso.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a
+build raw4_raster.exe: CXX_EXECUTABLE_LINKER__raw4_raster_Debug CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj | libppgso.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\raw4_raster.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -360,7 +443,7 @@ build raw4_raster.exe: CXX_EXECUTABLE_LINKER__raw4_raster_Debug CMakeFiles/raw4_
 build cmake_object_order_depends_target_gl1_gradient: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj: CXX_COMPILER__gl1_gradient_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl1_gradient/gl1_gradient.cpp || cmake_object_order_depends_target_gl1_gradient
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl1_gradient.dir\src\gl1_gradient\gl1_gradient.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -375,9 +458,9 @@ build CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj: CXX_COM
 #############################################
 # Link the executable gl1_gradient.exe
 
-build gl1_gradient.exe: CXX_EXECUTABLE_LINKER__gl1_gradient_Debug CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build gl1_gradient.exe: CXX_EXECUTABLE_LINKER__gl1_gradient_Debug CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\gl1_gradient.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -395,7 +478,7 @@ build gl1_gradient.exe: CXX_EXECUTABLE_LINKER__gl1_gradient_Debug CMakeFiles/gl1
 build cmake_object_order_depends_target_gl2_texture: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj: CXX_COMPILER__gl2_texture_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl2_texture/gl2_texture.cpp || cmake_object_order_depends_target_gl2_texture
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl2_texture.dir\src\gl2_texture\gl2_texture.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -410,9 +493,9 @@ build CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj: CXX_COMPIL
 #############################################
 # Link the executable gl2_texture.exe
 
-build gl2_texture.exe: CXX_EXECUTABLE_LINKER__gl2_texture_Debug CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build gl2_texture.exe: CXX_EXECUTABLE_LINKER__gl2_texture_Debug CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\gl2_texture.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -430,7 +513,7 @@ build gl2_texture.exe: CXX_EXECUTABLE_LINKER__gl2_texture_Debug CMakeFiles/gl2_t
 build cmake_object_order_depends_target_gl3_animate: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj: CXX_COMPILER__gl3_animate_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl3_animate/gl3_animate.cpp || cmake_object_order_depends_target_gl3_animate
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl3_animate.dir\src\gl3_animate\gl3_animate.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -445,9 +528,9 @@ build CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj: CXX_COMPIL
 #############################################
 # Link the executable gl3_animate.exe
 
-build gl3_animate.exe: CXX_EXECUTABLE_LINKER__gl3_animate_Debug CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build gl3_animate.exe: CXX_EXECUTABLE_LINKER__gl3_animate_Debug CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\gl3_animate.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -465,7 +548,7 @@ build gl3_animate.exe: CXX_EXECUTABLE_LINKER__gl3_animate_Debug CMakeFiles/gl3_a
 build cmake_object_order_depends_target_gl4_transform: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/gl4_transform.dir/src/gl4_transform/gl4_transform.cpp.obj: CXX_COMPILER__gl4_transform_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl4_transform/gl4_transform.cpp || cmake_object_order_depends_target_gl4_transform
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl4_transform.dir\src\gl4_transform\gl4_transform.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -480,9 +563,9 @@ build CMakeFiles/gl4_transform.dir/src/gl4_transform/gl4_transform.cpp.obj: CXX_
 #############################################
 # Link the executable gl4_transform.exe
 
-build gl4_transform.exe: CXX_EXECUTABLE_LINKER__gl4_transform_Debug CMakeFiles/gl4_transform.dir/src/gl4_transform/gl4_transform.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build gl4_transform.exe: CXX_EXECUTABLE_LINKER__gl4_transform_Debug CMakeFiles/gl4_transform.dir/src/gl4_transform/gl4_transform.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\gl4_transform.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -500,7 +583,7 @@ build gl4_transform.exe: CXX_EXECUTABLE_LINKER__gl4_transform_Debug CMakeFiles/g
 build cmake_object_order_depends_target_gl5_projection: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/gl5_projection.dir/src/gl5_projection/gl5_projection.cpp.obj: CXX_COMPILER__gl5_projection_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl5_projection/gl5_projection.cpp || cmake_object_order_depends_target_gl5_projection
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl5_projection.dir\src\gl5_projection\gl5_projection.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -515,9 +598,9 @@ build CMakeFiles/gl5_projection.dir/src/gl5_projection/gl5_projection.cpp.obj: C
 #############################################
 # Link the executable gl5_projection.exe
 
-build gl5_projection.exe: CXX_EXECUTABLE_LINKER__gl5_projection_Debug CMakeFiles/gl5_projection.dir/src/gl5_projection/gl5_projection.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build gl5_projection.exe: CXX_EXECUTABLE_LINKER__gl5_projection_Debug CMakeFiles/gl5_projection.dir/src/gl5_projection/gl5_projection.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\gl5_projection.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -535,7 +618,7 @@ build gl5_projection.exe: CXX_EXECUTABLE_LINKER__gl5_projection_Debug CMakeFiles
 build cmake_object_order_depends_target_gl6_mesh: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/gl6_mesh.dir/src/gl6_mesh/gl6_mesh.cpp.obj: CXX_COMPILER__gl6_mesh_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl6_mesh/gl6_mesh.cpp || cmake_object_order_depends_target_gl6_mesh
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl6_mesh.dir\src\gl6_mesh\gl6_mesh.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -550,9 +633,9 @@ build CMakeFiles/gl6_mesh.dir/src/gl6_mesh/gl6_mesh.cpp.obj: CXX_COMPILER__gl6_m
 #############################################
 # Link the executable gl6_mesh.exe
 
-build gl6_mesh.exe: CXX_EXECUTABLE_LINKER__gl6_mesh_Debug CMakeFiles/gl6_mesh.dir/src/gl6_mesh/gl6_mesh.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build gl6_mesh.exe: CXX_EXECUTABLE_LINKER__gl6_mesh_Debug CMakeFiles/gl6_mesh.dir/src/gl6_mesh/gl6_mesh.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\gl6_mesh.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -570,7 +653,7 @@ build gl6_mesh.exe: CXX_EXECUTABLE_LINKER__gl6_mesh_Debug CMakeFiles/gl6_mesh.di
 build cmake_object_order_depends_target_gl7_diffuse: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/gl7_diffuse.dir/src/gl7_diffuse/gl7_diffuse.cpp.obj: CXX_COMPILER__gl7_diffuse_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl7_diffuse/gl7_diffuse.cpp || cmake_object_order_depends_target_gl7_diffuse
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl7_diffuse.dir\src\gl7_diffuse\gl7_diffuse.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -585,9 +668,9 @@ build CMakeFiles/gl7_diffuse.dir/src/gl7_diffuse/gl7_diffuse.cpp.obj: CXX_COMPIL
 #############################################
 # Link the executable gl7_diffuse.exe
 
-build gl7_diffuse.exe: CXX_EXECUTABLE_LINKER__gl7_diffuse_Debug CMakeFiles/gl7_diffuse.dir/src/gl7_diffuse/gl7_diffuse.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build gl7_diffuse.exe: CXX_EXECUTABLE_LINKER__gl7_diffuse_Debug CMakeFiles/gl7_diffuse.dir/src/gl7_diffuse/gl7_diffuse.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\gl7_diffuse.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -605,7 +688,7 @@ build gl7_diffuse.exe: CXX_EXECUTABLE_LINKER__gl7_diffuse_Debug CMakeFiles/gl7_d
 build cmake_object_order_depends_target_gl8_framebuffer: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/gl8_framebuffer.dir/src/gl8_framebuffer/gl8_framebuffer.cpp.obj: CXX_COMPILER__gl8_framebuffer_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl8_framebuffer/gl8_framebuffer.cpp || cmake_object_order_depends_target_gl8_framebuffer
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl8_framebuffer.dir\src\gl8_framebuffer\gl8_framebuffer.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -620,9 +703,9 @@ build CMakeFiles/gl8_framebuffer.dir/src/gl8_framebuffer/gl8_framebuffer.cpp.obj
 #############################################
 # Link the executable gl8_framebuffer.exe
 
-build gl8_framebuffer.exe: CXX_EXECUTABLE_LINKER__gl8_framebuffer_Debug CMakeFiles/gl8_framebuffer.dir/src/gl8_framebuffer/gl8_framebuffer.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build gl8_framebuffer.exe: CXX_EXECUTABLE_LINKER__gl8_framebuffer_Debug CMakeFiles/gl8_framebuffer.dir/src/gl8_framebuffer/gl8_framebuffer.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\gl8_framebuffer.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -640,7 +723,7 @@ build gl8_framebuffer.exe: CXX_EXECUTABLE_LINKER__gl8_framebuffer_Debug CMakeFil
 build cmake_object_order_depends_target_gl9_scene: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/gl9_scene.cpp || cmake_object_order_depends_target_gl9_scene
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl9_scene.dir\src\gl9_scene\gl9_scene.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -648,7 +731,7 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj: CXX_COMPILER__gl
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/object.cpp || cmake_object_order_depends_target_gl9_scene
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl9_scene.dir\src\gl9_scene\object.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -656,7 +739,7 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj: CXX_COMPILER__gl9_s
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/scene.cpp || cmake_object_order_depends_target_gl9_scene
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl9_scene.dir\src\gl9_scene\scene.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -664,7 +747,7 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj: CXX_COMPILER__gl9_sc
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/camera.cpp || cmake_object_order_depends_target_gl9_scene
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl9_scene.dir\src\gl9_scene\camera.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -672,7 +755,7 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj: CXX_COMPILER__gl9_s
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/asteroid.cpp || cmake_object_order_depends_target_gl9_scene
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl9_scene.dir\src\gl9_scene\asteroid.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -680,7 +763,7 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj: CXX_COMPILER__gl9
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/generator.cpp || cmake_object_order_depends_target_gl9_scene
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl9_scene.dir\src\gl9_scene\generator.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -688,7 +771,7 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj: CXX_COMPILER__gl
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/player.cpp || cmake_object_order_depends_target_gl9_scene
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl9_scene.dir\src\gl9_scene\player.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -696,7 +779,7 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj: CXX_COMPILER__gl9_s
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/projectile.cpp || cmake_object_order_depends_target_gl9_scene
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl9_scene.dir\src\gl9_scene\projectile.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -704,7 +787,7 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj: CXX_COMPILER__g
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/explosion.cpp || cmake_object_order_depends_target_gl9_scene
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl9_scene.dir\src\gl9_scene\explosion.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -712,7 +795,7 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj: CXX_COMPILER__gl
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/space.cpp || cmake_object_order_depends_target_gl9_scene
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\gl9_scene.dir\src\gl9_scene\space.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -727,9 +810,9 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj: CXX_COMPILER__gl9_sc
 #############################################
 # Link the executable gl9_scene.exe
 
-build gl9_scene.exe: CXX_EXECUTABLE_LINKER__gl9_scene_Debug CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build gl9_scene.exe: CXX_EXECUTABLE_LINKER__gl9_scene_Debug CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\gl9_scene.dir
   POST_BUILD = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory C:/Users/matus/Desktop/PPGSO/ppgso_projekt/data/ C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug"
   PRE_LINK = cd .
@@ -747,6 +830,7 @@ build gl9_scene.exe: CXX_EXECUTABLE_LINKER__gl9_scene_Debug CMakeFiles/gl9_scene
 build cmake_object_order_depends_target_task1_filter: phony || CMakeFiles/task1_filter.dir
 
 build CMakeFiles/task1_filter.dir/src/task1_filter/task1_filter.cpp.obj: CXX_COMPILER__task1_filter_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/task1_filter/task1_filter.cpp || cmake_object_order_depends_target_task1_filter
+  DEFINES = -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\task1_filter.dir\src\task1_filter\task1_filter.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\task1_filter.dir
@@ -780,7 +864,7 @@ build task1_filter.exe: CXX_EXECUTABLE_LINKER__task1_filter_Debug CMakeFiles/tas
 build cmake_object_order_depends_target_task2_bresenham: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj: CXX_COMPILER__task2_bresenham_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/task2_bresenham/task2_bresenham.cpp || cmake_object_order_depends_target_task2_bresenham
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\task2_bresenham.dir\src\task2_bresenham\task2_bresenham.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -795,9 +879,9 @@ build CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj
 #############################################
 # Link the executable task2_bresenham.exe
 
-build task2_bresenham.exe: CXX_EXECUTABLE_LINKER__task2_bresenham_Debug CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build task2_bresenham.exe: CXX_EXECUTABLE_LINKER__task2_bresenham_Debug CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\task2_bresenham.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -815,7 +899,7 @@ build task2_bresenham.exe: CXX_EXECUTABLE_LINKER__task2_bresenham_Debug CMakeFil
 build cmake_object_order_depends_target_task3_bezier: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/task3_bezier.dir/src/task3_bezier/task3_bezier.cpp.obj: CXX_COMPILER__task3_bezier_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/task3_bezier/task3_bezier.cpp || cmake_object_order_depends_target_task3_bezier
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\task3_bezier.dir\src\task3_bezier\task3_bezier.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -830,9 +914,9 @@ build CMakeFiles/task3_bezier.dir/src/task3_bezier/task3_bezier.cpp.obj: CXX_COM
 #############################################
 # Link the executable task3_bezier.exe
 
-build task3_bezier.exe: CXX_EXECUTABLE_LINKER__task3_bezier_Debug CMakeFiles/task3_bezier.dir/src/task3_bezier/task3_bezier.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build task3_bezier.exe: CXX_EXECUTABLE_LINKER__task3_bezier_Debug CMakeFiles/task3_bezier.dir/src/task3_bezier/task3_bezier.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\task3_bezier.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -850,7 +934,7 @@ build task3_bezier.exe: CXX_EXECUTABLE_LINKER__task3_bezier_Debug CMakeFiles/tas
 build cmake_object_order_depends_target_task4_2dshapes: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/task4_2dshapes.dir/src/task4_2dshapes/task4_2dshapes.cpp.obj: CXX_COMPILER__task4_2dshapes_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/task4_2dshapes/task4_2dshapes.cpp || cmake_object_order_depends_target_task4_2dshapes
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\task4_2dshapes.dir\src\task4_2dshapes\task4_2dshapes.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -865,9 +949,9 @@ build CMakeFiles/task4_2dshapes.dir/src/task4_2dshapes/task4_2dshapes.cpp.obj: C
 #############################################
 # Link the executable task4_2dshapes.exe
 
-build task4_2dshapes.exe: CXX_EXECUTABLE_LINKER__task4_2dshapes_Debug CMakeFiles/task4_2dshapes.dir/src/task4_2dshapes/task4_2dshapes.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build task4_2dshapes.exe: CXX_EXECUTABLE_LINKER__task4_2dshapes_Debug CMakeFiles/task4_2dshapes.dir/src/task4_2dshapes/task4_2dshapes.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\task4_2dshapes.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -885,7 +969,7 @@ build task4_2dshapes.exe: CXX_EXECUTABLE_LINKER__task4_2dshapes_Debug CMakeFiles
 build cmake_object_order_depends_target_task5_3d_origin: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/task5_3d_origin.dir/src/task5_3d_origin/task5_3d_origin.cpp.obj: CXX_COMPILER__task5_3d_origin_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/task5_3d_origin/task5_3d_origin.cpp || cmake_object_order_depends_target_task5_3d_origin
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\task5_3d_origin.dir\src\task5_3d_origin\task5_3d_origin.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -900,9 +984,9 @@ build CMakeFiles/task5_3d_origin.dir/src/task5_3d_origin/task5_3d_origin.cpp.obj
 #############################################
 # Link the executable task5_3d_origin.exe
 
-build task5_3d_origin.exe: CXX_EXECUTABLE_LINKER__task5_3d_origin_Debug CMakeFiles/task5_3d_origin.dir/src/task5_3d_origin/task5_3d_origin.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build task5_3d_origin.exe: CXX_EXECUTABLE_LINKER__task5_3d_origin_Debug CMakeFiles/task5_3d_origin.dir/src/task5_3d_origin/task5_3d_origin.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\task5_3d_origin.dir
   POST_BUILD = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory C:/Users/matus/Desktop/PPGSO/ppgso_projekt/data/ C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug"
   PRE_LINK = cd .
@@ -920,7 +1004,7 @@ build task5_3d_origin.exe: CXX_EXECUTABLE_LINKER__task5_3d_origin_Debug CMakeFil
 build cmake_object_order_depends_target_task6_bezier_surface: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/task6_bezier_surface.dir/src/task6_bezier_surface/task6_bezier_surface.cpp.obj: CXX_COMPILER__task6_bezier_surface_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/task6_bezier_surface/task6_bezier_surface.cpp || cmake_object_order_depends_target_task6_bezier_surface
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\task6_bezier_surface.dir\src\task6_bezier_surface\task6_bezier_surface.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -935,9 +1019,9 @@ build CMakeFiles/task6_bezier_surface.dir/src/task6_bezier_surface/task6_bezier_
 #############################################
 # Link the executable task6_bezier_surface.exe
 
-build task6_bezier_surface.exe: CXX_EXECUTABLE_LINKER__task6_bezier_surface_Debug CMakeFiles/task6_bezier_surface.dir/src/task6_bezier_surface/task6_bezier_surface.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build task6_bezier_surface.exe: CXX_EXECUTABLE_LINKER__task6_bezier_surface_Debug CMakeFiles/task6_bezier_surface.dir/src/task6_bezier_surface/task6_bezier_surface.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\task6_bezier_surface.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -955,7 +1039,7 @@ build task6_bezier_surface.exe: CXX_EXECUTABLE_LINKER__task6_bezier_surface_Debu
 build cmake_object_order_depends_target_task7_particles: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj: CXX_COMPILER__task7_particles_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/task7_particles/task7_particles.cpp || cmake_object_order_depends_target_task7_particles
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\task7_particles.dir\src\task7_particles\task7_particles.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -970,9 +1054,9 @@ build CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj
 #############################################
 # Link the executable task7_particles.exe
 
-build task7_particles.exe: CXX_EXECUTABLE_LINKER__task7_particles_Debug CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build task7_particles.exe: CXX_EXECUTABLE_LINKER__task7_particles_Debug CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\task7_particles.dir
   POST_BUILD = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory C:/Users/matus/Desktop/PPGSO/ppgso_projekt/data/ C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug"
   PRE_LINK = cd .
@@ -990,7 +1074,7 @@ build task7_particles.exe: CXX_EXECUTABLE_LINKER__task7_particles_Debug CMakeFil
 build cmake_object_order_depends_target_playground: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/playground.dir/src/playground/playground.cpp.obj: CXX_COMPILER__playground_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/playground/playground.cpp || cmake_object_order_depends_target_playground
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\playground.dir\src\playground\playground.cpp.obj.d
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
@@ -1005,98 +1089,15 @@ build CMakeFiles/playground.dir/src/playground/playground.cpp.obj: CXX_COMPILER_
 #############################################
 # Link the executable playground.exe
 
-build playground.exe: CXX_EXECUTABLE_LINKER__playground_Debug CMakeFiles/playground.dir/src/playground/playground.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
+build playground.exe: CXX_EXECUTABLE_LINKER__playground_Debug CMakeFiles/playground.dir/src/playground/playground.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\playground.dir
   POST_BUILD = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory C:/Users/matus/Desktop/PPGSO/ppgso_projekt/data/ C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug"
   PRE_LINK = cd .
   TARGET_FILE = playground.exe
   TARGET_IMPLIB = libplayground.dll.a
   TARGET_PDB = playground.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target 1projekt
-
-
-#############################################
-# Order-only phony target for 1projekt
-
-build cmake_object_order_depends_target_1projekt: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
-
-build CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/main.cpp || cmake_object_order_depends_target_1projekt
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
-  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\main.cpp.obj.d
-  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
-  OBJECT_DIR = CMakeFiles\1projekt.dir
-  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-
-build CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/camera.cpp || cmake_object_order_depends_target_1projekt
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
-  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\camera.cpp.obj.d
-  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
-  OBJECT_DIR = CMakeFiles\1projekt.dir
-  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-
-build CMakeFiles/1projekt.dir/src/1projekt/renderable.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/renderable.cpp || cmake_object_order_depends_target_1projekt
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
-  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\renderable.cpp.obj.d
-  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
-  OBJECT_DIR = CMakeFiles\1projekt.dir
-  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-
-build CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/plane.cpp || cmake_object_order_depends_target_1projekt
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
-  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\plane.cpp.obj.d
-  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
-  OBJECT_DIR = CMakeFiles\1projekt.dir
-  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-
-build CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/particle.cpp || cmake_object_order_depends_target_1projekt
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
-  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\particle.cpp.obj.d
-  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
-  OBJECT_DIR = CMakeFiles\1projekt.dir
-  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-
-build CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/splash_particle.cpp || cmake_object_order_depends_target_1projekt
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
-  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\splash_particle.cpp.obj.d
-  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
-  OBJECT_DIR = CMakeFiles\1projekt.dir
-  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-
-build CMakeFiles/1projekt.dir/src/1projekt/particle_window.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/particle_window.cpp || cmake_object_order_depends_target_1projekt
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
-  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\particle_window.cpp.obj.d
-  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
-  OBJECT_DIR = CMakeFiles\1projekt.dir
-  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target 1projekt
-
-
-#############################################
-# Link the executable 1projekt.exe
-
-build 1projekt.exe: CXX_EXECUTABLE_LINKER__1projekt_Debug CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/renderable.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/particle_window.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a || libppgso.a libshaders.a
-  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
-  LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\1projekt.dir
-  POST_BUILD = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory C:/Users/matus/Desktop/PPGSO/ppgso_projekt/data/ C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug"
-  PRE_LINK = cd .
-  TARGET_FILE = 1projekt.exe
-  TARGET_IMPLIB = lib1projekt.dll.a
-  TARGET_PDB = 1projekt.exe.dbg
 
 
 #############################################
@@ -1294,12 +1295,7 @@ build task7_particles: phony task7_particles.exe
 #############################################
 # Folder: C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
 
-build all: phony libshaders.a libppgso.a raw1_gradient.exe raw2_raycast.exe raw3_raytrace.exe raw4_raster.exe gl1_gradient.exe gl2_texture.exe gl3_animate.exe gl4_transform.exe gl5_projection.exe gl6_mesh.exe gl7_diffuse.exe gl8_framebuffer.exe gl9_scene.exe task1_filter.exe task2_bresenham.exe task3_bezier.exe task4_2dshapes.exe task5_3d_origin.exe task6_bezier_surface.exe task7_particles.exe playground.exe 1projekt.exe
-
-# =============================================================================
-# Unknown Build Time Dependencies.
-# Tell Ninja that they may appear as side effects of build rules
-# otherwise ordered by order-only dependencies.
+build all: phony libshaders.a libppgso.a 1projekt.exe raw1_gradient.exe raw2_raycast.exe raw3_raytrace.exe raw4_raster.exe gl1_gradient.exe gl2_texture.exe gl3_animate.exe gl4_transform.exe gl5_projection.exe gl6_mesh.exe gl7_diffuse.exe gl8_framebuffer.exe gl9_scene.exe task1_filter.exe task2_bresenham.exe task3_bezier.exe task4_2dshapes.exe task5_3d_origin.exe task6_bezier_surface.exe task7_particles.exe playground.exe
 
 # =============================================================================
 # Built-in targets
@@ -1308,14 +1304,14 @@ build all: phony libshaders.a libppgso.a raw1_gradient.exe raw2_raycast.exe raw3
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/CMakeLists.txt C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLEW.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLFW3.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLM.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/add_resources.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenGL.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/CMakeLists.txt C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindASSIMP.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLEW.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLFW3.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLM.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/add_resources.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake CMakeFiles/assimp_version_major.cpp CMakeFiles/assimp_version_minor.cpp CMakeFiles/assimp_version_revision.cpp D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenGL.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/CMakeLists.txt C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLEW.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLFW3.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLM.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/add_resources.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenGL.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake: phony
+build C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/CMakeLists.txt C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindASSIMP.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLEW.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLFW3.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLM.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/add_resources.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake CMakeFiles/assimp_version_major.cpp CMakeFiles/assimp_version_minor.cpp CMakeFiles/assimp_version_revision.cpp D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenGL.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake: phony
 
 
 #############################################
