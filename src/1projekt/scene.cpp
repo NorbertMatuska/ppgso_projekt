@@ -1,6 +1,6 @@
 #include "scene.h"
 
-void Scene::update(float time) {
+void Scenegl::update(float time) {
   camera->update();
 
   // Use iterator to update all objects so we can remove while iterating
@@ -16,13 +16,13 @@ void Scene::update(float time) {
   }
 }
 
-void Scene::render() {
+void Scenegl::render() {
   // Simply render all objects
   for ( auto& obj : objects )
     obj->render(*this);
 }
 
-std::vector<Object*> Scene::intersect(const glm::vec3 &position, const glm::vec3 &direction) {
+std::vector<Object*> Scenegl::intersect(const glm::vec3 &position, const glm::vec3 &direction) {
   std::vector<Object*> intersected = {};
   for(auto& object : objects) {
     // Collision with sphere of size object->scale.x

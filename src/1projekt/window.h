@@ -4,12 +4,14 @@
 #include <ppgso/ppgso.h>
 #include "renderable.h"
 #include "camera.h"
+#include "scene.h"
 #include <map>
 
 class ParticleWindow : public ppgso::Window {
 private:
     Scene scene;
     Camera camera;
+    Scenegl scenegl;
     std::map<int, bool> keys;
 
     float lastX;

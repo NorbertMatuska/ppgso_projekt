@@ -16,6 +16,10 @@ ParticleWindow::ParticleWindow() : Window{"task7_particles", SIZEx, SIZEy}, came
     auto plane = std::make_unique<Plane>();
     scene.push_back(std::move(plane));
 
+    auto building = std::make_unique<Building>();
+    scene.push_back(std::move(building));
+
+
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 }
 
@@ -82,8 +86,6 @@ void ParticleWindow::onIdle() {
     static auto time = (float)glfwGetTime();
     float dTime = (float)glfwGetTime() - time;
     time = (float)glfwGetTime();
-    auto building = std::make_unique<Building>();
-    //scene.push_back(std::move(building));
 
     glClearColor(.1f, .1f, .1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

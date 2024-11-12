@@ -6,7 +6,7 @@
 #include <glm/glm.hpp>
 
 // Forward declare a scene
-class Scene;
+class Scenegl;
 
 /*!
  *  Abstract scene object interface
@@ -28,20 +28,20 @@ public:
    * @param dt - Time delta for animation purposes
    * @return true to delete the object
    */
-  virtual bool update(Scene &scene, float dt) = 0;
+  virtual bool update(Scenegl &scene, float dt) = 0;
 
   /*!
    * Render the object in the scene
    * @param scene
    */
-  virtual void render(Scene &scene) = 0;
+  virtual void render(Scenegl &scene) = 0;
 
 
   /*!
    * Event to be called when the object is clicked
    * @param scene
    */
-  virtual void onClick(Scene &scene) {};
+  virtual void onClick(Scenegl &scene) {};
 
   // Object properties
   glm::vec3 position{0,0,0};

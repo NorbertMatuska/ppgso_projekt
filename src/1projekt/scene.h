@@ -14,7 +14,7 @@
  * Objects are stored in a list of objects
  * Keyboard and Mouse states are stored in a map and struct
  */
-class Scene {
+class Scenegl {
   public:
     /*!
      * Update all objects in the scene
