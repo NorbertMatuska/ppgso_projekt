@@ -56,10 +56,10 @@ RM = "D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\STU\4-1\PPGSO\ppgso_projekt
+CMAKE_SOURCE_DIR = D:\PROJEKT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug
+CMAKE_BINARY_DIR = D:\PROJEKT\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,9 +131,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles D:\PROJEKT\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -903,6 +903,30 @@ src/1projekt/camera.s: src/1projekt/camera.cpp.s
 src/1projekt/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.s
 .PHONY : src/1projekt/camera.cpp.s
+
+src/1projekt/grid.obj: src/1projekt/grid.cpp.obj
+.PHONY : src/1projekt/grid.obj
+
+# target to build an object file
+src/1projekt/grid.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/grid.cpp.obj
+.PHONY : src/1projekt/grid.cpp.obj
+
+src/1projekt/grid.i: src/1projekt/grid.cpp.i
+.PHONY : src/1projekt/grid.i
+
+# target to preprocess a source file
+src/1projekt/grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/grid.cpp.i
+.PHONY : src/1projekt/grid.cpp.i
+
+src/1projekt/grid.s: src/1projekt/grid.cpp.s
+.PHONY : src/1projekt/grid.s
+
+# target to generate assembly for a file
+src/1projekt/grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/grid.cpp.s
+.PHONY : src/1projekt/grid.cpp.s
 
 src/1projekt/main.obj: src/1projekt/main.cpp.obj
 .PHONY : src/1projekt/main.obj
@@ -1882,6 +1906,9 @@ help:
 	@echo ... src/1projekt/camera.obj
 	@echo ... src/1projekt/camera.i
 	@echo ... src/1projekt/camera.s
+	@echo ... src/1projekt/grid.obj
+	@echo ... src/1projekt/grid.i
+	@echo ... src/1projekt/grid.s
 	@echo ... src/1projekt/main.obj
 	@echo ... src/1projekt/main.i
 	@echo ... src/1projekt/main.s

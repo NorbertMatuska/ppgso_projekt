@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/task4_2dshapes/task4_2dshapes.cpp" "CMakeFiles/task4_2dshapes.dir/src/task4_2dshapes/task4_2dshapes.cpp.obj" "gcc" "CMakeFiles/task4_2dshapes.dir/src/task4_2dshapes/task4_2dshapes.cpp.obj.d"
+  "D:/PROJEKT/src/task4_2dshapes/task4_2dshapes.cpp" "CMakeFiles/task4_2dshapes.dir/src/task4_2dshapes/task4_2dshapes.cpp.obj" "gcc" "CMakeFiles/task4_2dshapes.dir/src/task4_2dshapes/task4_2dshapes.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

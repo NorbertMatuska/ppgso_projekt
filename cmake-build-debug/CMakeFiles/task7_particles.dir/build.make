@@ -52,10 +52,10 @@ RM = "D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\STU\4-1\PPGSO\ppgso_projekt
+CMAKE_SOURCE_DIR = D:\PROJEKT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug
+CMAKE_BINARY_DIR = D:\PROJEKT\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/task7_particles.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/task7_particles.dir/flags.make
 
 CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj: CMakeFiles/task7_particles.dir/flags.make
 CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj: CMakeFiles/task7_particles.dir/includes_CXX.rsp
-CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/src/task7_particles/task7_particles.cpp
+CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj: D:/PROJEKT/src/task7_particles/task7_particles.cpp
 CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj: CMakeFiles/task7_particles.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj -MF CMakeFiles\task7_particles.dir\src\task7_particles\task7_particles.cpp.obj.d -o CMakeFiles\task7_particles.dir\src\task7_particles\task7_particles.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\src\task7_particles\task7_particles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj -MF CMakeFiles\task7_particles.dir\src\task7_particles\task7_particles.cpp.obj.d -o CMakeFiles\task7_particles.dir\src\task7_particles\task7_particles.cpp.obj -c D:\PROJEKT\src\task7_particles\task7_particles.cpp
 
 CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\src\task7_particles\task7_particles.cpp > CMakeFiles\task7_particles.dir\src\task7_particles\task7_particles.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\src\task7_particles\task7_particles.cpp > CMakeFiles\task7_particles.dir\src\task7_particles\task7_particles.cpp.i
 
 CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\src\task7_particles\task7_particles.cpp -o CMakeFiles\task7_particles.dir\src\task7_particles\task7_particles.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\src\task7_particles\task7_particles.cpp -o CMakeFiles\task7_particles.dir\src\task7_particles\task7_particles.cpp.s
 
 # Object files for target task7_particles
 task7_particles_OBJECTS = \
@@ -94,15 +94,15 @@ task7_particles.exe: CMakeFiles/task7_particles.dir/src/task7_particles/task7_pa
 task7_particles.exe: CMakeFiles/task7_particles.dir/build.make
 task7_particles.exe: libppgso.a
 task7_particles.exe: libshaders.a
-task7_particles.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a
-task7_particles.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a
-task7_particles.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a
+task7_particles.exe: D:/PROJEKT/dependencies/lib/mingw/libglfw3.a
+task7_particles.exe: D:/PROJEKT/dependencies/lib/mingw/libglew32.a
+task7_particles.exe: D:/PROJEKT/dependencies/lib/mingw/libassimp.a
 task7_particles.exe: CMakeFiles/task7_particles.dir/linkLibs.rsp
 task7_particles.exe: CMakeFiles/task7_particles.dir/objects1.rsp
 task7_particles.exe: CMakeFiles/task7_particles.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable task7_particles.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable task7_particles.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\task7_particles.dir\link.txt --verbose=$(VERBOSE)
-	"D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory D:/STU/4-1/PPGSO/ppgso_projekt/data/ D:/STU/4-1/PPGSO/ppgso_projekt/cmake-build-debug
+	"D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory D:/PROJEKT/data/ D:/PROJEKT/cmake-build-debug
 
 # Rule to build all files generated by this target.
 CMakeFiles/task7_particles.dir/build: task7_particles.exe
@@ -113,6 +113,6 @@ CMakeFiles/task7_particles.dir/clean:
 .PHONY : CMakeFiles/task7_particles.dir/clean
 
 CMakeFiles/task7_particles.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles\task7_particles.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\PROJEKT D:\PROJEKT D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug\CMakeFiles\task7_particles.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/task7_particles.dir/depend
 

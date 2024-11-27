@@ -52,10 +52,10 @@ RM = "D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\STU\4-1\PPGSO\ppgso_projekt
+CMAKE_SOURCE_DIR = D:\PROJEKT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug
+CMAKE_BINARY_DIR = D:\PROJEKT\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gl3_animate.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/gl3_animate.dir/flags.make
 
 CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj: CMakeFiles/gl3_animate.dir/flags.make
 CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj: CMakeFiles/gl3_animate.dir/includes_CXX.rsp
-CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/src/gl3_animate/gl3_animate.cpp
+CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj: D:/PROJEKT/src/gl3_animate/gl3_animate.cpp
 CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj: CMakeFiles/gl3_animate.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj -MF CMakeFiles\gl3_animate.dir\src\gl3_animate\gl3_animate.cpp.obj.d -o CMakeFiles\gl3_animate.dir\src\gl3_animate\gl3_animate.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\src\gl3_animate\gl3_animate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj -MF CMakeFiles\gl3_animate.dir\src\gl3_animate\gl3_animate.cpp.obj.d -o CMakeFiles\gl3_animate.dir\src\gl3_animate\gl3_animate.cpp.obj -c D:\PROJEKT\src\gl3_animate\gl3_animate.cpp
 
 CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\src\gl3_animate\gl3_animate.cpp > CMakeFiles\gl3_animate.dir\src\gl3_animate\gl3_animate.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\src\gl3_animate\gl3_animate.cpp > CMakeFiles\gl3_animate.dir\src\gl3_animate\gl3_animate.cpp.i
 
 CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\src\gl3_animate\gl3_animate.cpp -o CMakeFiles\gl3_animate.dir\src\gl3_animate\gl3_animate.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\src\gl3_animate\gl3_animate.cpp -o CMakeFiles\gl3_animate.dir\src\gl3_animate\gl3_animate.cpp.s
 
 # Object files for target gl3_animate
 gl3_animate_OBJECTS = \
@@ -94,13 +94,13 @@ gl3_animate.exe: CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj
 gl3_animate.exe: CMakeFiles/gl3_animate.dir/build.make
 gl3_animate.exe: libppgso.a
 gl3_animate.exe: libshaders.a
-gl3_animate.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a
-gl3_animate.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a
-gl3_animate.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a
+gl3_animate.exe: D:/PROJEKT/dependencies/lib/mingw/libglfw3.a
+gl3_animate.exe: D:/PROJEKT/dependencies/lib/mingw/libglew32.a
+gl3_animate.exe: D:/PROJEKT/dependencies/lib/mingw/libassimp.a
 gl3_animate.exe: CMakeFiles/gl3_animate.dir/linkLibs.rsp
 gl3_animate.exe: CMakeFiles/gl3_animate.dir/objects1.rsp
 gl3_animate.exe: CMakeFiles/gl3_animate.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable gl3_animate.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable gl3_animate.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gl3_animate.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -112,6 +112,6 @@ CMakeFiles/gl3_animate.dir/clean:
 .PHONY : CMakeFiles/gl3_animate.dir/clean
 
 CMakeFiles/gl3_animate.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles\gl3_animate.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\PROJEKT D:\PROJEKT D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug\CMakeFiles\gl3_animate.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/gl3_animate.dir/depend
 

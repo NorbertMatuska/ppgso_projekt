@@ -52,10 +52,10 @@ RM = "D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\STU\4-1\PPGSO\ppgso_projekt
+CMAKE_SOURCE_DIR = D:\PROJEKT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug
+CMAKE_BINARY_DIR = D:\PROJEKT\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ppgso.dir/depend.make
@@ -70,123 +70,123 @@ include CMakeFiles/ppgso.dir/flags.make
 
 CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
-CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/Mesh_Assimp.cpp
+CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj: D:/PROJEKT/ppgso/Mesh_Assimp.cpp
 CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj: CMakeFiles/ppgso.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\Mesh_Assimp.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\Mesh_Assimp.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\Mesh_Assimp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\Mesh_Assimp.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\Mesh_Assimp.cpp.obj -c D:\PROJEKT\ppgso\Mesh_Assimp.cpp
 
 CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\Mesh_Assimp.cpp > CMakeFiles\ppgso.dir\ppgso\Mesh_Assimp.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\ppgso\Mesh_Assimp.cpp > CMakeFiles\ppgso.dir\ppgso\Mesh_Assimp.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\Mesh_Assimp.cpp -o CMakeFiles\ppgso.dir\ppgso\Mesh_Assimp.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\ppgso\Mesh_Assimp.cpp -o CMakeFiles\ppgso.dir\ppgso\Mesh_Assimp.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
-CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/tiny_obj_loader.cpp
+CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj: D:/PROJEKT/ppgso/tiny_obj_loader.cpp
 CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj: CMakeFiles/ppgso.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\tiny_obj_loader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.obj -c D:\PROJEKT\ppgso\tiny_obj_loader.cpp
 
 CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\tiny_obj_loader.cpp > CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\ppgso\tiny_obj_loader.cpp > CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\tiny_obj_loader.cpp -o CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\ppgso\tiny_obj_loader.cpp -o CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
-CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/shader.cpp
+CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj: D:/PROJEKT/ppgso/shader.cpp
 CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj: CMakeFiles/ppgso.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\shader.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\shader.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\shader.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\shader.cpp.obj -c D:\PROJEKT\ppgso\shader.cpp
 
 CMakeFiles/ppgso.dir/ppgso/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/shader.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\shader.cpp > CMakeFiles\ppgso.dir\ppgso\shader.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\ppgso\shader.cpp > CMakeFiles\ppgso.dir\ppgso\shader.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/shader.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\shader.cpp -o CMakeFiles\ppgso.dir\ppgso\shader.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\ppgso\shader.cpp -o CMakeFiles\ppgso.dir\ppgso\shader.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/image.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/image.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
-CMakeFiles/ppgso.dir/ppgso/image.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/image.cpp
+CMakeFiles/ppgso.dir/ppgso/image.cpp.obj: D:/PROJEKT/ppgso/image.cpp
 CMakeFiles/ppgso.dir/ppgso/image.cpp.obj: CMakeFiles/ppgso.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ppgso.dir/ppgso/image.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/image.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\image.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\image.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ppgso.dir/ppgso/image.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/image.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\image.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\image.cpp.obj -c D:\PROJEKT\ppgso\image.cpp
 
 CMakeFiles/ppgso.dir/ppgso/image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/image.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\image.cpp > CMakeFiles\ppgso.dir\ppgso\image.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\ppgso\image.cpp > CMakeFiles\ppgso.dir\ppgso\image.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/image.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\image.cpp -o CMakeFiles\ppgso.dir\ppgso\image.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\ppgso\image.cpp -o CMakeFiles\ppgso.dir\ppgso\image.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
-CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/image_bmp.cpp
+CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj: D:/PROJEKT/ppgso/image_bmp.cpp
 CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj: CMakeFiles/ppgso.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\image_bmp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.obj -c D:\PROJEKT\ppgso\image_bmp.cpp
 
 CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\image_bmp.cpp > CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\ppgso\image_bmp.cpp > CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\image_bmp.cpp -o CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\ppgso\image_bmp.cpp -o CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
-CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/image_raw.cpp
+CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj: D:/PROJEKT/ppgso/image_raw.cpp
 CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj: CMakeFiles/ppgso.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\image_raw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.obj -c D:\PROJEKT\ppgso\image_raw.cpp
 
 CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\image_raw.cpp > CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\ppgso\image_raw.cpp > CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\image_raw.cpp -o CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\ppgso\image_raw.cpp -o CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
-CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/texture.cpp
+CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj: D:/PROJEKT/ppgso/texture.cpp
 CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj: CMakeFiles/ppgso.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\texture.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\texture.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\texture.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\texture.cpp.obj -c D:\PROJEKT\ppgso\texture.cpp
 
 CMakeFiles/ppgso.dir/ppgso/texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/texture.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\texture.cpp > CMakeFiles\ppgso.dir\ppgso\texture.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\ppgso\texture.cpp > CMakeFiles\ppgso.dir\ppgso\texture.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/texture.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\texture.cpp -o CMakeFiles\ppgso.dir\ppgso\texture.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\ppgso\texture.cpp -o CMakeFiles\ppgso.dir\ppgso\texture.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/window.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/window.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
-CMakeFiles/ppgso.dir/ppgso/window.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/window.cpp
+CMakeFiles/ppgso.dir/ppgso/window.cpp.obj: D:/PROJEKT/ppgso/window.cpp
 CMakeFiles/ppgso.dir/ppgso/window.cpp.obj: CMakeFiles/ppgso.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ppgso.dir/ppgso/window.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/window.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\window.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\window.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ppgso.dir/ppgso/window.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/ppgso/window.cpp.obj -MF CMakeFiles\ppgso.dir\ppgso\window.cpp.obj.d -o CMakeFiles\ppgso.dir\ppgso\window.cpp.obj -c D:\PROJEKT\ppgso\window.cpp
 
 CMakeFiles/ppgso.dir/ppgso/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/window.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\window.cpp > CMakeFiles\ppgso.dir\ppgso\window.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\ppgso\window.cpp > CMakeFiles\ppgso.dir\ppgso\window.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/window.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\ppgso\window.cpp -o CMakeFiles\ppgso.dir\ppgso\window.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\ppgso\window.cpp -o CMakeFiles\ppgso.dir\ppgso\window.cpp.s
 
 # Object files for target ppgso
 ppgso_OBJECTS = \
@@ -212,7 +212,7 @@ libppgso.a: CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj
 libppgso.a: CMakeFiles/ppgso.dir/ppgso/window.cpp.obj
 libppgso.a: CMakeFiles/ppgso.dir/build.make
 libppgso.a: CMakeFiles/ppgso.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libppgso.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libppgso.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\ppgso.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ppgso.dir\link.txt --verbose=$(VERBOSE)
 
@@ -225,6 +225,6 @@ CMakeFiles/ppgso.dir/clean:
 .PHONY : CMakeFiles/ppgso.dir/clean
 
 CMakeFiles/ppgso.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles\ppgso.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\PROJEKT D:\PROJEKT D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug\CMakeFiles\ppgso.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ppgso.dir/depend
 

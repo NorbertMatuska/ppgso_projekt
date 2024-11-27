@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/Mesh_Assimp.cpp" "CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/image.cpp" "CMakeFiles/ppgso.dir/ppgso/image.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/image.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/image_bmp.cpp" "CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/image_raw.cpp" "CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/shader.cpp" "CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/texture.cpp" "CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/tiny_obj_loader.cpp" "CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/ppgso/window.cpp" "CMakeFiles/ppgso.dir/ppgso/window.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/window.cpp.obj.d"
+  "D:/PROJEKT/ppgso/Mesh_Assimp.cpp" "CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj.d"
+  "D:/PROJEKT/ppgso/image.cpp" "CMakeFiles/ppgso.dir/ppgso/image.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/image.cpp.obj.d"
+  "D:/PROJEKT/ppgso/image_bmp.cpp" "CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj.d"
+  "D:/PROJEKT/ppgso/image_raw.cpp" "CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj.d"
+  "D:/PROJEKT/ppgso/shader.cpp" "CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj.d"
+  "D:/PROJEKT/ppgso/texture.cpp" "CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj.d"
+  "D:/PROJEKT/ppgso/tiny_obj_loader.cpp" "CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj.d"
+  "D:/PROJEKT/ppgso/window.cpp" "CMakeFiles/ppgso.dir/ppgso/window.cpp.obj" "gcc" "CMakeFiles/ppgso.dir/ppgso/window.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

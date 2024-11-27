@@ -1,1 +1,1 @@
--I"D:/STU/4-1/PPGSO/ppgso_projekt/ppgso" -I"D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/include" -I"D:/STU/4-1/PPGSO/ppgso_projekt" -I"D:/STU/4-1/PPGSO/ppgso_projekt/cmake-build-debug"
+-ID:/PROJEKT/ppgso -ID:/PROJEKT/dependencies/include -ID:/PROJEKT -I"D:/PROJEKT/cmake-build-debug"

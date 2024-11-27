@@ -8,15 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/1projekt/building.cpp" "CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/1projekt/camera.cpp" "CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/1projekt/main.cpp" "CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/1projekt/object.cpp" "CMakeFiles/1projekt.dir/src/1projekt/object.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/object.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/1projekt/particle.cpp" "CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/1projekt/plane.cpp" "CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/1projekt/scene.cpp" "CMakeFiles/1projekt.dir/src/1projekt/scene.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/scene.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/1projekt/splash_particle.cpp" "CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj.d"
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/1projekt/window.cpp" "CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj.d"
+  "D:/PROJEKT/src/1projekt/building.cpp" "CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj.d"
+  "D:/PROJEKT/src/1projekt/camera.cpp" "CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj.d"
+  "D:/PROJEKT/src/1projekt/grid.cpp" "CMakeFiles/1projekt.dir/src/1projekt/grid.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/grid.cpp.obj.d"
+  "D:/PROJEKT/src/1projekt/main.cpp" "CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj.d"
+  "D:/PROJEKT/src/1projekt/object.cpp" "CMakeFiles/1projekt.dir/src/1projekt/object.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/object.cpp.obj.d"
+  "D:/PROJEKT/src/1projekt/particle.cpp" "CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj.d"
+  "D:/PROJEKT/src/1projekt/plane.cpp" "CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj.d"
+  "D:/PROJEKT/src/1projekt/scene.cpp" "CMakeFiles/1projekt.dir/src/1projekt/scene.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/scene.cpp.obj.d"
+  "D:/PROJEKT/src/1projekt/splash_particle.cpp" "CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj.d"
+  "D:/PROJEKT/src/1projekt/window.cpp" "CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj" "gcc" "CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

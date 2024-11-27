@@ -52,10 +52,10 @@ RM = "D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\STU\4-1\PPGSO\ppgso_projekt
+CMAKE_SOURCE_DIR = D:\PROJEKT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug
+CMAKE_BINARY_DIR = D:\PROJEKT\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/task2_bresenham.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/task2_bresenham.dir/flags.make
 
 CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj: CMakeFiles/task2_bresenham.dir/flags.make
 CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj: CMakeFiles/task2_bresenham.dir/includes_CXX.rsp
-CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/src/task2_bresenham/task2_bresenham.cpp
+CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj: D:/PROJEKT/src/task2_bresenham/task2_bresenham.cpp
 CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj: CMakeFiles/task2_bresenham.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj -MF CMakeFiles\task2_bresenham.dir\src\task2_bresenham\task2_bresenham.cpp.obj.d -o CMakeFiles\task2_bresenham.dir\src\task2_bresenham\task2_bresenham.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\src\task2_bresenham\task2_bresenham.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj -MF CMakeFiles\task2_bresenham.dir\src\task2_bresenham\task2_bresenham.cpp.obj.d -o CMakeFiles\task2_bresenham.dir\src\task2_bresenham\task2_bresenham.cpp.obj -c D:\PROJEKT\src\task2_bresenham\task2_bresenham.cpp
 
 CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\src\task2_bresenham\task2_bresenham.cpp > CMakeFiles\task2_bresenham.dir\src\task2_bresenham\task2_bresenham.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\src\task2_bresenham\task2_bresenham.cpp > CMakeFiles\task2_bresenham.dir\src\task2_bresenham\task2_bresenham.cpp.i
 
 CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\src\task2_bresenham\task2_bresenham.cpp -o CMakeFiles\task2_bresenham.dir\src\task2_bresenham\task2_bresenham.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\src\task2_bresenham\task2_bresenham.cpp -o CMakeFiles\task2_bresenham.dir\src\task2_bresenham\task2_bresenham.cpp.s
 
 # Object files for target task2_bresenham
 task2_bresenham_OBJECTS = \
@@ -94,13 +94,13 @@ task2_bresenham.exe: CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_br
 task2_bresenham.exe: CMakeFiles/task2_bresenham.dir/build.make
 task2_bresenham.exe: libppgso.a
 task2_bresenham.exe: libshaders.a
-task2_bresenham.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a
-task2_bresenham.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a
-task2_bresenham.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a
+task2_bresenham.exe: D:/PROJEKT/dependencies/lib/mingw/libglfw3.a
+task2_bresenham.exe: D:/PROJEKT/dependencies/lib/mingw/libglew32.a
+task2_bresenham.exe: D:/PROJEKT/dependencies/lib/mingw/libassimp.a
 task2_bresenham.exe: CMakeFiles/task2_bresenham.dir/linkLibs.rsp
 task2_bresenham.exe: CMakeFiles/task2_bresenham.dir/objects1.rsp
 task2_bresenham.exe: CMakeFiles/task2_bresenham.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable task2_bresenham.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable task2_bresenham.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\task2_bresenham.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -112,6 +112,6 @@ CMakeFiles/task2_bresenham.dir/clean:
 .PHONY : CMakeFiles/task2_bresenham.dir/clean
 
 CMakeFiles/task2_bresenham.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles\task2_bresenham.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\PROJEKT D:\PROJEKT D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug\CMakeFiles\task2_bresenham.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/task2_bresenham.dir/depend
 

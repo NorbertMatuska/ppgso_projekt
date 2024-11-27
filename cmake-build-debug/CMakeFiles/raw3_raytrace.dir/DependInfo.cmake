@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/raw3_raytrace/raw3_raytrace.cpp" "CMakeFiles/raw3_raytrace.dir/src/raw3_raytrace/raw3_raytrace.cpp.obj" "gcc" "CMakeFiles/raw3_raytrace.dir/src/raw3_raytrace/raw3_raytrace.cpp.obj.d"
+  "D:/PROJEKT/src/raw3_raytrace/raw3_raytrace.cpp" "CMakeFiles/raw3_raytrace.dir/src/raw3_raytrace/raw3_raytrace.cpp.obj" "gcc" "CMakeFiles/raw3_raytrace.dir/src/raw3_raytrace/raw3_raytrace.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

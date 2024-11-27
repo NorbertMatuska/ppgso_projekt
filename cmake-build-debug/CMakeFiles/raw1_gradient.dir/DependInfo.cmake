@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/raw1_gradient/raw1_gradient.cpp" "CMakeFiles/raw1_gradient.dir/src/raw1_gradient/raw1_gradient.cpp.obj" "gcc" "CMakeFiles/raw1_gradient.dir/src/raw1_gradient/raw1_gradient.cpp.obj.d"
+  "D:/PROJEKT/src/raw1_gradient/raw1_gradient.cpp" "CMakeFiles/raw1_gradient.dir/src/raw1_gradient/raw1_gradient.cpp.obj" "gcc" "CMakeFiles/raw1_gradient.dir/src/raw1_gradient/raw1_gradient.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/task5_3d_origin/task5_3d_origin.cpp" "CMakeFiles/task5_3d_origin.dir/src/task5_3d_origin/task5_3d_origin.cpp.obj" "gcc" "CMakeFiles/task5_3d_origin.dir/src/task5_3d_origin/task5_3d_origin.cpp.obj.d"
+  "D:/PROJEKT/src/task5_3d_origin/task5_3d_origin.cpp" "CMakeFiles/task5_3d_origin.dir/src/task5_3d_origin/task5_3d_origin.cpp.obj" "gcc" "CMakeFiles/task5_3d_origin.dir/src/task5_3d_origin/task5_3d_origin.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

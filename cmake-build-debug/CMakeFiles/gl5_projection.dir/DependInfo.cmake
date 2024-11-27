@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/gl5_projection/gl5_projection.cpp" "CMakeFiles/gl5_projection.dir/src/gl5_projection/gl5_projection.cpp.obj" "gcc" "CMakeFiles/gl5_projection.dir/src/gl5_projection/gl5_projection.cpp.obj.d"
+  "D:/PROJEKT/src/gl5_projection/gl5_projection.cpp" "CMakeFiles/gl5_projection.dir/src/gl5_projection/gl5_projection.cpp.obj" "gcc" "CMakeFiles/gl5_projection.dir/src/gl5_projection/gl5_projection.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

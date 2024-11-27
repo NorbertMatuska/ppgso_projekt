@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/gl6_mesh/gl6_mesh.cpp" "CMakeFiles/gl6_mesh.dir/src/gl6_mesh/gl6_mesh.cpp.obj" "gcc" "CMakeFiles/gl6_mesh.dir/src/gl6_mesh/gl6_mesh.cpp.obj.d"
+  "D:/PROJEKT/src/gl6_mesh/gl6_mesh.cpp" "CMakeFiles/gl6_mesh.dir/src/gl6_mesh/gl6_mesh.cpp.obj" "gcc" "CMakeFiles/gl6_mesh.dir/src/gl6_mesh/gl6_mesh.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

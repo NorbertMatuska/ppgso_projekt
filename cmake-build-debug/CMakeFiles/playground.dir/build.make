@@ -52,10 +52,10 @@ RM = "D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\STU\4-1\PPGSO\ppgso_projekt
+CMAKE_SOURCE_DIR = D:\PROJEKT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug
+CMAKE_BINARY_DIR = D:\PROJEKT\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/playground.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/playground.dir/flags.make
 
 CMakeFiles/playground.dir/src/playground/playground.cpp.obj: CMakeFiles/playground.dir/flags.make
 CMakeFiles/playground.dir/src/playground/playground.cpp.obj: CMakeFiles/playground.dir/includes_CXX.rsp
-CMakeFiles/playground.dir/src/playground/playground.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/src/playground/playground.cpp
+CMakeFiles/playground.dir/src/playground/playground.cpp.obj: D:/PROJEKT/src/playground/playground.cpp
 CMakeFiles/playground.dir/src/playground/playground.cpp.obj: CMakeFiles/playground.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/playground.dir/src/playground/playground.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/playground.dir/src/playground/playground.cpp.obj -MF CMakeFiles\playground.dir\src\playground\playground.cpp.obj.d -o CMakeFiles\playground.dir\src\playground\playground.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\src\playground\playground.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/playground.dir/src/playground/playground.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/playground.dir/src/playground/playground.cpp.obj -MF CMakeFiles\playground.dir\src\playground\playground.cpp.obj.d -o CMakeFiles\playground.dir\src\playground\playground.cpp.obj -c D:\PROJEKT\src\playground\playground.cpp
 
 CMakeFiles/playground.dir/src/playground/playground.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/playground.dir/src/playground/playground.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\src\playground\playground.cpp > CMakeFiles\playground.dir\src\playground\playground.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\src\playground\playground.cpp > CMakeFiles\playground.dir\src\playground\playground.cpp.i
 
 CMakeFiles/playground.dir/src/playground/playground.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/playground.dir/src/playground/playground.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\src\playground\playground.cpp -o CMakeFiles\playground.dir\src\playground\playground.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\src\playground\playground.cpp -o CMakeFiles\playground.dir\src\playground\playground.cpp.s
 
 # Object files for target playground
 playground_OBJECTS = \
@@ -94,15 +94,15 @@ playground.exe: CMakeFiles/playground.dir/src/playground/playground.cpp.obj
 playground.exe: CMakeFiles/playground.dir/build.make
 playground.exe: libppgso.a
 playground.exe: libshaders.a
-playground.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a
-playground.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a
-playground.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a
+playground.exe: D:/PROJEKT/dependencies/lib/mingw/libglfw3.a
+playground.exe: D:/PROJEKT/dependencies/lib/mingw/libglew32.a
+playground.exe: D:/PROJEKT/dependencies/lib/mingw/libassimp.a
 playground.exe: CMakeFiles/playground.dir/linkLibs.rsp
 playground.exe: CMakeFiles/playground.dir/objects1.rsp
 playground.exe: CMakeFiles/playground.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable playground.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable playground.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\playground.dir\link.txt --verbose=$(VERBOSE)
-	"D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory D:/STU/4-1/PPGSO/ppgso_projekt/data/ D:/STU/4-1/PPGSO/ppgso_projekt/cmake-build-debug
+	"D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory D:/PROJEKT/data/ D:/PROJEKT/cmake-build-debug
 
 # Rule to build all files generated by this target.
 CMakeFiles/playground.dir/build: playground.exe
@@ -113,6 +113,6 @@ CMakeFiles/playground.dir/clean:
 .PHONY : CMakeFiles/playground.dir/clean
 
 CMakeFiles/playground.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles\playground.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\PROJEKT D:\PROJEKT D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug\CMakeFiles\playground.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/playground.dir/depend
 

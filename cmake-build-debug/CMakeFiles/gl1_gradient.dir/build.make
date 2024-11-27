@@ -52,10 +52,10 @@ RM = "D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\STU\4-1\PPGSO\ppgso_projekt
+CMAKE_SOURCE_DIR = D:\PROJEKT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug
+CMAKE_BINARY_DIR = D:\PROJEKT\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gl1_gradient.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/gl1_gradient.dir/flags.make
 
 CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj: CMakeFiles/gl1_gradient.dir/flags.make
 CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj: CMakeFiles/gl1_gradient.dir/includes_CXX.rsp
-CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/src/gl1_gradient/gl1_gradient.cpp
+CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj: D:/PROJEKT/src/gl1_gradient/gl1_gradient.cpp
 CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj: CMakeFiles/gl1_gradient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj -MF CMakeFiles\gl1_gradient.dir\src\gl1_gradient\gl1_gradient.cpp.obj.d -o CMakeFiles\gl1_gradient.dir\src\gl1_gradient\gl1_gradient.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\src\gl1_gradient\gl1_gradient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj -MF CMakeFiles\gl1_gradient.dir\src\gl1_gradient\gl1_gradient.cpp.obj.d -o CMakeFiles\gl1_gradient.dir\src\gl1_gradient\gl1_gradient.cpp.obj -c D:\PROJEKT\src\gl1_gradient\gl1_gradient.cpp
 
 CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\src\gl1_gradient\gl1_gradient.cpp > CMakeFiles\gl1_gradient.dir\src\gl1_gradient\gl1_gradient.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\src\gl1_gradient\gl1_gradient.cpp > CMakeFiles\gl1_gradient.dir\src\gl1_gradient\gl1_gradient.cpp.i
 
 CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\src\gl1_gradient\gl1_gradient.cpp -o CMakeFiles\gl1_gradient.dir\src\gl1_gradient\gl1_gradient.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\src\gl1_gradient\gl1_gradient.cpp -o CMakeFiles\gl1_gradient.dir\src\gl1_gradient\gl1_gradient.cpp.s
 
 # Object files for target gl1_gradient
 gl1_gradient_OBJECTS = \
@@ -94,13 +94,13 @@ gl1_gradient.exe: CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.
 gl1_gradient.exe: CMakeFiles/gl1_gradient.dir/build.make
 gl1_gradient.exe: libppgso.a
 gl1_gradient.exe: libshaders.a
-gl1_gradient.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a
-gl1_gradient.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a
-gl1_gradient.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a
+gl1_gradient.exe: D:/PROJEKT/dependencies/lib/mingw/libglfw3.a
+gl1_gradient.exe: D:/PROJEKT/dependencies/lib/mingw/libglew32.a
+gl1_gradient.exe: D:/PROJEKT/dependencies/lib/mingw/libassimp.a
 gl1_gradient.exe: CMakeFiles/gl1_gradient.dir/linkLibs.rsp
 gl1_gradient.exe: CMakeFiles/gl1_gradient.dir/objects1.rsp
 gl1_gradient.exe: CMakeFiles/gl1_gradient.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable gl1_gradient.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable gl1_gradient.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gl1_gradient.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -112,6 +112,6 @@ CMakeFiles/gl1_gradient.dir/clean:
 .PHONY : CMakeFiles/gl1_gradient.dir/clean
 
 CMakeFiles/gl1_gradient.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles\gl1_gradient.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\PROJEKT D:\PROJEKT D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug\CMakeFiles\gl1_gradient.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/gl1_gradient.dir/depend
 

@@ -16,44 +16,59 @@ ParticleWindow::ParticleWindow() : Window{"task7_particles", SIZEx, SIZEy}, came
     glEnable(GL_LINE_SMOOTH);
     glLineWidth(1.0f);
 
-    Grid grid(10, 10, 5.0f, glm::vec3(0.0f, 0.0f, 0.0f));
-    drawGridLines(grid);
-    // Add plane (ground)
-    auto plane = std::make_unique<Plane>();
-    scene.push_back(std::move(plane));
+    int n = 5;  // Number of 3x3 sub-grids along each dimension
+    float cellSize = 10.0f;  // Size of each grid cell
+    float subGridSize = 3 * cellSize;  // Size of a 3x3 sub-grid
 
-    // Add small cars with textures
-    auto smallCar1 = std::make_unique<Building>("small_car_1.obj", grid.getCellPosition(1,2), "stars.bmp");
-    scene.push_back(std::move(smallCar1));
-    auto smallCar2 = std::make_unique<Building>("small_car_2.obj", grid.getCellPosition(1,3), "stars.bmp");
-    scene.push_back(std::move(smallCar2));
+    Grid grid(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.0f, 0.0f));
+    drawGridLines(grid);  // Draw the grid in the background
 
-    // Add big car with texture
-    auto bigCar = std::make_unique<Building>("big_car.obj", grid.getCellPosition(1,4), "stars.bmp");
-    scene.push_back(std::move(bigCar));
+    // Iterate through each sub-grid to place buildings
+    for (int subGridRow = 0; subGridRow < n; ++subGridRow) {
+        for (int subGridCol = 0; subGridCol < n; ++subGridCol) {
+            glm::vec3 subGridOrigin = glm::vec3(subGridCol * subGridSize, 0.0f, subGridRow * subGridSize);
 
-    // Add small houses with textures
-    auto smallHouse1 = std::make_unique<Building>("small_house_1.obj", grid.getCellPosition(0,0), "cement.bmp");
-    scene.push_back(std::move(smallHouse1));
-    auto smallHouse2 = std::make_unique<Building>("small_house_2.obj", grid.getCellPosition(0,1), "cement.bmp");
-    scene.push_back(std::move(smallHouse2));
+            // Generate a 3x3 pattern for the current sub-grid
+            for (int row = 0; row < 3; ++row) {
+                for (int col = 0; col < 3; ++col) {
+                    if ((row == 1 && col == 1) || row == 1 || col == 1) {
+                        continue; // Skip the center and roads (leave these as roads)
+                    }
 
-    // Add medium houses with textures
-    auto mediumHouse1 = std::make_unique<Building>("medium_house_1.obj", grid.getCellPosition(0,2), "stars.bmp");
-    scene.push_back(std::move(mediumHouse1));
-    auto mediumHouse2 = std::make_unique<Building>("medium_house_2.obj", grid.getCellPosition(0,3), "stars.bmp");
-    scene.push_back(std::move(mediumHouse2));
+                    int buildingType = glm::linearRand(1, 4);  // Random building type
+                    std::string modelPath, texturePath;
 
-    // Add tall buildings with textures
-    auto tallHouse1 = std::make_unique<Building>("tall_house_1.obj", grid.getCellPosition(0,4), "stars.bmp");
-    scene.push_back(std::move(tallHouse1));
-    auto tallHouse2 = std::make_unique<Building>("tall_house_2.obj", grid.getCellPosition(4,8), "stars.bmp");
-    scene.push_back(std::move(tallHouse2));
+                    switch (buildingType) {
+                        case 1:
+                            modelPath = "models/building.obj";
+                            texturePath = "models/texture.bmp";
+                            break;
+                        case 2:
+                            modelPath = "models/building2.obj";
+                            texturePath = "models/texture2.bmp";
+                            break;
+                        case 3:
+                            modelPath = "models/building3.obj";
+                            texturePath = "models/texture3.bmp";
+                            break;
+                        case 4:
+                            modelPath = "models/building4.obj";
+                            texturePath = "models/texture4.bmp";
+                            break;
+                    }
 
-    // Enable mouse control for navigation
+                    glm::vec3 cellPosition = grid.getCellPosition(row, col) + subGridOrigin;
+                    auto newBuilding = std::make_unique<Building>(modelPath, cellPosition, texturePath);
+                    scene.push_back(std::move(newBuilding));
+                }
+            }
+        }
+    }
+
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 }
 
+// Function to draw the grid lines on the scene
 void ParticleWindow::drawGridLines(const Grid& grid) {
     int rows = 10;  // Number of rows in the grid
     int cols = 10;  // Number of columns in the grid

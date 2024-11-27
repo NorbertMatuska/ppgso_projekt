@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/gl7_diffuse/gl7_diffuse.cpp" "CMakeFiles/gl7_diffuse.dir/src/gl7_diffuse/gl7_diffuse.cpp.obj" "gcc" "CMakeFiles/gl7_diffuse.dir/src/gl7_diffuse/gl7_diffuse.cpp.obj.d"
+  "D:/PROJEKT/src/gl7_diffuse/gl7_diffuse.cpp" "CMakeFiles/gl7_diffuse.dir/src/gl7_diffuse/gl7_diffuse.cpp.obj" "gcc" "CMakeFiles/gl7_diffuse.dir/src/gl7_diffuse/gl7_diffuse.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

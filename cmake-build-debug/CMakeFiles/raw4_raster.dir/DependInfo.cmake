@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/raw4_raster/raw4_raster.cpp" "CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj" "gcc" "CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj.d"
+  "D:/PROJEKT/src/raw4_raster/raw4_raster.cpp" "CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj" "gcc" "CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

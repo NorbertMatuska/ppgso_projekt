@@ -4,20 +4,20 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
       - "CMakeLists.txt:6 (project)"
     message: |
       The system is: Windows - 10.0.22631 - AMD64
   -
     kind: "message-v1"
     backtrace:
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:6 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: D:/program files/CLion 2023.3.3/bin/mingw/bin/g++.exe 
+      Compiler: D:/CLion/CLion 2024.2.1/bin/mingw/bin/g++.exe 
       Build flags: 
       Id flags:  
       
@@ -28,191 +28,216 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
       The CXX compiler identification is GNU, found in:
-        C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/a.exe
+        D:/PROJEKT/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/a.exe
       
   -
     kind: "try_compile-v1"
     backtrace:
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:6 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rxbed8"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rxbed8"
+      source: "D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o2jghq"
+      binary: "D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o2jghq"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
       CMAKE_EXE_LINKER_FLAGS: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rxbed8'
+        Change Dir: 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o2jghq'
         
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_6aae6
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj -c "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_9f30d/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9f30d.dir\\build.make CMakeFiles/cmTC_9f30d.dir/build
+        mingw32-make[1]: Entering directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o2jghq'
+        Building CXX object CMakeFiles/cmTC_9f30d.dir/CMakeCXXCompilerABI.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_9f30d.dir\\CMakeCXXCompilerABI.cpp.obj -c "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
-        COLLECT_GCC=D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe
+        COLLECT_GCC=D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe
         Target: x86_64-w64-mingw32
         Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 13.1.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_6aae6.dir/'
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6aae6.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\matus\\AppData\\Local\\Temp\\ccf8bRQd.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_9f30d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9f30d.dir\\'
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_9f30d.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\janpa\\AppData\\Local\\Temp\\ccIVU9Do.s
         GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
         ignoring nonexistent directory "/win/include"
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../include"
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
         ignoring nonexistent directory "/mingw/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: e75de627edc3c57e31324b930b15b056
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_6aae6.dir/'
-         as -v -o CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\matus\\AppData\\Local\\Temp\\ccf8bRQd.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_9f30d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9f30d.dir\\'
+         as -v -o CMakeFiles\\cmTC_9f30d.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\janpa\\AppData\\Local\\Temp\\ccIVU9Do.s
         GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
-        COMPILER_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/
-        LIBRARY_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -v CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_6aae6.exe -Wl,--out-implib,libcmTC_6aae6.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        COMPILER_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_9f30d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9f30d.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_9f30d.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9f30d.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9f30d.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_9f30d.dir/objects.a @CMakeFiles\\cmTC_9f30d.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_9f30d.dir/objects.a -Wl,--no-whole-archive -o cmTC_9f30d.exe -Wl,--out-implib,libcmTC_9f30d.dll.a -Wl,--major-image-version,0,--minor-image-version,0
         Using built-in specs.
-        COLLECT_GCC=D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe
-        COLLECT_LTO_WRAPPER=D:/program\\ files/CLion\\ 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        COLLECT_GCC=D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe
+        COLLECT_LTO_WRAPPER=D:/CLion/CLion\\ 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
         Target: x86_64-w64-mingw32
         Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 13.1.0 (GCC) 
-        COMPILER_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/
-        LIBRARY_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6aae6.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_6aae6.'
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_6aae6.exe D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_6aae6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6aae6.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_6aae6.'
+        COMPILER_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9f30d.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_9f30d.'
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_9f30d.exe D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9f30d.dir/objects.a --no-whole-archive --out-implib libcmTC_9f30d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        collect2 version 13.1.0
+        D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_9f30d.exe D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9f30d.dir/objects.a --no-whole-archive --out-implib libcmTC_9f30d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        GNU ld (GNU Binutils) 2.40
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9f30d.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_9f30d.'
+        mingw32-make[1]: Leaving directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o2jghq'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:6 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
-          add: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
-          add: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
-          add: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
-          add: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
-          add: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
-          add: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+          add: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+          add: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+          add: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+          add: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+          add: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+          add: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+          add: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         end of search list found
-        collapse include dir [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++] ==> [D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
-        collapse include dir [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32] ==> [D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
-        collapse include dir [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward] ==> [D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
-        collapse include dir [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
-        collapse include dir [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [D:/program files/CLion 2023.3.3/bin/mingw/include]
-        collapse include dir [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
-        collapse include dir [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [D:/program files/CLion 2023.3.3/bin/mingw/x86_64-w64-mingw32/include]
-        implicit include dirs: [D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++;D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32;D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward;D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;D:/program files/CLion 2023.3.3/bin/mingw/include;D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;D:/program files/CLion 2023.3.3/bin/mingw/x86_64-w64-mingw32/include]
+        collapse include dir [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++] ==> [D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+        collapse include dir [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32] ==> [D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+        collapse include dir [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward] ==> [D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+        collapse include dir [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        collapse include dir [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [D:/CLion/CLion 2024.2.1/bin/mingw/include]
+        collapse include dir [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        collapse include dir [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [D:/CLion/CLion 2024.2.1/bin/mingw/x86_64-w64-mingw32/include]
+        implicit include dirs: [D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++;D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32;D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward;D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;D:/CLion/CLion 2024.2.1/bin/mingw/include;D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;D:/CLion/CLion 2024.2.1/bin/mingw/x86_64-w64-mingw32/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:6 (project)"
     message: |
       Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rxbed8']
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o2jghq']
         ignore line: []
-        ignore line: [Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_6aae6]
-        ignore line: [[1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj -c "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_9f30d/fast]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9f30d.dir\\build.make CMakeFiles/cmTC_9f30d.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o2jghq']
+        ignore line: [Building CXX object CMakeFiles/cmTC_9f30d.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: ["D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_9f30d.dir\\CMakeCXXCompilerABI.cpp.obj -c "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe]
+        ignore line: [COLLECT_GCC=D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_6aae6.dir/']
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6aae6.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\matus\\AppData\\Local\\Temp\\ccf8bRQd.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_9f30d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9f30d.dir\\']
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_9f30d.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\janpa\\AppData\\Local\\Temp\\ccIVU9Do.s]
         ignore line: [GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
         ignore line: [ignoring nonexistent directory "/win/include"]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../include"]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
         ignore line: [ignoring nonexistent directory "/mingw/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: e75de627edc3c57e31324b930b15b056]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_6aae6.dir/']
-        ignore line: [ as -v -o CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\matus\\AppData\\Local\\Temp\\ccf8bRQd.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_9f30d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9f30d.dir\\']
+        ignore line: [ as -v -o CMakeFiles\\cmTC_9f30d.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\janpa\\AppData\\Local\\Temp\\ccIVU9Do.s]
         ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
-        ignore line: [COMPILER_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/]
-        ignore line: [LIBRARY_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -v CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_6aae6.exe -Wl --out-implib libcmTC_6aae6.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [COMPILER_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_9f30d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9f30d.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_9f30d.exe]
+        ignore line: ["D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9f30d.dir\\link.txt --verbose=1]
+        ignore line: ["D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9f30d.dir/objects.a]
+        ignore line: ["D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_9f30d.dir/objects.a @CMakeFiles\\cmTC_9f30d.dir\\objects1.rsp]
+        ignore line: ["D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_9f30d.dir/objects.a -Wl --no-whole-archive -o cmTC_9f30d.exe -Wl --out-implib libcmTC_9f30d.dll.a -Wl --major-image-version 0 --minor-image-version 0]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=D:/program\\ files/CLion\\ 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [COLLECT_GCC=D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=D:/CLion/CLion\\ 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COMPILER_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/]
-        ignore line: [LIBRARY_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6aae6.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_6aae6.']
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_6aae6.exe D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. CMakeFiles/cmTC_6aae6.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_6aae6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6aae6.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_6aae6.']
+        ignore line: [COMPILER_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9f30d.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_9f30d.']
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_9f30d.exe D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9f30d.dir/objects.a --no-whole-archive --out-implib libcmTC_9f30d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [collect2 version 13.1.0]
+        ignore line: [D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_9f30d.exe D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9f30d.dir/objects.a --no-whole-archive --out-implib libcmTC_9f30d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [GNU ld (GNU Binutils) 2.40]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9f30d.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_9f30d.']
+        ignore line: [mingw32-make[1]: Leaving directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o2jghq']
         ignore line: []
         ignore line: []
+        linker tool for 'CXX': D:/CLion/CLion 2024.2.1/bin/mingw/bin/ld.exe
         implicit libs: []
         implicit objs: []
         implicit dirs: []
@@ -220,26 +245,44 @@ events:
       
       
   -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the CXX compiler's linker: "D:/CLion/CLion 2024.2.1/bin/mingw/bin/ld.exe" "-v"
+      GNU ld (GNU Binutils) 2.40
+  -
     kind: "try_run-v1"
     backtrace:
       - "cmake/FindASSIMP.cmake:196 (try_run)"
       - "CMakeLists.txt:60 (find_package)"
     directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      source: "D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+      CMAKE_MODULE_PATH: "D:/PROJEKT/cmake"
     buildResult:
       variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Change Dir: 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_45d09
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_45d09.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_45d09.dir/assimp_version_major.cpp.obj -o cmTC_45d09.exe -Wl,--out-implib,libcmTC_45d09.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_3a27f/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_3a27f.dir\\build.make CMakeFiles/cmTC_3a27f.dir/build
+        mingw32-make[1]: Entering directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_3a27f.dir/assimp_version_major.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  @CMakeFiles/cmTC_3a27f.dir/includes_CXX.rsp -fdiagnostics-color=always -o CMakeFiles\\cmTC_3a27f.dir\\assimp_version_major.cpp.obj -c D:\\PROJEKT\\cmake-build-debug\\CMakeFiles\\assimp_version_major.cpp
+        Linking CXX executable cmTC_3a27f.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_3a27f.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_3a27f.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_3a27f.dir/objects.a @CMakeFiles\\cmTC_3a27f.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe" -Wl,--whole-archive CMakeFiles\\cmTC_3a27f.dir/objects.a -Wl,--no-whole-archive -o cmTC_3a27f.exe -Wl,--out-implib,libcmTC_3a27f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_3a27f.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
         
       exitCode: 0
     runResult:
@@ -254,21 +297,29 @@ events:
       - "cmake/FindASSIMP.cmake:201 (try_run)"
       - "CMakeLists.txt:60 (find_package)"
     directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      source: "D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+      CMAKE_MODULE_PATH: "D:/PROJEKT/cmake"
     buildResult:
       variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Change Dir: 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_41762
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_41762.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_41762.dir/assimp_version_minor.cpp.obj -o cmTC_41762.exe -Wl,--out-implib,libcmTC_41762.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_55baf/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_55baf.dir\\build.make CMakeFiles/cmTC_55baf.dir/build
+        mingw32-make[1]: Entering directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_55baf.dir/assimp_version_minor.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  @CMakeFiles/cmTC_55baf.dir/includes_CXX.rsp -fdiagnostics-color=always -o CMakeFiles\\cmTC_55baf.dir\\assimp_version_minor.cpp.obj -c D:\\PROJEKT\\cmake-build-debug\\CMakeFiles\\assimp_version_minor.cpp
+        Linking CXX executable cmTC_55baf.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_55baf.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_55baf.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_55baf.dir/objects.a @CMakeFiles\\cmTC_55baf.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe" -Wl,--whole-archive CMakeFiles\\cmTC_55baf.dir/objects.a -Wl,--no-whole-archive -o cmTC_55baf.exe -Wl,--out-implib,libcmTC_55baf.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_55baf.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
         
       exitCode: 0
     runResult:
@@ -283,21 +334,29 @@ events:
       - "cmake/FindASSIMP.cmake:206 (try_run)"
       - "CMakeLists.txt:60 (find_package)"
     directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      source: "D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+      CMAKE_MODULE_PATH: "D:/PROJEKT/cmake"
     buildResult:
       variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Change Dir: 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_38eb6
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_38eb6.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_38eb6.dir/assimp_version_revision.cpp.obj -o cmTC_38eb6.exe -Wl,--out-implib,libcmTC_38eb6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_a3350/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a3350.dir\\build.make CMakeFiles/cmTC_a3350.dir/build
+        mingw32-make[1]: Entering directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_a3350.dir/assimp_version_revision.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  @CMakeFiles/cmTC_a3350.dir/includes_CXX.rsp -fdiagnostics-color=always -o CMakeFiles\\cmTC_a3350.dir\\assimp_version_revision.cpp.obj -c D:\\PROJEKT\\cmake-build-debug\\CMakeFiles\\assimp_version_revision.cpp
+        Linking CXX executable cmTC_a3350.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_a3350.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_a3350.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_a3350.dir/objects.a @CMakeFiles\\cmTC_a3350.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe" -Wl,--whole-archive CMakeFiles\\cmTC_a3350.dir/objects.a -Wl,--no-whole-archive -o cmTC_a3350.exe -Wl,--out-implib,libcmTC_a3350.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_a3350.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
         
       exitCode: 0
     runResult:
@@ -309,158 +368,174 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:485 (_OPENMP_GET_FLAGS)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
       - "CMakeLists.txt:80 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-deslvb"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-deslvb"
+      source: "D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4ndj3u"
+      binary: "D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4ndj3u"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+      CMAKE_MODULE_PATH: "D:/PROJEKT/cmake"
     buildResult:
       variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-deslvb'
+        Change Dir: 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4ndj3u'
         
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_32e41
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-deslvb/OpenMPTryFlag.cpp
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_85735/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_85735.dir\\build.make CMakeFiles/cmTC_85735.dir/build
+        mingw32-make[1]: Entering directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4ndj3u'
+        Building CXX object CMakeFiles/cmTC_85735.dir/OpenMPTryFlag.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles\\cmTC_85735.dir\\OpenMPTryFlag.cpp.obj -c D:\\PROJEKT\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-4ndj3u\\OpenMPTryFlag.cpp
         Using built-in specs.
-        COLLECT_GCC=D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe
+        COLLECT_GCC=D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe
         Target: x86_64-w64-mingw32
         Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 13.1.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_32e41.dir/'
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_MT -D_REENTRANT -U_REENTRANT C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-deslvb/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_32e41.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -mthreads -version -fdiagnostics-color=always -fopenmp -o C:\\Users\\matus\\AppData\\Local\\Temp\\cclWlZ1d.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles\\cmTC_85735.dir\\OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles\\cmTC_85735.dir\\'
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_MT -D_REENTRANT -U_REENTRANT D:\\PROJEKT\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-4ndj3u\\OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles\\cmTC_85735.dir\\ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -mthreads -version -fdiagnostics-color=always -fopenmp -o C:\\Users\\janpa\\AppData\\Local\\Temp\\ccqtaV1I.s
         GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
         ignoring nonexistent directory "/win/include"
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../include"
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
-        ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
         ignoring nonexistent directory "/mingw/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: e75de627edc3c57e31324b930b15b056
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_32e41.dir/'
-         as -v -o CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj C:\\Users\\matus\\AppData\\Local\\Temp\\cclWlZ1d.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles\\cmTC_85735.dir\\OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles\\cmTC_85735.dir\\'
+         as -v -o CMakeFiles\\cmTC_85735.dir\\OpenMPTryFlag.cpp.obj C:\\Users\\janpa\\AppData\\Local\\Temp\\ccqtaV1I.s
         GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
-        COMPILER_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/
-        LIBRARY_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.'
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe" -fopenmp -v  CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj -o cmTC_32e41.exe -Wl,--out-implib,libcmTC_32e41.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -v  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        COMPILER_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles\\cmTC_85735.dir\\OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles\\cmTC_85735.dir\\OpenMPTryFlag.cpp.'
+        Linking CXX executable cmTC_85735.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_85735.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_85735.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_85735.dir/objects.a @CMakeFiles\\cmTC_85735.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  -fopenmp -v -Wl,--whole-archive CMakeFiles\\cmTC_85735.dir/objects.a -Wl,--no-whole-archive -o cmTC_85735.exe -Wl,--out-implib,libcmTC_85735.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_85735.dir\\linkLibs.rsp
         Using built-in specs.
-        COLLECT_GCC=D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe
-        COLLECT_LTO_WRAPPER=D:/program\\ files/CLion\\ 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        COLLECT_GCC=D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe
+        COLLECT_LTO_WRAPPER=D:/CLion/CLion\\ 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
         Target: x86_64-w64-mingw32
         Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 13.1.0 (GCC) 
-        COMPILER_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/
-        LIBRARY_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        Reading specs from D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/libgomp.spec
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_32e41.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_32e41.'
-         D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_32e41.exe D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj --out-implib libcmTC_32e41.dll.a --major-image-version 0 --minor-image-version 0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -lstdc++ -lgomp -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_32e41.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_32e41.'
+        COMPILER_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        Reading specs from D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_85735.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_85735.'
+         D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_85735.exe D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. @C:\\Users\\janpa\\AppData\\Local\\Temp\\cckOyJVU -lgomp -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_85735.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_85735.'
+        mingw32-make[1]: Leaving directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4ndj3u'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:262 (message)"
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:485 (_OPENMP_GET_FLAGS)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:263 (message)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
       - "CMakeLists.txt:80 (find_package)"
     message: |
       Parsed CXX OpenMP implicit link information from above output:
-        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-deslvb']
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4ndj3u']
         ignore line: []
-        ignore line: [Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_32e41]
-        ignore line: [[1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-deslvb/OpenMPTryFlag.cpp]
+        ignore line: [Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_85735/fast]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_85735.dir\\build.make CMakeFiles/cmTC_85735.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4ndj3u']
+        ignore line: [Building CXX object CMakeFiles/cmTC_85735.dir/OpenMPTryFlag.cpp.obj]
+        ignore line: ["D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles\\cmTC_85735.dir\\OpenMPTryFlag.cpp.obj -c D:\\PROJEKT\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-4ndj3u\\OpenMPTryFlag.cpp]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe]
+        ignore line: [COLLECT_GCC=D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_32e41.dir/']
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_MT -D_REENTRANT -U_REENTRANT C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-deslvb/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_32e41.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -mthreads -version -fdiagnostics-color=always -fopenmp -o C:\\Users\\matus\\AppData\\Local\\Temp\\cclWlZ1d.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles\\cmTC_85735.dir\\OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles\\cmTC_85735.dir\\']
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_MT -D_REENTRANT -U_REENTRANT D:\\PROJEKT\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-4ndj3u\\OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles\\cmTC_85735.dir\\ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -mthreads -version -fdiagnostics-color=always -fopenmp -o C:\\Users\\janpa\\AppData\\Local\\Temp\\ccqtaV1I.s]
         ignore line: [GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
         ignore line: [ignoring nonexistent directory "/win/include"]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../include"]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
-        ignore line: [ignoring duplicate directory "D:/program files/CLion 2023.3.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "D:/CLion/CLion 2024.2.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
         ignore line: [ignoring nonexistent directory "/mingw/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: e75de627edc3c57e31324b930b15b056]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_32e41.dir/']
-        ignore line: [ as -v -o CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj C:\\Users\\matus\\AppData\\Local\\Temp\\cclWlZ1d.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles\\cmTC_85735.dir\\OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles\\cmTC_85735.dir\\']
+        ignore line: [ as -v -o CMakeFiles\\cmTC_85735.dir\\OpenMPTryFlag.cpp.obj C:\\Users\\janpa\\AppData\\Local\\Temp\\ccqtaV1I.s]
         ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
-        ignore line: [COMPILER_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/]
-        ignore line: [LIBRARY_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.']
-        ignore line: [[2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe" -fopenmp -v  CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj -o cmTC_32e41.exe -Wl --out-implib libcmTC_32e41.dll.a -Wl --major-image-version 0 --minor-image-version 0  -v  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."]
+        ignore line: [COMPILER_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles\\cmTC_85735.dir\\OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles\\cmTC_85735.dir\\OpenMPTryFlag.cpp.']
+        ignore line: [Linking CXX executable cmTC_85735.exe]
+        ignore line: ["D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_85735.dir\\link.txt --verbose=1]
+        ignore line: ["D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_85735.dir/objects.a]
+        ignore line: ["D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_85735.dir/objects.a @CMakeFiles\\cmTC_85735.dir\\objects1.rsp]
+        ignore line: ["D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  -fopenmp -v -Wl --whole-archive CMakeFiles\\cmTC_85735.dir/objects.a -Wl --no-whole-archive -o cmTC_85735.exe -Wl --out-implib libcmTC_85735.dll.a -Wl --major-image-version 0 --minor-image-version 0 @CMakeFiles\\cmTC_85735.dir\\linkLibs.rsp]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=D:/program\\ files/CLion\\ 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [COLLECT_GCC=D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=D:/CLion/CLion\\ 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COMPILER_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/]
-        ignore line: [LIBRARY_PATH=D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [Reading specs from D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/libgomp.spec]
-        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_32e41.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_32e41.']
-        ignore line: [ D:/program files/CLion 2023.3.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_32e41.exe D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. CMakeFiles/cmTC_32e41.dir/OpenMPTryFlag.cpp.obj --out-implib libcmTC_32e41.dll.a --major-image-version 0 --minor-image-version 0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -lstdc++ -lgomp -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
-        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_32e41.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_32e41.']
+        ignore line: [COMPILER_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [Reading specs from D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_85735.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_85735.']
+        ignore line: [ D:/CLion/CLion 2024.2.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_85735.exe D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. @C:\\Users\\janpa\\AppData\\Local\\Temp\\cckOyJVU -lgomp -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion/CLion 2024.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_85735.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread' '-dumpdir' 'cmTC_85735.']
+        ignore line: [mingw32-make[1]: Leaving directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4ndj3u']
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -472,1027 +547,34 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
-      - "D:/program files/CLion 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake:559 (_OPENMP_GET_SPEC_DATE)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:421 (try_compile)"
+      - "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:561 (_OPENMP_GET_SPEC_DATE)"
       - "CMakeLists.txt:80 (find_package)"
     description: "Detecting CXX OpenMP version"
     directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xq5avo"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xq5avo"
+      source: "D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6ct12a"
+      binary: "D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6ct12a"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+      CMAKE_MODULE_PATH: "D:/PROJEKT/cmake"
     buildResult:
       variable: "OpenMP_SPECTEST_CXX_"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xq5avo'
+        Change Dir: 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6ct12a'
         
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_cc194
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   -fopenmp -fdiagnostics-color=always -o CMakeFiles/cmTC_cc194.dir/OpenMPCheckVersion.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xq5avo/OpenMPCheckVersion.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe" -fopenmp  CMakeFiles/cmTC_cc194.dir/OpenMPCheckVersion.cpp.obj -o cmTC_cc194.exe -Wl,--out-implib,libcmTC_cc194.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-...
-
----
-events:
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:196 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_56b2e
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_56b2e.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_56b2e.dir/assimp_version_major.cpp.obj -o cmTC_56b2e.exe -Wl,--out-implib,libcmTC_56b2e.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_9ed3a/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9ed3a.dir\\build.make CMakeFiles/cmTC_9ed3a.dir/build
+        mingw32-make[1]: Entering directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6ct12a'
+        Building CXX object CMakeFiles/cmTC_9ed3a.dir/OpenMPCheckVersion.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"   -fopenmp -fdiagnostics-color=always -o CMakeFiles\\cmTC_9ed3a.dir\\OpenMPCheckVersion.cpp.obj -c D:\\PROJEKT\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-6ct12a\\OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_9ed3a.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9ed3a.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9ed3a.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_9ed3a.dir/objects.a @CMakeFiles\\cmTC_9ed3a.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  -fopenmp -Wl,--whole-archive CMakeFiles\\cmTC_9ed3a.dir/objects.a -Wl,--no-whole-archive -o cmTC_9ed3a.exe -Wl,--out-implib,libcmTC_9ed3a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_9ed3a.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/PROJEKT/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6ct12a'
         
       exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MAJOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 5
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:201 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_47faf
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_47faf.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_47faf.dir/assimp_version_minor.cpp.obj -o cmTC_47faf.exe -Wl,--out-implib,libcmTC_47faf.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MINOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 3
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:206 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_d50d2
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_d50d2.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_d50d2.dir/assimp_version_revision.cpp.obj -o cmTC_d50d2.exe -Wl,--out-implib,libcmTC_d50d2.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_REVISION"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 1565824753
-...
-
----
-events:
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:196 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_af8ec
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_af8ec.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_af8ec.dir/assimp_version_major.cpp.obj -o cmTC_af8ec.exe -Wl,--out-implib,libcmTC_af8ec.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MAJOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 5
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:201 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_4224d
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_4224d.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_4224d.dir/assimp_version_minor.cpp.obj -o cmTC_4224d.exe -Wl,--out-implib,libcmTC_4224d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MINOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 3
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:206 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_8c91d
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_8c91d.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_8c91d.dir/assimp_version_revision.cpp.obj -o cmTC_8c91d.exe -Wl,--out-implib,libcmTC_8c91d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_REVISION"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 1565824753
-...
-
----
-events:
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:196 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_8742a
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include  -o CMakeFiles/cmTC_8742a.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_8742a.dir/assimp_version_major.cpp.obj -o cmTC_8742a.exe -Wl,--out-implib,libcmTC_8742a.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MAJOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 5
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:201 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_ee36a
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include  -o CMakeFiles/cmTC_ee36a.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_ee36a.dir/assimp_version_minor.cpp.obj -o cmTC_ee36a.exe -Wl,--out-implib,libcmTC_ee36a.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MINOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 3
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:206 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_63d74
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include  -o CMakeFiles/cmTC_63d74.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_63d74.dir/assimp_version_revision.cpp.obj -o cmTC_63d74.exe -Wl,--out-implib,libcmTC_63d74.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_REVISION"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 1565824753
-...
-
----
-events:
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:196 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_53c07
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include  -o CMakeFiles/cmTC_53c07.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_53c07.dir/assimp_version_major.cpp.obj -o cmTC_53c07.exe -Wl,--out-implib,libcmTC_53c07.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MAJOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 5
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:201 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_25f0f
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include  -o CMakeFiles/cmTC_25f0f.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_25f0f.dir/assimp_version_minor.cpp.obj -o cmTC_25f0f.exe -Wl,--out-implib,libcmTC_25f0f.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MINOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 3
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:206 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_6c9ad
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include  -o CMakeFiles/cmTC_6c9ad.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_6c9ad.dir/assimp_version_revision.cpp.obj -o cmTC_6c9ad.exe -Wl,--out-implib,libcmTC_6c9ad.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_REVISION"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 1565824753
-...
-
----
-events:
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:196 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_a7c5e
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_a7c5e.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_a7c5e.dir/assimp_version_major.cpp.obj -o cmTC_a7c5e.exe -Wl,--out-implib,libcmTC_a7c5e.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MAJOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 5
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:201 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_89472
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_89472.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_89472.dir/assimp_version_minor.cpp.obj -o cmTC_89472.exe -Wl,--out-implib,libcmTC_89472.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MINOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 3
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:206 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_40625
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_40625.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_40625.dir/assimp_version_revision.cpp.obj -o cmTC_40625.exe -Wl,--out-implib,libcmTC_40625.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_REVISION"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 1565824753
-...
-
----
-events:
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:196 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_14002
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_14002.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_14002.dir/assimp_version_major.cpp.obj -o cmTC_14002.exe -Wl,--out-implib,libcmTC_14002.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MAJOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 5
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:201 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_d2261
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_d2261.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_d2261.dir/assimp_version_minor.cpp.obj -o cmTC_d2261.exe -Wl,--out-implib,libcmTC_d2261.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MINOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 3
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:206 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_3545b
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_3545b.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_3545b.dir/assimp_version_revision.cpp.obj -o cmTC_3545b.exe -Wl,--out-implib,libcmTC_3545b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_REVISION"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 1565824753
-...
-
----
-events:
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:196 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_23b8c
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_23b8c.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_23b8c.dir/assimp_version_major.cpp.obj -o cmTC_23b8c.exe -Wl,--out-implib,libcmTC_23b8c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MAJOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 5
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:201 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_ab761
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_ab761.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_ab761.dir/assimp_version_minor.cpp.obj -o cmTC_ab761.exe -Wl,--out-implib,libcmTC_ab761.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MINOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 3
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:206 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_15b67
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_15b67.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_15b67.dir/assimp_version_revision.cpp.obj -o cmTC_15b67.exe -Wl,--out-implib,libcmTC_15b67.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_REVISION"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 1565824753
-...
-
----
-events:
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:196 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_ebf84
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_ebf84.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_ebf84.dir/assimp_version_major.cpp.obj -o cmTC_ebf84.exe -Wl,--out-implib,libcmTC_ebf84.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MAJOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 5
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:201 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_31f9e
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_31f9e.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_31f9e.dir/assimp_version_minor.cpp.obj -o cmTC_31f9e.exe -Wl,--out-implib,libcmTC_31f9e.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MINOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 3
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:206 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_226b3
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_226b3.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_226b3.dir/assimp_version_revision.cpp.obj -o cmTC_226b3.exe -Wl,--out-implib,libcmTC_226b3.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_REVISION"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 1565824753
-...
-
----
-events:
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:196 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_9fec7
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_9fec7.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_9fec7.dir/assimp_version_major.cpp.obj -o cmTC_9fec7.exe -Wl,--out-implib,libcmTC_9fec7.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MAJOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 5
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:201 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_1bf77
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_1bf77.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_1bf77.dir/assimp_version_minor.cpp.obj -o cmTC_1bf77.exe -Wl,--out-implib,libcmTC_1bf77.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MINOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 3
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:206 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_6dd79
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_6dd79.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_6dd79.dir/assimp_version_revision.cpp.obj -o cmTC_6dd79.exe -Wl,--out-implib,libcmTC_6dd79.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_REVISION"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 1565824753
-...
-
----
-events:
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:196 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_229bc
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_229bc.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_229bc.dir/assimp_version_major.cpp.obj -o cmTC_229bc.exe -Wl,--out-implib,libcmTC_229bc.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MAJOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 5
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:201 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_6d644
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_6d644.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_6d644.dir/assimp_version_minor.cpp.obj -o cmTC_6d644.exe -Wl,--out-implib,libcmTC_6d644.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MINOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 3
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:206 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_7eaf9
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_7eaf9.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_7eaf9.dir/assimp_version_revision.cpp.obj -o cmTC_7eaf9.exe -Wl,--out-implib,libcmTC_7eaf9.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_REVISION"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 1565824753
-...
-
----
-events:
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:196 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_fe33e
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_fe33e.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_fe33e.dir/assimp_version_major.cpp.obj -o cmTC_fe33e.exe -Wl,--out-implib,libcmTC_fe33e.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MAJOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 5
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:201 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_817db
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_817db.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_817db.dir/assimp_version_minor.cpp.obj -o cmTC_817db.exe -Wl,--out-implib,libcmTC_817db.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_MINOR"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 3
-  -
-    kind: "try_run-v1"
-    backtrace:
-      - "cmake/FindASSIMP.cmake:206 (try_run)"
-      - "CMakeLists.txt:60 (find_package)"
-    directories:
-      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
-    buildResult:
-      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
-        
-        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_67902
-        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_67902.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
-        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_67902.dir/assimp_version_revision.cpp.obj -o cmTC_67902.exe -Wl,--out-implib,libcmTC_67902.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        
-      exitCode: 0
-    runResult:
-      variable: "ASSIMP_VERSION_REVISION"
-      cached: true
-      stdout: |
-      stderr: |
-      exitCode: 1565824753
 ...

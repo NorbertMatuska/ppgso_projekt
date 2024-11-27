@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/task1_filter/task1_filter.cpp" "CMakeFiles/task1_filter.dir/src/task1_filter/task1_filter.cpp.obj" "gcc" "CMakeFiles/task1_filter.dir/src/task1_filter/task1_filter.cpp.obj.d"
+  "D:/PROJEKT/src/task1_filter/task1_filter.cpp" "CMakeFiles/task1_filter.dir/src/task1_filter/task1_filter.cpp.obj" "gcc" "CMakeFiles/task1_filter.dir/src/task1_filter/task1_filter.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

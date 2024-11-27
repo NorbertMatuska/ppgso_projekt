@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/STU/4-1/PPGSO/ppgso_projekt/src/gl4_transform/gl4_transform.cpp" "CMakeFiles/gl4_transform.dir/src/gl4_transform/gl4_transform.cpp.obj" "gcc" "CMakeFiles/gl4_transform.dir/src/gl4_transform/gl4_transform.cpp.obj.d"
+  "D:/PROJEKT/src/gl4_transform/gl4_transform.cpp" "CMakeFiles/gl4_transform.dir/src/gl4_transform/gl4_transform.cpp.obj" "gcc" "CMakeFiles/gl4_transform.dir/src/gl4_transform/gl4_transform.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj.d"
   "CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj"
   "CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj.d"
+  "CMakeFiles/1projekt.dir/src/1projekt/grid.cpp.obj"
+  "CMakeFiles/1projekt.dir/src/1projekt/grid.cpp.obj.d"
   "CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj"
   "CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj.d"
   "CMakeFiles/1projekt.dir/src/1projekt/object.cpp.obj"

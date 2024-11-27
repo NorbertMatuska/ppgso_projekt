@@ -52,10 +52,10 @@ RM = "D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\STU\4-1\PPGSO\ppgso_projekt
+CMAKE_SOURCE_DIR = D:\PROJEKT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug
+CMAKE_BINARY_DIR = D:\PROJEKT\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gl2_texture.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/gl2_texture.dir/flags.make
 
 CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj: CMakeFiles/gl2_texture.dir/flags.make
 CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj: CMakeFiles/gl2_texture.dir/includes_CXX.rsp
-CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/src/gl2_texture/gl2_texture.cpp
+CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj: D:/PROJEKT/src/gl2_texture/gl2_texture.cpp
 CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj: CMakeFiles/gl2_texture.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj -MF CMakeFiles\gl2_texture.dir\src\gl2_texture\gl2_texture.cpp.obj.d -o CMakeFiles\gl2_texture.dir\src\gl2_texture\gl2_texture.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\src\gl2_texture\gl2_texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj -MF CMakeFiles\gl2_texture.dir\src\gl2_texture\gl2_texture.cpp.obj.d -o CMakeFiles\gl2_texture.dir\src\gl2_texture\gl2_texture.cpp.obj -c D:\PROJEKT\src\gl2_texture\gl2_texture.cpp
 
 CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\src\gl2_texture\gl2_texture.cpp > CMakeFiles\gl2_texture.dir\src\gl2_texture\gl2_texture.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\src\gl2_texture\gl2_texture.cpp > CMakeFiles\gl2_texture.dir\src\gl2_texture\gl2_texture.cpp.i
 
 CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\src\gl2_texture\gl2_texture.cpp -o CMakeFiles\gl2_texture.dir\src\gl2_texture\gl2_texture.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\src\gl2_texture\gl2_texture.cpp -o CMakeFiles\gl2_texture.dir\src\gl2_texture\gl2_texture.cpp.s
 
 # Object files for target gl2_texture
 gl2_texture_OBJECTS = \
@@ -94,13 +94,13 @@ gl2_texture.exe: CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj
 gl2_texture.exe: CMakeFiles/gl2_texture.dir/build.make
 gl2_texture.exe: libppgso.a
 gl2_texture.exe: libshaders.a
-gl2_texture.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a
-gl2_texture.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a
-gl2_texture.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a
+gl2_texture.exe: D:/PROJEKT/dependencies/lib/mingw/libglfw3.a
+gl2_texture.exe: D:/PROJEKT/dependencies/lib/mingw/libglew32.a
+gl2_texture.exe: D:/PROJEKT/dependencies/lib/mingw/libassimp.a
 gl2_texture.exe: CMakeFiles/gl2_texture.dir/linkLibs.rsp
 gl2_texture.exe: CMakeFiles/gl2_texture.dir/objects1.rsp
 gl2_texture.exe: CMakeFiles/gl2_texture.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable gl2_texture.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable gl2_texture.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gl2_texture.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -112,6 +112,6 @@ CMakeFiles/gl2_texture.dir/clean:
 .PHONY : CMakeFiles/gl2_texture.dir/clean
 
 CMakeFiles/gl2_texture.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles\gl2_texture.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\PROJEKT D:\PROJEKT D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug\CMakeFiles\gl2_texture.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/gl2_texture.dir/depend
 

@@ -53,10 +53,10 @@ RM = "D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\STU\4-1\PPGSO\ppgso_projekt
+CMAKE_SOURCE_DIR = D:\PROJEKT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug
+CMAKE_BINARY_DIR = D:\PROJEKT\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -126,14 +126,14 @@ clean: CMakeFiles/playground.dir/clean
 CMakeFiles/shaders.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73 "Built target shaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74 "Built target shaders"
 .PHONY : CMakeFiles/shaders.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shaders.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/shaders.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/shaders.dir/rule
 
 # Convenience name for target.
@@ -152,14 +152,14 @@ CMakeFiles/shaders.dir/clean:
 CMakeFiles/ppgso.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ppgso.dir\build.make CMakeFiles/ppgso.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ppgso.dir\build.make CMakeFiles/ppgso.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=40,41,42,43,44,45,46,47,48 "Built target ppgso"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49 "Built target ppgso"
 .PHONY : CMakeFiles/ppgso.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ppgso.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ppgso.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/ppgso.dir/rule
 
 # Convenience name for target.
@@ -175,18 +175,18 @@ CMakeFiles/ppgso.dir/clean:
 # Target rules for target CMakeFiles/1projekt.dir
 
 # All Build rule for target.
-CMakeFiles/1projekt.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/1projekt.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/1projekt.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target 1projekt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target 1projekt"
 .PHONY : CMakeFiles/1projekt.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/1projekt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/1projekt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/1projekt.dir/rule
 
 # Convenience name for target.
@@ -205,14 +205,14 @@ CMakeFiles/1projekt.dir/clean:
 CMakeFiles/raw1_gradient.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\raw1_gradient.dir\build.make CMakeFiles/raw1_gradient.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\raw1_gradient.dir\build.make CMakeFiles/raw1_gradient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=49,50 "Built target raw1_gradient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=50,51 "Built target raw1_gradient"
 .PHONY : CMakeFiles/raw1_gradient.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/raw1_gradient.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/raw1_gradient.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/raw1_gradient.dir/rule
 
 # Convenience name for target.
@@ -231,14 +231,14 @@ CMakeFiles/raw1_gradient.dir/clean:
 CMakeFiles/raw2_raycast.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\raw2_raycast.dir\build.make CMakeFiles/raw2_raycast.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\raw2_raycast.dir\build.make CMakeFiles/raw2_raycast.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=51,52 "Built target raw2_raycast"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=52,53 "Built target raw2_raycast"
 .PHONY : CMakeFiles/raw2_raycast.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/raw2_raycast.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/raw2_raycast.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/raw2_raycast.dir/rule
 
 # Convenience name for target.
@@ -257,14 +257,14 @@ CMakeFiles/raw2_raycast.dir/clean:
 CMakeFiles/raw3_raytrace.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\raw3_raytrace.dir\build.make CMakeFiles/raw3_raytrace.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\raw3_raytrace.dir\build.make CMakeFiles/raw3_raytrace.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=53,54 "Built target raw3_raytrace"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=54,55 "Built target raw3_raytrace"
 .PHONY : CMakeFiles/raw3_raytrace.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/raw3_raytrace.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/raw3_raytrace.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/raw3_raytrace.dir/rule
 
 # Convenience name for target.
@@ -283,14 +283,14 @@ CMakeFiles/raw3_raytrace.dir/clean:
 CMakeFiles/raw4_raster.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\raw4_raster.dir\build.make CMakeFiles/raw4_raster.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\raw4_raster.dir\build.make CMakeFiles/raw4_raster.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=55,56 "Built target raw4_raster"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=56,57 "Built target raw4_raster"
 .PHONY : CMakeFiles/raw4_raster.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/raw4_raster.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/raw4_raster.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/raw4_raster.dir/rule
 
 # Convenience name for target.
@@ -306,18 +306,18 @@ CMakeFiles/raw4_raster.dir/clean:
 # Target rules for target CMakeFiles/gl1_gradient.dir
 
 # All Build rule for target.
-CMakeFiles/gl1_gradient.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/gl1_gradient.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/gl1_gradient.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl1_gradient.dir\build.make CMakeFiles/gl1_gradient.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl1_gradient.dir\build.make CMakeFiles/gl1_gradient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target gl1_gradient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=12,13 "Built target gl1_gradient"
 .PHONY : CMakeFiles/gl1_gradient.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gl1_gradient.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/gl1_gradient.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/gl1_gradient.dir/rule
 
 # Convenience name for target.
@@ -333,18 +333,18 @@ CMakeFiles/gl1_gradient.dir/clean:
 # Target rules for target CMakeFiles/gl2_texture.dir
 
 # All Build rule for target.
-CMakeFiles/gl2_texture.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/gl2_texture.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/gl2_texture.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl2_texture.dir\build.make CMakeFiles/gl2_texture.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl2_texture.dir\build.make CMakeFiles/gl2_texture.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target gl2_texture"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=14,15 "Built target gl2_texture"
 .PHONY : CMakeFiles/gl2_texture.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gl2_texture.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/gl2_texture.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/gl2_texture.dir/rule
 
 # Convenience name for target.
@@ -360,18 +360,18 @@ CMakeFiles/gl2_texture.dir/clean:
 # Target rules for target CMakeFiles/gl3_animate.dir
 
 # All Build rule for target.
-CMakeFiles/gl3_animate.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/gl3_animate.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/gl3_animate.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl3_animate.dir\build.make CMakeFiles/gl3_animate.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl3_animate.dir\build.make CMakeFiles/gl3_animate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target gl3_animate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=16,17 "Built target gl3_animate"
 .PHONY : CMakeFiles/gl3_animate.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gl3_animate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/gl3_animate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/gl3_animate.dir/rule
 
 # Convenience name for target.
@@ -387,18 +387,18 @@ CMakeFiles/gl3_animate.dir/clean:
 # Target rules for target CMakeFiles/gl4_transform.dir
 
 # All Build rule for target.
-CMakeFiles/gl4_transform.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/gl4_transform.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/gl4_transform.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl4_transform.dir\build.make CMakeFiles/gl4_transform.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl4_transform.dir\build.make CMakeFiles/gl4_transform.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=17,18 "Built target gl4_transform"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=18,19 "Built target gl4_transform"
 .PHONY : CMakeFiles/gl4_transform.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gl4_transform.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/gl4_transform.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/gl4_transform.dir/rule
 
 # Convenience name for target.
@@ -414,18 +414,18 @@ CMakeFiles/gl4_transform.dir/clean:
 # Target rules for target CMakeFiles/gl5_projection.dir
 
 # All Build rule for target.
-CMakeFiles/gl5_projection.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/gl5_projection.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/gl5_projection.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl5_projection.dir\build.make CMakeFiles/gl5_projection.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl5_projection.dir\build.make CMakeFiles/gl5_projection.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=19,20 "Built target gl5_projection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=20,21 "Built target gl5_projection"
 .PHONY : CMakeFiles/gl5_projection.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gl5_projection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/gl5_projection.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/gl5_projection.dir/rule
 
 # Convenience name for target.
@@ -441,18 +441,18 @@ CMakeFiles/gl5_projection.dir/clean:
 # Target rules for target CMakeFiles/gl6_mesh.dir
 
 # All Build rule for target.
-CMakeFiles/gl6_mesh.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/gl6_mesh.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/gl6_mesh.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl6_mesh.dir\build.make CMakeFiles/gl6_mesh.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl6_mesh.dir\build.make CMakeFiles/gl6_mesh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=21,22 "Built target gl6_mesh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=22,23 "Built target gl6_mesh"
 .PHONY : CMakeFiles/gl6_mesh.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gl6_mesh.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/gl6_mesh.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/gl6_mesh.dir/rule
 
 # Convenience name for target.
@@ -468,18 +468,18 @@ CMakeFiles/gl6_mesh.dir/clean:
 # Target rules for target CMakeFiles/gl7_diffuse.dir
 
 # All Build rule for target.
-CMakeFiles/gl7_diffuse.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/gl7_diffuse.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/gl7_diffuse.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl7_diffuse.dir\build.make CMakeFiles/gl7_diffuse.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl7_diffuse.dir\build.make CMakeFiles/gl7_diffuse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=23,24 "Built target gl7_diffuse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=24,25 "Built target gl7_diffuse"
 .PHONY : CMakeFiles/gl7_diffuse.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gl7_diffuse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/gl7_diffuse.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/gl7_diffuse.dir/rule
 
 # Convenience name for target.
@@ -495,18 +495,18 @@ CMakeFiles/gl7_diffuse.dir/clean:
 # Target rules for target CMakeFiles/gl8_framebuffer.dir
 
 # All Build rule for target.
-CMakeFiles/gl8_framebuffer.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/gl8_framebuffer.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/gl8_framebuffer.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl8_framebuffer.dir\build.make CMakeFiles/gl8_framebuffer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl8_framebuffer.dir\build.make CMakeFiles/gl8_framebuffer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=25,26 "Built target gl8_framebuffer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=26,27 "Built target gl8_framebuffer"
 .PHONY : CMakeFiles/gl8_framebuffer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gl8_framebuffer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/gl8_framebuffer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/gl8_framebuffer.dir/rule
 
 # Convenience name for target.
@@ -522,18 +522,18 @@ CMakeFiles/gl8_framebuffer.dir/clean:
 # Target rules for target CMakeFiles/gl9_scene.dir
 
 # All Build rule for target.
-CMakeFiles/gl9_scene.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/gl9_scene.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/gl9_scene.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35,36,37 "Built target gl9_scene"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=28,29,30,31,32,33,34,35,36,37,38 "Built target gl9_scene"
 .PHONY : CMakeFiles/gl9_scene.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gl9_scene.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/gl9_scene.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/gl9_scene.dir/rule
 
 # Convenience name for target.
@@ -552,14 +552,14 @@ CMakeFiles/gl9_scene.dir/clean:
 CMakeFiles/task1_filter.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task1_filter.dir\build.make CMakeFiles/task1_filter.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task1_filter.dir\build.make CMakeFiles/task1_filter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=74,75 "Built target task1_filter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=75,76 "Built target task1_filter"
 .PHONY : CMakeFiles/task1_filter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/task1_filter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/task1_filter.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/task1_filter.dir/rule
 
 # Convenience name for target.
@@ -575,18 +575,18 @@ CMakeFiles/task1_filter.dir/clean:
 # Target rules for target CMakeFiles/task2_bresenham.dir
 
 # All Build rule for target.
-CMakeFiles/task2_bresenham.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/task2_bresenham.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/task2_bresenham.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task2_bresenham.dir\build.make CMakeFiles/task2_bresenham.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task2_bresenham.dir\build.make CMakeFiles/task2_bresenham.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=76,77 "Built target task2_bresenham"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=77,78 "Built target task2_bresenham"
 .PHONY : CMakeFiles/task2_bresenham.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/task2_bresenham.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/task2_bresenham.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/task2_bresenham.dir/rule
 
 # Convenience name for target.
@@ -602,18 +602,18 @@ CMakeFiles/task2_bresenham.dir/clean:
 # Target rules for target CMakeFiles/task3_bezier.dir
 
 # All Build rule for target.
-CMakeFiles/task3_bezier.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/task3_bezier.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/task3_bezier.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task3_bezier.dir\build.make CMakeFiles/task3_bezier.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task3_bezier.dir\build.make CMakeFiles/task3_bezier.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=78,79 "Built target task3_bezier"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=79,80 "Built target task3_bezier"
 .PHONY : CMakeFiles/task3_bezier.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/task3_bezier.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/task3_bezier.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/task3_bezier.dir/rule
 
 # Convenience name for target.
@@ -629,18 +629,18 @@ CMakeFiles/task3_bezier.dir/clean:
 # Target rules for target CMakeFiles/task4_2dshapes.dir
 
 # All Build rule for target.
-CMakeFiles/task4_2dshapes.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/task4_2dshapes.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/task4_2dshapes.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task4_2dshapes.dir\build.make CMakeFiles/task4_2dshapes.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task4_2dshapes.dir\build.make CMakeFiles/task4_2dshapes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=80,81 "Built target task4_2dshapes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=81,82 "Built target task4_2dshapes"
 .PHONY : CMakeFiles/task4_2dshapes.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/task4_2dshapes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/task4_2dshapes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/task4_2dshapes.dir/rule
 
 # Convenience name for target.
@@ -656,18 +656,18 @@ CMakeFiles/task4_2dshapes.dir/clean:
 # Target rules for target CMakeFiles/task5_3d_origin.dir
 
 # All Build rule for target.
-CMakeFiles/task5_3d_origin.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/task5_3d_origin.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/task5_3d_origin.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task5_3d_origin.dir\build.make CMakeFiles/task5_3d_origin.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task5_3d_origin.dir\build.make CMakeFiles/task5_3d_origin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=82,83 "Built target task5_3d_origin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=83,84 "Built target task5_3d_origin"
 .PHONY : CMakeFiles/task5_3d_origin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/task5_3d_origin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/task5_3d_origin.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/task5_3d_origin.dir/rule
 
 # Convenience name for target.
@@ -683,18 +683,18 @@ CMakeFiles/task5_3d_origin.dir/clean:
 # Target rules for target CMakeFiles/task6_bezier_surface.dir
 
 # All Build rule for target.
-CMakeFiles/task6_bezier_surface.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/task6_bezier_surface.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/task6_bezier_surface.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task6_bezier_surface.dir\build.make CMakeFiles/task6_bezier_surface.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task6_bezier_surface.dir\build.make CMakeFiles/task6_bezier_surface.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=84,85 "Built target task6_bezier_surface"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=85,86 "Built target task6_bezier_surface"
 .PHONY : CMakeFiles/task6_bezier_surface.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/task6_bezier_surface.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/task6_bezier_surface.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/task6_bezier_surface.dir/rule
 
 # Convenience name for target.
@@ -710,18 +710,18 @@ CMakeFiles/task6_bezier_surface.dir/clean:
 # Target rules for target CMakeFiles/task7_particles.dir
 
 # All Build rule for target.
-CMakeFiles/task7_particles.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/task7_particles.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/task7_particles.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task7_particles.dir\build.make CMakeFiles/task7_particles.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task7_particles.dir\build.make CMakeFiles/task7_particles.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=86,87 "Built target task7_particles"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=87,88 "Built target task7_particles"
 .PHONY : CMakeFiles/task7_particles.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/task7_particles.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/task7_particles.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/task7_particles.dir/rule
 
 # Convenience name for target.
@@ -737,18 +737,18 @@ CMakeFiles/task7_particles.dir/clean:
 # Target rules for target CMakeFiles/playground.dir
 
 # All Build rule for target.
-CMakeFiles/playground.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/playground.dir/all: CMakeFiles/ppgso.dir/all
+CMakeFiles/playground.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\playground.dir\build.make CMakeFiles/playground.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\playground.dir\build.make CMakeFiles/playground.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=38,39 "Built target playground"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=39,40 "Built target playground"
 .PHONY : CMakeFiles/playground.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/playground.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/playground.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/playground.dir/rule
 
 # Convenience name for target.

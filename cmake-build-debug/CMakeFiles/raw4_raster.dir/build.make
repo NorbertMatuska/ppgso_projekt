@@ -52,10 +52,10 @@ RM = "D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\STU\4-1\PPGSO\ppgso_projekt
+CMAKE_SOURCE_DIR = D:\PROJEKT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug
+CMAKE_BINARY_DIR = D:\PROJEKT\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/raw4_raster.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/raw4_raster.dir/flags.make
 
 CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj: CMakeFiles/raw4_raster.dir/flags.make
 CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj: CMakeFiles/raw4_raster.dir/includes_CXX.rsp
-CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj: D:/STU/4-1/PPGSO/ppgso_projekt/src/raw4_raster/raw4_raster.cpp
+CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj: D:/PROJEKT/src/raw4_raster/raw4_raster.cpp
 CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj: CMakeFiles/raw4_raster.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj -MF CMakeFiles\raw4_raster.dir\src\raw4_raster\raw4_raster.cpp.obj.d -o CMakeFiles\raw4_raster.dir\src\raw4_raster\raw4_raster.cpp.obj -c D:\STU\4-1\PPGSO\ppgso_projekt\src\raw4_raster\raw4_raster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj -MF CMakeFiles\raw4_raster.dir\src\raw4_raster\raw4_raster.cpp.obj.d -o CMakeFiles\raw4_raster.dir\src\raw4_raster\raw4_raster.cpp.obj -c D:\PROJEKT\src\raw4_raster\raw4_raster.cpp
 
 CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.i"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\STU\4-1\PPGSO\ppgso_projekt\src\raw4_raster\raw4_raster.cpp > CMakeFiles\raw4_raster.dir\src\raw4_raster\raw4_raster.cpp.i
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\PROJEKT\src\raw4_raster\raw4_raster.cpp > CMakeFiles\raw4_raster.dir\src\raw4_raster\raw4_raster.cpp.i
 
 CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.s"
-	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\STU\4-1\PPGSO\ppgso_projekt\src\raw4_raster\raw4_raster.cpp -o CMakeFiles\raw4_raster.dir\src\raw4_raster\raw4_raster.cpp.s
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\PROJEKT\src\raw4_raster\raw4_raster.cpp -o CMakeFiles\raw4_raster.dir\src\raw4_raster\raw4_raster.cpp.s
 
 # Object files for target raw4_raster
 raw4_raster_OBJECTS = \
@@ -93,13 +93,13 @@ raw4_raster_EXTERNAL_OBJECTS =
 raw4_raster.exe: CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj
 raw4_raster.exe: CMakeFiles/raw4_raster.dir/build.make
 raw4_raster.exe: libppgso.a
-raw4_raster.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a
-raw4_raster.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a
-raw4_raster.exe: D:/STU/4-1/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a
+raw4_raster.exe: D:/PROJEKT/dependencies/lib/mingw/libglfw3.a
+raw4_raster.exe: D:/PROJEKT/dependencies/lib/mingw/libglew32.a
+raw4_raster.exe: D:/PROJEKT/dependencies/lib/mingw/libassimp.a
 raw4_raster.exe: CMakeFiles/raw4_raster.dir/linkLibs.rsp
 raw4_raster.exe: CMakeFiles/raw4_raster.dir/objects1.rsp
 raw4_raster.exe: CMakeFiles/raw4_raster.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable raw4_raster.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\PROJEKT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable raw4_raster.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\raw4_raster.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -111,6 +111,6 @@ CMakeFiles/raw4_raster.dir/clean:
 .PHONY : CMakeFiles/raw4_raster.dir/clean
 
 CMakeFiles/raw4_raster.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug D:\STU\4-1\PPGSO\ppgso_projekt\cmake-build-debug\CMakeFiles\raw4_raster.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\PROJEKT D:\PROJEKT D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug D:\PROJEKT\cmake-build-debug\CMakeFiles\raw4_raster.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/raw4_raster.dir/depend
 
