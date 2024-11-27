@@ -1,0 +1,268 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f68652112e17142477e2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ppgso",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "1projekt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-1projekt-Debug-6866fa90e5bb2a094580.json",
+					"name" : "1projekt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gl1_gradient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gl1_gradient-Debug-3b04e9748af1f7573173.json",
+					"name" : "gl1_gradient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gl2_texture::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gl2_texture-Debug-07a354445156cb797c4f.json",
+					"name" : "gl2_texture",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gl3_animate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gl3_animate-Debug-2891bf45e2537a7d754b.json",
+					"name" : "gl3_animate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gl4_transform::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gl4_transform-Debug-7faea8c5ef55a3ad7ca6.json",
+					"name" : "gl4_transform",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gl5_projection::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gl5_projection-Debug-8d2268bda1c0506b68d2.json",
+					"name" : "gl5_projection",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gl6_mesh::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gl6_mesh-Debug-c3265b8d52caee95a2fd.json",
+					"name" : "gl6_mesh",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gl7_diffuse::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gl7_diffuse-Debug-fcec0ecb902d85effdcf.json",
+					"name" : "gl7_diffuse",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gl8_framebuffer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gl8_framebuffer-Debug-1ec70ea467d319f31445.json",
+					"name" : "gl8_framebuffer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gl9_scene::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gl9_scene-Debug-3eadbb454f9a1e30f1ab.json",
+					"name" : "gl9_scene",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "playground::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-playground-Debug-dc0c76cf78d11cdfc00b.json",
+					"name" : "playground",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ppgso::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ppgso-Debug-c067b796dc2791ff2771.json",
+					"name" : "ppgso",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "raw1_gradient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-raw1_gradient-Debug-ef5df91348d60752596e.json",
+					"name" : "raw1_gradient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "raw2_raycast::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-raw2_raycast-Debug-53a1102e0aff8cda33bc.json",
+					"name" : "raw2_raycast",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "raw3_raytrace::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-raw3_raytrace-Debug-c8f5e5407325b226af3e.json",
+					"name" : "raw3_raytrace",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "raw4_raster::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-raw4_raster-Debug-4a61693bcc21a5fa0321.json",
+					"name" : "raw4_raster",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "shaders::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-shaders-Debug-1b4c8a128f8f538b3088.json",
+					"name" : "shaders",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task1_filter::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task1_filter-Debug-868805665d6a8c2124a3.json",
+					"name" : "task1_filter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task2_bresenham::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task2_bresenham-Debug-99cf1925ffbbcd38c10c.json",
+					"name" : "task2_bresenham",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task3_bezier::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task3_bezier-Debug-69cedf45ff0d9f3b13a7.json",
+					"name" : "task3_bezier",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task4_2dshapes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task4_2dshapes-Debug-c40a3478f495cfb5cd06.json",
+					"name" : "task4_2dshapes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task5_3d_origin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task5_3d_origin-Debug-972fc29a4705665645d9.json",
+					"name" : "task5_3d_origin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task6_bezier_surface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task6_bezier_surface-Debug-c0346f853750e1ec903f.json",
+					"name" : "task6_bezier_surface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task7_particles::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task7_particles-Debug-9829105d2f889aef1bdc.json",
+					"name" : "task7_particles",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/PROJEKT/cmake-build-debug",
+		"source" : "D:/PROJEKT"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
