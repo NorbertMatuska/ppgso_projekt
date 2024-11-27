@@ -3,6 +3,7 @@
 #include "particle.h"
 #include "splash_particle.h"
 #include "building.h"
+#include "grid.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/random.hpp>
 
@@ -12,16 +13,76 @@
 ParticleWindow::ParticleWindow() : Window{"task7_particles", SIZEx, SIZEy}, camera{60.0f, (float)width / (float)height, 0.1f, 100.0f}, lastX(width / 2.0f), lastY(height / 2.0f), firstMouse(true), sensitivity(0.1f) {
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LEQUAL);
+    glEnable(GL_LINE_SMOOTH);
+    glLineWidth(1.0f);
 
+    Grid grid(10, 10, 5.0f, glm::vec3(0.0f, 0.0f, 0.0f));
+    drawGridLines(grid);
+    // Add plane (ground)
     auto plane = std::make_unique<Plane>();
     scene.push_back(std::move(plane));
 
-    auto building = std::make_unique<Building>();
-    scene.push_back(std::move(building));
+    // Add small cars with textures
+    auto smallCar1 = std::make_unique<Building>("small_car_1.obj", grid.getCellPosition(1,2), "stars.bmp");
+    scene.push_back(std::move(smallCar1));
+    auto smallCar2 = std::make_unique<Building>("small_car_2.obj", grid.getCellPosition(1,3), "stars.bmp");
+    scene.push_back(std::move(smallCar2));
 
+    // Add big car with texture
+    auto bigCar = std::make_unique<Building>("big_car.obj", grid.getCellPosition(1,4), "stars.bmp");
+    scene.push_back(std::move(bigCar));
 
+    // Add small houses with textures
+    auto smallHouse1 = std::make_unique<Building>("small_house_1.obj", grid.getCellPosition(0,0), "cement.bmp");
+    scene.push_back(std::move(smallHouse1));
+    auto smallHouse2 = std::make_unique<Building>("small_house_2.obj", grid.getCellPosition(0,1), "cement.bmp");
+    scene.push_back(std::move(smallHouse2));
+
+    // Add medium houses with textures
+    auto mediumHouse1 = std::make_unique<Building>("medium_house_1.obj", grid.getCellPosition(0,2), "stars.bmp");
+    scene.push_back(std::move(mediumHouse1));
+    auto mediumHouse2 = std::make_unique<Building>("medium_house_2.obj", grid.getCellPosition(0,3), "stars.bmp");
+    scene.push_back(std::move(mediumHouse2));
+
+    // Add tall buildings with textures
+    auto tallHouse1 = std::make_unique<Building>("tall_house_1.obj", grid.getCellPosition(0,4), "stars.bmp");
+    scene.push_back(std::move(tallHouse1));
+    auto tallHouse2 = std::make_unique<Building>("tall_house_2.obj", grid.getCellPosition(4,8), "stars.bmp");
+    scene.push_back(std::move(tallHouse2));
+
+    // Enable mouse control for navigation
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 }
+
+void ParticleWindow::drawGridLines(const Grid& grid) {
+    int rows = 10;  // Number of rows in the grid
+    int cols = 10;  // Number of columns in the grid
+    float cellSize = 5.0f;  // Size of each cell in world units
+    glm::vec3 origin = glm::vec3(0.0f, 0.0f, 0.0f);  // Starting point of the grid
+
+    glBegin(GL_LINES);  // Begin drawing lines
+    glColor3f(0.5f, 0.5f, 0.5f);  // Set the grid color (gray)
+
+    // Draw horizontal lines
+    for (int r = 0; r <= rows; ++r) {
+        glm::vec3 start = origin + glm::vec3(0.0f, 0.0f, r * cellSize);
+        glm::vec3 end = origin + glm::vec3(cols * cellSize, 0.0f, r * cellSize);
+        glVertex3f(start.x, start.y, start.z);
+        glVertex3f(end.x, end.y, end.z);
+    }
+
+    // Draw vertical lines
+    for (int c = 0; c <= cols; ++c) {
+        glm::vec3 start = origin + glm::vec3(c * cellSize, 0.0f, 0.0f);
+        glm::vec3 end = origin + glm::vec3(c * cellSize, 0.0f, rows * cellSize);
+        glVertex3f(start.x, start.y, start.z);
+        glVertex3f(end.x, end.y, end.z);
+    }
+
+    glEnd();  // End drawing lines
+}
+
+
 
 void ParticleWindow::onKey(int key, int scanCode, int action, int mods) {
     if (action == GLFW_PRESS) {

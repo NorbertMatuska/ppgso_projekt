@@ -6,6 +6,7 @@
 #include "camera.h"
 #include "scene.h"
 #include <map>
+#include "grid.h"
 
 class ParticleWindow : public ppgso::Window {
 private:
@@ -21,6 +22,8 @@ private:
 
 public:
     ParticleWindow();
+
+    void drawGridLines(const Grid& grid);
 
     void onKey(int key, int scanCode, int action, int mods) override;
     void onCursorPos(double xpos, double ypos) override;

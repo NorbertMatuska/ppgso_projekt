@@ -10,49 +10,48 @@
 
 namespace ppgso {
 
-  class Texture {
-  public:
+    class Texture {
+    public:
 
-    /*!
-     * Create new empty texture and bind it to OpenGL.
-     *
-     * @param width - Width in pixels.
-     * @param height - Height in pixels.
-     */
-    Texture(int width, int height);
+        /*!
+         * Create new empty texture and bind it to OpenGL.
+         *
+         * @param width - Width in pixels.
+         * @param height - Height in pixels.
+         */
+        Texture(int width, int height);
 
-    /*!
-     * Load from image.
-     *
-     * @param image - Image to use
-     */
-    Texture(Image&& image);
+        /*!
+         * Load from image.
+         *
+         * @param image - Image to use
+         */
+        Texture(Image&& image);
 
-    ~Texture();
+        ~Texture();
 
-    /*!
-     * Update the OpenGL texture in memory.
-     */
-    void update();
+        /*!
+         * Update the OpenGL texture in memory.
+         */
+        void update();
 
-    /*!
-     * Get OpenGL texture identifier number.
-     *
-     * @return - OpenGL texture identifier number.
-     */
-    GLuint getTexture();
+        /*!
+         * Get OpenGL texture identifier number.
+         *
+         * @return - OpenGL texture identifier number.
+         */
+        GLuint getTexture();
 
-    /*!
-     * Bind the OpenGL texture for use.
-     *
-     * @param id - OpenGL Texture id to bind to (0 default)
-     */
-    void bind(int id = 0) const;
+        /*!
+         * Bind the OpenGL texture for use.
+         *
+         * @param id - OpenGL Texture id to bind to (0 default)
+         */
+        void bind(int id = 0) const;
 
-    Image image;
-  private:
-    void initGL();
-    GLuint texture;
-  };
+        Image image;
+    private:
+        void initGL();
+        GLuint texture;
+    };
 }
-

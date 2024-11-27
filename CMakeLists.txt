@@ -123,6 +123,7 @@ else ()
           ppgso/image_raw.cpp
           ppgso/texture.cpp
           ppgso/window.cpp
+          ppgso/stb_image.cpp
   )
 endif ()
 
@@ -177,6 +178,9 @@ add_executable(1projekt
         src/1projekt/scene.h
         src/1projekt/object.cpp
         src/1projekt/object.h
+        shader/texture_frag.glsl
+        src/1projekt/grid.cpp
+        src/1projekt/grid.h
 )
 target_link_libraries(1projekt ppgso shaders)
 install(TARGETS 1projekt DESTINATION .)
