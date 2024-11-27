@@ -7,10 +7,13 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/random.hpp>
 
+
 #define SIZEx 1280
 #define SIZEy 720
 
-ParticleWindow::ParticleWindow() : Window{"task7_particles", SIZEx, SIZEy}, camera{60.0f, (float)width / (float)height, 0.1f, 100.0f}, lastX(width / 2.0f), lastY(height / 2.0f), firstMouse(true), sensitivity(0.1f) {
+unsigned int overlayTexture;
+
+ParticleWindow::ParticleWindow() : Window{"Project_Matuska_Pacuta", SIZEx, SIZEy}, camera{60.0f, (float)width / (float)height, 0.1f, 100.0f}, lastX(width / 2.0f), lastY(height / 2.0f), firstMouse(true), sensitivity(0.1f) {
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LEQUAL);
     glEnable(GL_LINE_SMOOTH);
@@ -35,27 +38,52 @@ ParticleWindow::ParticleWindow() : Window{"task7_particles", SIZEx, SIZEy}, came
                         continue; // Skip the center and roads (leave these as roads)
                     }
 
-                    int buildingType = glm::linearRand(1, 4);  // Random building type
-                    std::string modelPath, texturePath;
+                    int buildingType = glm::linearRand(1, 7);  // Random building type
+std::string modelPath, texturePath;
 
-                    switch (buildingType) {
-                        case 1:
-                            modelPath = "models/building.obj";
-                            texturePath = "models/texture.bmp";
-                            break;
-                        case 2:
-                            modelPath = "models/building2.obj";
-                            texturePath = "models/texture2.bmp";
-                            break;
-                        case 3:
-                            modelPath = "models/building3.obj";
-                            texturePath = "models/texture3.bmp";
-                            break;
-                        case 4:
-                            modelPath = "models/building4.obj";
-                            texturePath = "models/texture4.bmp";
-                            break;
-                    }
+// Random texture selection excluding textures for building 5 and 6
+int randomTexture = glm::linearRand(1, 4);  // This will give us a number between 1 and 4 for the textures
+
+switch (buildingType) {
+    case 1:
+        modelPath = "models/building.obj";
+        texturePath = (randomTexture == 1) ? "models/texture.bmp" :
+                      (randomTexture == 2) ? "models/texture2.bmp" :
+                      (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
+        break;
+    case 2:
+        modelPath = "models/building2.obj";
+        texturePath = (randomTexture == 1) ? "models/texture.bmp" :
+                      (randomTexture == 2) ? "models/texture2.bmp" :
+                      (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
+        break;
+    case 3:
+        modelPath = "models/building3.obj";
+        texturePath = (randomTexture == 1) ? "models/texture.bmp" :
+                      (randomTexture == 2) ? "models/texture2.bmp" :
+                      (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
+        break;
+    case 4:
+        modelPath = "models/building4.obj";
+        texturePath = (randomTexture == 1) ? "models/texture.bmp" :
+                      (randomTexture == 2) ? "models/texture2.bmp" :
+                      (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
+        break;
+    case 5:
+        modelPath = "models/building5.obj";
+        texturePath = "models/texture5.bmp";
+        break;
+    case 6:
+        modelPath = "models/building6.obj";
+        texturePath = "models/texture6.bmp";
+        break;
+    case 7:
+        modelPath = "models/building7.obj";
+        texturePath = (randomTexture == 1) ? "models/texture.bmp" :
+                      (randomTexture == 2) ? "models/texture2.bmp" :
+                      (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
+        break;
+}
 
                     glm::vec3 cellPosition = grid.getCellPosition(row, col) + subGridOrigin;
                     auto newBuilding = std::make_unique<Building>(modelPath, cellPosition, texturePath);

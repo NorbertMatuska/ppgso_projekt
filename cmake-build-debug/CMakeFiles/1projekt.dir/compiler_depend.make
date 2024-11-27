@@ -4062,6 +4062,7 @@ CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj: D:/PROJEKT/src/1projekt/win
   D:/PROJEKT/ppgso/image_raw.h \
   D:/PROJEKT/ppgso/ppgso.h \
   D:/PROJEKT/ppgso/shader.h \
+  D:/PROJEKT/ppgso/stb_image.h \
   D:/PROJEKT/ppgso/texture.h \
   D:/PROJEKT/ppgso/window.h \
   D:/PROJEKT/src/1projekt/building.h \
@@ -5017,3 +5018,5 @@ D:/PROJEKT/src/1projekt/plane.h:
 D:/PROJEKT/src/1projekt/splash_particle.cpp:
 
 D:/PROJEKT/src/1projekt/window.cpp:
+
+D:/PROJEKT/ppgso/stb_image.h:
