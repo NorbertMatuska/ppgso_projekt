@@ -4,6 +4,8 @@
 #include "splash_particle.h"
 #include "building.h"
 #include "grid.h"
+#include "GrassTile.h"
+#include "SkyBox.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/random.hpp>
 
@@ -13,7 +15,10 @@
 
 unsigned int overlayTexture;
 
-ParticleWindow::ParticleWindow() : Window{"Project_Matuska_Pacuta", SIZEx, SIZEy}, camera{60.0f, (float)width / (float)height, 0.1f, 100.0f}, lastX(width / 2.0f), lastY(height / 2.0f), firstMouse(true), sensitivity(0.1f) {
+ParticleWindow::ParticleWindow()
+        : Window{"Project_Matuska_Pacuta", SIZEx, SIZEy},
+          camera{60.0f, (float)width / (float)height, 0.1f, 100.0f},
+          lastX(width / 2.0f), lastY(height / 2.0f), firstMouse(true), sensitivity(0.1f) {
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LEQUAL);
     glEnable(GL_LINE_SMOOTH);
@@ -26,7 +31,22 @@ ParticleWindow::ParticleWindow() : Window{"Project_Matuska_Pacuta", SIZEx, SIZEy
     Grid grid(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.0f, 0.0f));
     drawGridLines(grid);  // Draw the grid in the background
 
-    // Iterate through each sub-grid to place buildings
+    std::vector<std::string> skyboxFaces = {
+            "skyboxes/vz_sinister_land_right.bmp",
+            "skyboxes/vz_sinister_land_left.bmp",
+            "skyboxes/vz_sinister_land_up.bmp",
+            "skyboxes/vz_sinister_land_down.bmp",
+            "skyboxes/vz_sinister_land_front.bmp",
+            "skyboxes/vz_sinister_land _back.bmp"
+    };
+
+    auto skybox = std::make_unique<Skybox>(skyboxFaces);
+    scene.push_back(std::move(skybox));
+
+    auto grassTile = std::make_unique<GrassTile>(glm::vec3(0.0f, -0.1f, 0.0f), glm::vec3(200.0f));
+    scene.push_back(std::move(grassTile));
+
+    // Iterate through each sub-grid to place buildings and roads
     for (int subGridRow = 0; subGridRow < n; ++subGridRow) {
         for (int subGridCol = 0; subGridCol < n; ++subGridCol) {
             glm::vec3 subGridOrigin = glm::vec3(subGridCol * subGridSize, 0.0f, subGridRow * subGridSize);
@@ -34,58 +54,76 @@ ParticleWindow::ParticleWindow() : Window{"Project_Matuska_Pacuta", SIZEx, SIZEy
             // Generate a 3x3 pattern for the current sub-grid
             for (int row = 0; row < 3; ++row) {
                 for (int col = 0; col < 3; ++col) {
-                    if ((row == 1 && col == 1) || row == 1 || col == 1) {
-                        continue; // Skip the center and roads (leave these as roads)
+                    glm::vec3 cellPosition = grid.getCellPosition(row, col) + subGridOrigin;
+
+                    // Add roads in the center rows and columns
+                    if (row == 1 || col == 1) {
+                        // Create a road using the Plane class
+                        auto road = std::make_unique<Plane>(cellPosition);
+
+                        // Rotate the road if it's in the center column
+                        if (row == 1 && col != 1) {
+                            road->setRotation(90.0f); // Rotate vertical roads by 90 degrees
+                        }
+
+                        // Add the road to the scene
+                        scene.push_back(std::move(road));
+                        continue;
+                    }
+
+                    // Skip placing a building if it's the center of the grid
+                    if (row == 1 && col == 1) {
+                        continue;
                     }
 
                     int buildingType = glm::linearRand(1, 7);  // Random building type
-std::string modelPath, texturePath;
+                    std::string modelPath, texturePath;
 
-// Random texture selection excluding textures for building 5 and 6
-int randomTexture = glm::linearRand(1, 4);  // This will give us a number between 1 and 4 for the textures
+                    // Random texture selection excluding textures for building 5 and 6
+                    int randomTexture = glm::linearRand(1, 4);  // This will give us a number between 1 and 4 for the textures
 
-switch (buildingType) {
-    case 1:
-        modelPath = "models/building.obj";
-        texturePath = (randomTexture == 1) ? "models/texture.bmp" :
-                      (randomTexture == 2) ? "models/texture2.bmp" :
-                      (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
-        break;
-    case 2:
-        modelPath = "models/building2.obj";
-        texturePath = (randomTexture == 1) ? "models/texture.bmp" :
-                      (randomTexture == 2) ? "models/texture2.bmp" :
-                      (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
-        break;
-    case 3:
-        modelPath = "models/building3.obj";
-        texturePath = (randomTexture == 1) ? "models/texture.bmp" :
-                      (randomTexture == 2) ? "models/texture2.bmp" :
-                      (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
-        break;
-    case 4:
-        modelPath = "models/building4.obj";
-        texturePath = (randomTexture == 1) ? "models/texture.bmp" :
-                      (randomTexture == 2) ? "models/texture2.bmp" :
-                      (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
-        break;
-    case 5:
-        modelPath = "models/building5.obj";
-        texturePath = "models/texture5.bmp";
-        break;
-    case 6:
-        modelPath = "models/building6.obj";
-        texturePath = "models/texture6.bmp";
-        break;
-    case 7:
-        modelPath = "models/building7.obj";
-        texturePath = (randomTexture == 1) ? "models/texture.bmp" :
-                      (randomTexture == 2) ? "models/texture2.bmp" :
-                      (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
-        break;
-}
+                    switch (buildingType) {
+                        case 1:
+                            modelPath = "models/building.obj";
+                            texturePath = (randomTexture == 1) ? "models/texture.bmp" :
+                                          (randomTexture == 2) ? "models/texture2.bmp" :
+                                          (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
+                            break;
+                        case 2:
+                            modelPath = "models/building2.obj";
+                            texturePath = (randomTexture == 1) ? "models/texture.bmp" :
+                                          (randomTexture == 2) ? "models/texture2.bmp" :
+                                          (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
+                            break;
+                        case 3:
+                            modelPath = "models/building3.obj";
+                            texturePath = (randomTexture == 1) ? "models/texture.bmp" :
+                                          (randomTexture == 2) ? "models/texture2.bmp" :
+                                          (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
+                            break;
+                        case 4:
+                            modelPath = "models/building4.obj";
+                            texturePath = (randomTexture == 1) ? "models/texture.bmp" :
+                                          (randomTexture == 2) ? "models/texture2.bmp" :
+                                          (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
+                            break;
+                        case 5:
+                            modelPath = "models/building5.obj";
+                            texturePath = "models/texture5.bmp";
+                            break;
+                        case 6:
+                            modelPath = "models/building6.obj";
+                            texturePath = "models/texture6.bmp";
+                            break;
+                        case 7:
+                            modelPath = "models/building7.obj";
+                            texturePath = (randomTexture == 1) ? "models/texture.bmp" :
+                                          (randomTexture == 2) ? "models/texture2.bmp" :
+                                          (randomTexture == 3) ? "models/texture3.bmp" : "models/texture7.bmp";
+                            break;
+                    }
 
-                    glm::vec3 cellPosition = grid.getCellPosition(row, col) + subGridOrigin;
+                    // Create and add the building
                     auto newBuilding = std::make_unique<Building>(modelPath, cellPosition, texturePath);
                     scene.push_back(std::move(newBuilding));
                 }

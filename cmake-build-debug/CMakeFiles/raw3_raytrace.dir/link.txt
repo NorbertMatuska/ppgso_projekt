@@ -1,3 +1,0 @@
-"D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\raw3_raytrace.dir/objects.a
-"D:\CLion\CLion 2024.2.1\bin\mingw\bin\ar.exe" qc CMakeFiles\raw3_raytrace.dir/objects.a @CMakeFiles\raw3_raytrace.dir\objects1.rsp
-"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -Wl,--whole-archive CMakeFiles\raw3_raytrace.dir/objects.a -Wl,--no-whole-archive -o raw3_raytrace.exe -Wl,--out-implib,libraw3_raytrace.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\raw3_raytrace.dir\linkLibs.rsp
