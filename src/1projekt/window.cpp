@@ -32,12 +32,12 @@ ParticleWindow::ParticleWindow()
     drawGridLines(grid);  // Draw the grid in the background
 
     std::vector<std::string> skyboxFaces = {
-            "skyboxes/vz_sinister_land_right.bmp",
-            "skyboxes/vz_sinister_land_left.bmp",
-            "skyboxes/vz_sinister_land_up.bmp",
-            "skyboxes/vz_sinister_land_down.bmp",
-            "skyboxes/vz_sinister_land_front.bmp",
-            "skyboxes/vz_sinister_land _back.bmp"
+            "skyboxes/vz_dawn_right.bmp",
+            "skyboxes/vz_dawn_left.bmp",
+            "skyboxes/vz_dawn_up.bmp",
+            "skyboxes/vz_dawn_down.bmp",
+            "skyboxes/vz_dawn_front.bmp",
+            "skyboxes/vz_dawn_back.bmp"
     };
 
     auto skybox = std::make_unique<Skybox>(skyboxFaces);
@@ -45,6 +45,10 @@ ParticleWindow::ParticleWindow()
 
     auto grassTile = std::make_unique<GrassTile>(glm::vec3(0.0f, -0.1f, 0.0f), glm::vec3(200.0f));
     scene.push_back(std::move(grassTile));
+
+    auto lamp = std::make_unique<Building>("models/lamp.obj", grid.getCellPosition(0, 0), "models/lamp.bmp");
+    lamp->setScale(0.001f);
+    scene.push_back(std::move(lamp));
 
     // Iterate through each sub-grid to place buildings and roads
     for (int subGridRow = 0; subGridRow < n; ++subGridRow) {
@@ -68,6 +72,42 @@ ParticleWindow::ParticleWindow()
 
                         // Add the road to the scene
                         scene.push_back(std::move(road));
+
+                        if (row == 1 && col == 1) {
+                            continue; // Intersection - skip placing lamps but keep the road
+                        }
+
+                        float lampOffset = 5.0f; // Distance from road center to lamp
+                        if (row == 1) {
+                            // Horizontal road, place lamps on the sides
+                            glm::vec3 leftLampPos = cellPosition + glm::vec3(0.0f, 0.0f, -lampOffset);
+                            glm::vec3 rightLampPos = cellPosition + glm::vec3(0.0f, 0.0f, lampOffset);
+
+                            auto leftLamp = std::make_unique<Building>("models/lamp.obj", leftLampPos, "models/lamp.bmp");
+                            leftLamp->setScale(0.001f);
+                            leftLamp->setRotation(270.0f);
+                            scene.push_back(std::move(leftLamp));
+
+                            auto rightLamp = std::make_unique<Building>("models/lamp.obj", rightLampPos, "models/lamp.bmp");
+                            rightLamp->setScale(0.001f);
+                            rightLamp->setRotation(90.0f);
+                            scene.push_back(std::move(rightLamp));
+                        }
+
+                        if (col == 1) {
+                            // Vertical road, place lamps on the sides
+                            glm::vec3 topLampPos = cellPosition + glm::vec3(-lampOffset, 0.0f, 0.0f);
+                            glm::vec3 bottomLampPos = cellPosition + glm::vec3(lampOffset, 0.0f, 0.0f);
+
+                            auto topLamp = std::make_unique<Building>("models/lamp.obj", topLampPos, "models/lamp.bmp");
+                            topLamp->setScale(0.001f);
+                            scene.push_back(std::move(topLamp));
+
+                            auto bottomLamp = std::make_unique<Building>("models/lamp.obj", bottomLampPos, "models/lamp.bmp");
+                            bottomLamp->setScale(0.001f);
+                            bottomLamp->setRotation(180.0f);
+                            scene.push_back(std::move(bottomLamp));
+                        }
                         continue;
                     }
 

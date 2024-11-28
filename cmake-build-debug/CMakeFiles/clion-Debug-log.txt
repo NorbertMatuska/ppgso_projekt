@@ -5,6 +5,6 @@ FIND_PATH C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include
 -- GLEW_LIBRARIES: C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a
 -- GLM_INCLUDE_DIR = C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include
 -- Using ASSIMP object loader
--- Configuring done (2.7s)
+-- Configuring done (3.6s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug

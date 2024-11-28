@@ -30,8 +30,10 @@ void Building::render(const Camera& camera) {
     shader->setUniform("Texture", *texture);
 
     glm::mat4 modelMatrix = glm::mat4(1.0f);
-    modelMatrix = glm::translate(modelMatrix, position); // Use position from constructor
-    modelMatrix = glm::scale(modelMatrix, glm::vec3(1.0f)); // Adjust scale if needed
+    modelMatrix = glm::translate(modelMatrix, position);
+    modelMatrix = glm::scale(modelMatrix, glm::vec3(scale));
+    modelMatrix = glm::rotate(modelMatrix, glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+    modelMatrix = glm::rotate(modelMatrix, glm::radians(rotation), glm::vec3(0.0f, 1.0f, 0.0f));
 
     shader->setUniform("ModelMatrix", modelMatrix);
     shader->setUniform("ViewMatrix", camera.viewMatrix);

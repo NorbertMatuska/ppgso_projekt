@@ -10,9 +10,9 @@ class Plane final : public Renderable {
     static std::unique_ptr<ppgso::Shader> shader;
     static std::unique_ptr<ppgso::Texture> texture;
 
-    glm::vec3 position;  // Position of the plane
-    glm::vec3 scale = {1.0f, 1.0f, 1.0f};  // Scale of the plane
-    float rotation = 0.0f;  // Rotation of the plane (in degrees)
+    glm::vec3 position;
+    glm::vec3 scale = {1.0f, 1.0f, 1.0f};
+    float rotation = 0.0f;
 
 public:
     explicit Plane(const glm::vec3& position = {0.0f, 0.0f, 0.0f});

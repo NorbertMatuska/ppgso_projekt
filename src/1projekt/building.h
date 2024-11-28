@@ -13,12 +13,16 @@ class Building final : public Renderable {
     std::unique_ptr<ppgso::Mesh> mesh;
     std::unique_ptr<ppgso::Texture> texture;
     glm::vec3 position;
+    float scale = 1.0f;
+    float rotation = 0.0f;
 
 public:
     Building(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename);
 
     bool update(float dTime, Scene &scene) override;
     void render(const Camera& camera) override;
+    void setScale(float newScale) { scale = newScale; }
+    void setRotation(float angle) { rotation = angle; }
 };
 
 #endif //PPGSO_BUILDING_H
