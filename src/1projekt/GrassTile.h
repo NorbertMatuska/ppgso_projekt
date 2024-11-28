@@ -18,6 +18,8 @@ public:
 
     bool update(float dTime, Scene &scene) override;
     void render(const Camera& camera) override;
+    ppgso::Shader* getShader() const override;
+
 };
 
 #endif //PPGSO_GRASSTILE_H

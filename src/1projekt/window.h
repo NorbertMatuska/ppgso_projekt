@@ -22,9 +22,10 @@ private:
 
 public:
     ParticleWindow();
+    glm::vec3 sunDirection;
 
-    void drawGridLines(const Grid& grid);
-
+    void updateSunPosition(float dTime);
+    void setLightingUniforms(ppgso::Shader& shader);
     void onKey(int key, int scanCode, int action, int mods) override;
     void onCursorPos(double xpos, double ypos) override;
     void onIdle() override;

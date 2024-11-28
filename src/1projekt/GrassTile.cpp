@@ -15,6 +15,10 @@ GrassTile::GrassTile(const glm::vec3& position, const glm::vec3& scale) : positi
     if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("models/grass.bmp"));
 }
 
+ppgso::Shader* GrassTile::getShader() const {
+    return shader.get();
+}
+
 bool GrassTile::update(float dTime, Scene &scene) {
     return true;
 }
@@ -33,6 +37,11 @@ void GrassTile::render(const Camera& camera) {
     shader->setUniform("ModelMatrix", modelMatrix);
     shader->setUniform("ViewMatrix", camera.viewMatrix);
     shader->setUniform("ProjectionMatrix", camera.projectionMatrix);
+
+    shader->setUniform("material.ambient", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader->setUniform("material.diffuse", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader->setUniform("material.specular", glm::vec3(0.5f, 0.5f, 0.5f));
+    shader->setUniform("material.shininess", 32.0f);
 
     float tilingFactor = 50.0f; // Adjust this to control how often the grass texture tiles
     shader->setUniform("TilingFactor", tilingFactor);

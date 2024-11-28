@@ -3,6 +3,7 @@
 
 #include <list>
 #include <memory>
+#include <ppgso.h>
 
 class Camera; // Forward declaration
 
@@ -15,6 +16,8 @@ public:
 
     virtual void render(const Camera& camera) = 0;
     virtual bool update(float dTime, Scene &scene) = 0;
+    virtual ppgso::Shader* getShader() const = 0;
+
 };
 
 #endif //PPGSO_RENDERABLE_H

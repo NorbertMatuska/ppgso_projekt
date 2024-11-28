@@ -17,8 +17,12 @@ class Building final : public Renderable {
     float rotation = 0.0f;
 
 public:
-    Building(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename);
+    static glm::vec3 ambientLightColor;
+    ppgso::Shader* getShader() const override;
 
+
+    Building(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename);
+    void setLightingUniforms(ppgso::Shader* shader, const Camera& camera);
     bool update(float dTime, Scene &scene) override;
     void render(const Camera& camera) override;
     void setScale(float newScale) { scale = newScale; }

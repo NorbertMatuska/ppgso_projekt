@@ -58,6 +58,10 @@ void Skybox::loadCubemap(const std::vector<std::string>& faces) {
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
 }
 
+ppgso::Shader* Skybox::getShader() const {
+    return shader.get();
+}
+
 bool Skybox::update(float dTime, Scene &scene) {
     return true; // Skybox does not need updates
 }
@@ -75,6 +79,11 @@ void Skybox::render(const Camera& camera) {
     glm::mat4 viewMatrix = glm::mat4(glm::mat3(camera.viewMatrix));
     shader->setUniform("ViewMatrix", viewMatrix);
     shader->setUniform("ProjectionMatrix", camera.projectionMatrix);
+
+    shader->setUniform("material.ambient", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader->setUniform("material.diffuse", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader->setUniform("material.specular", glm::vec3(0.5f, 0.5f, 0.5f));
+    shader->setUniform("material.shininess", 32.0f);
 
     // Bind the cubemap texture
     glActiveTexture(GL_TEXTURE0);

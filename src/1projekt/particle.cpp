@@ -20,6 +20,10 @@ Particle::Particle(glm::vec3 p, glm::vec3 s, glm::vec3 c) {
     lifetime = 5.0f;
 }
 
+ppgso::Shader* Particle::getShader() const {
+    return shader.get();
+}
+
 bool Particle::update(float dTime, Scene &scene) {
     position += speed * dTime;
     age += dTime;

@@ -19,6 +19,10 @@ SplashParticle::SplashParticle(glm::vec3 p, glm::vec3 s, glm::vec3 c, float lt) 
     lifetime = lt;
 }
 
+ppgso::Shader* SplashParticle::getShader() const {
+    return shader.get();
+}
+
 bool SplashParticle::update(float dTime, Scene &scene) {
     position += speed * dTime;
     age += dTime;

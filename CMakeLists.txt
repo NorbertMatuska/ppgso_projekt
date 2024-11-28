@@ -98,7 +98,7 @@ set(PPGSO_SHADER_SRC
         shader/texture_vert.glsl shader/texture_frag.glsl
         shader/texture_vert_grass.glsl shader/texture_frag_grass.glsl
         shader/skybox_vert.glsl shader/skybox_frag.glsl
-        )
+)
 add_resources(shaders ${PPGSO_SHADER_SRC})
 
 # PPGSO library

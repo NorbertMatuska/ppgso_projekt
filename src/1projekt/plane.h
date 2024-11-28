@@ -15,6 +15,10 @@ class Plane final : public Renderable {
     float rotation = 0.0f;
 
 public:
+    // Ambient light color
+    static glm::vec3 ambientLightColor;
+    ppgso::Shader* getShader() const override;
+
     explicit Plane(const glm::vec3& position = {0.0f, 0.0f, 0.0f});
 
     void setRotation(float angle) { rotation = angle; }

@@ -8,8 +8,8 @@
 std::unique_ptr<ppgso::Mesh> Plane::mesh;
 std::unique_ptr<ppgso::Shader> Plane::shader;
 std::unique_ptr<ppgso::Texture> Plane::texture;
+glm::vec3 Plane::ambientLightColor = glm::vec3(0.8f, 0.7f, 0.6f);
 
-// Constructor with position parameter
 Plane::Plane(const glm::vec3& position) : position(position) {
     if (!shader) shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
     if (!mesh) mesh = std::make_unique<ppgso::Mesh>("quad.obj");
@@ -20,9 +20,16 @@ bool Plane::update(float dTime, Scene &scene) {
     return true;
 }
 
+ppgso::Shader* Plane::getShader() const {
+    return shader.get();
+}
+
 void Plane::render(const Camera& camera) {
     shader->use();
     shader->setUniform("Texture", *texture);
+
+    // Set the ambient light color uniform
+    shader->setUniform("AmbientLightColor", ambientLightColor);
 
     glm::mat4 modelMatrix = glm::mat4(1.0f);
 
@@ -35,5 +42,11 @@ void Plane::render(const Camera& camera) {
     shader->setUniform("ModelMatrix", modelMatrix);
     shader->setUniform("ViewMatrix", camera.viewMatrix);
     shader->setUniform("ProjectionMatrix", camera.projectionMatrix);
+
+    shader->setUniform("material.ambient", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader->setUniform("material.diffuse", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader->setUniform("material.specular", glm::vec3(0.5f, 0.5f, 0.5f));
+    shader->setUniform("material.shininess", 32.0f);
+
     mesh->render();
 }

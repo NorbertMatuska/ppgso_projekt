@@ -8,6 +8,8 @@
 #include "SkyBox.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/random.hpp>
+#include <set>
+
 
 
 #define SIZEx 1280
@@ -24,12 +26,13 @@ ParticleWindow::ParticleWindow()
     glEnable(GL_LINE_SMOOTH);
     glLineWidth(1.0f);
 
+    sunDirection = glm::vec3(-0.2f, -1.0f, -0.3f);
+
     int n = 5;  // Number of 3x3 sub-grids along each dimension
     float cellSize = 10.0f;  // Size of each grid cell
     float subGridSize = 3 * cellSize;  // Size of a 3x3 sub-grid
 
     Grid grid(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.0f, 0.0f));
-    drawGridLines(grid);  // Draw the grid in the background
 
     std::vector<std::string> skyboxFaces = {
             "skyboxes/vz_dawn_right.bmp",
@@ -45,10 +48,6 @@ ParticleWindow::ParticleWindow()
 
     auto grassTile = std::make_unique<GrassTile>(glm::vec3(0.0f, -0.1f, 0.0f), glm::vec3(200.0f));
     scene.push_back(std::move(grassTile));
-
-    auto lamp = std::make_unique<Building>("models/lamp.obj", grid.getCellPosition(0, 0), "models/lamp.bmp");
-    lamp->setScale(0.001f);
-    scene.push_back(std::move(lamp));
 
     // Iterate through each sub-grid to place buildings and roads
     for (int subGridRow = 0; subGridRow < n; ++subGridRow) {
@@ -77,9 +76,8 @@ ParticleWindow::ParticleWindow()
                             continue; // Intersection - skip placing lamps but keep the road
                         }
 
-                        float lampOffset = 5.0f; // Distance from road center to lamp
+                        float lampOffset = 5.0f;
                         if (row == 1) {
-                            // Horizontal road, place lamps on the sides
                             glm::vec3 leftLampPos = cellPosition + glm::vec3(0.0f, 0.0f, -lampOffset);
                             glm::vec3 rightLampPos = cellPosition + glm::vec3(0.0f, 0.0f, lampOffset);
 
@@ -95,7 +93,6 @@ ParticleWindow::ParticleWindow()
                         }
 
                         if (col == 1) {
-                            // Vertical road, place lamps on the sides
                             glm::vec3 topLampPos = cellPosition + glm::vec3(-lampOffset, 0.0f, 0.0f);
                             glm::vec3 bottomLampPos = cellPosition + glm::vec3(lampOffset, 0.0f, 0.0f);
 
@@ -108,11 +105,6 @@ ParticleWindow::ParticleWindow()
                             bottomLamp->setRotation(180.0f);
                             scene.push_back(std::move(bottomLamp));
                         }
-                        continue;
-                    }
-
-                    // Skip placing a building if it's the center of the grid
-                    if (row == 1 && col == 1) {
                         continue;
                     }
 
@@ -174,35 +166,47 @@ ParticleWindow::ParticleWindow()
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 }
 
-// Function to draw the grid lines on the scene
-void ParticleWindow::drawGridLines(const Grid& grid) {
-    int rows = 10;  // Number of rows in the grid
-    int cols = 10;  // Number of columns in the grid
-    float cellSize = 5.0f;  // Size of each cell in world units
-    glm::vec3 origin = glm::vec3(0.0f, 0.0f, 0.0f);  // Starting point of the grid
+void ParticleWindow::setLightingUniforms(ppgso::Shader& shader) {
+    shader.setUniform("viewPos", camera.position);
 
-    glBegin(GL_LINES);  // Begin drawing lines
-    glColor3f(0.5f, 0.5f, 0.5f);  // Set the grid color (gray)
+    // Directional light
+    shader.setUniform("dirLight.direction", sunDirection);
+    shader.setUniform("dirLight.ambient", glm::vec3(0.3f, 0.3f, 0.3f));   // Increase ambient intensity
+    shader.setUniform("dirLight.diffuse", glm::vec3(0.7f, 0.7f, 0.7f));   // Increase diffuse intensity
+    shader.setUniform("dirLight.specular", glm::vec3(1.0f, 1.0f, 1.0f));  // Max specular intensity
 
-    // Draw horizontal lines
-    for (int r = 0; r <= rows; ++r) {
-        glm::vec3 start = origin + glm::vec3(0.0f, 0.0f, r * cellSize);
-        glm::vec3 end = origin + glm::vec3(cols * cellSize, 0.0f, r * cellSize);
-        glVertex3f(start.x, start.y, start.z);
-        glVertex3f(end.x, end.y, end.z);
-    }
+    // Point light 1
+    /*
+    shader.setUniform("pointLights[0].position", glm::vec3(10.0f, 10.0f, 10.0f));
+    shader.setUniform("pointLights[0].ambient", glm::vec3(0.2f, 0.2f, 0.2f));  // Increase ambient intensity
+    shader.setUniform("pointLights[0].diffuse", glm::vec3(1.0f, 1.0f, 1.0f));  // Increase diffuse intensity
+    shader.setUniform("pointLights[0].specular", glm::vec3(1.0f, 1.0f, 1.0f)); // Max specular intensity
+    shader.setUniform("pointLights[0].constant", 1.0f);
+    shader.setUniform("pointLights[0].linear", 0.07f);     // Adjust attenuation
+    shader.setUniform("pointLights[0].quadratic", 0.017f); // Adjust attenuation
 
-    // Draw vertical lines
-    for (int c = 0; c <= cols; ++c) {
-        glm::vec3 start = origin + glm::vec3(c * cellSize, 0.0f, 0.0f);
-        glm::vec3 end = origin + glm::vec3(c * cellSize, 0.0f, rows * cellSize);
-        glVertex3f(start.x, start.y, start.z);
-        glVertex3f(end.x, end.y, end.z);
-    }
+    // Point light 2 (adjust as needed)
+    shader.setUniform("pointLights[1].position", glm::vec3(-10.0f, 10.0f, -10.0f));
+    shader.setUniform("pointLights[1].ambient", glm::vec3(0.2f, 0.2f, 0.2f));
+    shader.setUniform("pointLights[1].diffuse", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader.setUniform("pointLights[1].specular", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader.setUniform("pointLights[1].constant", 1.0f);
+    shader.setUniform("pointLights[1].linear", 0.07f);
+    shader.setUniform("pointLights[1].quadratic", 0.017f);
 
-    glEnd();  // End drawing lines
+    // Spotlight (from the camera's perspective)
+    shader.setUniform("spotLight.position", camera.position);
+    shader.setUniform("spotLight.direction", glm::normalize(camera.target - camera.position));
+    shader.setUniform("spotLight.cutOff", glm::cos(glm::radians(12.5f)));
+    shader.setUniform("spotLight.outerCutOff", glm::cos(glm::radians(17.5f)));
+    shader.setUniform("spotLight.ambient", glm::vec3(0.0f, 0.0f, 0.0f));
+    shader.setUniform("spotLight.diffuse", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader.setUniform("spotLight.specular", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader.setUniform("spotLight.constant", 1.0f);
+    shader.setUniform("spotLight.linear", 0.07f);
+    shader.setUniform("spotLight.quadratic", 0.017f);
+     */
 }
-
 
 
 void ParticleWindow::onKey(int key, int scanCode, int action, int mods) {
@@ -213,6 +217,7 @@ void ParticleWindow::onKey(int key, int scanCode, int action, int mods) {
     }
 
     if (key == GLFW_KEY_SPACE && action == GLFW_PRESS) {
+        /*
         float x = glm::linearRand(-7.0f, 7.0f);
         float y = glm::linearRand(0.5f, 5.0f);
         float z = glm::linearRand(-7.0f, 7.0f);
@@ -231,6 +236,7 @@ void ParticleWindow::onKey(int key, int scanCode, int action, int mods) {
             auto particle = std::make_unique<SplashParticle>(position, speed, color, lt);
             scene.push_back(std::move(particle));
         }
+         */
     }
 
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
@@ -264,6 +270,21 @@ void ParticleWindow::onCursorPos(double xpos, double ypos) {
     camera.update();
 }
 
+void ParticleWindow::updateSunPosition(float dTime) {
+    static float sunAngle = 0.0f;
+
+    sunAngle += dTime;
+
+    if (sunAngle > glm::two_pi<float>()) {
+        sunAngle -= glm::two_pi<float>();
+    }
+
+    // Calculate sun direction based on sunAngle
+    float x = sin(sunAngle);
+    float y = cos(sunAngle);
+    sunDirection = glm::normalize(glm::vec3(x, y, 0.0f));
+}
+
 void ParticleWindow::onIdle() {
     static auto time = (float)glfwGetTime();
     float dTime = (float)glfwGetTime() - time;
@@ -272,8 +293,10 @@ void ParticleWindow::onIdle() {
     glClearColor(.1f, .1f, .1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+    updateSunPosition(dTime);
     static float particleTime = 0.0f;
     particleTime += dTime;
+    /*
     if (particleTime > 0.1f) {
         particleTime = 0.0f;
         float x = glm::linearRand(-10.0f, 10.0f);
@@ -284,7 +307,7 @@ void ParticleWindow::onIdle() {
         glm::vec3 color = glm::vec3(0.0f, 0.0f, 1.0f);
         auto particle = std::make_unique<Particle>(position, speed, color);
         scene.push_back(std::move(particle));
-    }
+    }*/
 
     float cameraSpeed = 10.0f;
     glm::vec3 forward = glm::normalize(camera.target - camera.position);
@@ -312,6 +335,19 @@ void ParticleWindow::onIdle() {
             i = scene.erase(i);
         else
             ++i;
+    }
+
+    std::set<ppgso::Shader*> shadersSet;
+
+    // Set lighting uniforms for all shaders used by objects in the scene
+    for (auto& object : scene) {
+        auto shader = object->getShader();
+        // Check if the shader has already been processed
+        if (shadersSet.find(shader) == shadersSet.end()) {
+            shader->use();
+            setLightingUniforms(*shader);
+            shadersSet.insert(shader);
+        }
     }
 
     for (auto& object : scene) {
