@@ -46,6 +46,7 @@ struct SpotLight {
 
 uniform sampler2D Texture;
 uniform vec2 TextureOffset;
+uniform sampler2DShadow ShadowMap;
 
 uniform Material material;
 uniform DirectionalLight dirLight;
@@ -56,6 +57,7 @@ uniform vec3 viewPos;
 in vec2 texCoord;
 in vec3 FragPos;
 in vec3 NormalDir;
+in vec4 FragPosLightSpace;
 
 out vec4 FragmentColor;
 
@@ -63,6 +65,7 @@ out vec4 FragmentColor;
 vec3 CalcDirLight(DirectionalLight light, vec3 normal, vec3 viewDir, vec3 texColor);
 vec3 CalcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir, vec3 texColor);
 vec3 CalcSpotLight(SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir, vec3 texColor);
+float ShadowCalculation(vec4 fragPosLightSpace, vec3 normal, vec3 lightDir);
 
 void main() {
     vec3 norm = normalize(NormalDir);
@@ -87,8 +90,12 @@ void main() {
     diffuse += dirDiffuse;
     specular += dirSpecular;
 
-    // Combine results
-    vec3 result = ambient + diffuse + specular;
+    float shadow = ShadowCalculation(FragPosLightSpace, norm, dirLightDir);
+
+    // Combine lighting
+    vec3 result = CalcDirLight(dirLight, norm, viewDir, texColor);
+    result = mix(result, result * 0.3, shadow); // Adjust shadow darkness
+
     FragmentColor = vec4(result, 1.0);
 }
 
@@ -106,6 +113,28 @@ vec3 CalcDirLight(DirectionalLight light, vec3 normal, vec3 viewDir, vec3 texCol
     vec3 diffuse = light.diffuse * diff * texColor * material.diffuse;
     vec3 specular = light.specular * spec * material.specular;
     return (ambient + diffuse + specular);
+}
+
+float ShadowCalculation(vec4 fragPosLightSpace, vec3 normal, vec3 lightDir) {
+    // Perform perspective divide
+    vec3 projCoords = fragPosLightSpace.xyz / fragPosLightSpace.w;
+    // Transform to [0,1] range
+    projCoords = projCoords * 0.5 + 0.5;
+
+    // Check if current fragment is outside the shadow map
+    if (projCoords.z > 1.0)
+        return 0.0;
+
+    // Sample the shadow map
+    float closestDepth = texture(ShadowMap, projCoords.xyz);
+    float currentDepth = projCoords.z;
+    // Bias to prevent shadow acne
+    float bias = max(0.05 * (1.0 - dot(normal, lightDir)), 0.005);
+    float shadow = 0.0;
+    if (currentDepth - bias > closestDepth)
+        shadow = 1.0;
+
+    return shadow;
 }
 
 // Calculate point light

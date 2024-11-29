@@ -73,6 +73,18 @@
 },
 {
   "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DUSE_ASSIMP=1 -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\shaders.dir\\shaders\\depth_vert_glsl.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\cmake-build-debug\\shaders\\depth_vert_glsl.cpp",
+  "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\cmake-build-debug\\shaders\\depth_vert_glsl.cpp",
+  "output": "CMakeFiles\\shaders.dir\\shaders\\depth_vert_glsl.cpp.obj"
+},
+{
+  "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DUSE_ASSIMP=1 -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\shaders.dir\\shaders\\depth_frag_glsl.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\cmake-build-debug\\shaders\\depth_frag_glsl.cpp",
+  "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\cmake-build-debug\\shaders\\depth_frag_glsl.cpp",
+  "output": "CMakeFiles\\shaders.dir\\shaders\\depth_frag_glsl.cpp.obj"
+},
+{
+  "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
   "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1 -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\ppgso.dir\\ppgso\\Mesh_Assimp.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\ppgso\\Mesh_Assimp.cpp",
   "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\ppgso\\Mesh_Assimp.cpp",
   "output": "CMakeFiles\\ppgso.dir\\ppgso\\Mesh_Assimp.cpp.obj"
@@ -184,18 +196,6 @@
   "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1 -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\1projekt.dir\\src\\1projekt\\GrassTile.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\GrassTile.cpp",
   "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\GrassTile.cpp",
   "output": "CMakeFiles\\1projekt.dir\\src\\1projekt\\GrassTile.cpp.obj"
-},
-{
-  "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
-  "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1 -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\1projekt.dir\\shaders\\texture_vert_grass_glsl.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\cmake-build-debug\\shaders\\texture_vert_grass_glsl.cpp",
-  "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\cmake-build-debug\\shaders\\texture_vert_grass_glsl.cpp",
-  "output": "CMakeFiles\\1projekt.dir\\shaders\\texture_vert_grass_glsl.cpp.obj"
-},
-{
-  "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
-  "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1 -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\1projekt.dir\\shaders\\texture_frag_grass_glsl.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\cmake-build-debug\\shaders\\texture_frag_grass_glsl.cpp",
-  "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\cmake-build-debug\\shaders\\texture_frag_grass_glsl.cpp",
-  "output": "CMakeFiles\\1projekt.dir\\shaders\\texture_frag_grass_glsl.cpp.obj"
 },
 {
   "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",

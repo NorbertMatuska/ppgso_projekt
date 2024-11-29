@@ -18,15 +18,16 @@ class Building final : public Renderable {
 
 public:
     static glm::vec3 ambientLightColor;
-    ppgso::Shader* getShader() const override;
-
 
     Building(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename);
-    void setLightingUniforms(ppgso::Shader* shader, const Camera& camera);
-    bool update(float dTime, Scene &scene) override;
+
+    bool update(float dTime, Scene& scene) override;
     void render(const Camera& camera) override;
+    void renderDepth(ppgso::Shader& depthShader) override;
+    ppgso::Shader* getShader() const override;
+
     void setScale(float newScale) { scale = newScale; }
     void setRotation(float angle) { rotation = angle; }
 };
 
-#endif //PPGSO_BUILDING_H
+#endif // PPGSO_BUILDING_H

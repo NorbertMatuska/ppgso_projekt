@@ -17,6 +17,10 @@ public:
     virtual void render(const Camera& camera) = 0;
     virtual bool update(float dTime, Scene &scene) = 0;
     virtual ppgso::Shader* getShader() const = 0;
+    virtual void renderDepth(ppgso::Shader& depthShader) = 0;
+
+    static glm::mat4 lightSpaceMatrix;
+    static GLuint depthMap;
 
 };
 

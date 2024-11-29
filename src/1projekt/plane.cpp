@@ -24,6 +24,19 @@ ppgso::Shader* Plane::getShader() const {
     return shader.get();
 }
 
+void Plane::renderDepth(ppgso::Shader& depthShader) {
+    depthShader.use();
+
+    glm::mat4 modelMatrix = glm::translate(glm::mat4(1.0f), position);
+    modelMatrix = glm::scale(modelMatrix, glm::vec3(scale));
+    modelMatrix = glm::rotate(modelMatrix, glm::radians(rotation), glm::vec3(0.0f, 1.0f, 0.0f));
+
+    depthShader.setUniform("ModelMatrix", modelMatrix);
+
+    mesh->render();
+}
+
+
 void Plane::render(const Camera& camera) {
     shader->use();
     shader->setUniform("Texture", *texture);

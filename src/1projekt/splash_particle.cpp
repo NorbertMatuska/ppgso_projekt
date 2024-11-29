@@ -23,6 +23,9 @@ ppgso::Shader* SplashParticle::getShader() const {
     return shader.get();
 }
 
+void SplashParticle::renderDepth(ppgso::Shader& depthShader) {
+}
+
 bool SplashParticle::update(float dTime, Scene &scene) {
     position += speed * dTime;
     age += dTime;

@@ -23,7 +23,8 @@ Particle::Particle(glm::vec3 p, glm::vec3 s, glm::vec3 c) {
 ppgso::Shader* Particle::getShader() const {
     return shader.get();
 }
-
+void Particle::renderDepth(ppgso::Shader& depthShader) {
+}
 bool Particle::update(float dTime, Scene &scene) {
     position += speed * dTime;
     age += dTime;

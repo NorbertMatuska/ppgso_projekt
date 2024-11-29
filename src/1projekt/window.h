@@ -20,6 +20,14 @@ private:
     bool firstMouse;
     float sensitivity;
 
+    GLuint depthMapFBO;
+    GLuint depthMap;
+    ppgso::Shader depthShader;
+    glm::mat4 lightSpaceMatrix;
+    void initShadowMap();
+    void renderDepthMap();
+
+
 public:
     ParticleWindow();
     glm::vec3 sunDirection;

@@ -47,7 +47,7 @@ cmake_ninja_workdir = C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-de
 #############################################
 # Order-only phony target for shaders
 
-build cmake_object_order_depends_target_shaders: phony || shaders/color_frag_glsl.cpp shaders/color_frag_glsl.h shaders/color_vert_glsl.cpp shaders/color_vert_glsl.h shaders/convolution_frag_glsl.cpp shaders/convolution_frag_glsl.h shaders/convolution_vert_glsl.cpp shaders/convolution_vert_glsl.h shaders/diffuse_frag_glsl.cpp shaders/diffuse_frag_glsl.h shaders/diffuse_vert_glsl.cpp shaders/diffuse_vert_glsl.h shaders/skybox_frag_glsl.cpp shaders/skybox_frag_glsl.h shaders/skybox_vert_glsl.cpp shaders/skybox_vert_glsl.h shaders/texture_frag_glsl.cpp shaders/texture_frag_glsl.h shaders/texture_frag_grass_glsl.cpp shaders/texture_frag_grass_glsl.h shaders/texture_vert_glsl.cpp shaders/texture_vert_glsl.h shaders/texture_vert_grass_glsl.cpp shaders/texture_vert_grass_glsl.h
+build cmake_object_order_depends_target_shaders: phony || shaders/color_frag_glsl.cpp shaders/color_frag_glsl.h shaders/color_vert_glsl.cpp shaders/color_vert_glsl.h shaders/convolution_frag_glsl.cpp shaders/convolution_frag_glsl.h shaders/convolution_vert_glsl.cpp shaders/convolution_vert_glsl.h shaders/depth_frag_glsl.cpp shaders/depth_frag_glsl.h shaders/depth_vert_glsl.cpp shaders/depth_vert_glsl.h shaders/diffuse_frag_glsl.cpp shaders/diffuse_frag_glsl.h shaders/diffuse_vert_glsl.cpp shaders/diffuse_vert_glsl.h shaders/skybox_frag_glsl.cpp shaders/skybox_frag_glsl.h shaders/skybox_vert_glsl.cpp shaders/skybox_vert_glsl.h shaders/texture_frag_glsl.cpp shaders/texture_frag_glsl.h shaders/texture_frag_grass_glsl.cpp shaders/texture_frag_grass_glsl.h shaders/texture_vert_glsl.cpp shaders/texture_vert_glsl.h shaders/texture_vert_grass_glsl.cpp shaders/texture_vert_grass_glsl.h
 
 build CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/color_vert_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -145,6 +145,22 @@ build CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj: CXX_COMPILER__sha
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
 
+build CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/depth_vert_glsl.cpp || cmake_object_order_depends_target_shaders
+  DEFINES = -DUSE_ASSIMP=1
+  DEP_FILE = CMakeFiles\shaders.dir\shaders\depth_vert_glsl.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\shaders.dir
+  OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
+
+build CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/depth_frag_glsl.cpp || cmake_object_order_depends_target_shaders
+  DEFINES = -DUSE_ASSIMP=1
+  DEP_FILE = CMakeFiles\shaders.dir\shaders\depth_frag_glsl.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\shaders.dir
+  OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target shaders
@@ -153,7 +169,7 @@ build CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj: CXX_COMPILER__sha
 #############################################
 # Link the static library libshaders.a
 
-build libshaders.a: CXX_STATIC_LIBRARY_LINKER__shaders_Debug CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj
+build libshaders.a: CXX_STATIC_LIBRARY_LINKER__shaders_Debug CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
   OBJECT_DIR = CMakeFiles\shaders.dir
   POST_BUILD = cd .
@@ -257,7 +273,7 @@ build libppgso.a: CXX_STATIC_LIBRARY_LINKER__ppgso_Debug CMakeFiles/ppgso.dir/pp
 #############################################
 # Order-only phony target for 1projekt
 
-build cmake_object_order_depends_target_1projekt: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders shaders/texture_frag_grass_glsl.cpp shaders/texture_frag_grass_glsl.h shaders/texture_vert_grass_glsl.cpp shaders/texture_vert_grass_glsl.h
+build cmake_object_order_depends_target_1projekt: phony || cmake_object_order_depends_target_ppgso cmake_object_order_depends_target_shaders
 
 build CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/main.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -347,22 +363,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.obj: CXX_COMPILER__1pro
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
 
-build CMakeFiles/1projekt.dir/shaders/texture_vert_grass_glsl.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/texture_vert_grass_glsl.cpp || cmake_object_order_depends_target_1projekt
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
-  DEP_FILE = CMakeFiles\1projekt.dir\shaders\texture_vert_grass_glsl.cpp.obj.d
-  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
-  OBJECT_DIR = CMakeFiles\1projekt.dir
-  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\shaders
-
-build CMakeFiles/1projekt.dir/shaders/texture_frag_grass_glsl.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/texture_frag_grass_glsl.cpp || cmake_object_order_depends_target_1projekt
-  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
-  DEP_FILE = CMakeFiles\1projekt.dir\shaders\texture_frag_grass_glsl.cpp.obj.d
-  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
-  OBJECT_DIR = CMakeFiles\1projekt.dir
-  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\shaders
-
 build CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/SkyBox.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
   DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\SkyBox.cpp.obj.d
@@ -379,7 +379,7 @@ build CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj: CXX_COMPILER__1projek
 #############################################
 # Link the executable 1projekt.exe
 
-build 1projekt.exe: CXX_EXECUTABLE_LINKER__1projekt_Debug CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/scene.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/object.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/grid.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.obj CMakeFiles/1projekt.dir/shaders/texture_vert_grass_glsl.cpp.obj CMakeFiles/1projekt.dir/shaders/texture_frag_grass_glsl.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
+build 1projekt.exe: CXX_EXECUTABLE_LINKER__1projekt_Debug CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/scene.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/object.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/grid.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
   LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1projekt.dir
@@ -1366,6 +1366,24 @@ build shaders/skybox_vert_glsl.cpp shaders/skybox_vert_glsl.h | ${cmake_ninja_wo
 build shaders/skybox_frag_glsl.cpp shaders/skybox_frag_glsl.h | ${cmake_ninja_workdir}shaders/skybox_frag_glsl.cpp ${cmake_ninja_workdir}shaders/skybox_frag_glsl.h: CUSTOM_COMMAND C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/shader/skybox_frag.glsl
   COMMAND = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DOUTPUT_C=C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/skybox_frag_glsl.cpp -DOUTPUT_H=C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/skybox_frag_glsl.h -DSYMBOL=skybox_frag_glsl -DINPUT_FILE=C:/Users/matus/Desktop/PPGSO/ppgso_projekt/shader/skybox_frag.glsl -P C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/bin2c.cmake"
   DESC = Generating resource from C:/Users/matus/Desktop/PPGSO/ppgso_projekt/shader/skybox_frag.glsl
+  restat = 1
+
+
+#############################################
+# Custom command for shaders\depth_vert_glsl.cpp
+
+build shaders/depth_vert_glsl.cpp shaders/depth_vert_glsl.h | ${cmake_ninja_workdir}shaders/depth_vert_glsl.cpp ${cmake_ninja_workdir}shaders/depth_vert_glsl.h: CUSTOM_COMMAND C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/shader/depth_vert.glsl
+  COMMAND = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DOUTPUT_C=C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/depth_vert_glsl.cpp -DOUTPUT_H=C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/depth_vert_glsl.h -DSYMBOL=depth_vert_glsl -DINPUT_FILE=C:/Users/matus/Desktop/PPGSO/ppgso_projekt/shader/depth_vert.glsl -P C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/bin2c.cmake"
+  DESC = Generating resource from C:/Users/matus/Desktop/PPGSO/ppgso_projekt/shader/depth_vert.glsl
+  restat = 1
+
+
+#############################################
+# Custom command for shaders\depth_frag_glsl.cpp
+
+build shaders/depth_frag_glsl.cpp shaders/depth_frag_glsl.h | ${cmake_ninja_workdir}shaders/depth_frag_glsl.cpp ${cmake_ninja_workdir}shaders/depth_frag_glsl.h: CUSTOM_COMMAND C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/shader/depth_frag.glsl
+  COMMAND = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DOUTPUT_C=C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/depth_frag_glsl.cpp -DOUTPUT_H=C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/depth_frag_glsl.h -DSYMBOL=depth_frag_glsl -DINPUT_FILE=C:/Users/matus/Desktop/PPGSO/ppgso_projekt/shader/depth_frag.glsl -P C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/bin2c.cmake"
+  DESC = Generating resource from C:/Users/matus/Desktop/PPGSO/ppgso_projekt/shader/depth_frag.glsl
   restat = 1
 
 # =============================================================================

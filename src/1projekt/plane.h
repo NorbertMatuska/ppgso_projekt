@@ -18,6 +18,8 @@ public:
     // Ambient light color
     static glm::vec3 ambientLightColor;
     ppgso::Shader* getShader() const override;
+    void renderDepth(ppgso::Shader& depthShader) override;
+
 
     explicit Plane(const glm::vec3& position = {0.0f, 0.0f, 0.0f});
 

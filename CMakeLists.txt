@@ -98,6 +98,7 @@ set(PPGSO_SHADER_SRC
         shader/texture_vert.glsl shader/texture_frag.glsl
         shader/texture_vert_grass.glsl shader/texture_frag_grass.glsl
         shader/skybox_vert.glsl shader/skybox_frag.glsl
+        shader/depth_vert.glsl shader/depth_frag.glsl
 )
 add_resources(shaders ${PPGSO_SHADER_SRC})
 
@@ -185,10 +186,6 @@ add_executable(1projekt
         src/1projekt/grid.h
         src/1projekt/GrassTile.cpp
         src/1projekt/GrassTile.h
-        cmake-build-debug/shaders/texture_vert_grass_glsl.cpp
-        cmake-build-debug/shaders/texture_vert_grass_glsl.h
-        cmake-build-debug/shaders/texture_frag_grass_glsl.cpp
-        cmake-build-debug/shaders/texture_frag_grass_glsl.h
         src/1projekt/SkyBox.cpp
         src/1projekt/SkyBox.h
 )

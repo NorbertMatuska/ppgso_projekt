@@ -9,24 +9,28 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/random.hpp>
 #include <set>
+#include <shaders/depth_frag_glsl.h>
+#include <shaders/depth_vert_glsl.h>
 
 
 
 #define SIZEx 1280
 #define SIZEy 720
 
-unsigned int overlayTexture;
+const unsigned int SHADOW_WIDTH = 1024, SHADOW_HEIGHT = 1024;
 
 ParticleWindow::ParticleWindow()
         : Window{"Project_Matuska_Pacuta", SIZEx, SIZEy},
           camera{60.0f, (float)width / (float)height, 0.1f, 100.0f},
-          lastX(width / 2.0f), lastY(height / 2.0f), firstMouse(true), sensitivity(0.1f) {
+          lastX(width / 2.0f), lastY(height / 2.0f), firstMouse(true), sensitivity(0.1f),
+          depthShader(depth_vert_glsl, depth_frag_glsl) {
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LEQUAL);
     glEnable(GL_LINE_SMOOTH);
     glLineWidth(1.0f);
 
     sunDirection = glm::normalize(glm::vec3(-0.5f, -0.01f, 0.3f));
+    initShadowMap();
 
     int n = 5;  // Number of 3x3 sub-grids along each dimension
     float cellSize = 10.0f;  // Size of each grid cell
@@ -208,6 +212,64 @@ void ParticleWindow::setLightingUniforms(ppgso::Shader& shader) {
      */
 }
 
+void ParticleWindow::initShadowMap() {
+    // Generate the framebuffer
+    glGenFramebuffers(1, &depthMapFBO);
+
+    // Create the depth texture
+    glGenTextures(1, &depthMap);
+    glBindTexture(GL_TEXTURE_2D, depthMap);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT,
+                 SHADOW_WIDTH, SHADOW_HEIGHT, 0, GL_DEPTH_COMPONENT, GL_FLOAT, nullptr);
+
+    // Set texture parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST); // Or GL_LINEAR
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST); // Or GL_LINEAR
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER); // Important for shadows
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
+
+    // Define the border color for when sampling outside the shadow map
+    float borderColor[] = {1.0f, 1.0f, 1.0f, 1.0f};
+    glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, borderColor);
+
+    // Attach the depth texture to the framebuffer
+    glBindFramebuffer(GL_FRAMEBUFFER, depthMapFBO);
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, depthMap, 0);
+
+    // We don't need a color buffer
+    glDrawBuffer(GL_NONE);
+    glReadBuffer(GL_NONE);
+
+    // Unbind the framebuffer
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+}
+void ParticleWindow::renderDepthMap() {
+    // Set the static depthMap in Renderable
+    Renderable::depthMap = depthMap;
+
+    // Set viewport to the size of the shadow map
+    glViewport(0, 0, SHADOW_WIDTH, SHADOW_HEIGHT);
+    // Bind the framebuffer
+    glBindFramebuffer(GL_FRAMEBUFFER, depthMapFBO);
+    // Clear the depth buffer
+    glClear(GL_DEPTH_BUFFER_BIT);
+
+    // Use the depth shader
+    depthShader.use();
+    depthShader.setUniform("LightSpaceMatrix", lightSpaceMatrix);
+
+    // Render the scene with the depth shader
+    for (auto& object : scene) {
+        object->renderDepth(depthShader);
+    }
+
+    // Unbind the framebuffer
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
+    // Restore viewport
+    glViewport(0, 0, width, height);
+}
+
 
 void ParticleWindow::onKey(int key, int scanCode, int action, int mods) {
     if (action == GLFW_PRESS) {
@@ -301,25 +363,28 @@ void ParticleWindow::onIdle() {
     float dTime = (float)glfwGetTime() - time;
     time = (float)glfwGetTime();
 
+    // Update the sun direction if needed
+    // updateSunPosition(dTime);
+
+    // Compute the light space matrix
+    glm::vec3 lightPos = -sunDirection * 50.0f; // Position the light far away in the sun's direction
+    glm::mat4 lightProjection, lightView;
+    float near_plane = 1.0f, far_plane = 200.0f;
+    lightProjection = glm::ortho(-100.0f, 100.0f, -100.0f, 100.0f, near_plane, far_plane);
+    lightView = glm::lookAt(lightPos, glm::vec3(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    lightSpaceMatrix = lightProjection * lightView;
+
+    // Set the static lightSpaceMatrix in Renderable
+    Renderable::lightSpaceMatrix = lightSpaceMatrix;
+
+    // 1. Render the depth map
+    renderDepthMap();
+
+    // 2. Render the scene from the camera's perspective
     glClearColor(.1f, .1f, .1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    //updateSunPosition(dTime);
-    static float particleTime = 0.0f;
-    particleTime += dTime;
-    /*
-    if (particleTime > 0.1f) {
-        particleTime = 0.0f;
-        float x = glm::linearRand(-10.0f, 10.0f);
-        float y = 10.0f;
-        float z = glm::linearRand(-10.0f, 10.0f);
-        glm::vec3 position = glm::vec3(x, y, z);
-        glm::vec3 speed = glm::vec3(0.0f, -5.0f, 0.0f);
-        glm::vec3 color = glm::vec3(0.0f, 0.0f, 1.0f);
-        auto particle = std::make_unique<Particle>(position, speed, color);
-        scene.push_back(std::move(particle));
-    }*/
-
+    // Handle input
     float cameraSpeed = 10.0f;
     glm::vec3 forward = glm::normalize(camera.target - camera.position);
     glm::vec3 right = glm::normalize(glm::cross(forward, camera.up));
@@ -339,6 +404,7 @@ void ParticleWindow::onIdle() {
 
     camera.update();
 
+    // Update objects
     auto i = std::begin(scene);
     while (i != std::end(scene)) {
         auto obj = i->get();
@@ -357,10 +423,13 @@ void ParticleWindow::onIdle() {
         if (shadersSet.find(shader) == shadersSet.end()) {
             shader->use();
             setLightingUniforms(*shader);
+            shader->setUniform("LightSpaceMatrix", lightSpaceMatrix);
+            shader->setUniform("ShadowMap", 1); // Texture unit 1
             shadersSet.insert(shader);
         }
     }
 
+    // Render all objects
     for (auto& object : scene) {
         object->render(camera);
     }
