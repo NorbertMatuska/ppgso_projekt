@@ -26,7 +26,7 @@ ParticleWindow::ParticleWindow()
     glEnable(GL_LINE_SMOOTH);
     glLineWidth(1.0f);
 
-    sunDirection = glm::vec3(-0.2f, -1.0f, -0.3f);
+    sunDirection = glm::normalize(glm::vec3(-0.5f, -0.01f, 0.3f));
 
     int n = 5;  // Number of 3x3 sub-grids along each dimension
     float cellSize = 10.0f;  // Size of each grid cell
@@ -171,9 +171,9 @@ void ParticleWindow::setLightingUniforms(ppgso::Shader& shader) {
 
     // Directional light
     shader.setUniform("dirLight.direction", sunDirection);
-    shader.setUniform("dirLight.ambient", glm::vec3(0.3f, 0.3f, 0.3f));   // Increase ambient intensity
-    shader.setUniform("dirLight.diffuse", glm::vec3(0.7f, 0.7f, 0.7f));   // Increase diffuse intensity
-    shader.setUniform("dirLight.specular", glm::vec3(1.0f, 1.0f, 1.0f));  // Max specular intensity
+    shader.setUniform("dirLight.ambient", glm::vec3(0.4f, 0.35f, 0.3f));
+    shader.setUniform("dirLight.diffuse", glm::vec3(0.8f, 0.7f, 0.6f));
+    shader.setUniform("dirLight.specular", glm::vec3(1.0f, 0.9f, 0.8f));
 
     // Point light 1
     /*
@@ -279,10 +279,21 @@ void ParticleWindow::updateSunPosition(float dTime) {
         sunAngle -= glm::two_pi<float>();
     }
 
-    // Calculate sun direction based on sunAngle
+    float radius = 100.0f; // The length of the sunDirection vector
+
+    // Calculate the x and z components to make the sun move in a horizontal circle
+    float x = cos(sunAngle) * radius;
+    float y = 10.0f; // Fixed vertical position (e.g., y = -0.5f for sun above the horizon)
+    float z = sin(sunAngle) * radius;
+
+    // Update sunDirection with the new values
+    sunDirection = glm::normalize(glm::vec3(x, y, z));
+    /*
+    // day n night
     float x = sin(sunAngle);
     float y = cos(sunAngle);
     sunDirection = glm::normalize(glm::vec3(x, y, 0.0f));
+     */
 }
 
 void ParticleWindow::onIdle() {
@@ -293,7 +304,7 @@ void ParticleWindow::onIdle() {
     glClearColor(.1f, .1f, .1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    updateSunPosition(dTime);
+    //updateSunPosition(dTime);
     static float particleTime = 0.0f;
     particleTime += dTime;
     /*
