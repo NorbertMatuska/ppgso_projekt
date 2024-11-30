@@ -56,10 +56,10 @@ RM = "D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\PROJEKT
+CMAKE_SOURCE_DIR = D:\ppgso_projekt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\PROJEKT\cmake-build-debug
+CMAKE_BINARY_DIR = D:\ppgso_projekt\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,9 +131,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles D:\PROJEKT\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\ppgso_projekt\cmake-build-debug\CMakeFiles D:\ppgso_projekt\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\PROJEKT\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\ppgso_projekt\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -760,6 +760,54 @@ shaders/convolution_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.s
 .PHONY : shaders/convolution_vert_glsl.cpp.s
 
+shaders/depth_frag_glsl.obj: shaders/depth_frag_glsl.cpp.obj
+.PHONY : shaders/depth_frag_glsl.obj
+
+# target to build an object file
+shaders/depth_frag_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj
+.PHONY : shaders/depth_frag_glsl.cpp.obj
+
+shaders/depth_frag_glsl.i: shaders/depth_frag_glsl.cpp.i
+.PHONY : shaders/depth_frag_glsl.i
+
+# target to preprocess a source file
+shaders/depth_frag_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.i
+.PHONY : shaders/depth_frag_glsl.cpp.i
+
+shaders/depth_frag_glsl.s: shaders/depth_frag_glsl.cpp.s
+.PHONY : shaders/depth_frag_glsl.s
+
+# target to generate assembly for a file
+shaders/depth_frag_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.s
+.PHONY : shaders/depth_frag_glsl.cpp.s
+
+shaders/depth_vert_glsl.obj: shaders/depth_vert_glsl.cpp.obj
+.PHONY : shaders/depth_vert_glsl.obj
+
+# target to build an object file
+shaders/depth_vert_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj
+.PHONY : shaders/depth_vert_glsl.cpp.obj
+
+shaders/depth_vert_glsl.i: shaders/depth_vert_glsl.cpp.i
+.PHONY : shaders/depth_vert_glsl.i
+
+# target to preprocess a source file
+shaders/depth_vert_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.i
+.PHONY : shaders/depth_vert_glsl.cpp.i
+
+shaders/depth_vert_glsl.s: shaders/depth_vert_glsl.cpp.s
+.PHONY : shaders/depth_vert_glsl.s
+
+# target to generate assembly for a file
+shaders/depth_vert_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.s
+.PHONY : shaders/depth_vert_glsl.cpp.s
+
 shaders/diffuse_frag_glsl.obj: shaders/diffuse_frag_glsl.cpp.obj
 .PHONY : shaders/diffuse_frag_glsl.obj
 
@@ -808,6 +856,54 @@ shaders/diffuse_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.s
 .PHONY : shaders/diffuse_vert_glsl.cpp.s
 
+shaders/skybox_frag_glsl.obj: shaders/skybox_frag_glsl.cpp.obj
+.PHONY : shaders/skybox_frag_glsl.obj
+
+# target to build an object file
+shaders/skybox_frag_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj
+.PHONY : shaders/skybox_frag_glsl.cpp.obj
+
+shaders/skybox_frag_glsl.i: shaders/skybox_frag_glsl.cpp.i
+.PHONY : shaders/skybox_frag_glsl.i
+
+# target to preprocess a source file
+shaders/skybox_frag_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.i
+.PHONY : shaders/skybox_frag_glsl.cpp.i
+
+shaders/skybox_frag_glsl.s: shaders/skybox_frag_glsl.cpp.s
+.PHONY : shaders/skybox_frag_glsl.s
+
+# target to generate assembly for a file
+shaders/skybox_frag_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.s
+.PHONY : shaders/skybox_frag_glsl.cpp.s
+
+shaders/skybox_vert_glsl.obj: shaders/skybox_vert_glsl.cpp.obj
+.PHONY : shaders/skybox_vert_glsl.obj
+
+# target to build an object file
+shaders/skybox_vert_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj
+.PHONY : shaders/skybox_vert_glsl.cpp.obj
+
+shaders/skybox_vert_glsl.i: shaders/skybox_vert_glsl.cpp.i
+.PHONY : shaders/skybox_vert_glsl.i
+
+# target to preprocess a source file
+shaders/skybox_vert_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.i
+.PHONY : shaders/skybox_vert_glsl.cpp.i
+
+shaders/skybox_vert_glsl.s: shaders/skybox_vert_glsl.cpp.s
+.PHONY : shaders/skybox_vert_glsl.s
+
+# target to generate assembly for a file
+shaders/skybox_vert_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.s
+.PHONY : shaders/skybox_vert_glsl.cpp.s
+
 shaders/texture_frag_glsl.obj: shaders/texture_frag_glsl.cpp.obj
 .PHONY : shaders/texture_frag_glsl.obj
 
@@ -832,6 +928,30 @@ shaders/texture_frag_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.s
 .PHONY : shaders/texture_frag_glsl.cpp.s
 
+shaders/texture_frag_grass_glsl.obj: shaders/texture_frag_grass_glsl.cpp.obj
+.PHONY : shaders/texture_frag_grass_glsl.obj
+
+# target to build an object file
+shaders/texture_frag_grass_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.obj
+.PHONY : shaders/texture_frag_grass_glsl.cpp.obj
+
+shaders/texture_frag_grass_glsl.i: shaders/texture_frag_grass_glsl.cpp.i
+.PHONY : shaders/texture_frag_grass_glsl.i
+
+# target to preprocess a source file
+shaders/texture_frag_grass_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.i
+.PHONY : shaders/texture_frag_grass_glsl.cpp.i
+
+shaders/texture_frag_grass_glsl.s: shaders/texture_frag_grass_glsl.cpp.s
+.PHONY : shaders/texture_frag_grass_glsl.s
+
+# target to generate assembly for a file
+shaders/texture_frag_grass_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.s
+.PHONY : shaders/texture_frag_grass_glsl.cpp.s
+
 shaders/texture_vert_glsl.obj: shaders/texture_vert_glsl.cpp.obj
 .PHONY : shaders/texture_vert_glsl.obj
 
@@ -855,6 +975,78 @@ shaders/texture_vert_glsl.s: shaders/texture_vert_glsl.cpp.s
 shaders/texture_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s
 .PHONY : shaders/texture_vert_glsl.cpp.s
+
+shaders/texture_vert_grass_glsl.obj: shaders/texture_vert_grass_glsl.cpp.obj
+.PHONY : shaders/texture_vert_grass_glsl.obj
+
+# target to build an object file
+shaders/texture_vert_grass_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.obj
+.PHONY : shaders/texture_vert_grass_glsl.cpp.obj
+
+shaders/texture_vert_grass_glsl.i: shaders/texture_vert_grass_glsl.cpp.i
+.PHONY : shaders/texture_vert_grass_glsl.i
+
+# target to preprocess a source file
+shaders/texture_vert_grass_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.i
+.PHONY : shaders/texture_vert_grass_glsl.cpp.i
+
+shaders/texture_vert_grass_glsl.s: shaders/texture_vert_grass_glsl.cpp.s
+.PHONY : shaders/texture_vert_grass_glsl.s
+
+# target to generate assembly for a file
+shaders/texture_vert_grass_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.s
+.PHONY : shaders/texture_vert_grass_glsl.cpp.s
+
+src/1projekt/GrassTile.obj: src/1projekt/GrassTile.cpp.obj
+.PHONY : src/1projekt/GrassTile.obj
+
+# target to build an object file
+src/1projekt/GrassTile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.obj
+.PHONY : src/1projekt/GrassTile.cpp.obj
+
+src/1projekt/GrassTile.i: src/1projekt/GrassTile.cpp.i
+.PHONY : src/1projekt/GrassTile.i
+
+# target to preprocess a source file
+src/1projekt/GrassTile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.i
+.PHONY : src/1projekt/GrassTile.cpp.i
+
+src/1projekt/GrassTile.s: src/1projekt/GrassTile.cpp.s
+.PHONY : src/1projekt/GrassTile.s
+
+# target to generate assembly for a file
+src/1projekt/GrassTile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.s
+.PHONY : src/1projekt/GrassTile.cpp.s
+
+src/1projekt/SkyBox.obj: src/1projekt/SkyBox.cpp.obj
+.PHONY : src/1projekt/SkyBox.obj
+
+# target to build an object file
+src/1projekt/SkyBox.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj
+.PHONY : src/1projekt/SkyBox.cpp.obj
+
+src/1projekt/SkyBox.i: src/1projekt/SkyBox.cpp.i
+.PHONY : src/1projekt/SkyBox.i
+
+# target to preprocess a source file
+src/1projekt/SkyBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.i
+.PHONY : src/1projekt/SkyBox.cpp.i
+
+src/1projekt/SkyBox.s: src/1projekt/SkyBox.cpp.s
+.PHONY : src/1projekt/SkyBox.s
+
+# target to generate assembly for a file
+src/1projekt/SkyBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.s
+.PHONY : src/1projekt/SkyBox.cpp.s
 
 src/1projekt/building.obj: src/1projekt/building.cpp.obj
 .PHONY : src/1projekt/building.obj
@@ -1023,6 +1215,30 @@ src/1projekt/plane.s: src/1projekt/plane.cpp.s
 src/1projekt/plane.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.s
 .PHONY : src/1projekt/plane.cpp.s
+
+src/1projekt/planeCross.obj: src/1projekt/planeCross.cpp.obj
+.PHONY : src/1projekt/planeCross.obj
+
+# target to build an object file
+src/1projekt/planeCross.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/planeCross.cpp.obj
+.PHONY : src/1projekt/planeCross.cpp.obj
+
+src/1projekt/planeCross.i: src/1projekt/planeCross.cpp.i
+.PHONY : src/1projekt/planeCross.i
+
+# target to preprocess a source file
+src/1projekt/planeCross.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/planeCross.cpp.i
+.PHONY : src/1projekt/planeCross.cpp.i
+
+src/1projekt/planeCross.s: src/1projekt/planeCross.cpp.s
+.PHONY : src/1projekt/planeCross.s
+
+# target to generate assembly for a file
+src/1projekt/planeCross.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/planeCross.cpp.s
+.PHONY : src/1projekt/planeCross.cpp.s
 
 src/1projekt/scene.obj: src/1projekt/scene.cpp.obj
 .PHONY : src/1projekt/scene.obj
@@ -1888,18 +2104,42 @@ help:
 	@echo ... shaders/convolution_vert_glsl.obj
 	@echo ... shaders/convolution_vert_glsl.i
 	@echo ... shaders/convolution_vert_glsl.s
+	@echo ... shaders/depth_frag_glsl.obj
+	@echo ... shaders/depth_frag_glsl.i
+	@echo ... shaders/depth_frag_glsl.s
+	@echo ... shaders/depth_vert_glsl.obj
+	@echo ... shaders/depth_vert_glsl.i
+	@echo ... shaders/depth_vert_glsl.s
 	@echo ... shaders/diffuse_frag_glsl.obj
 	@echo ... shaders/diffuse_frag_glsl.i
 	@echo ... shaders/diffuse_frag_glsl.s
 	@echo ... shaders/diffuse_vert_glsl.obj
 	@echo ... shaders/diffuse_vert_glsl.i
 	@echo ... shaders/diffuse_vert_glsl.s
+	@echo ... shaders/skybox_frag_glsl.obj
+	@echo ... shaders/skybox_frag_glsl.i
+	@echo ... shaders/skybox_frag_glsl.s
+	@echo ... shaders/skybox_vert_glsl.obj
+	@echo ... shaders/skybox_vert_glsl.i
+	@echo ... shaders/skybox_vert_glsl.s
 	@echo ... shaders/texture_frag_glsl.obj
 	@echo ... shaders/texture_frag_glsl.i
 	@echo ... shaders/texture_frag_glsl.s
+	@echo ... shaders/texture_frag_grass_glsl.obj
+	@echo ... shaders/texture_frag_grass_glsl.i
+	@echo ... shaders/texture_frag_grass_glsl.s
 	@echo ... shaders/texture_vert_glsl.obj
 	@echo ... shaders/texture_vert_glsl.i
 	@echo ... shaders/texture_vert_glsl.s
+	@echo ... shaders/texture_vert_grass_glsl.obj
+	@echo ... shaders/texture_vert_grass_glsl.i
+	@echo ... shaders/texture_vert_grass_glsl.s
+	@echo ... src/1projekt/GrassTile.obj
+	@echo ... src/1projekt/GrassTile.i
+	@echo ... src/1projekt/GrassTile.s
+	@echo ... src/1projekt/SkyBox.obj
+	@echo ... src/1projekt/SkyBox.i
+	@echo ... src/1projekt/SkyBox.s
 	@echo ... src/1projekt/building.obj
 	@echo ... src/1projekt/building.i
 	@echo ... src/1projekt/building.s
@@ -1921,6 +2161,9 @@ help:
 	@echo ... src/1projekt/plane.obj
 	@echo ... src/1projekt/plane.i
 	@echo ... src/1projekt/plane.s
+	@echo ... src/1projekt/planeCross.obj
+	@echo ... src/1projekt/planeCross.i
+	@echo ... src/1projekt/planeCross.s
 	@echo ... src/1projekt/scene.obj
 	@echo ... src/1projekt/scene.i
 	@echo ... src/1projekt/scene.s

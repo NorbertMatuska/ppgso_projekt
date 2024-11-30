@@ -188,6 +188,8 @@ add_executable(1projekt
         src/1projekt/GrassTile.h
         src/1projekt/SkyBox.cpp
         src/1projekt/SkyBox.h
+        src/1projekt/planeCross.cpp
+        src/1projekt/planeCross.h
 )
 target_link_libraries(1projekt ppgso shaders)
 install(TARGETS 1projekt DESTINATION .)

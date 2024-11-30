@@ -26,7 +26,7 @@ private:
     glm::mat4 lightSpaceMatrix;
     void initShadowMap();
     void renderDepthMap();
-
+    void renderSun(const glm::vec3& lightPos);
 
 public:
     ParticleWindow();
