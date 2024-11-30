@@ -33,7 +33,7 @@ ParticleWindow::ParticleWindow()
     sunDirection = glm::normalize(glm::vec3(-0.5f, -0.01f, 0.3f));
     initShadowMap();
 
-    int n = 5;  // Number of 3x3 sub-grids along each dimension
+    int n = 2;  // Number of 3x3 sub-grids along each dimension
     float cellSize = 10.0f;  // Size of each grid cell
     float subGridSize = 3 * cellSize;  // Size of a 3x3 sub-grid
 
