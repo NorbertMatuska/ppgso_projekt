@@ -53,6 +53,14 @@ ParticleWindow::ParticleWindow()
     auto grassTile = std::make_unique<GrassTile>(glm::vec3(0.0f, -0.1f, 0.0f), glm::vec3(200.0f));
     scene.push_back(std::move(grassTile));
 
+    auto roadblock = std::make_unique<Building>("models/roadblock.obj", grid.getCellPosition(0, 0), "models/roadblock.bmp");
+    roadblock->setScale(0.001);
+    scene.push_back(std::move(roadblock));
+
+    auto trashbin = std::make_unique<Building>("models/trashbin.obj", grid.getCellPosition(1, 1), "models/trashbin.bmp");
+    trashbin->setScale(0.0015);
+    scene.push_back(std::move(trashbin));
+
     // Iterate through each sub-grid to place buildings and roads
     for (int subGridRow = 0; subGridRow < n; ++subGridRow) {
         for (int subGridCol = 0; subGridCol < n; ++subGridCol) {
@@ -198,7 +206,7 @@ void ParticleWindow::setLightingUniforms(ppgso::Shader& shader) {
     shader.setUniform("pointLights[1].linear", 0.07f);
     shader.setUniform("pointLights[1].quadratic", 0.017f);
 
-    // Spotlight (from the camera's perspective)
+    //Spotlight (from the camera's perspective)
     shader.setUniform("spotLight.position", camera.position);
     shader.setUniform("spotLight.direction", glm::normalize(camera.target - camera.position));
     shader.setUniform("spotLight.cutOff", glm::cos(glm::radians(12.5f)));
@@ -209,7 +217,7 @@ void ParticleWindow::setLightingUniforms(ppgso::Shader& shader) {
     shader.setUniform("spotLight.constant", 1.0f);
     shader.setUniform("spotLight.linear", 0.07f);
     shader.setUniform("spotLight.quadratic", 0.017f);
-     */
+    */
 }
 
 void ParticleWindow::initShadowMap() {
@@ -341,21 +349,21 @@ void ParticleWindow::updateSunPosition(float dTime) {
         sunAngle -= glm::two_pi<float>();
     }
 
-    float radius = 100.0f; // The length of the sunDirection vector
+    float radius = 100.0f;
 
-    // Calculate the x and z components to make the sun move in a horizontal circle
     float x = cos(sunAngle) * radius;
-    float y = 10.0f; // Fixed vertical position (e.g., y = -0.5f for sun above the horizon)
+    float y = 10.0f;
     float z = sin(sunAngle) * radius;
 
     // Update sunDirection with the new values
     sunDirection = glm::normalize(glm::vec3(x, y, z));
-    /*
+
+/*
     // day n night
     float x = sin(sunAngle);
     float y = cos(sunAngle);
     sunDirection = glm::normalize(glm::vec3(x, y, 0.0f));
-     */
+*/
 }
 
 void ParticleWindow::onIdle() {
@@ -363,14 +371,13 @@ void ParticleWindow::onIdle() {
     float dTime = (float)glfwGetTime() - time;
     time = (float)glfwGetTime();
 
-    // Update the sun direction if needed
-    // updateSunPosition(dTime);
+    updateSunPosition(dTime);
 
     // Compute the light space matrix
-    glm::vec3 lightPos = -sunDirection * 50.0f; // Position the light far away in the sun's direction
+    glm::vec3 lightPos = -sunDirection * 150.0f; // Position the light far away in the sun's direction
     glm::mat4 lightProjection, lightView;
     float near_plane = 1.0f, far_plane = 200.0f;
-    lightProjection = glm::ortho(-100.0f, 100.0f, -100.0f, 100.0f, near_plane, far_plane);
+    lightProjection = glm::ortho(-150.0f, 150.0f, -150.0f, 150.0f, near_plane, far_plane);
     lightView = glm::lookAt(lightPos, glm::vec3(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
     lightSpaceMatrix = lightProjection * lightView;
 
@@ -433,4 +440,14 @@ void ParticleWindow::onIdle() {
     for (auto& object : scene) {
         object->render(camera);
     }
+    renderSun(lightPos);
 }
+
+void ParticleWindow::renderSun(const glm::vec3& lightPos) {
+    glPointSize(10.0f); // Adjust the size of the point
+    glBegin(GL_POINTS);
+    glColor3f(1.0f, 1.0f, 0.5f); // Yellowish color
+    glVertex3f(lightPos.x, lightPos.y, lightPos.z);
+    glEnd();
+}
+
