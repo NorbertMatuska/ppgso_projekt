@@ -54,14 +54,6 @@ ParticleWindow::ParticleWindow()
     auto grassTile = std::make_unique<GrassTile>(glm::vec3(0.0f, -0.1f, 0.0f), glm::vec3(200.0f));
     scene.push_back(std::move(grassTile));
 
-    auto roadblock = std::make_unique<Building>("models/roadblock.obj", grid.getCellPosition(0, 0), "models/roadblock.bmp");
-    roadblock->setScale(0.001);
-    scene.push_back(std::move(roadblock));
-
-    auto trashbin = std::make_unique<Building>("models/trashbin.obj", grid.getCellPosition(1, 1), "models/trashbin.bmp");
-    trashbin->setScale(0.0015);
-    scene.push_back(std::move(trashbin));
-
     // Iterate through each sub-grid to place buildings and roads
     for (int subGridRow = 0; subGridRow < n; ++subGridRow) {
         for (int subGridCol = 0; subGridCol < n; ++subGridCol) {
@@ -72,21 +64,23 @@ ParticleWindow::ParticleWindow()
                 for (int col = 0; col < 3; ++col) {
                     glm::vec3 cellPosition = grid.getCellPosition(row, col) + subGridOrigin;
 
-                    // Add roads in the center rows and columns
+                    // --------------------------
+                    // ROAD GENERATION
+                    // --------------------------
                     if (row == 1 || col == 1) {
 
                         if (!(row == 1 && col == 1)){
-                            // Create a road using the Plane class
                             auto road = std::make_unique<Plane>(cellPosition);
-
-                            // Rotate the road if it's in the center column
                             if (row == 1 && col != 1) {
-                                road->setRotation(90.0f); // Rotate vertical roads by 90 degrees
+                                road->setRotation(90.0f);
                             }
-
-                            // Add the road to the scene
                             scene.push_back(std::move(road));
 
+                            // --------------------------
+                            // ROADBLOCK GENERATION
+                            // --------------------------
+
+                            // determining, if its top, bottom, left, right city border
                             bool isCityBorder = (subGridRow == 0 && row == 0) ||
                                                 (subGridRow == n - 1 && row == 2) ||
                                                 (subGridCol == 0 && col == 0) ||
@@ -96,6 +90,7 @@ ParticleWindow::ParticleWindow()
                                 glm::vec3 roadblockPosition1 = cellPosition;
                                 glm::vec3 roadblockPosition2 = cellPosition;
 
+                                // aligning each road block to the end of the road
                                 if (row == 0 || row == 2) {
                                     roadblockPosition1.z += (row == 0 ? -1.0f : 1.0f) * (cellSize / 2);
                                     roadblockPosition1.x -= cellSize / 4;
@@ -108,10 +103,10 @@ ParticleWindow::ParticleWindow()
                                     roadblockPosition2.z += cellSize / 4;
                                 }
 
-                                roadblockPosition1.x += glm::linearRand(-0.5f, 0.5f); // Random offset in x
-                                roadblockPosition1.z += glm::linearRand(-0.5f, 0.5f); // Random offset in z
-                                roadblockPosition2.x += glm::linearRand(-0.5f, 0.5f); // Random offset in x
-                                roadblockPosition2.z += glm::linearRand(-0.5f, 0.5f); // Random offset in z
+                                roadblockPosition1.x += glm::linearRand(-0.5f, 0.5f);
+                                roadblockPosition1.z += glm::linearRand(-0.5f, 0.5f);
+                                roadblockPosition2.x += glm::linearRand(-0.5f, 0.5f);
+                                roadblockPosition2.z += glm::linearRand(-0.5f, 0.5f);
 
                                 roadblockPosition1.y += 1.5f;
                                 roadblockPosition2.y += 1.5f;
@@ -132,13 +127,21 @@ ParticleWindow::ParticleWindow()
                                 scene.push_back(std::move(roadblock2));
                             }
                         }
+
+                        // intersection road textures
                         if (row == 1 && col == 1) {
                             auto cross = std::make_unique<PlaneCross>(cellPosition);
                             scene.push_back(std::move(cross));
                             continue;
                         }
 
+                        // --------------------------
+                        // LAMPS AND TRASHBINS GENERATION
+                        // --------------------------
                         float lampOffset = 5.0f;
+                        float randomOffsetX = glm::linearRand(-4.0f, 4.0f);
+                        float randomOffsetZ = glm::linearRand(-4.0f, 4.0f);
+
                         if (row == 1) {
                             glm::vec3 leftLampPos = cellPosition + glm::vec3(0.0f, 0.0f, -lampOffset);
                             glm::vec3 rightLampPos = cellPosition + glm::vec3(0.0f, 0.0f, lampOffset);
@@ -152,6 +155,21 @@ ParticleWindow::ParticleWindow()
                             rightLamp->setScale(0.001f);
                             rightLamp->setRotation(90.0f);
                             scene.push_back(std::move(rightLamp));
+
+                            glm::vec3 leftTrashBinPos = cellPosition + glm::vec3(randomOffsetX, 0.25f, -lampOffset);
+                            glm::vec3 rightTrashBinPos = cellPosition + glm::vec3(randomOffsetX, 0.25f, lampOffset);
+
+                            if (glm::linearRand(0.0f, 1.0f) < 0.3f) {
+                                auto leftTrashBin = std::make_unique<Building>("models/trashbin.obj", leftTrashBinPos, "models/trashbin.bmp");
+                                leftTrashBin->setScale(0.0015f);
+                                scene.push_back(std::move(leftTrashBin));
+                            }
+
+                            if (glm::linearRand(0.0f, 1.0f) < 0.3f) {
+                                auto rightTrashBin = std::make_unique<Building>("models/trashbin.obj", rightTrashBinPos, "models/trashbin.bmp");
+                                rightTrashBin->setScale(0.0015f);
+                                scene.push_back(std::move(rightTrashBin));
+                            }
                         }
 
                         if (col == 1) {
@@ -166,15 +184,36 @@ ParticleWindow::ParticleWindow()
                             bottomLamp->setScale(0.001f);
                             bottomLamp->setRotation(180.0f);
                             scene.push_back(std::move(bottomLamp));
+
+                            glm::vec3 topTrashBinPos = cellPosition + glm::vec3(-lampOffset, 0.25f, randomOffsetZ);
+                            glm::vec3 bottomTrashBinPos = cellPosition + glm::vec3(lampOffset, 0.25f, randomOffsetZ);
+
+                            if (glm::linearRand(0.0f, 1.0f) < 0.3f) {
+                                auto topTrashBin = std::make_unique<Building>("models/trashbin.obj", topTrashBinPos, "models/trashbin.bmp");
+                                topTrashBin->setScale(0.0015f);
+                                topTrashBin->setRotation(glm::linearRand(0.0f, 360.0f));
+                                scene.push_back(std::move(topTrashBin));
+                            }
+
+                            if (glm::linearRand(0.0f, 1.0f) < 0.3f) {
+                                auto bottomTrashBin = std::make_unique<Building>("models/trashbin.obj", bottomTrashBinPos, "models/trashbin.bmp");
+                                bottomTrashBin->setScale(0.0015f);
+                                bottomTrashBin->setRotation(glm::linearRand(0.0f, 360.0f));
+                                scene.push_back(std::move(bottomTrashBin));
+                            }
                         }
                         continue;
                     }
 
-                    int buildingType = glm::linearRand(1, 7);  // Random building type
+                    // --------------------------
+                    // BUILDINGS GENERATION
+                    // --------------------------
+
+                    // rand texture and type
+                    int buildingType = glm::linearRand(1, 7);
+                    int randomTexture = glm::linearRand(1, 4);
                     std::string modelPath, texturePath;
 
-                    // Random texture selection excluding textures for building 5 and 6
-                    int randomTexture = glm::linearRand(1, 4);  // This will give us a number between 1 and 4 for the textures
 
                     switch (buildingType) {
                         case 1:
@@ -217,7 +256,6 @@ ParticleWindow::ParticleWindow()
                             break;
                     }
 
-                    // Create and add the building
                     auto newBuilding = std::make_unique<Building>(modelPath, cellPosition, texturePath);
                     scene.push_back(std::move(newBuilding));
                 }
@@ -393,7 +431,7 @@ void ParticleWindow::onCursorPos(double xpos, double ypos) {
 void ParticleWindow::updateSunPosition(float dTime) {
     static float sunAngle = 0.0f;
 
-    sunAngle += dTime;
+    sunAngle += dTime * 0.5;
 
     if (sunAngle > glm::two_pi<float>()) {
         sunAngle -= glm::two_pi<float>();
