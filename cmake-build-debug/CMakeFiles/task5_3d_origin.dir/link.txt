@@ -1,3 +1,0 @@
-"D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\task5_3d_origin.dir/objects.a
-"D:\CLion\CLion 2024.2.1\bin\mingw\bin\ar.exe" qc CMakeFiles\task5_3d_origin.dir/objects.a @CMakeFiles\task5_3d_origin.dir\objects1.rsp
-"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -Wl,--whole-archive CMakeFiles\task5_3d_origin.dir/objects.a -Wl,--no-whole-archive -o task5_3d_origin.exe -Wl,--out-implib,libtask5_3d_origin.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\task5_3d_origin.dir\linkLibs.rsp

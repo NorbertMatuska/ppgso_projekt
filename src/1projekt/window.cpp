@@ -33,7 +33,7 @@ ParticleWindow::ParticleWindow()
     sunDirection = glm::normalize(glm::vec3(-0.5f, -0.01f, 0.3f));
     initShadowMap();
 
-    int n = 2;  // Number of 3x3 sub-grids along each dimension
+    int n = 5;  // Number of 3x3 sub-grids along each dimension
     float cellSize = 10.0f;  // Size of each grid cell
     float subGridSize = 3 * cellSize;  // Size of a 3x3 sub-grid
 
@@ -86,11 +86,56 @@ ParticleWindow::ParticleWindow()
 
                             // Add the road to the scene
                             scene.push_back(std::move(road));
+
+                            bool isCityBorder = (subGridRow == 0 && row == 0) ||
+                                                (subGridRow == n - 1 && row == 2) ||
+                                                (subGridCol == 0 && col == 0) ||
+                                                (subGridCol == n - 1 && col == 2);
+
+                            if (isCityBorder) {
+                                glm::vec3 roadblockPosition1 = cellPosition;
+                                glm::vec3 roadblockPosition2 = cellPosition;
+
+                                if (row == 0 || row == 2) {
+                                    roadblockPosition1.z += (row == 0 ? -1.0f : 1.0f) * (cellSize / 2);
+                                    roadblockPosition1.x -= cellSize / 4;
+                                    roadblockPosition2.z += (row == 0 ? -1.0f : 1.0f) * (cellSize / 2);
+                                    roadblockPosition2.x += cellSize / 4;
+                                } else if (col == 0 || col == 2) {
+                                    roadblockPosition1.x += (col == 0 ? -1.0f : 1.0f) * (cellSize / 2);
+                                    roadblockPosition1.z -= cellSize / 4;
+                                    roadblockPosition2.x += (col == 0 ? -1.0f : 1.0f) * (cellSize / 2);
+                                    roadblockPosition2.z += cellSize / 4;
+                                }
+
+                                roadblockPosition1.x += glm::linearRand(-0.5f, 0.5f); // Random offset in x
+                                roadblockPosition1.z += glm::linearRand(-0.5f, 0.5f); // Random offset in z
+                                roadblockPosition2.x += glm::linearRand(-0.5f, 0.5f); // Random offset in x
+                                roadblockPosition2.z += glm::linearRand(-0.5f, 0.5f); // Random offset in z
+
+                                roadblockPosition1.y += 1.5f;
+                                roadblockPosition2.y += 1.5f;
+
+                                auto roadblock1 = std::make_unique<Building>("models/roadblock.obj", roadblockPosition1, "models/roadblock.bmp");
+                                roadblock1->setScale(0.003f);
+                                roadblock1->setRotation(glm::linearRand(-30.0f, 30.0f));
+
+                                auto roadblock2 = std::make_unique<Building>("models/roadblock.obj", roadblockPosition2, "models/roadblock.bmp");
+                                roadblock2->setScale(0.003f);
+                                roadblock2->setRotation(glm::linearRand(-30.0f, 30.0f));
+
+                                if (row == 0 || row == 2) {
+                                    roadblock1->setRotation(90.0f + glm::linearRand(-30.0f, 30.0f));
+                                    roadblock2->setRotation(90.0f + glm::linearRand(-30.0f, 30.0f));
+                                }
+                                scene.push_back(std::move(roadblock1));
+                                scene.push_back(std::move(roadblock2));
+                            }
                         }
                         if (row == 1 && col == 1) {
                             auto cross = std::make_unique<PlaneCross>(cellPosition);
                             scene.push_back(std::move(cross));
-                            continue; // Intersection - skip placing lamps but keep the road
+                            continue;
                         }
 
                         float lampOffset = 5.0f;
