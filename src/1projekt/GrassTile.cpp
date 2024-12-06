@@ -51,10 +51,10 @@ void GrassTile::render(const Camera& camera) {
     shader->setUniform("ViewMatrix", camera.viewMatrix);
     shader->setUniform("ProjectionMatrix", camera.projectionMatrix);
 
-    shader->setUniform("material.ambient", glm::vec3(1.0f, 1.0f, 1.0f));
-    shader->setUniform("material.diffuse", glm::vec3(1.0f, 1.0f, 1.0f));
-    shader->setUniform("material.specular", glm::vec3(0.5f, 0.5f, 0.5f));
-    shader->setUniform("material.shininess", 32.0f);
+    shader->setUniform("material.ambient", glm::vec3(1.0f));
+    shader->setUniform("material.diffuse", glm::vec3(1.0f));
+    shader->setUniform("material.specular", glm::vec3(1.0f));
+    shader->setUniform("material.shininess", 64.0f);
 
     float tilingFactor = 50.0f; // Adjust this to control how often the grass texture tiles
     shader->setUniform("TilingFactor", tilingFactor);

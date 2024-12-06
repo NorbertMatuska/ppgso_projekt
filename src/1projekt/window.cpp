@@ -33,7 +33,7 @@ ParticleWindow::ParticleWindow()
     sunDirection = glm::normalize(glm::vec3(-0.5f, -0.01f, 0.3f));
     initShadowMap();
 
-    int n = 5;  // Number of 3x3 sub-grids along each dimension
+    int n = 3;  // Number of 3x3 sub-grids along each dimension
     float cellSize = 10.0f;  // Size of each grid cell
     float subGridSize = 3 * cellSize;  // Size of a 3x3 sub-grid
 
@@ -53,6 +53,12 @@ ParticleWindow::ParticleWindow()
 
     auto grassTile = std::make_unique<GrassTile>(glm::vec3(0.0f, -0.1f, 0.0f), glm::vec3(200.0f));
     scene.push_back(std::move(grassTile));
+
+    auto roadblock1 = std::make_unique<Building>("models/roadblock.obj", grid.getCellPosition(0, 0), "models/roadblock.bmp");
+    roadblock1->setScale(0.003f);
+    roadblock1->setRotation(glm::linearRand(-30.0f, 30.0f));
+
+    scene.push_back(std::move(roadblock1));
 
     // Iterate through each sub-grid to place buildings and roads
     for (int subGridRow = 0; subGridRow < n; ++subGridRow) {
@@ -141,18 +147,19 @@ ParticleWindow::ParticleWindow()
                         float lampOffset = 5.0f;
                         float randomOffsetX = glm::linearRand(-4.0f, 4.0f);
                         float randomOffsetZ = glm::linearRand(-4.0f, 4.0f);
+                        float binScale = 0.003f;
 
                         if (row == 1) {
                             glm::vec3 leftLampPos = cellPosition + glm::vec3(0.0f, 0.0f, -lampOffset);
                             glm::vec3 rightLampPos = cellPosition + glm::vec3(0.0f, 0.0f, lampOffset);
 
                             auto leftLamp = std::make_unique<Building>("models/lamp.obj", leftLampPos, "models/lamp.bmp");
-                            leftLamp->setScale(0.001f);
+                            leftLamp->setScale(0.002f);
                             leftLamp->setRotation(270.0f);
                             scene.push_back(std::move(leftLamp));
 
                             auto rightLamp = std::make_unique<Building>("models/lamp.obj", rightLampPos, "models/lamp.bmp");
-                            rightLamp->setScale(0.001f);
+                            rightLamp->setScale(0.002f);
                             rightLamp->setRotation(90.0f);
                             scene.push_back(std::move(rightLamp));
 
@@ -161,13 +168,13 @@ ParticleWindow::ParticleWindow()
 
                             if (glm::linearRand(0.0f, 1.0f) < 0.3f) {
                                 auto leftTrashBin = std::make_unique<Building>("models/trashbin.obj", leftTrashBinPos, "models/trashbin.bmp");
-                                leftTrashBin->setScale(0.0015f);
+                                leftTrashBin->setScale(binScale);
                                 scene.push_back(std::move(leftTrashBin));
                             }
 
                             if (glm::linearRand(0.0f, 1.0f) < 0.3f) {
                                 auto rightTrashBin = std::make_unique<Building>("models/trashbin.obj", rightTrashBinPos, "models/trashbin.bmp");
-                                rightTrashBin->setScale(0.0015f);
+                                rightTrashBin->setScale(binScale);
                                 scene.push_back(std::move(rightTrashBin));
                             }
                         }
@@ -177,11 +184,11 @@ ParticleWindow::ParticleWindow()
                             glm::vec3 bottomLampPos = cellPosition + glm::vec3(lampOffset, 0.0f, 0.0f);
 
                             auto topLamp = std::make_unique<Building>("models/lamp.obj", topLampPos, "models/lamp.bmp");
-                            topLamp->setScale(0.001f);
+                            topLamp->setScale(0.002f);
                             scene.push_back(std::move(topLamp));
 
                             auto bottomLamp = std::make_unique<Building>("models/lamp.obj", bottomLampPos, "models/lamp.bmp");
-                            bottomLamp->setScale(0.001f);
+                            bottomLamp->setScale(0.002f);
                             bottomLamp->setRotation(180.0f);
                             scene.push_back(std::move(bottomLamp));
 
@@ -190,14 +197,14 @@ ParticleWindow::ParticleWindow()
 
                             if (glm::linearRand(0.0f, 1.0f) < 0.3f) {
                                 auto topTrashBin = std::make_unique<Building>("models/trashbin.obj", topTrashBinPos, "models/trashbin.bmp");
-                                topTrashBin->setScale(0.0015f);
+                                topTrashBin->setScale(binScale);
                                 topTrashBin->setRotation(glm::linearRand(0.0f, 360.0f));
                                 scene.push_back(std::move(topTrashBin));
                             }
 
                             if (glm::linearRand(0.0f, 1.0f) < 0.3f) {
                                 auto bottomTrashBin = std::make_unique<Building>("models/trashbin.obj", bottomTrashBinPos, "models/trashbin.bmp");
-                                bottomTrashBin->setScale(0.0015f);
+                                bottomTrashBin->setScale(binScale);
                                 bottomTrashBin->setRotation(glm::linearRand(0.0f, 360.0f));
                                 scene.push_back(std::move(bottomTrashBin));
                             }
@@ -257,6 +264,9 @@ ParticleWindow::ParticleWindow()
                     }
 
                     auto newBuilding = std::make_unique<Building>(modelPath, cellPosition, texturePath);
+                    if (buildingType == 5) {
+                        newBuilding->setScale(0.85);
+                    }
                     scene.push_back(std::move(newBuilding));
                 }
             }
@@ -431,13 +441,14 @@ void ParticleWindow::onCursorPos(double xpos, double ypos) {
 void ParticleWindow::updateSunPosition(float dTime) {
     static float sunAngle = 0.0f;
 
-    sunAngle += dTime * 0.5;
+    sunAngle += dTime * 0.01;
 
     if (sunAngle > glm::two_pi<float>()) {
         sunAngle -= glm::two_pi<float>();
     }
 
-    float radius = 100.0f;
+
+    float radius = 500.0f;
 
     float x = cos(sunAngle) * radius;
     float y = 10.0f;
@@ -451,7 +462,8 @@ void ParticleWindow::updateSunPosition(float dTime) {
     float x = sin(sunAngle);
     float y = cos(sunAngle);
     sunDirection = glm::normalize(glm::vec3(x, y, 0.0f));
-*/
+    */
+
 }
 
 void ParticleWindow::onIdle() {
