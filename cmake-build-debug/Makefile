@@ -1096,6 +1096,30 @@ src/1projekt/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.s
 .PHONY : src/1projekt/camera.cpp.s
 
+src/1projekt/car.obj: src/1projekt/car.cpp.obj
+.PHONY : src/1projekt/car.obj
+
+# target to build an object file
+src/1projekt/car.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/car.cpp.obj
+.PHONY : src/1projekt/car.cpp.obj
+
+src/1projekt/car.i: src/1projekt/car.cpp.i
+.PHONY : src/1projekt/car.i
+
+# target to preprocess a source file
+src/1projekt/car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/car.cpp.i
+.PHONY : src/1projekt/car.cpp.i
+
+src/1projekt/car.s: src/1projekt/car.cpp.s
+.PHONY : src/1projekt/car.s
+
+# target to generate assembly for a file
+src/1projekt/car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/car.cpp.s
+.PHONY : src/1projekt/car.cpp.s
+
 src/1projekt/grid.obj: src/1projekt/grid.cpp.obj
 .PHONY : src/1projekt/grid.obj
 
@@ -2146,6 +2170,9 @@ help:
 	@echo ... src/1projekt/camera.obj
 	@echo ... src/1projekt/camera.i
 	@echo ... src/1projekt/camera.s
+	@echo ... src/1projekt/car.obj
+	@echo ... src/1projekt/car.i
+	@echo ... src/1projekt/car.s
 	@echo ... src/1projekt/grid.obj
 	@echo ... src/1projekt/grid.i
 	@echo ... src/1projekt/grid.s

@@ -13,6 +13,7 @@
 #include <shaders/depth_frag_glsl.h>
 #include <shaders/depth_vert_glsl.h>
 
+#include "car.h"
 
 
 #define SIZEx 1280
@@ -38,6 +39,7 @@ ParticleWindow::ParticleWindow()
     float subGridSize = 3 * cellSize;  // Size of a 3x3 sub-grid
 
     Grid grid(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.0f, 0.0f));
+    Grid gridcars(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.4f, 0.0f));
 
     std::vector<std::string> skyboxFaces = {
             "skyboxes/vz_dawn_right.bmp",
@@ -60,6 +62,13 @@ ParticleWindow::ParticleWindow()
 
     scene.push_back(std::move(roadblock1));
 */
+
+    auto car = std::make_unique<Car>("models/car.obj", gridcars.getCellPosition(1,2),"models/car.bmp");
+    car->setScale(0.030f);
+    scene.push_back(std::move(car));
+
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+
     // Iterate through each sub-grid to place buildings and roads
     for (int subGridRow = 0; subGridRow < n; ++subGridRow) {
         for (int subGridCol = 0; subGridCol < n; ++subGridCol) {
