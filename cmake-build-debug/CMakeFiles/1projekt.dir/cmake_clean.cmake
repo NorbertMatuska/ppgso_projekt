@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "1projekt.pdb"
   "CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.obj"
   "CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.obj.d"
+  "CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj"
+  "CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj.d"
   "CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj"
   "CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj.d"
   "CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj"

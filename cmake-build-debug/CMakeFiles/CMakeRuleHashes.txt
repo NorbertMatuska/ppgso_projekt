@@ -1,4 +1,6 @@
 # Hashes of file build rules.
+769d30195cff6ac9dee04923b1bc0f78 shaders/blur_frag_glsl.cpp
+08fd90aac34beea78d94fca88b2bb3c9 shaders/bright_frag_glsl.cpp
 d03bb5f7aad2f840ec1ba0b35eb5e084 shaders/color_frag_glsl.cpp
 b4c1b6c51acd06a8039e79497b2a6b16 shaders/color_vert_glsl.cpp
 0e1b3d9a0c900ea71fcf5854bc0855ec shaders/convolution_frag_glsl.cpp
@@ -7,6 +9,8 @@ f9988b08dc5d467852437cc65aa2f9ee shaders/depth_frag_glsl.cpp
 b0991a82c6d27d32a1f7db9d9cff3041 shaders/depth_vert_glsl.cpp
 8395aa2eae6b637c9f35e12e71125ad1 shaders/diffuse_frag_glsl.cpp
 3a01d859957dc6d7435f4e16fbe587b8 shaders/diffuse_vert_glsl.cpp
+d09719ab273e10add0120cf9a2dcc6d4 shaders/final_frag_glsl.cpp
+bec2fc8d39541b07ed4c953385355ce2 shaders/quad_vert_glsl.cpp
 923884f7465f12cd8292f4ae9f4eb3d7 shaders/skybox_frag_glsl.cpp
 7d27379396117668d11437538b80e8f9 shaders/skybox_vert_glsl.cpp
 71b548cffe9691f523de0ccf1b703a05 shaders/texture_frag_glsl.cpp

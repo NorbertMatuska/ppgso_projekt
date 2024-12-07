@@ -99,9 +99,11 @@ set(PPGSO_SHADER_SRC
         shader/texture_vert_grass.glsl shader/texture_frag_grass.glsl
         shader/skybox_vert.glsl shader/skybox_frag.glsl
         shader/depth_vert.glsl shader/depth_frag.glsl
+        shader/quad_vert.glsl shader/final_frag.glsl
+        shader/blur_frag.glsl
+        shader/bright_frag.glsl
 )
 add_resources(shaders ${PPGSO_SHADER_SRC})
-
 # PPGSO library
 if (ASSIMP_FOUND)
   message(STATUS "Using ASSIMP object loader")
@@ -192,6 +194,8 @@ add_executable(1projekt
         src/1projekt/planeCross.h
         src/1projekt/car.cpp
         src/1projekt/car.h
+        src/1projekt/PostProcessor.cpp
+        src/1projekt/PostProcessor.h
 )
 target_link_libraries(1projekt ppgso shaders)
 install(TARGETS 1projekt DESTINATION .)

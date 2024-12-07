@@ -7,6 +7,7 @@
 #include "scene.h"
 #include <map>
 #include "grid.h"
+#include "PostProcessor.h"
 
 class ParticleWindow : public ppgso::Window {
 private:
@@ -33,6 +34,7 @@ private:
 public:
     ParticleWindow();
     glm::vec3 sunDirection;
+    std::unique_ptr<PostProcessor> postProcessor;
 
     void updateSunPosition(float dTime);
     void setLightingUniforms(ppgso::Shader& shader);

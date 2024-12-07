@@ -278,6 +278,21 @@ CMakeFiles/1projekt.dir/src/1projekt/car.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/1projekt.dir/src/1projekt/car.cpp.s"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ppgso_projekt\src\1projekt\car.cpp -o CMakeFiles\1projekt.dir\src\1projekt\car.cpp.s
 
+CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj: CMakeFiles/1projekt.dir/flags.make
+CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj: CMakeFiles/1projekt.dir/includes_CXX.rsp
+CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj: D:/ppgso_projekt/src/1projekt/PostProcessor.cpp
+CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj: CMakeFiles/1projekt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj -MF CMakeFiles\1projekt.dir\src\1projekt\PostProcessor.cpp.obj.d -o CMakeFiles\1projekt.dir\src\1projekt\PostProcessor.cpp.obj -c D:\ppgso_projekt\src\1projekt\PostProcessor.cpp
+
+CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.i"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ppgso_projekt\src\1projekt\PostProcessor.cpp > CMakeFiles\1projekt.dir\src\1projekt\PostProcessor.cpp.i
+
+CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.s"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ppgso_projekt\src\1projekt\PostProcessor.cpp -o CMakeFiles\1projekt.dir\src\1projekt\PostProcessor.cpp.s
+
 # Object files for target 1projekt
 1projekt_OBJECTS = \
 "CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj" \
@@ -293,7 +308,8 @@ CMakeFiles/1projekt.dir/src/1projekt/car.cpp.s: cmake_force
 "CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.obj" \
 "CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj" \
 "CMakeFiles/1projekt.dir/src/1projekt/planeCross.cpp.obj" \
-"CMakeFiles/1projekt.dir/src/1projekt/car.cpp.obj"
+"CMakeFiles/1projekt.dir/src/1projekt/car.cpp.obj" \
+"CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj"
 
 # External object files for target 1projekt
 1projekt_EXTERNAL_OBJECTS =
@@ -312,6 +328,7 @@ CMakeFiles/1projekt.dir/src/1projekt/car.cpp.s: cmake_force
 1projekt.exe: CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj
 1projekt.exe: CMakeFiles/1projekt.dir/src/1projekt/planeCross.cpp.obj
 1projekt.exe: CMakeFiles/1projekt.dir/src/1projekt/car.cpp.obj
+1projekt.exe: CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj
 1projekt.exe: CMakeFiles/1projekt.dir/build.make
 1projekt.exe: libppgso.a
 1projekt.exe: libshaders.a
@@ -321,7 +338,7 @@ CMakeFiles/1projekt.dir/src/1projekt/car.cpp.s: cmake_force
 1projekt.exe: CMakeFiles/1projekt.dir/linkLibs.rsp
 1projekt.exe: CMakeFiles/1projekt.dir/objects1.rsp
 1projekt.exe: CMakeFiles/1projekt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable 1projekt.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable 1projekt.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\1projekt.dir\link.txt --verbose=$(VERBOSE)
 	"D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory D:/ppgso_projekt/data/ D:/ppgso_projekt/cmake-build-debug
 

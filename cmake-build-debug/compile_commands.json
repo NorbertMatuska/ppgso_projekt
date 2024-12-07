@@ -85,6 +85,30 @@
 },
 {
   "directory": "D:/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe\" -DUSE_ASSIMP=1 @CMakeFiles/shaders.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\shaders.dir\\shaders\\quad_vert_glsl.cpp.obj -c D:\\ppgso_projekt\\cmake-build-debug\\shaders\\quad_vert_glsl.cpp",
+  "file": "D:/ppgso_projekt/cmake-build-debug/shaders/quad_vert_glsl.cpp",
+  "output": "CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.obj"
+},
+{
+  "directory": "D:/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe\" -DUSE_ASSIMP=1 @CMakeFiles/shaders.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\shaders.dir\\shaders\\final_frag_glsl.cpp.obj -c D:\\ppgso_projekt\\cmake-build-debug\\shaders\\final_frag_glsl.cpp",
+  "file": "D:/ppgso_projekt/cmake-build-debug/shaders/final_frag_glsl.cpp",
+  "output": "CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.obj"
+},
+{
+  "directory": "D:/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe\" -DUSE_ASSIMP=1 @CMakeFiles/shaders.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\shaders.dir\\shaders\\blur_frag_glsl.cpp.obj -c D:\\ppgso_projekt\\cmake-build-debug\\shaders\\blur_frag_glsl.cpp",
+  "file": "D:/ppgso_projekt/cmake-build-debug/shaders/blur_frag_glsl.cpp",
+  "output": "CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.obj"
+},
+{
+  "directory": "D:/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe\" -DUSE_ASSIMP=1 @CMakeFiles/shaders.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\shaders.dir\\shaders\\bright_frag_glsl.cpp.obj -c D:\\ppgso_projekt\\cmake-build-debug\\shaders\\bright_frag_glsl.cpp",
+  "file": "D:/ppgso_projekt/cmake-build-debug/shaders/bright_frag_glsl.cpp",
+  "output": "CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.obj"
+},
+{
+  "directory": "D:/ppgso_projekt/cmake-build-debug",
   "command": "\"D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1 @CMakeFiles/ppgso.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\ppgso.dir\\ppgso\\Mesh_Assimp.cpp.obj -c D:\\ppgso_projekt\\ppgso\\Mesh_Assimp.cpp",
   "file": "D:/ppgso_projekt/ppgso/Mesh_Assimp.cpp",
   "output": "CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj"
@@ -214,6 +238,12 @@
   "command": "\"D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1 @CMakeFiles/1projekt.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\1projekt.dir\\src\\1projekt\\car.cpp.obj -c D:\\ppgso_projekt\\src\\1projekt\\car.cpp",
   "file": "D:/ppgso_projekt/src/1projekt/car.cpp",
   "output": "CMakeFiles/1projekt.dir/src/1projekt/car.cpp.obj"
+},
+{
+  "directory": "D:/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1 @CMakeFiles/1projekt.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\1projekt.dir\\src\\1projekt\\PostProcessor.cpp.obj -c D:\\ppgso_projekt\\src\\1projekt\\PostProcessor.cpp",
+  "file": "D:/ppgso_projekt/src/1projekt/PostProcessor.cpp",
+  "output": "CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj"
 },
 {
   "directory": "D:/ppgso_projekt/cmake-build-debug",

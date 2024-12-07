@@ -13,8 +13,8 @@
 #include <shaders/depth_frag_glsl.h>
 #include <shaders/depth_vert_glsl.h>
 #include <chrono>
-
-
+#include "PostProcessor.h"
+#include <GL/glew.h>
 #include "car.h"
 
 
@@ -33,6 +33,7 @@ ParticleWindow::ParticleWindow()
     glEnable(GL_LINE_SMOOTH);
     glLineWidth(1.0f);
 
+    postProcessor = std::make_unique<PostProcessor>(SIZEx, SIZEy);
     sunDirection = glm::normalize(glm::vec3(-0.5f, -0.1f, 0.3f));
     initShadowMap();
 
@@ -64,11 +65,6 @@ ParticleWindow::ParticleWindow()
 
     scene.push_back(std::move(roadblock1));
 */
-
-    static auto lastSpawnTime = std::chrono::steady_clock::now();
-    auto currentTime = std::chrono::steady_clock::now();
-    float spawnInterval = 1.0f; // Spawn every 5 seconds
-
 
     auto car = std::make_unique<Car>("models/car.obj", gridcars.getCellPosition(1,2), "models/car.bmp");
     car->setScale(0.030f);
@@ -522,76 +518,73 @@ void ParticleWindow::onIdle() {
     float dTime = (float)glfwGetTime() - time;
     time = (float)glfwGetTime();
 
-    //updateSunPosition(dTime);
+    // (Optional) Update sun direction if needed
+    // updateSunPosition(dTime);
 
-    glm::vec3 lightPos = -sunDirection * 150.0f; // Position the light far away in the sun's direction
-    glm::mat4 lightProjection, lightView;
+    // Setup the light space matrix for shadows
+    glm::vec3 lightPos = -sunDirection * 150.0f;
     float near_plane = 1.0f, far_plane = 200.0f;
-    lightProjection = glm::ortho(-150.0f, 150.0f, -150.0f, 150.0f, near_plane, far_plane);
-    lightView = glm::lookAt(lightPos, glm::vec3(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    glm::mat4 lightProjection = glm::ortho(-150.0f, 150.0f, -150.0f, 150.0f, near_plane, far_plane);
+    glm::mat4 lightView = glm::lookAt(lightPos, glm::vec3(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
     lightSpaceMatrix = lightProjection * lightView;
 
-    // Set the static lightSpaceMatrix in Renderable
     Renderable::lightSpaceMatrix = lightSpaceMatrix;
 
-    // 1. Render the depth map
+    // 1. Render the depth map for shadows
     renderDepthMap();
 
-    // 2. Render the scene from the camera's perspective
-    glClearColor(.1f, .1f, .1f, 1.0f);
+    // 2. Begin rendering into our HDR framebuffer using the PostProcessor
+    postProcessor->BeginRender();
+    // Now everything drawn goes into the HDR FBO
+
+    glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    // Handle input
+    // Handle camera input
     float cameraSpeed = 10.0f;
     glm::vec3 forward = glm::normalize(camera.target - camera.position);
     glm::vec3 right = glm::normalize(glm::cross(forward, camera.up));
 
-    if (keys[GLFW_KEY_W]) {
-        camera.position += forward * cameraSpeed * dTime;
-    }
-    if (keys[GLFW_KEY_S]) {
-        camera.position -= forward * cameraSpeed * dTime;
-    }
-    if (keys[GLFW_KEY_A]) {
-        camera.position -= right * cameraSpeed * dTime;
-    }
-    if (keys[GLFW_KEY_D]) {
-        camera.position += right * cameraSpeed * dTime;
-    }
+    if (keys[GLFW_KEY_W]) camera.position += forward * cameraSpeed * dTime;
+    if (keys[GLFW_KEY_S]) camera.position -= forward * cameraSpeed * dTime;
+    if (keys[GLFW_KEY_A]) camera.position -= right * cameraSpeed * dTime;
+    if (keys[GLFW_KEY_D]) camera.position += right * cameraSpeed * dTime;
 
     camera.update();
 
     // Update objects
-    auto i = std::begin(scene);
-    while (i != std::end(scene)) {
-        auto obj = i->get();
-        if (!obj->update(dTime, scene))
-            i = scene.erase(i);
+    for (auto it = scene.begin(); it != scene.end();) {
+        if (!(*it)->update(dTime, scene))
+            it = scene.erase(it);
         else
-            ++i;
+            ++it;
     }
 
-    std::set<ppgso::Shader*> shadersSet;
-
-    // Set lighting uniforms for all shaders used by objects in the scene
+    // Set lighting uniforms for all shaders
+    std::set<ppgso::Shader*> processedShaders;
     for (auto& object : scene) {
         auto shader = object->getShader();
-        // Check if the shader has already been processed
-        if (shadersSet.find(shader) == shadersSet.end()) {
+        if (processedShaders.find(shader) == processedShaders.end()) {
             shader->use();
             setLightingUniforms(*shader);
             updateDynamicLights(*shader);
             shader->setUniform("LightSpaceMatrix", lightSpaceMatrix);
-            shader->setUniform("ShadowMap", 1); // Texture unit 1
-            shadersSet.insert(shader);
+            shader->setUniform("ShadowMap", 1); // Assuming shadow map is on texture unit 1
+            processedShaders.insert(shader);
         }
     }
 
-    // Render all objects
+    // Render all objects to the HDR buffer
     for (auto& object : scene) {
         object->render(camera);
     }
-    renderSun(lightPos);
+
+    // 3. End rendering to HDR buffer, apply bloom, and render to the default framebuffer
+    postProcessor->EndRender();
+
+    // After this, the bloom effect has been applied. The final image is displayed to the window.
+    //glfwSwapBuffers(window);
+    //glfwPollEvents();
 }
 
 void ParticleWindow::renderSun(const glm::vec3& lightPos) {

@@ -808,3 +808,348 @@ events:
       stderr: |
       exitCode: 1565824753
 ...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:196 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_34b1e/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_34b1e.dir\\build.make CMakeFiles/cmTC_34b1e.dir/build
+        mingw32-make[1]: Entering directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_34b1e.dir/assimp_version_major.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  @CMakeFiles/cmTC_34b1e.dir/includes_CXX.rsp -fdiagnostics-color=always -o CMakeFiles\\cmTC_34b1e.dir\\assimp_version_major.cpp.obj -c D:\\ppgso_projekt\\cmake-build-debug\\CMakeFiles\\assimp_version_major.cpp
+        Linking CXX executable cmTC_34b1e.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_34b1e.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_34b1e.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_34b1e.dir/objects.a @CMakeFiles\\cmTC_34b1e.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe" -Wl,--whole-archive CMakeFiles\\cmTC_34b1e.dir/objects.a -Wl,--no-whole-archive -o cmTC_34b1e.exe -Wl,--out-implib,libcmTC_34b1e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_34b1e.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MAJOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 5
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:201 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_208cd/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_208cd.dir\\build.make CMakeFiles/cmTC_208cd.dir/build
+        mingw32-make[1]: Entering directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_208cd.dir/assimp_version_minor.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  @CMakeFiles/cmTC_208cd.dir/includes_CXX.rsp -fdiagnostics-color=always -o CMakeFiles\\cmTC_208cd.dir\\assimp_version_minor.cpp.obj -c D:\\ppgso_projekt\\cmake-build-debug\\CMakeFiles\\assimp_version_minor.cpp
+        Linking CXX executable cmTC_208cd.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_208cd.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_208cd.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_208cd.dir/objects.a @CMakeFiles\\cmTC_208cd.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe" -Wl,--whole-archive CMakeFiles\\cmTC_208cd.dir/objects.a -Wl,--no-whole-archive -o cmTC_208cd.exe -Wl,--out-implib,libcmTC_208cd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_208cd.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MINOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 3
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:206 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_3f5c3/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_3f5c3.dir\\build.make CMakeFiles/cmTC_3f5c3.dir/build
+        mingw32-make[1]: Entering directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_3f5c3.dir/assimp_version_revision.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  @CMakeFiles/cmTC_3f5c3.dir/includes_CXX.rsp -fdiagnostics-color=always -o CMakeFiles\\cmTC_3f5c3.dir\\assimp_version_revision.cpp.obj -c D:\\ppgso_projekt\\cmake-build-debug\\CMakeFiles\\assimp_version_revision.cpp
+        Linking CXX executable cmTC_3f5c3.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_3f5c3.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_3f5c3.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_3f5c3.dir/objects.a @CMakeFiles\\cmTC_3f5c3.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe" -Wl,--whole-archive CMakeFiles\\cmTC_3f5c3.dir/objects.a -Wl,--no-whole-archive -o cmTC_3f5c3.exe -Wl,--out-implib,libcmTC_3f5c3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_3f5c3.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_REVISION"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 1565824753
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:196 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_f69ed/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f69ed.dir\\build.make CMakeFiles/cmTC_f69ed.dir/build
+        mingw32-make[1]: Entering directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_f69ed.dir/assimp_version_major.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  @CMakeFiles/cmTC_f69ed.dir/includes_CXX.rsp -fdiagnostics-color=always -o CMakeFiles\\cmTC_f69ed.dir\\assimp_version_major.cpp.obj -c D:\\ppgso_projekt\\cmake-build-debug\\CMakeFiles\\assimp_version_major.cpp
+        Linking CXX executable cmTC_f69ed.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f69ed.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f69ed.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_f69ed.dir/objects.a @CMakeFiles\\cmTC_f69ed.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe" -Wl,--whole-archive CMakeFiles\\cmTC_f69ed.dir/objects.a -Wl,--no-whole-archive -o cmTC_f69ed.exe -Wl,--out-implib,libcmTC_f69ed.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_f69ed.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MAJOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 5
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:201 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_1549c/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1549c.dir\\build.make CMakeFiles/cmTC_1549c.dir/build
+        mingw32-make[1]: Entering directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_1549c.dir/assimp_version_minor.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  @CMakeFiles/cmTC_1549c.dir/includes_CXX.rsp -fdiagnostics-color=always -o CMakeFiles\\cmTC_1549c.dir\\assimp_version_minor.cpp.obj -c D:\\ppgso_projekt\\cmake-build-debug\\CMakeFiles\\assimp_version_minor.cpp
+        Linking CXX executable cmTC_1549c.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1549c.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_1549c.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_1549c.dir/objects.a @CMakeFiles\\cmTC_1549c.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe" -Wl,--whole-archive CMakeFiles\\cmTC_1549c.dir/objects.a -Wl,--no-whole-archive -o cmTC_1549c.exe -Wl,--out-implib,libcmTC_1549c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_1549c.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MINOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 3
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:206 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_d0fae/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d0fae.dir\\build.make CMakeFiles/cmTC_d0fae.dir/build
+        mingw32-make[1]: Entering directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_d0fae.dir/assimp_version_revision.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  @CMakeFiles/cmTC_d0fae.dir/includes_CXX.rsp -fdiagnostics-color=always -o CMakeFiles\\cmTC_d0fae.dir\\assimp_version_revision.cpp.obj -c D:\\ppgso_projekt\\cmake-build-debug\\CMakeFiles\\assimp_version_revision.cpp
+        Linking CXX executable cmTC_d0fae.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_d0fae.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_d0fae.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_d0fae.dir/objects.a @CMakeFiles\\cmTC_d0fae.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe" -Wl,--whole-archive CMakeFiles\\cmTC_d0fae.dir/objects.a -Wl,--no-whole-archive -o cmTC_d0fae.exe -Wl,--out-implib,libcmTC_d0fae.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_d0fae.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_REVISION"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 1565824753
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:196 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_ce64c/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ce64c.dir\\build.make CMakeFiles/cmTC_ce64c.dir/build
+        mingw32-make[1]: Entering directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_ce64c.dir/assimp_version_major.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  @CMakeFiles/cmTC_ce64c.dir/includes_CXX.rsp -fdiagnostics-color=always -o CMakeFiles\\cmTC_ce64c.dir\\assimp_version_major.cpp.obj -c D:\\ppgso_projekt\\cmake-build-debug\\CMakeFiles\\assimp_version_major.cpp
+        Linking CXX executable cmTC_ce64c.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ce64c.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_ce64c.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_ce64c.dir/objects.a @CMakeFiles\\cmTC_ce64c.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe" -Wl,--whole-archive CMakeFiles\\cmTC_ce64c.dir/objects.a -Wl,--no-whole-archive -o cmTC_ce64c.exe -Wl,--out-implib,libcmTC_ce64c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_ce64c.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MAJOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 5
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:201 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_a1590/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a1590.dir\\build.make CMakeFiles/cmTC_a1590.dir/build
+        mingw32-make[1]: Entering directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_a1590.dir/assimp_version_minor.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  @CMakeFiles/cmTC_a1590.dir/includes_CXX.rsp -fdiagnostics-color=always -o CMakeFiles\\cmTC_a1590.dir\\assimp_version_minor.cpp.obj -c D:\\ppgso_projekt\\cmake-build-debug\\CMakeFiles\\assimp_version_minor.cpp
+        Linking CXX executable cmTC_a1590.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_a1590.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_a1590.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_a1590.dir/objects.a @CMakeFiles\\cmTC_a1590.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe" -Wl,--whole-archive CMakeFiles\\cmTC_a1590.dir/objects.a -Wl,--no-whole-archive -o cmTC_a1590.exe -Wl,--out-implib,libcmTC_a1590.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_a1590.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MINOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 3
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:206 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/CLion/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_7da1c/fast
+        D:/CLion/CLion 2024.2.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7da1c.dir\\build.make CMakeFiles/cmTC_7da1c.dir/build
+        mingw32-make[1]: Entering directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_7da1c.dir/assimp_version_revision.cpp.obj
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe"  @CMakeFiles/cmTC_7da1c.dir/includes_CXX.rsp -fdiagnostics-color=always -o CMakeFiles\\cmTC_7da1c.dir\\assimp_version_revision.cpp.obj -c D:\\ppgso_projekt\\cmake-build-debug\\CMakeFiles\\assimp_version_revision.cpp
+        Linking CXX executable cmTC_7da1c.exe
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_7da1c.dir\\link.txt --verbose=1
+        "D:\\CLion\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_7da1c.dir/objects.a
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_7da1c.dir/objects.a @CMakeFiles\\cmTC_7da1c.dir\\objects1.rsp
+        "D:\\CLion\\CLion 2024.2.1\\bin\\mingw\\bin\\g++.exe" -Wl,--whole-archive CMakeFiles\\cmTC_7da1c.dir/objects.a -Wl,--no-whole-archive -o cmTC_7da1c.exe -Wl,--out-implib,libcmTC_7da1c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_7da1c.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_REVISION"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 1565824753
+...

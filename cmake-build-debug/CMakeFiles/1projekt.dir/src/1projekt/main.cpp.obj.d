@@ -446,4 +446,5 @@ CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj: \
  D:\ppgso_projekt\src\1projekt\camera.h \
  D:\ppgso_projekt\src\1projekt\scene.h \
  D:\ppgso_projekt\src\1projekt\object.h \
- D:\ppgso_projekt\src\1projekt\grid.h
+ D:\ppgso_projekt\src\1projekt\grid.h \
+ D:\ppgso_projekt\src\1projekt\PostProcessor.h

@@ -664,6 +664,54 @@ ppgso/window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ppgso.dir\build.make CMakeFiles/ppgso.dir/ppgso/window.cpp.s
 .PHONY : ppgso/window.cpp.s
 
+shaders/blur_frag_glsl.obj: shaders/blur_frag_glsl.cpp.obj
+.PHONY : shaders/blur_frag_glsl.obj
+
+# target to build an object file
+shaders/blur_frag_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.obj
+.PHONY : shaders/blur_frag_glsl.cpp.obj
+
+shaders/blur_frag_glsl.i: shaders/blur_frag_glsl.cpp.i
+.PHONY : shaders/blur_frag_glsl.i
+
+# target to preprocess a source file
+shaders/blur_frag_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.i
+.PHONY : shaders/blur_frag_glsl.cpp.i
+
+shaders/blur_frag_glsl.s: shaders/blur_frag_glsl.cpp.s
+.PHONY : shaders/blur_frag_glsl.s
+
+# target to generate assembly for a file
+shaders/blur_frag_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.s
+.PHONY : shaders/blur_frag_glsl.cpp.s
+
+shaders/bright_frag_glsl.obj: shaders/bright_frag_glsl.cpp.obj
+.PHONY : shaders/bright_frag_glsl.obj
+
+# target to build an object file
+shaders/bright_frag_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.obj
+.PHONY : shaders/bright_frag_glsl.cpp.obj
+
+shaders/bright_frag_glsl.i: shaders/bright_frag_glsl.cpp.i
+.PHONY : shaders/bright_frag_glsl.i
+
+# target to preprocess a source file
+shaders/bright_frag_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.i
+.PHONY : shaders/bright_frag_glsl.cpp.i
+
+shaders/bright_frag_glsl.s: shaders/bright_frag_glsl.cpp.s
+.PHONY : shaders/bright_frag_glsl.s
+
+# target to generate assembly for a file
+shaders/bright_frag_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.s
+.PHONY : shaders/bright_frag_glsl.cpp.s
+
 shaders/color_frag_glsl.obj: shaders/color_frag_glsl.cpp.obj
 .PHONY : shaders/color_frag_glsl.obj
 
@@ -856,6 +904,54 @@ shaders/diffuse_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.s
 .PHONY : shaders/diffuse_vert_glsl.cpp.s
 
+shaders/final_frag_glsl.obj: shaders/final_frag_glsl.cpp.obj
+.PHONY : shaders/final_frag_glsl.obj
+
+# target to build an object file
+shaders/final_frag_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.obj
+.PHONY : shaders/final_frag_glsl.cpp.obj
+
+shaders/final_frag_glsl.i: shaders/final_frag_glsl.cpp.i
+.PHONY : shaders/final_frag_glsl.i
+
+# target to preprocess a source file
+shaders/final_frag_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.i
+.PHONY : shaders/final_frag_glsl.cpp.i
+
+shaders/final_frag_glsl.s: shaders/final_frag_glsl.cpp.s
+.PHONY : shaders/final_frag_glsl.s
+
+# target to generate assembly for a file
+shaders/final_frag_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.s
+.PHONY : shaders/final_frag_glsl.cpp.s
+
+shaders/quad_vert_glsl.obj: shaders/quad_vert_glsl.cpp.obj
+.PHONY : shaders/quad_vert_glsl.obj
+
+# target to build an object file
+shaders/quad_vert_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.obj
+.PHONY : shaders/quad_vert_glsl.cpp.obj
+
+shaders/quad_vert_glsl.i: shaders/quad_vert_glsl.cpp.i
+.PHONY : shaders/quad_vert_glsl.i
+
+# target to preprocess a source file
+shaders/quad_vert_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.i
+.PHONY : shaders/quad_vert_glsl.cpp.i
+
+shaders/quad_vert_glsl.s: shaders/quad_vert_glsl.cpp.s
+.PHONY : shaders/quad_vert_glsl.s
+
+# target to generate assembly for a file
+shaders/quad_vert_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.s
+.PHONY : shaders/quad_vert_glsl.cpp.s
+
 shaders/skybox_frag_glsl.obj: shaders/skybox_frag_glsl.cpp.obj
 .PHONY : shaders/skybox_frag_glsl.obj
 
@@ -1023,6 +1119,30 @@ src/1projekt/GrassTile.s: src/1projekt/GrassTile.cpp.s
 src/1projekt/GrassTile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.s
 .PHONY : src/1projekt/GrassTile.cpp.s
+
+src/1projekt/PostProcessor.obj: src/1projekt/PostProcessor.cpp.obj
+.PHONY : src/1projekt/PostProcessor.obj
+
+# target to build an object file
+src/1projekt/PostProcessor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj
+.PHONY : src/1projekt/PostProcessor.cpp.obj
+
+src/1projekt/PostProcessor.i: src/1projekt/PostProcessor.cpp.i
+.PHONY : src/1projekt/PostProcessor.i
+
+# target to preprocess a source file
+src/1projekt/PostProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.i
+.PHONY : src/1projekt/PostProcessor.cpp.i
+
+src/1projekt/PostProcessor.s: src/1projekt/PostProcessor.cpp.s
+.PHONY : src/1projekt/PostProcessor.s
+
+# target to generate assembly for a file
+src/1projekt/PostProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.s
+.PHONY : src/1projekt/PostProcessor.cpp.s
 
 src/1projekt/SkyBox.obj: src/1projekt/SkyBox.cpp.obj
 .PHONY : src/1projekt/SkyBox.obj
@@ -2116,6 +2236,12 @@ help:
 	@echo ... ppgso/window.obj
 	@echo ... ppgso/window.i
 	@echo ... ppgso/window.s
+	@echo ... shaders/blur_frag_glsl.obj
+	@echo ... shaders/blur_frag_glsl.i
+	@echo ... shaders/blur_frag_glsl.s
+	@echo ... shaders/bright_frag_glsl.obj
+	@echo ... shaders/bright_frag_glsl.i
+	@echo ... shaders/bright_frag_glsl.s
 	@echo ... shaders/color_frag_glsl.obj
 	@echo ... shaders/color_frag_glsl.i
 	@echo ... shaders/color_frag_glsl.s
@@ -2140,6 +2266,12 @@ help:
 	@echo ... shaders/diffuse_vert_glsl.obj
 	@echo ... shaders/diffuse_vert_glsl.i
 	@echo ... shaders/diffuse_vert_glsl.s
+	@echo ... shaders/final_frag_glsl.obj
+	@echo ... shaders/final_frag_glsl.i
+	@echo ... shaders/final_frag_glsl.s
+	@echo ... shaders/quad_vert_glsl.obj
+	@echo ... shaders/quad_vert_glsl.i
+	@echo ... shaders/quad_vert_glsl.s
 	@echo ... shaders/skybox_frag_glsl.obj
 	@echo ... shaders/skybox_frag_glsl.i
 	@echo ... shaders/skybox_frag_glsl.s
@@ -2161,6 +2293,9 @@ help:
 	@echo ... src/1projekt/GrassTile.obj
 	@echo ... src/1projekt/GrassTile.i
 	@echo ... src/1projekt/GrassTile.s
+	@echo ... src/1projekt/PostProcessor.obj
+	@echo ... src/1projekt/PostProcessor.i
+	@echo ... src/1projekt/PostProcessor.s
 	@echo ... src/1projekt/SkyBox.obj
 	@echo ... src/1projekt/SkyBox.i
 	@echo ... src/1projekt/SkyBox.s

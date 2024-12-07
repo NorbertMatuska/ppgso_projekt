@@ -166,11 +166,39 @@ shaders/depth_frag_glsl.cpp: D:/ppgso_projekt/shader/depth_frag.glsl
 shaders/depth_frag_glsl.h: shaders/depth_frag_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders\depth_frag_glsl.h
 
+shaders/quad_vert_glsl.cpp: D:/ppgso_projekt/shader/quad_vert.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating resource from D:/ppgso_projekt/shader/quad_vert.glsl"
+	"D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -DOUTPUT_C=D:/ppgso_projekt/cmake-build-debug/shaders/quad_vert_glsl.cpp -DOUTPUT_H=D:/ppgso_projekt/cmake-build-debug/shaders/quad_vert_glsl.h -DSYMBOL=quad_vert_glsl -DINPUT_FILE=D:/ppgso_projekt/shader/quad_vert.glsl -P D:/ppgso_projekt/cmake/bin2c.cmake
+
+shaders/quad_vert_glsl.h: shaders/quad_vert_glsl.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate shaders\quad_vert_glsl.h
+
+shaders/final_frag_glsl.cpp: D:/ppgso_projekt/shader/final_frag.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating resource from D:/ppgso_projekt/shader/final_frag.glsl"
+	"D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -DOUTPUT_C=D:/ppgso_projekt/cmake-build-debug/shaders/final_frag_glsl.cpp -DOUTPUT_H=D:/ppgso_projekt/cmake-build-debug/shaders/final_frag_glsl.h -DSYMBOL=final_frag_glsl -DINPUT_FILE=D:/ppgso_projekt/shader/final_frag.glsl -P D:/ppgso_projekt/cmake/bin2c.cmake
+
+shaders/final_frag_glsl.h: shaders/final_frag_glsl.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate shaders\final_frag_glsl.h
+
+shaders/blur_frag_glsl.cpp: D:/ppgso_projekt/shader/blur_frag.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating resource from D:/ppgso_projekt/shader/blur_frag.glsl"
+	"D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -DOUTPUT_C=D:/ppgso_projekt/cmake-build-debug/shaders/blur_frag_glsl.cpp -DOUTPUT_H=D:/ppgso_projekt/cmake-build-debug/shaders/blur_frag_glsl.h -DSYMBOL=blur_frag_glsl -DINPUT_FILE=D:/ppgso_projekt/shader/blur_frag.glsl -P D:/ppgso_projekt/cmake/bin2c.cmake
+
+shaders/blur_frag_glsl.h: shaders/blur_frag_glsl.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate shaders\blur_frag_glsl.h
+
+shaders/bright_frag_glsl.cpp: D:/ppgso_projekt/shader/bright_frag.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating resource from D:/ppgso_projekt/shader/bright_frag.glsl"
+	"D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -DOUTPUT_C=D:/ppgso_projekt/cmake-build-debug/shaders/bright_frag_glsl.cpp -DOUTPUT_H=D:/ppgso_projekt/cmake-build-debug/shaders/bright_frag_glsl.h -DSYMBOL=bright_frag_glsl -DINPUT_FILE=D:/ppgso_projekt/shader/bright_frag.glsl -P D:/ppgso_projekt/cmake/bin2c.cmake
+
+shaders/bright_frag_glsl.h: shaders/bright_frag_glsl.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate shaders\bright_frag_glsl.h
+
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: shaders/color_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\color_vert_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\color_vert_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\color_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.i: cmake_force
@@ -185,7 +213,7 @@ CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/f
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: shaders/color_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\color_frag_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\color_frag_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\color_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.i: cmake_force
@@ -200,7 +228,7 @@ CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: CMakeFiles/shaders
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: shaders/convolution_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\convolution_vert_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\convolution_vert_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\convolution_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.i: cmake_force
@@ -215,7 +243,7 @@ CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: CMakeFiles/shaders
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: shaders/convolution_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\convolution_frag_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\convolution_frag_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\convolution_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.i: cmake_force
@@ -230,7 +258,7 @@ CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: CMakeFiles/shaders.dir
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: shaders/diffuse_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\diffuse_vert_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\diffuse_vert_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\diffuse_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.i: cmake_force
@@ -245,7 +273,7 @@ CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: CMakeFiles/shaders.dir
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: shaders/diffuse_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\diffuse_frag_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\diffuse_frag_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\diffuse_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.i: cmake_force
@@ -260,7 +288,7 @@ CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: CMakeFiles/shaders.dir
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: shaders/texture_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\texture_vert_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\texture_vert_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\texture_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.i: cmake_force
@@ -275,7 +303,7 @@ CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: CMakeFiles/shaders.dir
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: shaders/texture_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\texture_frag_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\texture_frag_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\texture_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.i: cmake_force
@@ -290,7 +318,7 @@ CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.obj: CMakeFiles/shade
 CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.obj: shaders/texture_vert_grass_glsl.cpp
 CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\texture_vert_grass_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\texture_vert_grass_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\texture_vert_grass_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.i: cmake_force
@@ -305,7 +333,7 @@ CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.obj: CMakeFiles/shade
 CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.obj: shaders/texture_frag_grass_glsl.cpp
 CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\texture_frag_grass_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\texture_frag_grass_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\texture_frag_grass_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.i: cmake_force
@@ -320,7 +348,7 @@ CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/
 CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj: shaders/skybox_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\skybox_vert_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\skybox_vert_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\skybox_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.i: cmake_force
@@ -335,7 +363,7 @@ CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/
 CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj: shaders/skybox_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\skybox_frag_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\skybox_frag_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\skybox_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.i: cmake_force
@@ -350,7 +378,7 @@ CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/f
 CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj: shaders/depth_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\depth_vert_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\depth_vert_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\depth_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.i: cmake_force
@@ -365,7 +393,7 @@ CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/f
 CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj: shaders/depth_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\depth_frag_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\depth_frag_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\depth_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.i: cmake_force
@@ -375,6 +403,66 @@ CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.i: cmake_force
 CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.s"
 	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ppgso_projekt\cmake-build-debug\shaders\depth_frag_glsl.cpp -o CMakeFiles\shaders.dir\shaders\depth_frag_glsl.cpp.s
+
+CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
+CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
+CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.obj: shaders/quad_vert_glsl.cpp
+CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\quad_vert_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\quad_vert_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\quad_vert_glsl.cpp
+
+CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.i"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ppgso_projekt\cmake-build-debug\shaders\quad_vert_glsl.cpp > CMakeFiles\shaders.dir\shaders\quad_vert_glsl.cpp.i
+
+CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.s"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ppgso_projekt\cmake-build-debug\shaders\quad_vert_glsl.cpp -o CMakeFiles\shaders.dir\shaders\quad_vert_glsl.cpp.s
+
+CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
+CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
+CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.obj: shaders/final_frag_glsl.cpp
+CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\final_frag_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\final_frag_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\final_frag_glsl.cpp
+
+CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.i"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ppgso_projekt\cmake-build-debug\shaders\final_frag_glsl.cpp > CMakeFiles\shaders.dir\shaders\final_frag_glsl.cpp.i
+
+CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.s"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ppgso_projekt\cmake-build-debug\shaders\final_frag_glsl.cpp -o CMakeFiles\shaders.dir\shaders\final_frag_glsl.cpp.s
+
+CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
+CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
+CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.obj: shaders/blur_frag_glsl.cpp
+CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\blur_frag_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\blur_frag_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\blur_frag_glsl.cpp
+
+CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.i"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ppgso_projekt\cmake-build-debug\shaders\blur_frag_glsl.cpp > CMakeFiles\shaders.dir\shaders\blur_frag_glsl.cpp.i
+
+CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.s"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ppgso_projekt\cmake-build-debug\shaders\blur_frag_glsl.cpp -o CMakeFiles\shaders.dir\shaders\blur_frag_glsl.cpp.s
+
+CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
+CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
+CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.obj: shaders/bright_frag_glsl.cpp
+CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.obj"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.obj -MF CMakeFiles\shaders.dir\shaders\bright_frag_glsl.cpp.obj.d -o CMakeFiles\shaders.dir\shaders\bright_frag_glsl.cpp.obj -c D:\ppgso_projekt\cmake-build-debug\shaders\bright_frag_glsl.cpp
+
+CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.i"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ppgso_projekt\cmake-build-debug\shaders\bright_frag_glsl.cpp > CMakeFiles\shaders.dir\shaders\bright_frag_glsl.cpp.i
+
+CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.s"
+	"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ppgso_projekt\cmake-build-debug\shaders\bright_frag_glsl.cpp -o CMakeFiles\shaders.dir\shaders\bright_frag_glsl.cpp.s
 
 # Object files for target shaders
 shaders_OBJECTS = \
@@ -391,7 +479,11 @@ shaders_OBJECTS = \
 "CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj" \
 "CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj" \
 "CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj" \
-"CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj"
+"CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj" \
+"CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.obj" \
+"CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.obj" \
+"CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.obj" \
+"CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.obj"
 
 # External object files for target shaders
 shaders_EXTERNAL_OBJECTS =
@@ -410,9 +502,13 @@ libshaders.a: CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj
 libshaders.a: CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj
 libshaders.a: CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj
 libshaders.a: CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj
+libshaders.a: CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.obj
+libshaders.a: CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.obj
+libshaders.a: CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.obj
+libshaders.a: CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.obj
 libshaders.a: CMakeFiles/shaders.dir/build.make
 libshaders.a: CMakeFiles/shaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX static library libshaders.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX static library libshaders.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\shaders.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\shaders.dir\link.txt --verbose=$(VERBOSE)
 
@@ -424,6 +520,10 @@ CMakeFiles/shaders.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles\shaders.dir\cmake_clean.cmake
 .PHONY : CMakeFiles/shaders.dir/clean
 
+CMakeFiles/shaders.dir/depend: shaders/blur_frag_glsl.cpp
+CMakeFiles/shaders.dir/depend: shaders/blur_frag_glsl.h
+CMakeFiles/shaders.dir/depend: shaders/bright_frag_glsl.cpp
+CMakeFiles/shaders.dir/depend: shaders/bright_frag_glsl.h
 CMakeFiles/shaders.dir/depend: shaders/color_frag_glsl.cpp
 CMakeFiles/shaders.dir/depend: shaders/color_frag_glsl.h
 CMakeFiles/shaders.dir/depend: shaders/color_vert_glsl.cpp
@@ -440,6 +540,10 @@ CMakeFiles/shaders.dir/depend: shaders/diffuse_frag_glsl.cpp
 CMakeFiles/shaders.dir/depend: shaders/diffuse_frag_glsl.h
 CMakeFiles/shaders.dir/depend: shaders/diffuse_vert_glsl.cpp
 CMakeFiles/shaders.dir/depend: shaders/diffuse_vert_glsl.h
+CMakeFiles/shaders.dir/depend: shaders/final_frag_glsl.cpp
+CMakeFiles/shaders.dir/depend: shaders/final_frag_glsl.h
+CMakeFiles/shaders.dir/depend: shaders/quad_vert_glsl.cpp
+CMakeFiles/shaders.dir/depend: shaders/quad_vert_glsl.h
 CMakeFiles/shaders.dir/depend: shaders/skybox_frag_glsl.cpp
 CMakeFiles/shaders.dir/depend: shaders/skybox_frag_glsl.h
 CMakeFiles/shaders.dir/depend: shaders/skybox_vert_glsl.cpp
