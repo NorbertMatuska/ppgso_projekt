@@ -15,9 +15,10 @@ out vec3 NormalDir;
 out vec4 FragPosLightSpace;
 
 void main() {
-    texCoord = TexCoord;
-    FragPos = vec3(ModelMatrix * vec4(Position, 1.0));
+    vec4 worldPosition = ModelMatrix * vec4(Position, 1.0);
+    FragPos = vec3(worldPosition);
     NormalDir = mat3(transpose(inverse(ModelMatrix))) * Normal;
-    FragPosLightSpace = LightSpaceMatrix * vec4(FragPos, 1.0);
-    gl_Position = ProjectionMatrix * ViewMatrix * vec4(FragPos, 1.0);
+    FragPosLightSpace = LightSpaceMatrix * worldPosition;
+    gl_Position = ProjectionMatrix * ViewMatrix * worldPosition;
+    texCoord = TexCoord;
 }

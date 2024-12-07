@@ -116,26 +116,24 @@ vec3 CalcDirLight(DirectionalLight light, vec3 normal, vec3 viewDir, vec3 texCol
 }
 
 float ShadowCalculation(vec4 fragPosLightSpace, vec3 normal, vec3 lightDir) {
-    // Perform perspective divide
+    // Transform to normalized device coordinates
     vec3 projCoords = fragPosLightSpace.xyz / fragPosLightSpace.w;
-    // Transform to [0,1] range
     projCoords = projCoords * 0.5 + 0.5;
 
-    // Check if current fragment is outside the shadow map
-    if (projCoords.z > 1.0)
-        return 0.0;
+    // Return full light if outside the light's frustum
+    if (projCoords.z > 1.0 || projCoords.x < 0.0 || projCoords.x > 1.0 || projCoords.y < 0.0 || projCoords.y > 1.0)
+        return 1.0;
 
-    // Sample the shadow map
-    float closestDepth = texture(ShadowMap, projCoords.xyz);
-    float currentDepth = projCoords.z;
-    // Bias to prevent shadow acne
+    // Sample the shadow map with comparison (sampler2DShadow)
+    float shadow = texture(ShadowMap, projCoords);
+
+    // Optional: Apply bias to reduce shadow acne
     float bias = max(0.005 * (1.0 - dot(normal, lightDir)), 0.005);
-    float shadow = 0.0;
-    if (currentDepth - bias > closestDepth)
-        shadow = 1.0;
+    shadow = projCoords.z > shadow + bias ? 0.0 : 1.0;
 
     return shadow;
 }
+
 
 // Calculate point light
 vec3 CalcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir, vec3 texColor) {

@@ -27,6 +27,8 @@ private:
     void initShadowMap();
     void renderDepthMap();
     void renderSun(const glm::vec3& lightPos);
+    void updateDynamicLights(ppgso::Shader& shader);
+    std::vector<glm::vec3> lampPositions;
 
 public:
     ParticleWindow();

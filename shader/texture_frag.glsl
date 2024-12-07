@@ -42,7 +42,7 @@ struct SpotLight {
     float quadratic;
 };
 
-#define NR_POINT_LIGHTS 2
+#define NR_POINT_LIGHTS 15
 
 uniform sampler2D Texture;
 uniform vec2 TextureOffset;
@@ -90,11 +90,24 @@ void main() {
     diffuse += dirDiffuse;
     specular += dirSpecular;
 
+    for (int i = 0; i < NR_POINT_LIGHTS; i++) {
+        // Ignore lights with invalid or default positions (e.g., 0,0,0 or out of range)
+        if (length(pointLights[i].position) < 0.001) {
+            continue;
+        }
+
+        vec3 pointLightContribution = CalcPointLight(pointLights[i], norm, FragPos, viewDir, texColor);
+        ambient += pointLightContribution * pointLights[i].ambient;
+        diffuse += pointLightContribution * pointLights[i].diffuse;
+        specular += pointLightContribution * pointLights[i].specular;
+    }
+
+
     float shadow = ShadowCalculation(FragPosLightSpace, norm, dirLightDir);
 
     // Combine lighting
-    vec3 result = CalcDirLight(dirLight, norm, viewDir, texColor);
-    result = mix(result, result * 0.3, shadow); // Adjust shadow darkness
+vec3 result = texColor * (ambient + (diffuse + specular) * (1.0 - shadow));
+    result *= (1.0 - shadow);
 
     FragmentColor = vec4(result, 1.0);
 }
@@ -116,26 +129,31 @@ vec3 CalcDirLight(DirectionalLight light, vec3 normal, vec3 viewDir, vec3 texCol
 }
 
 float ShadowCalculation(vec4 fragPosLightSpace, vec3 normal, vec3 lightDir) {
-    // Perform perspective divide
     vec3 projCoords = fragPosLightSpace.xyz / fragPosLightSpace.w;
-    // Transform to [0,1] range
-    projCoords = projCoords * 0.5 + 0.5;
+    projCoords = projCoords * 0.5 + 0.5; // Transform to [0, 1] range
 
-    // Check if current fragment is outside the shadow map
-    if (projCoords.z > 1.0)
-        return 0.0;
+    if (projCoords.z > 1.0 || projCoords.x < 0.0 || projCoords.x > 1.0 || projCoords.y < 0.0 || projCoords.y > 1.0)
+        return 1.0; // Fully lit if outside shadow map
 
-    // Sample the shadow map
-    float closestDepth = texture(ShadowMap, projCoords.xyz);
-    float currentDepth = projCoords.z;
-    // Bias to prevent shadow acne
-    float bias = max(0.005 * (1.0 - dot(normal, lightDir)), 0.005);
+    // Calculate shadow bias dynamically
+    float bias = max(0.0025 * (1.0 - dot(normal, lightDir)), 0.0025);
+
+    // Perform PCF (Percentage-Closer Filtering)
     float shadow = 0.0;
-    if (currentDepth - bias > closestDepth)
-        shadow = 1.0;
+    vec2 texelSize = 1.0 / vec2(textureSize(ShadowMap, 0));
+    for (int x = -1; x <= 1; ++x) {
+        for (int y = -1; y <= 1; ++y) {
+            float pcfDepth = texture(ShadowMap, vec3(projCoords.xy + vec2(x, y) * texelSize, projCoords.z - bias));
+            shadow += pcfDepth;
+        }
+    }
+    shadow /= 9.0; // Average the results for smoother shadows
 
     return shadow;
 }
+
+
+
 
 // Calculate point light
 vec3 CalcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir, vec3 texColor) {

@@ -17,7 +17,7 @@
 
 #define SIZEx 1280
 #define SIZEy 720
-
+#define NR_POINT_LIGHTS 15
 const unsigned int SHADOW_WIDTH = 1024, SHADOW_HEIGHT = 1024;
 
 ParticleWindow::ParticleWindow()
@@ -26,11 +26,11 @@ ParticleWindow::ParticleWindow()
           lastX(width / 2.0f), lastY(height / 2.0f), firstMouse(true), sensitivity(0.1f),
           depthShader(depth_vert_glsl, depth_frag_glsl) {
     glEnable(GL_DEPTH_TEST);
-    glDepthFunc(GL_LEQUAL);
+    glDepthFunc(GL_LESS);
     glEnable(GL_LINE_SMOOTH);
     glLineWidth(1.0f);
 
-    sunDirection = glm::normalize(glm::vec3(-0.5f, -0.01f, 0.3f));
+    sunDirection = glm::normalize(glm::vec3(-0.5f, -0.1f, 0.3f));
     initShadowMap();
 
     int n = 3;  // Number of 3x3 sub-grids along each dimension
@@ -53,13 +53,13 @@ ParticleWindow::ParticleWindow()
 
     auto grassTile = std::make_unique<GrassTile>(glm::vec3(0.0f, -0.1f, 0.0f), glm::vec3(200.0f));
     scene.push_back(std::move(grassTile));
-
+/*
     auto roadblock1 = std::make_unique<Building>("models/roadblock.obj", grid.getCellPosition(0, 0), "models/roadblock.bmp");
     roadblock1->setScale(0.003f);
     roadblock1->setRotation(glm::linearRand(-30.0f, 30.0f));
 
     scene.push_back(std::move(roadblock1));
-
+*/
     // Iterate through each sub-grid to place buildings and roads
     for (int subGridRow = 0; subGridRow < n; ++subGridRow) {
         for (int subGridCol = 0; subGridCol < n; ++subGridCol) {
@@ -152,6 +152,8 @@ ParticleWindow::ParticleWindow()
                         if (row == 1) {
                             glm::vec3 leftLampPos = cellPosition + glm::vec3(0.0f, 0.0f, -lampOffset);
                             glm::vec3 rightLampPos = cellPosition + glm::vec3(0.0f, 0.0f, lampOffset);
+                            lampPositions.push_back(leftLampPos);
+                            lampPositions.push_back(rightLampPos);
 
                             auto leftLamp = std::make_unique<Building>("models/lamp.obj", leftLampPos, "models/lamp.bmp");
                             leftLamp->setScale(0.002f);
@@ -182,6 +184,8 @@ ParticleWindow::ParticleWindow()
                         if (col == 1) {
                             glm::vec3 topLampPos = cellPosition + glm::vec3(-lampOffset, 0.0f, 0.0f);
                             glm::vec3 bottomLampPos = cellPosition + glm::vec3(lampOffset, 0.0f, 0.0f);
+                            lampPositions.push_back(topLampPos);
+                            lampPositions.push_back(bottomLampPos);
 
                             auto topLamp = std::make_unique<Building>("models/lamp.obj", topLampPos, "models/lamp.bmp");
                             topLamp->setScale(0.002f);
@@ -318,6 +322,37 @@ void ParticleWindow::setLightingUniforms(ppgso::Shader& shader) {
     */
 }
 
+void ParticleWindow::updateDynamicLights(ppgso::Shader& shader) {
+    std::vector<glm::vec3> activeLights;
+    float activationRadius = 25.0f; // Radius around the camera
+
+    // Filter lights based on distance from the camera
+    for (const auto &lampPos: lampPositions) {
+        float distance = glm::distance(camera.position, lampPos);
+        //std::cout << distance << std::endl;
+        if (distance <= activationRadius) {
+            activeLights.push_back(lampPos);
+        }
+    }
+
+    // Update uniforms for the active lights
+    int lightCount = 0;
+    for (const auto &activeLight: activeLights) {
+        if (lightCount >= NR_POINT_LIGHTS) break;
+
+        std::string index = "pointLights[" + std::to_string(lightCount) + "].";
+        shader.setUniform(index + "position", activeLight + glm::vec3(0.0f, 3.0f, 0.0f)); // Offset for lamp height
+        shader.setUniform(index + "ambient", glm::vec3(0.05f));
+        shader.setUniform(index + "diffuse", glm::vec3(0.8f, 0.8f, 0.7f));
+        shader.setUniform(index + "specular", glm::vec3(1.0f));
+        shader.setUniform(index + "constant", 1.0f);
+        shader.setUniform(index + "linear", 0.045f);
+        shader.setUniform(index + "quadratic", 0.0075f);
+
+        lightCount++;
+    }
+}
+
 void ParticleWindow::initShadowMap() {
     // Generate the framebuffer
     glGenFramebuffers(1, &depthMapFBO);
@@ -329,8 +364,8 @@ void ParticleWindow::initShadowMap() {
                  SHADOW_WIDTH, SHADOW_HEIGHT, 0, GL_DEPTH_COMPONENT, GL_FLOAT, nullptr);
 
     // Set texture parameters
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST); // Or GL_LINEAR
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST); // Or GL_LINEAR
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER); // Important for shadows
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
 
@@ -441,7 +476,7 @@ void ParticleWindow::onCursorPos(double xpos, double ypos) {
 void ParticleWindow::updateSunPosition(float dTime) {
     static float sunAngle = 0.0f;
 
-    sunAngle += dTime * 0.01;
+    sunAngle += dTime * 0.5;
 
     if (sunAngle > glm::two_pi<float>()) {
         sunAngle -= glm::two_pi<float>();
@@ -471,9 +506,8 @@ void ParticleWindow::onIdle() {
     float dTime = (float)glfwGetTime() - time;
     time = (float)glfwGetTime();
 
-    updateSunPosition(dTime);
+    //updateSunPosition(dTime);
 
-    // Compute the light space matrix
     glm::vec3 lightPos = -sunDirection * 150.0f; // Position the light far away in the sun's direction
     glm::mat4 lightProjection, lightView;
     float near_plane = 1.0f, far_plane = 200.0f;
@@ -530,6 +564,7 @@ void ParticleWindow::onIdle() {
         if (shadersSet.find(shader) == shadersSet.end()) {
             shader->use();
             setLightingUniforms(*shader);
+            updateDynamicLights(*shader);
             shader->setUniform("LightSpaceMatrix", lightSpaceMatrix);
             shader->setUniform("ShadowMap", 1); // Texture unit 1
             shadersSet.insert(shader);
