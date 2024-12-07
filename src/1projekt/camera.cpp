@@ -1,4 +1,6 @@
 #include "camera.h"
+
+#include <iostream>
 #include <glm/gtx/euler_angles.hpp>
 
 Camera::Camera(float fov, float ratio, float near, float far) {

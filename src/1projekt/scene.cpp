@@ -1,4 +1,5 @@
 #include "scene.h"
+#include "car.h"
 
 void Scenegl::update(float time) {
   camera->update();
@@ -13,6 +14,22 @@ void Scenegl::update(float time) {
       i = objects.erase(i); // NOTE: no need to call destructors as we store shared pointers in the scene
     else
       ++i;
+  }
+  for (auto it1 = objects.begin(); it1 != objects.end(); ++it1) {
+    auto car1 = dynamic_cast<Car*>(it1->get());
+    if (!car1) continue;
+
+    for (auto it2 = std::next(it1); it2 != objects.end(); ++it2) {
+      auto car2 = dynamic_cast<Car*>(it2->get());
+      if (!car2 || car1 == car2) continue;
+
+      //if (car1->checkCollision(*car2)) {
+        //car1->simulateCollision(*car2);
+        //car2->simulateCollision(*car1);
+        // Print the position of the camera to the console
+        //std::cout << "CARS CRASHED" << std::endl;
+      //}
+    }
   }
 }
 

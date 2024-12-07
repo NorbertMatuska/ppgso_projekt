@@ -28,6 +28,8 @@ public:
     // Constructor
     Car(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename);
 
+    bool isAtIntersection();
+
     // Overrides
     bool update(float dTime, Scene& scene);
     void render(const Camera& camera) override;

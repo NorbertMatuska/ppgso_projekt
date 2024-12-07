@@ -459,6 +459,10 @@ CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj: \
  D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
  D:/ppgso_projekt/cmake-build-debug/shaders/depth_frag_glsl.h \
  D:/ppgso_projekt/cmake-build-debug/shaders/depth_vert_glsl.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h \
  D:\ppgso_projekt\src\1projekt\car.h \
  D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.hpp \
  D:/ppgso_projekt/dependencies/include/glm/gtx/transform.hpp \

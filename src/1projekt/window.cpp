@@ -12,6 +12,8 @@
 #include <set>
 #include <shaders/depth_frag_glsl.h>
 #include <shaders/depth_vert_glsl.h>
+#include <chrono>
+
 
 #include "car.h"
 
@@ -63,7 +65,12 @@ ParticleWindow::ParticleWindow()
     scene.push_back(std::move(roadblock1));
 */
 
-    auto car = std::make_unique<Car>("models/car.obj", gridcars.getCellPosition(1,2),"models/car.bmp");
+    static auto lastSpawnTime = std::chrono::steady_clock::now();
+    auto currentTime = std::chrono::steady_clock::now();
+    float spawnInterval = 1.0f; // Spawn every 5 seconds
+
+
+    auto car = std::make_unique<Car>("models/car.obj", gridcars.getCellPosition(1,2), "models/car.bmp");
     car->setScale(0.030f);
     scene.push_back(std::move(car));
 

@@ -334,4 +334,120 @@ CMakeFiles/1projekt.dir/src/1projekt/scene.cpp.obj: \
  D:/ppgso_projekt/dependencies/include/glm/gtc/matrix_transform.hpp \
  D:/ppgso_projekt/dependencies/include/glm/gtc/constants.hpp \
  D:/ppgso_projekt/dependencies/include/glm/gtc/constants.inl \
- D:/ppgso_projekt/dependencies/include/glm/gtc/matrix_transform.inl
+ D:/ppgso_projekt/dependencies/include/glm/gtc/matrix_transform.inl \
+ D:\ppgso_projekt\src\1projekt\car.h \
+ D:\ppgso_projekt\src\1projekt\renderable.h \
+ D:/ppgso_projekt/ppgso/ppgso.h \
+ D:/ppgso_projekt/dependencies/include/glm/gtc/random.hpp \
+ D:/ppgso_projekt/dependencies/include/glm/gtc/random.inl \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/compatibility.hpp \
+ D:/ppgso_projekt/dependencies/include/glm/gtc/quaternion.hpp \
+ D:/ppgso_projekt/dependencies/include/glm/gtc/quaternion.inl \
+ D:/ppgso_projekt/dependencies/include/glm/gtc/quaternion_simd.inl \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/compatibility.inl \
+ D:/ppgso_projekt/ppgso/Mesh_Assimp.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/locale.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
+ D:/ppgso_projekt/dependencies/include/GL/glew.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/inttypes.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/GL/glu.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/GL/gl.h \
+ D:/ppgso_projekt/dependencies/include/glm/gtc/type_ptr.hpp \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/string.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ D:/ppgso_projekt/dependencies/include/glm/gtc/type_ptr.inl \
+ D:/ppgso_projekt/ppgso/shader.h D:/ppgso_projekt/ppgso/texture.h \
+ D:/ppgso_projekt/ppgso/image.h \
+ D:/ppgso_projekt/dependencies/include/assimp/Importer.hpp \
+ D:/ppgso_projekt/dependencies/include/assimp/types.h \
+ D:/ppgso_projekt/dependencies/include/assimp/defs.h \
+ D:/ppgso_projekt/dependencies/include/assimp/config.h \
+ D:/ppgso_projekt/dependencies/include/assimp/vector2.h \
+ D:/ppgso_projekt/dependencies/include/assimp/vector3.h \
+ D:/ppgso_projekt/dependencies/include/assimp/color4.h \
+ D:/ppgso_projekt/dependencies/include/assimp/matrix3x3.h \
+ D:/ppgso_projekt/dependencies/include/assimp/matrix4x4.h \
+ D:/ppgso_projekt/dependencies/include/assimp/quaternion.h \
+ D:/ppgso_projekt/dependencies/include/assimp/vector2.inl \
+ D:/ppgso_projekt/dependencies/include/assimp/vector3.inl \
+ D:/ppgso_projekt/dependencies/include/assimp/color4.inl \
+ D:/ppgso_projekt/dependencies/include/assimp/matrix3x3.inl \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+ D:/ppgso_projekt/dependencies/include/assimp/matrix4x4.inl \
+ D:/ppgso_projekt/dependencies/include/assimp/MathFunctions.h \
+ D:/ppgso_projekt/dependencies/include/assimp/quaternion.inl \
+ D:/ppgso_projekt/dependencies/include/assimp/scene.h \
+ D:/ppgso_projekt/dependencies/include/assimp/texture.h \
+ D:/ppgso_projekt/dependencies/include/assimp/Compiler/pushpack1.h \
+ D:/ppgso_projekt/dependencies/include/assimp/Compiler/poppack1.h \
+ D:/ppgso_projekt/dependencies/include/assimp/mesh.h \
+ D:/ppgso_projekt/dependencies/include/assimp/aabb.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_set \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_set.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
+ D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
+ D:/ppgso_projekt/dependencies/include/assimp/light.h \
+ D:/ppgso_projekt/dependencies/include/assimp/camera.h \
+ D:/ppgso_projekt/dependencies/include/assimp/material.h \
+ D:/ppgso_projekt/dependencies/include/assimp/material.inl \
+ D:/ppgso_projekt/dependencies/include/assimp/anim.h \
+ D:/ppgso_projekt/dependencies/include/assimp/metadata.h \
+ D:/ppgso_projekt/dependencies/include/assimp/postprocess.h \
+ D:/ppgso_projekt/ppgso/image_bmp.h D:/ppgso_projekt/ppgso/image_raw.h \
+ D:/ppgso_projekt/ppgso/window.h \
+ D:/ppgso_projekt/dependencies/include/GLFW/glfw3.h \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.hpp \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/transform.hpp \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/transform.inl \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.inl
