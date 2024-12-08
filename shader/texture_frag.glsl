@@ -106,8 +106,7 @@ void main() {
     float shadow = ShadowCalculation(FragPosLightSpace, norm, dirLightDir);
 
     // Combine lighting
-vec3 result = texColor * (ambient + (diffuse + specular) * (1.0 - shadow));
-    result *= (1.0 - shadow);
+    vec3 result = texColor * (ambient + (diffuse + specular) * (1.0 - shadow));
 
     FragmentColor = vec4(result, 1.0);
 }

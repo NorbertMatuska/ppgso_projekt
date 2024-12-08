@@ -1,3 +1,0 @@
-"D:\CLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\task3_bezier.dir/objects.a
-"D:\CLion\CLion 2024.2.1\bin\mingw\bin\ar.exe" qc CMakeFiles\task3_bezier.dir/objects.a @CMakeFiles\task3_bezier.dir\objects1.rsp
-"D:\CLion\CLion 2024.2.1\bin\mingw\bin\g++.exe" -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -Wl,--whole-archive CMakeFiles\task3_bezier.dir/objects.a -Wl,--no-whole-archive -o task3_bezier.exe -Wl,--out-implib,libtask3_bezier.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\task3_bezier.dir\linkLibs.rsp

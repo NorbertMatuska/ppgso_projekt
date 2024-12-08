@@ -1,4 +1,5 @@
 #include "PostProcessor.h"
+#include "GLFW/glfw3.h"
 #include <iostream>
 
 #include <shaders/quad_vert_glsl.h>
@@ -116,6 +117,16 @@ void PostProcessor::EndRender() {
     finalShader->setUniform("bloom", bloomEnabled);
     finalShader->setUniform("exposure", 1.0f);
 
+    // Render grain
+    finalShader->setUniform("grainIntensity", 0.1f);
+    finalShader->setUniform("grainScale", 100.0f);
+    finalShader->setUniform("grainTime", (float)glfwGetTime());
+
+    // chromatic abberation
+    finalShader->setUniform("chromaticAberration", 0.01f);
+
+
+
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, colorBuffers[0]);
     glActiveTexture(GL_TEXTURE1);
@@ -137,7 +148,7 @@ void PostProcessor::applyBloom() {
     // Blur
     blurShader->use();
     bool horizontal = true, first_iteration = true;
-    unsigned int amount = 10; // blur passes
+    unsigned int amount = 5; // blur passes
     for (unsigned int i = 0; i < amount; i++) {
         glBindFramebuffer(GL_FRAMEBUFFER, pingpongFBO[horizontal]);
         blurShader->setUniform("image", 0);

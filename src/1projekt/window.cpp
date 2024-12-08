@@ -519,7 +519,7 @@ void ParticleWindow::onIdle() {
     time = (float)glfwGetTime();
 
     // (Optional) Update sun direction if needed
-    // updateSunPosition(dTime);
+    updateSunPosition(dTime);
 
     // Setup the light space matrix for shadows
     glm::vec3 lightPos = -sunDirection * 150.0f;
