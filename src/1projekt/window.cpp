@@ -16,6 +16,8 @@
 #include "PostProcessor.h"
 #include <GL/glew.h>
 #include "car.h"
+#include <random>
+#include "trailer.h"
 
 
 #define SIZEx 1280
@@ -43,6 +45,7 @@ ParticleWindow::ParticleWindow()
 
     Grid grid(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.0f, 0.0f));
     Grid gridcars(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.4f, 0.0f));
+    Grid gridtruck(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.8f, 0.0f));
 
     std::vector<std::string> skyboxFaces = {
             "skyboxes/vz_dawn_right.bmp",
@@ -66,9 +69,46 @@ ParticleWindow::ParticleWindow()
     scene.push_back(std::move(roadblock1));
 */
 
-    auto car = std::make_unique<Car>("models/car.obj", gridcars.getCellPosition(1,2), "models/car.bmp");
-    car->setScale(0.030f);
-    scene.push_back(std::move(car));
+    const int carCount = 30;
+
+    int gridRows = 2;
+    int gridCols = 2;
+
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> rowDist(1, gridRows);
+    std::uniform_int_distribution<> colDist(1, gridCols);
+
+
+    for (int i = 0; i < carCount; ++i) {
+
+        int randomRow = rowDist(gen) * 3 + 1;
+        int randomCol = colDist(gen) * 3 + 1;
+
+        std::string textureFile = (i % 2 == 0) ? "models/car.bmp" : "models/car2.bmp";
+
+        auto car = std::make_unique<Car>("models/car.obj", gridcars.getCellPosition(randomRow, randomCol), textureFile);
+        car->setScale(0.030f);
+
+        scene.push_back(std::move(car));
+    }
+
+    auto truckPosition = gridtruck.getCellPosition(1, 2);
+    auto trailerPosition = glm::vec3(truckPosition.x, truckPosition.y, truckPosition.z - 0.1);
+
+    auto truck = std::make_unique<Car>("models/truck.obj", truckPosition, "models/stainless-steel.bmp");
+    truck->setScale(1.8f);
+    truck->setRotation(90.0f);
+
+    auto trailer = std::make_unique<Trailer>("models/trailer.obj", trailerPosition , "models/stainless-steel.bmp");
+    trailer->setScale(1.8f);
+    trailer->setRotation(90.0f);
+
+    trailer->attachToCar(truck.get());
+
+    scene.push_back(std::move(truck));
+    scene.push_back(std::move(trailer));
+
 
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 

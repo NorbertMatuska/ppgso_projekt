@@ -1432,6 +1432,30 @@ src/1projekt/splash_particle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.s
 .PHONY : src/1projekt/splash_particle.cpp.s
 
+src/1projekt/trailer.obj: src/1projekt/trailer.cpp.obj
+.PHONY : src/1projekt/trailer.obj
+
+# target to build an object file
+src/1projekt/trailer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/trailer.cpp.obj
+.PHONY : src/1projekt/trailer.cpp.obj
+
+src/1projekt/trailer.i: src/1projekt/trailer.cpp.i
+.PHONY : src/1projekt/trailer.i
+
+# target to preprocess a source file
+src/1projekt/trailer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/trailer.cpp.i
+.PHONY : src/1projekt/trailer.cpp.i
+
+src/1projekt/trailer.s: src/1projekt/trailer.cpp.s
+.PHONY : src/1projekt/trailer.s
+
+# target to generate assembly for a file
+src/1projekt/trailer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/src/1projekt/trailer.cpp.s
+.PHONY : src/1projekt/trailer.cpp.s
+
 src/1projekt/window.obj: src/1projekt/window.cpp.obj
 .PHONY : src/1projekt/window.obj
 
@@ -2332,6 +2356,9 @@ help:
 	@echo ... src/1projekt/splash_particle.obj
 	@echo ... src/1projekt/splash_particle.i
 	@echo ... src/1projekt/splash_particle.s
+	@echo ... src/1projekt/trailer.obj
+	@echo ... src/1projekt/trailer.i
+	@echo ... src/1projekt/trailer.s
 	@echo ... src/1projekt/window.obj
 	@echo ... src/1projekt/window.i
 	@echo ... src/1projekt/window.s

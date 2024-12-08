@@ -4,12 +4,11 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <shaders/texture_vert_glsl.h>
 #include <shaders/texture_frag_glsl.h>
+#include <random>
 
-// Static resources
 std::unique_ptr<ppgso::Shader> Car::shader;
 glm::vec3 Car::ambientLightColor = glm::vec3(0.8f, 0.7f, 0.6f);
-float animationTime;
-bool atIntersection = false;
+static std::vector<Car*> allCars;
 
 Car::Car(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename)
         : position(initialPosition), direction(1.0f, 0.0f, 0.0f), boundingBox(glm::vec3(1.0f)) {
@@ -19,24 +18,55 @@ Car::Car(const std::string& objFilename, const glm::vec3& initialPosition, const
 
     mesh = std::make_unique<ppgso::Mesh>(objFilename);
     texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP(textureFilename));
+
+    allCars.push_back(this);
 }
 
-void Car::simulateCollision(Car& other) {
+/*void Car::simulateCollision(Car& other) {
     crashed = true;
     other.crashed = true;
 
     animationTime = 0.0f;
-}
+    other.animationTime = 0.0f;
 
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_real_distribution<> angleDist(0, 360);
+
+    float randomAngle1 = glm::radians(angleDist(gen));
+    float randomAngle2 = glm::radians(angleDist(gen));
+
+    direction = glm::vec3(cos(randomAngle1), 0.0f, sin(randomAngle1));
+    other.direction = glm::vec3(cos(randomAngle2), 0.0f, sin(randomAngle2));
+}*/
+/*
+void Car::checkCollision() {
+    for (Car* other : allCars) {
+        if (other == this || other->crashed) continue;
+
+        // Simple AABB (axis-aligned bounding box) collision detection
+        if (glm::abs(position.x - other->position.x) < boundingBox.x &&
+            glm::abs(position.y - other->position.y) < boundingBox.y &&
+            glm::abs(position.z - other->position.z) < boundingBox.z) {
+
+            // Handle collision
+            crashed = true;
+            other->crashed = true;
+
+            // Optionally, stop both cars or redirect them
+            direction = glm::vec3(0.0f);
+            other->direction = glm::vec3(0.0f);
+            }
+    }
+}*/
 
 bool Car::update(float dTime, Scene& scene) {
-    if (crashed) return false;
 
-    // Update position
     position += direction * dTime * 5.0f;
 
-    // Detect if the car is at an intersection
-    float intersectionThreshold = 1.0f; // Threshold for intersection detection
+    //checkCollision();
+
+    float intersectionThreshold = 1.0f;
 
     bool nearIntersection =
         (glm::mod(position.x - 10.0f, 30.0f) < intersectionThreshold ||
@@ -44,37 +74,32 @@ bool Car::update(float dTime, Scene& scene) {
         (glm::mod(position.z - 10.0f, 30.0f) < intersectionThreshold ||
          glm::mod(position.z - 10.0f, 30.0f) > (30.0f - intersectionThreshold));
 
-    // Number of intersections along one axis
-    int n = 3; // Example: adjust as needed
-    float mapEnd = 10.0f + (n - 1) * 30.0f + 10.0f; // End boundary for both x and z
+    int n = 3;
+    float mapEnd = 10.0f + (n - 1) * 30.0f + 10.0f;
 
-    // Check if car is out of bounds
     if (position.x < 0.0f || position.x > mapEnd || position.z < 0.0f || position.z > mapEnd) {
-        // Turn 180 degrees
         direction = -direction;
-        rotation += 180.0f; // Rotate the car 180 degrees (if you are tracking its visual orientation)
+        rotation += 180.0f;
         return true;
     }
 
     if (nearIntersection && !atIntersection) {
         atIntersection = true;
 
-        // Randomly choose a direction at the intersection
-        int turnChoice = glm::linearRand(0, 2); // 0 = straight, 1 = left, 2 = right
+        int turnChoice = glm::linearRand(0, 2);
         switch (turnChoice) {
-            case 0: // Go straight
+            case 0:
                 break;
-            case 1: // Turn left
-                direction = glm::vec3(-direction.z, 0.0f, direction.x); // Rotate 90 degrees left
-            rotation -= 90.0f;
-            break;
-            case 2: // Turn right
-                direction = glm::vec3(direction.z, 0.0f, -direction.x); // Rotate 90 degrees right
-            rotation += 90.0f;
-            break;
+            case 1:
+                direction = glm::vec3(-direction.z, 0.0f, direction.x);
+                rotation -= 90.0f;
+                break;
+            case 2:
+                direction = glm::vec3(direction.z, 0.0f, -direction.x);
+                rotation += 90.0f;
+                break;
         }
     } else if (!nearIntersection && atIntersection) {
-        // Reset the state when leaving the intersection
         atIntersection = false;
     }
 

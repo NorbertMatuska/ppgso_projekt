@@ -9,21 +9,24 @@
 #include <glm/gtx/rotate_vector.hpp> // For rotating direction vectors
 #include <string>
 
-class Car final : public Renderable {
-    static std::unique_ptr<ppgso::Shader> shader;
 
-    std::unique_ptr<ppgso::Mesh> mesh;
-    std::unique_ptr<ppgso::Texture> texture;
+class Car : public Renderable {
 
     glm::vec3 direction; // Current movement direction
-    float scale = 1.0f;
-    float rotation = 0.0f; // Rotation in degrees
     bool crashed = false; // Whether the car is crashed
     glm::vec3 boundingBox; // Bounding box size for collision detection
 
 public:
+    std::unique_ptr<ppgso::Mesh> mesh;
+    std::unique_ptr<ppgso::Texture> texture;
+    float scale = 1.0f;
+    float rotation = 0.0f;
+    static std::unique_ptr<ppgso::Shader> shader;
     glm::vec3 position;
     static glm::vec3 ambientLightColor;
+    bool atIntersection = false;
+    float animationTime{};
+    float rotationTimer;
 
     // Constructor
     Car(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename);
@@ -34,6 +37,7 @@ public:
     bool update(float dTime, Scene& scene);
     void render(const Camera& camera) override;
     void renderDepth(ppgso::Shader& depthShader) override;
+    //void Car::simulateCollision(Car& other);
 
     // Shader getter
     ppgso::Shader* getShader() const override;
@@ -41,16 +45,16 @@ public:
     // Position and direction control
     void setPosition(const glm::vec3& newPosition) { position = newPosition; }
     glm::vec3 getPosition() const { return position; }
+    glm::vec3 getDirection() const { return direction; }
+    float getRotation() const { return rotation; }
+    float getRotationTimer() const { return rotationTimer; }
 
     // Setters
     void setScale(float newScale) { scale = newScale; }
     void setRotation(float angle) { rotation = angle; }
 
     // Collision detection
-    bool checkCollision(const Car& other) const;
-
-    // Collision simulation
-    void simulateCollision(Car& other);
+    //void Car::checkCollision();
 };
 
 #endif // CAR_H

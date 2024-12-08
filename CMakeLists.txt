@@ -196,6 +196,8 @@ add_executable(1projekt
         src/1projekt/car.h
         src/1projekt/PostProcessor.cpp
         src/1projekt/PostProcessor.h
+        src/1projekt/trailer.cpp
+        src/1projekt/trailer.h
 )
 target_link_libraries(1projekt ppgso shaders)
 install(TARGETS 1projekt DESTINATION .)
