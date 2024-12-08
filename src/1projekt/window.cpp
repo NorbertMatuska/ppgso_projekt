@@ -95,6 +95,7 @@ ParticleWindow::ParticleWindow()
 
     auto truckPosition = gridtruck.getCellPosition(1, 2);
     auto trailerPosition = glm::vec3(truckPosition.x, truckPosition.y, truckPosition.z - 0.1);
+    auto trashPosition = glm::vec3(truckPosition.x, truckPosition.y + 0.01, truckPosition.z - 0.1);
 
     auto truck = std::make_unique<Car>("models/truck.obj", truckPosition, "models/stainless-steel.bmp");
     truck->setScale(1.8f);
@@ -106,9 +107,14 @@ ParticleWindow::ParticleWindow()
 
     trailer->attachToCar(truck.get());
 
+    auto trailerTrash = std::make_unique<Building>("models/trashbin.obj", trashPosition, "models/trashbin.bmp");
+    trailerTrash->setScale(0.003);
+
+    trailer->attachTrashBin(trailerTrash.get());
+
     scene.push_back(std::move(truck));
     scene.push_back(std::move(trailer));
-
+    //scene.push_back(std::move(trailerTrash));
 
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 

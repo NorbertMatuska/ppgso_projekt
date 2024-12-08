@@ -445,6 +445,7 @@ CMakeFiles/1projekt.dir/src/1projekt/trailer.cpp.obj: \
  D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
  D:/ppgso_projekt/dependencies/include/GLFW/glfw3.h \
  D:\ppgso_projekt\src\1projekt\camera.h \
+ D:\ppgso_projekt\src\1projekt\building.h \
  D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.hpp \
  D:/ppgso_projekt/dependencies/include/glm/gtx/transform.hpp \
  D:/ppgso_projekt/dependencies/include/glm/gtx/transform.inl \

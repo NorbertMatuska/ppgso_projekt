@@ -3,6 +3,7 @@
 
 #include "renderable.h"
 #include "camera.h"
+#include "building.h"
 #include <ppgso/ppgso.h>
 #include <memory>
 #include <glm/vec3.hpp>
@@ -28,6 +29,7 @@ public:
     float animationTime{};
     Car* parentCar = nullptr;
     glm::vec3 relativePosition;
+    Building* trashBin = nullptr;
 
     Trailer(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename);
 
@@ -43,6 +45,7 @@ public:
     void setScale(float newScale) { scale = newScale; }
     void setRotation(float angle) { rotation = angle; }
     void attachToCar(Car* car) { parentCar = car; }
+    void attachTrashBin(Building* bin) { trashBin = bin; }
     Car* getParentCar();
 };
 

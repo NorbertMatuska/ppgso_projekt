@@ -12,12 +12,13 @@ class Building final : public Renderable {
     // Instance-specific resources
     std::unique_ptr<ppgso::Mesh> mesh;
     std::unique_ptr<ppgso::Texture> texture;
-    glm::vec3 position;
+
     float scale = 1.0f;
     float rotation = 0.0f;
 
 public:
     static glm::vec3 ambientLightColor;
+    glm::vec3 position;
 
     Building(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename);
 

@@ -106,9 +106,6 @@ bool Car::update(float dTime, Scene& scene) {
     return true;
 }
 
-
-
-
 void Car::render(const Camera& camera) {
     if (crashed) return;
     shader->use();

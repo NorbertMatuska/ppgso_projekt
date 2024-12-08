@@ -6483,6 +6483,7 @@ CMakeFiles/1projekt.dir/src/1projekt/trailer.cpp.obj: D:/ppgso_projekt/src/1proj
   D:/ppgso_projekt/ppgso/shader.h \
   D:/ppgso_projekt/ppgso/texture.h \
   D:/ppgso_projekt/ppgso/window.h \
+  D:/ppgso_projekt/src/1projekt/building.h \
   D:/ppgso_projekt/src/1projekt/camera.h \
   D:/ppgso_projekt/src/1projekt/car.h \
   D:/ppgso_projekt/src/1projekt/renderable.h \

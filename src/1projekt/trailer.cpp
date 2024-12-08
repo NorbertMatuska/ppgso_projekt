@@ -24,10 +24,16 @@ bool Trailer::update(float dTime, Scene& scene) {
         position = car->getPosition() + relativePosition;
         position += car->getDirection() * dTime * 5.0f;
         rotation = car->getRotation();
+
+        float height = 1.7f;
+        float offsetX = 0.0f;
+        float offsetY = 0.0f;
+
+        trashBin->position = car->getPosition() + glm::vec3(offsetX, height, offsetY);
     }
+
     return true;
 }
-
 
 
 void Trailer::render(const Camera& camera) {
