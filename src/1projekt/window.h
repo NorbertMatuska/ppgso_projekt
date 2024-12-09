@@ -42,6 +42,7 @@ public:
     void onKey(int key, int scanCode, int action, int mods) override;
     void onCursorPos(double xpos, double ypos) override;
     void onIdle() override;
+    void addCarLights(ppgso::Shader& shader, const glm::vec3& carPosition);
 };
 
 #endif //PPGSO_PARTICLE_WINDOW_H

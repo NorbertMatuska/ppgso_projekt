@@ -24,6 +24,7 @@
 #define SIZEy 720
 #define NR_POINT_LIGHTS 15
 const unsigned int SHADOW_WIDTH = 1024, SHADOW_HEIGHT = 1024;
+static std::vector<Car*> Cars;
 
 ParticleWindow::ParticleWindow()
         : Window{"Project_Matuska_Pacuta", SIZEx, SIZEy},
@@ -94,6 +95,12 @@ ParticleWindow::ParticleWindow()
         auto car = std::make_unique<Car>("models/car.obj", gridcars.getCellPosition(spawnPositions[i][0], spawnPositions[i][1]), textureFile);
         car->setScale(0.030f);
 
+        // Add car lights to the shader
+        auto shader = car->getShader();
+        shader->use();
+        addCarLights(*shader, gridcars.getCellPosition(spawnPositions[i][0], spawnPositions[i][1]));
+
+        Cars.push_back(car.get());
         scene.push_back(std::move(car));
     }
 
@@ -388,22 +395,29 @@ void ParticleWindow::updateDynamicLights(ppgso::Shader& shader) {
     std::vector<glm::vec3> activeLights;
     float activationRadius = 25.0f; // Radius around the camera
 
-    // Filter lights based on distance from the camera
+    // Filter lamp lights based on distance from the camera
     for (const auto &lampPos: lampPositions) {
-        float distance = glm::distance(camera.position, lampPos);
-        //std::cout << distance << std::endl;
-        if (distance <= activationRadius) {
+        if (glm::distance(camera.position, lampPos) <= activationRadius) {
             activeLights.push_back(lampPos);
+        }
+    }
+
+    // Add car lights dynamically
+    for (const auto& car : Cars) {
+        glm::vec3 carPos = car->getPosition();
+        if (glm::distance(camera.position, carPos) <= activationRadius) {
+            activeLights.push_back(carPos + glm::vec3(0.5f, -1.0f, 1.4f)); // Front-left light
+            activeLights.push_back(carPos + glm::vec3(-0.5f, -1.0f, 1.4f)); // Front-right light
         }
     }
 
     // Update uniforms for the active lights
     int lightCount = 0;
-    for (const auto &activeLight: activeLights) {
+    for (const auto& activeLight : activeLights) {
         if (lightCount >= NR_POINT_LIGHTS) break;
 
         std::string index = "pointLights[" + std::to_string(lightCount) + "].";
-        shader.setUniform(index + "position", activeLight + glm::vec3(0.0f, 3.0f, 0.0f)); // Offset for lamp height
+        shader.setUniform(index + "position", activeLight);
         shader.setUniform(index + "ambient", glm::vec3(0.05f));
         shader.setUniform(index + "diffuse", glm::vec3(0.8f, 0.8f, 0.7f));
         shader.setUniform(index + "specular", glm::vec3(1.0f));
@@ -414,6 +428,7 @@ void ParticleWindow::updateDynamicLights(ppgso::Shader& shader) {
         lightCount++;
     }
 }
+
 
 void ParticleWindow::initShadowMap() {
     // Generate the framebuffer
@@ -636,6 +651,31 @@ void ParticleWindow::onIdle() {
     //glfwSwapBuffers(window);
     //glfwPollEvents();
 }
+
+void ParticleWindow::addCarLights(ppgso::Shader& shader, const glm::vec3& carPosition) {
+    // Define offsets for car lights (front-left and front-right)
+    glm::vec3 frontLeftLight = carPosition + glm::vec3(-0.5f, 0.5f, 1.0f); // Adjust as needed
+    glm::vec3 frontRightLight = carPosition + glm::vec3(0.5f, 0.5f, 1.0f);
+
+    // Set light properties for the front-left light
+    shader.setUniform("carLightLeft.position", frontLeftLight);
+    shader.setUniform("carLightLeft.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
+    shader.setUniform("carLightLeft.diffuse", glm::vec3(1.0f, 1.0f, 0.8f));
+    shader.setUniform("carLightLeft.specular", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader.setUniform("carLightLeft.constant", 1.0f);
+    shader.setUniform("carLightLeft.linear", 0.09f);
+    shader.setUniform("carLightLeft.quadratic", 0.032f);
+
+    // Set light properties for the front-right light
+    shader.setUniform("carLightRight.position", frontRightLight);
+    shader.setUniform("carLightRight.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
+    shader.setUniform("carLightRight.diffuse", glm::vec3(1.0f, 1.0f, 0.8f));
+    shader.setUniform("carLightRight.specular", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader.setUniform("carLightRight.constant", 1.0f);
+    shader.setUniform("carLightRight.linear", 0.09f);
+    shader.setUniform("carLightRight.quadratic", 0.032f);
+}
+
 
 void ParticleWindow::renderSun(const glm::vec3& lightPos) {
     glPointSize(10.0f); // Adjust the size of the point

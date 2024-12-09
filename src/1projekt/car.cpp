@@ -76,7 +76,6 @@ bool Car::update(float dTime, Scene& scene) {
         return true;
     }
 
-    // Normal movement logic when not crashed
     if (turning) {
         if (glm::abs(rotation - targetRotation) > 0.1f) {
             float rotationStep = turnSpeed * dTime;
@@ -89,7 +88,7 @@ bool Car::update(float dTime, Scene& scene) {
         }
     }
 
-    position += direction * dTime * 5.0f;
+    //position += direction * dTime * 5.0f;
 
     checkCollision();
 
