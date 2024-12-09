@@ -83,7 +83,6 @@ ParticleWindow::ParticleWindow()
     std::uniform_int_distribution<> rowDist(1, gridRows);
     std::uniform_int_distribution<> colDist(1, gridCols);
 
-
     for (int i = 0; i < carCount; ++i) {
 
         int randomRow = rowDist(gen) * 3 + 1;
@@ -91,6 +90,7 @@ ParticleWindow::ParticleWindow()
 
         std::string textureFile = (i % 2 == 0) ? "models/car.bmp" : "models/car2.bmp";
 
+        //auto car = std::make_unique<Car>("models/car.obj", gridcars.getCellPosition(randomRow, randomCol), textureFile);
         auto car = std::make_unique<Car>("models/car.obj", gridcars.getCellPosition(spawnPositions[i][0], spawnPositions[i][1]), textureFile);
         car->setScale(0.030f);
 

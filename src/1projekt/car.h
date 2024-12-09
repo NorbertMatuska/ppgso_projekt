@@ -27,6 +27,11 @@ public:
     bool atIntersection = false;
     float animationTime{};
     float rotationTimer;
+    bool turning = false;
+    float targetRotation = 0.0f;
+    float turnSpeed = 180.0f;
+    glm::vec3 startPosition;
+
 
     Car(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename);
 

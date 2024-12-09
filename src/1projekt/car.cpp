@@ -11,7 +11,7 @@ glm::vec3 Car::ambientLightColor = glm::vec3(0.8f, 0.7f, 0.6f);
 static std::vector<Car*> allCars;
 
 Car::Car(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename)
-        : position(initialPosition), direction(1.0f, 0.0f, 0.0f), boundingBox(glm::vec3(1.0f)) {
+        : position(initialPosition), startPosition(initialPosition), direction(1.0f, 0.0f, 0.0f), boundingBox(glm::vec3(1.0f)) {
     if (!shader) {
         shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
     }
@@ -21,7 +21,6 @@ Car::Car(const std::string& objFilename, const glm::vec3& initialPosition, const
 
     allCars.push_back(this);
 }
-
 
 void Car::simulateCollision(Car& other) {
     crashed = true;
@@ -41,6 +40,7 @@ void Car::simulateCollision(Car& other) {
     other.direction = glm::vec3(cos(randomAngle2), 0.0f, sin(randomAngle2));
 }
 
+
 void Car::checkCollision() {
     for (Car* other : allCars) {
         if (other == this || other->crashed) continue;
@@ -57,11 +57,36 @@ void Car::checkCollision() {
 bool Car::update(float dTime, Scene& scene) {
     if (crashed) {
         animationTime += dTime;
-        if (animationTime > 1.0f) {
+        if (animationTime <= 1.0f) {
+            position += direction * dTime * 3.0f;
+        } else {
             direction = glm::vec3(0.0f);
         }
-        position += direction * dTime * 3.0f;
+
+        if (animationTime >= 5.0f) {
+            crashed = false;
+            animationTime = 0.0f;
+            position = startPosition;
+            direction = glm::vec3(1.0f, 0.0f, 0.0f);
+            rotation = 0.0f;
+            turning = false;
+            atIntersection = false;
+        }
+
         return true;
+    }
+
+    // Normal movement logic when not crashed
+    if (turning) {
+        if (glm::abs(rotation - targetRotation) > 0.1f) {
+            float rotationStep = turnSpeed * dTime;
+            if (glm::abs(rotation - targetRotation) < rotationStep) {
+                rotation = targetRotation;
+                turning = false;
+            } else {
+                rotation += (targetRotation > rotation) ? rotationStep : -rotationStep;
+            }
+        }
     }
 
     position += direction * dTime * 5.0f;
@@ -69,7 +94,6 @@ bool Car::update(float dTime, Scene& scene) {
     checkCollision();
 
     float intersectionThreshold = 1.0f;
-
     bool nearIntersection =
         (glm::mod(position.x - 10.0f, 30.0f) < intersectionThreshold ||
          glm::mod(position.x - 10.0f, 30.0f) > (30.0f - intersectionThreshold)) &&
@@ -87,18 +111,20 @@ bool Car::update(float dTime, Scene& scene) {
 
     if (nearIntersection && !atIntersection) {
         atIntersection = true;
-
         int turnChoice = glm::linearRand(0, 2);
         switch (turnChoice) {
             case 0:
+                // go straight
                 break;
             case 1:
                 direction = glm::vec3(-direction.z, 0.0f, direction.x);
-                rotation -= 90.0f;
+                targetRotation = rotation - 90.0f;  // left turn
+                turning = true;
                 break;
             case 2:
                 direction = glm::vec3(direction.z, 0.0f, -direction.x);
-                rotation += 90.0f;
+                targetRotation = rotation + 90.0f;  // right turn
+                turning = true;
                 break;
         }
     } else if (!nearIntersection && atIntersection) {
@@ -107,6 +133,8 @@ bool Car::update(float dTime, Scene& scene) {
 
     return true;
 }
+
+
 
 void Car::render(const Camera& camera) {
     shader->use();
