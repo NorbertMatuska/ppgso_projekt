@@ -1,6 +1,7 @@
 #include "car.h"
 #include "camera.h"
 #include "renderable.h"
+#include "splash_particle.h"
 #include <glm/gtc/matrix_transform.hpp>
 #include <shaders/texture_vert_glsl.h>
 #include <shaders/texture_frag_glsl.h>
@@ -11,7 +12,7 @@ glm::vec3 Car::ambientLightColor = glm::vec3(0.8f, 0.7f, 0.6f);
 static std::vector<Car*> allCars;
 
 Car::Car(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename)
-        : position(initialPosition), startPosition(initialPosition), direction(1.0f, 0.0f, 0.0f), boundingBox(glm::vec3(1.0f)) {
+        : direction(1.0f, 0.0f, 0.0f), boundingBox(glm::vec3(1.0f)), position(initialPosition), startPosition(initialPosition) {
     if (!shader) {
         shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
     }
@@ -19,36 +20,108 @@ Car::Car(const std::string& objFilename, const glm::vec3& initialPosition, const
     mesh = std::make_unique<ppgso::Mesh>(objFilename);
     texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP(textureFilename));
 
+    if (objFilename.find("truck") != std::string::npos) { isTruck = true; }
+    else { isTruck = false; }
+
     allCars.push_back(this);
 }
 
-void Car::simulateCollision(Car& other) {
+void Car::simulateCollision(Car& other, Scene& scene) {
+    // Prevent multiple collision responses in the same frame
+    if (crashed || other.crashed) return;
+
+    // Mark both cars as crashed
     crashed = true;
     other.crashed = true;
 
+    // Reset animation times
     animationTime = 0.0f;
     other.animationTime = 0.0f;
 
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_real_distribution<> angleDist(0, 360);
+    // Define masses (assuming equal mass for simplicity)
+    float mass1 = 1.0f;
+    float mass2 = 1.0f;
 
-    float randomAngle1 = glm::radians(angleDist(gen));
-    float randomAngle2 = glm::radians(angleDist(gen));
+    // Calculate the collision normal (normalized vector from other to this)
+    glm::vec3 collisionNormal = glm::normalize(position - other.position);
 
-    direction = glm::vec3(cos(randomAngle1), 0.0f, sin(randomAngle1));
-    other.direction = glm::vec3(cos(randomAngle2), 0.0f, sin(randomAngle2));
+    // Relative velocity
+    glm::vec3 relativeVelocity = direction - other.direction;
+
+    // Velocity along the collision normal
+    float velocityAlongNormal = glm::dot(relativeVelocity, collisionNormal);
+
+    // If velocities are separating, do not resolve
+    if (velocityAlongNormal > 0)
+        return;
+
+    // Coefficient of restitution (1.0 for perfectly elastic collision)
+    float restitution = 0.8f; // Adjust between 0 (inelastic) and 1 (elastic)
+
+    // Calculate impulse scalar
+    float impulseScalar = -(1 + restitution) * velocityAlongNormal;
+    impulseScalar /= (1 / mass1) + (1 / mass2);
+
+    // Apply impulse to the directions (velocities)
+    glm::vec3 impulse = impulseScalar * collisionNormal;
+    direction += (impulse / mass1);
+    other.direction -= (impulse / mass2);
+
+    // Normalize directions to maintain consistent speed
+    direction = glm::normalize(direction);
+    other.direction = glm::normalize(other.direction);
+
+    // Update rotations based on new directions
+    rotation = glm::degrees(atan2(direction.z, direction.x));
+    other.rotation = glm::degrees(atan2(other.direction.z, other.direction.x));
+
+    // Generate splash particles at the point of collision
+    glm::vec3 collisionPoint = (position + other.position) / 2.0f;
+    int particlesPerCar = 100;
+
+    auto generateParticles = [&](const glm::vec3& basePosition, const glm::vec3& dir) {
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_real_distribution<float> offsetDist(-1.0f, 1.0f);
+        std::uniform_real_distribution<float> colorDist(0.2f, 1.0f);
+        std::uniform_real_distribution<float> speedDist(5.0f, 10.0f);
+        std::uniform_real_distribution<float> lifetimeDist(0.5f, 1.5f);
+
+        for (int i = 0; i < particlesPerCar; ++i) {
+            // Slightly offset the collision point for particle distribution
+            glm::vec3 particlePosition = basePosition + glm::vec3(
+                offsetDist(gen) * 0.5f,
+                glm::linearRand(0.0f, 2.0f),
+                offsetDist(gen) * 0.5f
+            );
+
+            // Random color for the particle
+            glm::vec3 color = glm::vec3(colorDist(gen), colorDist(gen), colorDist(gen));
+
+            // Particle velocity influenced by collision direction
+            glm::vec3 velocity = glm::normalize(dir) * speedDist(gen) + glm::sphericalRand(2.0f);
+
+            float lifetime = lifetimeDist(gen);
+
+            auto particle = std::make_unique<SplashParticle>(particlePosition, velocity, color, lifetime);
+            scene.push_back(std::move(particle));
+        }
+    };
+
+    // Generate particles for both cars
+    generateParticles(collisionPoint, direction);
+    generateParticles(collisionPoint, other.direction);
 }
 
 
-void Car::checkCollision() {
+void Car::checkCollision(Scene& scene) {
     for (Car* other : allCars) {
         if (other == this || other->crashed) continue;
 
         if (glm::abs(position.x - other->position.x) < boundingBox.x &&
             glm::abs(position.y - other->position.y) < boundingBox.y &&
             glm::abs(position.z - other->position.z) < boundingBox.z) {
-            simulateCollision(*other);
+            simulateCollision(*other, scene);
             }
     }
 }
@@ -68,7 +141,11 @@ bool Car::update(float dTime, Scene& scene) {
             animationTime = 0.0f;
             position = startPosition;
             direction = glm::vec3(1.0f, 0.0f, 0.0f);
-            rotation = 0.0f;
+            if (isTruck) {
+                rotation = 90.0f;
+            } else {
+                rotation = 0.0f;
+            }
             turning = false;
             atIntersection = false;
         }
@@ -88,9 +165,9 @@ bool Car::update(float dTime, Scene& scene) {
         }
     }
 
-    //position += direction * dTime * 5.0f;
+    position += direction * dTime * 5.0f;
 
-    checkCollision();
+    checkCollision(scene);
 
     float intersectionThreshold = 1.0f;
     bool nearIntersection =

@@ -497,7 +497,7 @@ void ParticleWindow::onKey(int key, int scanCode, int action, int mods) {
     }
 
     if (key == GLFW_KEY_SPACE && action == GLFW_PRESS) {
-        /*
+
         float x = glm::linearRand(-7.0f, 7.0f);
         float y = glm::linearRand(0.5f, 5.0f);
         float z = glm::linearRand(-7.0f, 7.0f);
@@ -516,7 +516,7 @@ void ParticleWindow::onKey(int key, int scanCode, int action, int mods) {
             auto particle = std::make_unique<SplashParticle>(position, speed, color, lt);
             scene.push_back(std::move(particle));
         }
-         */
+
     }
 
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
@@ -553,7 +553,7 @@ void ParticleWindow::onCursorPos(double xpos, double ypos) {
 void ParticleWindow::updateSunPosition(float dTime) {
     static float sunAngle = 0.0f;
 
-    sunAngle += dTime * 0.5;
+    sunAngle += dTime * 0.2;
 
     if (sunAngle > glm::two_pi<float>()) {
         sunAngle -= glm::two_pi<float>();
@@ -648,8 +648,8 @@ void ParticleWindow::onIdle() {
     postProcessor->EndRender();
 
     // After this, the bloom effect has been applied. The final image is displayed to the window.
-    //glfwSwapBuffers(window);
-    //glfwPollEvents();
+    glfwSwapBuffers(window);
+    glfwPollEvents();
 }
 
 void ParticleWindow::addCarLights(ppgso::Shader& shader, const glm::vec3& carPosition) {

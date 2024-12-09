@@ -31,6 +31,10 @@ public:
     float targetRotation = 0.0f;
     float turnSpeed = 180.0f;
     glm::vec3 startPosition;
+    bool isTruck;
+    glm::vec3 velocity = glm::vec3(0.0f);
+    glm::vec3 acceleration = glm::vec3(0.0f);
+    glm::vec3 force = glm::vec3(0.0f);
 
 
     Car(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename);
@@ -52,8 +56,8 @@ public:
 
     void setScale(float newScale) { scale = newScale; }
     void setRotation(float angle) { rotation = angle; }
-    void simulateCollision(Car& other);
-    void checkCollision();
+    void simulateCollision(Car& other, Scene& scene);
+    void checkCollision(Scene& scene);
 };
 
 #endif // CAR_H
