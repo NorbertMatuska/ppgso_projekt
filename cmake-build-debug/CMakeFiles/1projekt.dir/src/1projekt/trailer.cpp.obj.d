@@ -446,10 +446,10 @@ CMakeFiles/1projekt.dir/src/1projekt/trailer.cpp.obj: \
  D:/ppgso_projekt/dependencies/include/GLFW/glfw3.h \
  D:\ppgso_projekt\src\1projekt\camera.h \
  D:\ppgso_projekt\src\1projekt\building.h \
+ D:\ppgso_projekt\src\1projekt\car.h \
  D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.hpp \
  D:/ppgso_projekt/dependencies/include/glm/gtx/transform.hpp \
  D:/ppgso_projekt/dependencies/include/glm/gtx/transform.inl \
  D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.inl \
- D:\ppgso_projekt\src\1projekt\car.h \
  D:/ppgso_projekt/cmake-build-debug/shaders/texture_vert_glsl.h \
  D:/ppgso_projekt/cmake-build-debug/shaders/texture_frag_glsl.h

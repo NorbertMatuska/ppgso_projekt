@@ -448,6 +448,11 @@ CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj: \
  D:\ppgso_projekt\src\1projekt\object.h \
  D:\ppgso_projekt\src\1projekt\grid.h \
  D:\ppgso_projekt\src\1projekt\PostProcessor.h \
+ D:\ppgso_projekt\src\1projekt\car.h \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.hpp \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/transform.hpp \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/transform.inl \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.inl \
  D:\ppgso_projekt\src\1projekt\plane.h \
  D:\ppgso_projekt\src\1projekt\planeCross.h \
  D:\ppgso_projekt\src\1projekt\particle.h \
@@ -464,11 +469,6 @@ CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj: \
  D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
  D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
  D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h \
- D:\ppgso_projekt\src\1projekt\car.h \
- D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.hpp \
- D:/ppgso_projekt/dependencies/include/glm/gtx/transform.hpp \
- D:/ppgso_projekt/dependencies/include/glm/gtx/transform.inl \
- D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.inl \
  D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/random \
  D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.h \
  D:/CLion/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \

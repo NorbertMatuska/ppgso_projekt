@@ -1696,6 +1696,10 @@ CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj: D:/ppgso_projekt/src/1pro
   D:/ppgso_projekt/dependencies/include/glm/gtc/type_ptr.inl \
   D:/ppgso_projekt/dependencies/include/glm/gtx/compatibility.hpp \
   D:/ppgso_projekt/dependencies/include/glm/gtx/compatibility.inl \
+  D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.hpp \
+  D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.inl \
+  D:/ppgso_projekt/dependencies/include/glm/gtx/transform.hpp \
+  D:/ppgso_projekt/dependencies/include/glm/gtx/transform.inl \
   D:/ppgso_projekt/dependencies/include/glm/integer.hpp \
   D:/ppgso_projekt/dependencies/include/glm/mat2x2.hpp \
   D:/ppgso_projekt/dependencies/include/glm/mat2x3.hpp \
@@ -1729,6 +1733,7 @@ CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj: D:/ppgso_projekt/src/1pro
   D:/ppgso_projekt/ppgso/window.h \
   D:/ppgso_projekt/src/1projekt/building.h \
   D:/ppgso_projekt/src/1projekt/camera.h \
+  D:/ppgso_projekt/src/1projekt/car.h \
   D:/ppgso_projekt/src/1projekt/renderable.h
 
 CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj: D:/ppgso_projekt/src/1projekt/camera.cpp \
@@ -3400,6 +3405,10 @@ CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj: D:/ppgso_projekt/src/1projekt
   D:/ppgso_projekt/dependencies/include/glm/gtc/type_ptr.inl \
   D:/ppgso_projekt/dependencies/include/glm/gtx/compatibility.hpp \
   D:/ppgso_projekt/dependencies/include/glm/gtx/compatibility.inl \
+  D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.hpp \
+  D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.inl \
+  D:/ppgso_projekt/dependencies/include/glm/gtx/transform.hpp \
+  D:/ppgso_projekt/dependencies/include/glm/gtx/transform.inl \
   D:/ppgso_projekt/dependencies/include/glm/integer.hpp \
   D:/ppgso_projekt/dependencies/include/glm/mat2x2.hpp \
   D:/ppgso_projekt/dependencies/include/glm/mat2x3.hpp \
@@ -3433,6 +3442,7 @@ CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj: D:/ppgso_projekt/src/1projekt
   D:/ppgso_projekt/ppgso/window.h \
   D:/ppgso_projekt/src/1projekt/PostProcessor.h \
   D:/ppgso_projekt/src/1projekt/camera.h \
+  D:/ppgso_projekt/src/1projekt/car.h \
   D:/ppgso_projekt/src/1projekt/grid.h \
   D:/ppgso_projekt/src/1projekt/object.h \
   D:/ppgso_projekt/src/1projekt/renderable.h \

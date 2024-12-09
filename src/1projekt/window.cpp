@@ -39,9 +39,9 @@ ParticleWindow::ParticleWindow()
     sunDirection = glm::normalize(glm::vec3(-0.5f, -0.1f, 0.3f));
     initShadowMap();
 
-    int n = 3;  // Number of 3x3 sub-grids along each dimension
-    float cellSize = 10.0f;  // Size of each grid cell
-    float subGridSize = 3 * cellSize;  // Size of a 3x3 sub-grid
+    int n = 3;
+    float cellSize = 10.0f;
+    float subGridSize = 3 * cellSize;
 
     Grid grid(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.0f, 0.0f));
     Grid gridcars(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.4f, 0.0f));
@@ -69,10 +69,14 @@ ParticleWindow::ParticleWindow()
     scene.push_back(std::move(roadblock1));
 */
 
-    const int carCount = 30;
+    const int carCount = 10;
 
     int gridRows = 2;
     int gridCols = 2;
+
+    float spawnPositions[carCount][2] = {
+    {1,1},{1,5},{1,7}, {4,1},{4,4},{4,7},{7,7},{7,6},{1,3},{1,4}
+    };
 
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -87,7 +91,7 @@ ParticleWindow::ParticleWindow()
 
         std::string textureFile = (i % 2 == 0) ? "models/car.bmp" : "models/car2.bmp";
 
-        auto car = std::make_unique<Car>("models/car.obj", gridcars.getCellPosition(randomRow, randomCol), textureFile);
+        auto car = std::make_unique<Car>("models/car.obj", gridcars.getCellPosition(spawnPositions[i][0], spawnPositions[i][1]), textureFile);
         car->setScale(0.030f);
 
         scene.push_back(std::move(car));
@@ -114,7 +118,7 @@ ParticleWindow::ParticleWindow()
 
     scene.push_back(std::move(truck));
     scene.push_back(std::move(trailer));
-    //scene.push_back(std::move(trailerTrash));
+    scene.push_back(std::move(trailerTrash));
 
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 

@@ -2,6 +2,7 @@
 #define PPGSO_BUILDING_H
 
 #include "renderable.h"
+#include "car.h"
 #include <ppgso/ppgso.h>
 #include <memory>
 #include <glm/vec3.hpp>

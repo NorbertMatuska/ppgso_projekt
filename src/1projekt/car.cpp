@@ -22,7 +22,8 @@ Car::Car(const std::string& objFilename, const glm::vec3& initialPosition, const
     allCars.push_back(this);
 }
 
-/*void Car::simulateCollision(Car& other) {
+
+void Car::simulateCollision(Car& other) {
     crashed = true;
     other.crashed = true;
 
@@ -38,33 +39,34 @@ Car::Car(const std::string& objFilename, const glm::vec3& initialPosition, const
 
     direction = glm::vec3(cos(randomAngle1), 0.0f, sin(randomAngle1));
     other.direction = glm::vec3(cos(randomAngle2), 0.0f, sin(randomAngle2));
-}*/
-/*
+}
+
 void Car::checkCollision() {
     for (Car* other : allCars) {
         if (other == this || other->crashed) continue;
 
-        // Simple AABB (axis-aligned bounding box) collision detection
         if (glm::abs(position.x - other->position.x) < boundingBox.x &&
             glm::abs(position.y - other->position.y) < boundingBox.y &&
             glm::abs(position.z - other->position.z) < boundingBox.z) {
-
-            // Handle collision
-            crashed = true;
-            other->crashed = true;
-
-            // Optionally, stop both cars or redirect them
-            direction = glm::vec3(0.0f);
-            other->direction = glm::vec3(0.0f);
+            simulateCollision(*other);
             }
     }
-}*/
+}
+
 
 bool Car::update(float dTime, Scene& scene) {
+    if (crashed) {
+        animationTime += dTime;
+        if (animationTime > 1.0f) {
+            direction = glm::vec3(0.0f);
+        }
+        position += direction * dTime * 3.0f;
+        return true;
+    }
 
     position += direction * dTime * 5.0f;
 
-    //checkCollision();
+    checkCollision();
 
     float intersectionThreshold = 1.0f;
 
@@ -107,7 +109,6 @@ bool Car::update(float dTime, Scene& scene) {
 }
 
 void Car::render(const Camera& camera) {
-    if (crashed) return;
     shader->use();
 
     glm::mat4 modelMatrix = glm::translate(glm::mat4(1.0f), position);

@@ -19,6 +19,14 @@ Trailer::Trailer(const std::string& objFilename, const glm::vec3& initialPositio
 
 }
 
+double normalizeAngle(double angle) {
+    angle = fmod(angle, 360);
+    if (angle < 0) {
+        angle += 360;
+    }
+    return angle;
+}
+
 bool Trailer::update(float dTime, Scene& scene) {
     if (auto* car = getParentCar()) {
         position = car->getPosition() + relativePosition;
@@ -29,11 +37,24 @@ bool Trailer::update(float dTime, Scene& scene) {
         float offsetX = 0.0f;
         float offsetY = 0.0f;
 
-        trashBin->position = car->getPosition() + glm::vec3(offsetX, height, offsetY);
+        if (normalizeAngle(rotation) == 0.0f) {
+            offsetY = -4.0f;
+            trashBin->position = car->getPosition() + glm::vec3(offsetX, height, offsetY);
+        } else if (normalizeAngle(rotation) == 90.0f) {
+            offsetX = -4.0f;
+            trashBin->position = car->getPosition() + glm::vec3(offsetX, height, offsetY);
+        } else if (normalizeAngle(rotation) == 180.0f) {
+            offsetY = 4.0f;
+            trashBin->position = car->getPosition() + glm::vec3(offsetX, height, offsetY);
+        } else if (normalizeAngle(rotation) == 270.0f) {
+            offsetX = 4.0f;
+            trashBin->position = car->getPosition() + glm::vec3(offsetX, height, offsetY);
+        }
     }
 
     return true;
 }
+
 
 
 void Trailer::render(const Camera& camera) {

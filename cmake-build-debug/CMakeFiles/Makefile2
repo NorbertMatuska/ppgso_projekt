@@ -175,8 +175,8 @@ CMakeFiles/ppgso.dir/clean:
 # Target rules for target CMakeFiles/1projekt.dir
 
 # All Build rule for target.
-CMakeFiles/1projekt.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/1projekt.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/1projekt.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1projekt.dir\build.make CMakeFiles/1projekt.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target 1projekt"
@@ -306,8 +306,8 @@ CMakeFiles/raw4_raster.dir/clean:
 # Target rules for target CMakeFiles/gl1_gradient.dir
 
 # All Build rule for target.
-CMakeFiles/gl1_gradient.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/gl1_gradient.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/gl1_gradient.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl1_gradient.dir\build.make CMakeFiles/gl1_gradient.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl1_gradient.dir\build.make CMakeFiles/gl1_gradient.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target gl1_gradient"
@@ -333,8 +333,8 @@ CMakeFiles/gl1_gradient.dir/clean:
 # Target rules for target CMakeFiles/gl2_texture.dir
 
 # All Build rule for target.
-CMakeFiles/gl2_texture.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/gl2_texture.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/gl2_texture.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl2_texture.dir\build.make CMakeFiles/gl2_texture.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl2_texture.dir\build.make CMakeFiles/gl2_texture.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=17,18 "Built target gl2_texture"
@@ -360,8 +360,8 @@ CMakeFiles/gl2_texture.dir/clean:
 # Target rules for target CMakeFiles/gl3_animate.dir
 
 # All Build rule for target.
-CMakeFiles/gl3_animate.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/gl3_animate.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/gl3_animate.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl3_animate.dir\build.make CMakeFiles/gl3_animate.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl3_animate.dir\build.make CMakeFiles/gl3_animate.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=19,20 "Built target gl3_animate"
@@ -387,8 +387,8 @@ CMakeFiles/gl3_animate.dir/clean:
 # Target rules for target CMakeFiles/gl4_transform.dir
 
 # All Build rule for target.
-CMakeFiles/gl4_transform.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/gl4_transform.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/gl4_transform.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl4_transform.dir\build.make CMakeFiles/gl4_transform.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl4_transform.dir\build.make CMakeFiles/gl4_transform.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=21 "Built target gl4_transform"
@@ -414,8 +414,8 @@ CMakeFiles/gl4_transform.dir/clean:
 # Target rules for target CMakeFiles/gl5_projection.dir
 
 # All Build rule for target.
-CMakeFiles/gl5_projection.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/gl5_projection.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/gl5_projection.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl5_projection.dir\build.make CMakeFiles/gl5_projection.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl5_projection.dir\build.make CMakeFiles/gl5_projection.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=22,23 "Built target gl5_projection"
@@ -441,8 +441,8 @@ CMakeFiles/gl5_projection.dir/clean:
 # Target rules for target CMakeFiles/gl6_mesh.dir
 
 # All Build rule for target.
-CMakeFiles/gl6_mesh.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/gl6_mesh.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/gl6_mesh.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl6_mesh.dir\build.make CMakeFiles/gl6_mesh.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl6_mesh.dir\build.make CMakeFiles/gl6_mesh.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=24,25 "Built target gl6_mesh"
@@ -468,8 +468,8 @@ CMakeFiles/gl6_mesh.dir/clean:
 # Target rules for target CMakeFiles/gl7_diffuse.dir
 
 # All Build rule for target.
-CMakeFiles/gl7_diffuse.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/gl7_diffuse.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/gl7_diffuse.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl7_diffuse.dir\build.make CMakeFiles/gl7_diffuse.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl7_diffuse.dir\build.make CMakeFiles/gl7_diffuse.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=26,27 "Built target gl7_diffuse"
@@ -495,8 +495,8 @@ CMakeFiles/gl7_diffuse.dir/clean:
 # Target rules for target CMakeFiles/gl8_framebuffer.dir
 
 # All Build rule for target.
-CMakeFiles/gl8_framebuffer.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/gl8_framebuffer.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/gl8_framebuffer.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl8_framebuffer.dir\build.make CMakeFiles/gl8_framebuffer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl8_framebuffer.dir\build.make CMakeFiles/gl8_framebuffer.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=28 "Built target gl8_framebuffer"
@@ -522,8 +522,8 @@ CMakeFiles/gl8_framebuffer.dir/clean:
 # Target rules for target CMakeFiles/gl9_scene.dir
 
 # All Build rule for target.
-CMakeFiles/gl9_scene.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/gl9_scene.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/gl9_scene.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=29,30,31,32,33,34,35,36,37,38 "Built target gl9_scene"
@@ -575,8 +575,8 @@ CMakeFiles/task1_filter.dir/clean:
 # Target rules for target CMakeFiles/task2_bresenham.dir
 
 # All Build rule for target.
-CMakeFiles/task2_bresenham.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/task2_bresenham.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/task2_bresenham.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task2_bresenham.dir\build.make CMakeFiles/task2_bresenham.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task2_bresenham.dir\build.make CMakeFiles/task2_bresenham.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=90,91 "Built target task2_bresenham"
@@ -602,8 +602,8 @@ CMakeFiles/task2_bresenham.dir/clean:
 # Target rules for target CMakeFiles/task3_bezier.dir
 
 # All Build rule for target.
-CMakeFiles/task3_bezier.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/task3_bezier.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/task3_bezier.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task3_bezier.dir\build.make CMakeFiles/task3_bezier.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task3_bezier.dir\build.make CMakeFiles/task3_bezier.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=92 "Built target task3_bezier"
@@ -629,8 +629,8 @@ CMakeFiles/task3_bezier.dir/clean:
 # Target rules for target CMakeFiles/task4_2dshapes.dir
 
 # All Build rule for target.
-CMakeFiles/task4_2dshapes.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/task4_2dshapes.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/task4_2dshapes.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task4_2dshapes.dir\build.make CMakeFiles/task4_2dshapes.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task4_2dshapes.dir\build.make CMakeFiles/task4_2dshapes.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=93,94 "Built target task4_2dshapes"
@@ -656,8 +656,8 @@ CMakeFiles/task4_2dshapes.dir/clean:
 # Target rules for target CMakeFiles/task5_3d_origin.dir
 
 # All Build rule for target.
-CMakeFiles/task5_3d_origin.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/task5_3d_origin.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/task5_3d_origin.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task5_3d_origin.dir\build.make CMakeFiles/task5_3d_origin.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task5_3d_origin.dir\build.make CMakeFiles/task5_3d_origin.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=95,96 "Built target task5_3d_origin"
@@ -683,8 +683,8 @@ CMakeFiles/task5_3d_origin.dir/clean:
 # Target rules for target CMakeFiles/task6_bezier_surface.dir
 
 # All Build rule for target.
-CMakeFiles/task6_bezier_surface.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/task6_bezier_surface.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/task6_bezier_surface.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task6_bezier_surface.dir\build.make CMakeFiles/task6_bezier_surface.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task6_bezier_surface.dir\build.make CMakeFiles/task6_bezier_surface.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=97,98 "Built target task6_bezier_surface"
@@ -710,8 +710,8 @@ CMakeFiles/task6_bezier_surface.dir/clean:
 # Target rules for target CMakeFiles/task7_particles.dir
 
 # All Build rule for target.
-CMakeFiles/task7_particles.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/task7_particles.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/task7_particles.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task7_particles.dir\build.make CMakeFiles/task7_particles.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task7_particles.dir\build.make CMakeFiles/task7_particles.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=99,100 "Built target task7_particles"
@@ -737,8 +737,8 @@ CMakeFiles/task7_particles.dir/clean:
 # Target rules for target CMakeFiles/playground.dir
 
 # All Build rule for target.
-CMakeFiles/playground.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/playground.dir/all: CMakeFiles/shaders.dir/all
+CMakeFiles/playground.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\playground.dir\build.make CMakeFiles/playground.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\playground.dir\build.make CMakeFiles/playground.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ppgso_projekt\cmake-build-debug\CMakeFiles --progress-num=39,40 "Built target playground"

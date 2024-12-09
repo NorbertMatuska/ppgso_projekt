@@ -447,4 +447,9 @@ CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj: \
  D:\ppgso_projekt\src\1projekt\scene.h \
  D:\ppgso_projekt\src\1projekt\object.h \
  D:\ppgso_projekt\src\1projekt\grid.h \
- D:\ppgso_projekt\src\1projekt\PostProcessor.h
+ D:\ppgso_projekt\src\1projekt\PostProcessor.h \
+ D:\ppgso_projekt\src\1projekt\car.h \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.hpp \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/transform.hpp \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/transform.inl \
+ D:/ppgso_projekt/dependencies/include/glm/gtx/rotate_vector.inl

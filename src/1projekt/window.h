@@ -8,6 +8,7 @@
 #include <map>
 #include "grid.h"
 #include "PostProcessor.h"
+#include "car.h"
 
 class ParticleWindow : public ppgso::Window {
 private:
