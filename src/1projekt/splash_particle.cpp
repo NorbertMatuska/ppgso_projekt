@@ -5,7 +5,6 @@
 #include <shaders/color_vert_glsl.h>
 #include <shaders/color_frag_glsl.h>
 
-// Static resources
 std::unique_ptr<ppgso::Mesh> SplashParticle::mesh;
 std::unique_ptr<ppgso::Shader> SplashParticle::shader;
 

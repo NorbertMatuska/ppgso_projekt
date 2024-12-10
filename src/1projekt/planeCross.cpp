@@ -44,7 +44,6 @@ void PlaneCross::render(const Camera& camera) {
 
     glm::mat4 modelMatrix = glm::mat4(1.0f);
 
-    // Apply transformations: position, rotation, and scale
     modelMatrix = glm::translate(modelMatrix, position);
     modelMatrix = glm::rotate(modelMatrix, glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
     modelMatrix = glm::rotate(modelMatrix, glm::radians(rotation), glm::vec3(0.0f, 0.0f, 1.0f));

@@ -6,7 +6,6 @@
 #include <shaders/color_vert_glsl.h>
 #include <shaders/color_frag_glsl.h>
 
-// Static resources
 std::unique_ptr<ppgso::Mesh> Particle::mesh;
 std::unique_ptr<ppgso::Shader> Particle::shader;
 
@@ -29,15 +28,12 @@ void Particle::renderDepth(ppgso::Shader& depthShader) {
 }
 
 bool Particle::update(float dTime, Scene &scene) {
-    // Apply wind as acceleration
     speed += wind * dTime;
 
-    // Update position based on speed
     position += speed * dTime;
     age += dTime;
 
     if (position.y <= 0.5f) {
-        // Generate splash particles
         const int NUM_SPLASH_PARTICLES = 100;
         for (int i = 0; i < NUM_SPLASH_PARTICLES; ++i) {
             float angle = glm::linearRand(0.0f, glm::two_pi<float>());
@@ -47,10 +43,9 @@ bool Particle::update(float dTime, Scene &scene) {
             auto splashParticle = std::make_unique<SplashParticle>(position, splashSpeed, splashColor, 1.0f);
             scene.push_back(std::move(splashParticle));
         }
-        return false; // Remove the rain particle
+        return false;
     }
 
-    // Update model matrix for rendering
     modelMatrix = glm::translate(glm::mat4(1.0f), position);
     modelMatrix = glm::scale(modelMatrix, glm::vec3(0.05f));
 

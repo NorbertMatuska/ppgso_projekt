@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "task4_2dshapes.exe"
+			"path" : "gl9_scene.exe"
 		},
 		{
-			"path" : "task4_2dshapes.pdb"
+			"path" : "gl9_scene.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 303,
+				"line" : 270,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 305,
+				"line" : 282,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 304,
+				"line" : 281,
 				"parent" : 0
 			},
 			{
@@ -113,7 +113,16 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
 			]
 		}
 	],
@@ -128,7 +137,7 @@
 			"id" : "shaders::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "task4_2dshapes::@6890427a1f51a3e7e1df",
+	"id" : "gl9_scene::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -197,8 +206,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "task4_2dshapes",
-	"nameOnDisk" : "task4_2dshapes.exe",
+	"name" : "gl9_scene",
+	"nameOnDisk" : "gl9_scene.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -210,7 +219,16 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
 			]
 		}
 	],
@@ -219,7 +237,61 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/task4_2dshapes/task4_2dshapes.cpp",
+			"path" : "src/gl9_scene/gl9_scene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gl9_scene/object.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gl9_scene/scene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gl9_scene/camera.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gl9_scene/asteroid.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gl9_scene/generator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gl9_scene/player.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gl9_scene/projectile.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gl9_scene/explosion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gl9_scene/space.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

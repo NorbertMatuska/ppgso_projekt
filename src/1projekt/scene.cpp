@@ -4,14 +4,12 @@
 void Scenegl::update(float time) {
   camera->update();
 
-  // Use iterator to update all objects so we can remove while iterating
   auto i = std::begin(objects);
 
   while (i != std::end(objects)) {
-    // Update and remove from list if needed
     auto obj = i->get();
     if (!obj->update(*this, time))
-      i = objects.erase(i); // NOTE: no need to call destructors as we store shared pointers in the scene
+      i = objects.erase(i);
     else
       ++i;
   }
@@ -22,19 +20,11 @@ void Scenegl::update(float time) {
     for (auto it2 = std::next(it1); it2 != objects.end(); ++it2) {
       auto car2 = dynamic_cast<Car*>(it2->get());
       if (!car2 || car1 == car2) continue;
-
-      //if (car1->checkCollision(*car2)) {
-        //car1->simulateCollision(*car2);
-        //car2->simulateCollision(*car1);
-        // Print the position of the camera to the console
-        //std::cout << "CARS CRASHED" << std::endl;
-      //}
     }
   }
 }
 
 void Scenegl::render() {
-  // Simply render all objects
   for ( auto& obj : objects )
     obj->render(*this);
 }
@@ -42,7 +32,6 @@ void Scenegl::render() {
 std::vector<Object*> Scenegl::intersect(const glm::vec3 &position, const glm::vec3 &direction) {
   std::vector<Object*> intersected = {};
   for(auto& object : objects) {
-    // Collision with sphere of size object->scale.x
     auto oc = position - object->position;
     auto radius = object->scale.x;
     auto a = glm::dot(direction, direction);

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "gl6_mesh.exe"
+			"path" : "raw3_raytrace.exe"
 		},
 		{
-			"path" : "gl6_mesh.pdb"
+			"path" : "raw3_raytrace.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 256,
+				"line" : 220,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 258,
+				"line" : 222,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 257,
+				"line" : 221,
 				"parent" : 0
 			},
 			{
@@ -122,13 +122,9 @@
 		{
 			"backtrace" : 3,
 			"id" : "ppgso::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 3,
-			"id" : "shaders::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "gl6_mesh::@6890427a1f51a3e7e1df",
+	"id" : "raw3_raytrace::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -158,11 +154,6 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "libppgso.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 3,
-				"fragment" : "libshaders.a",
 				"role" : "libraries"
 			},
 			{
@@ -197,8 +188,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "gl6_mesh",
-	"nameOnDisk" : "gl6_mesh.exe",
+	"name" : "raw3_raytrace",
+	"nameOnDisk" : "raw3_raytrace.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -219,7 +210,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/gl6_mesh/gl6_mesh.cpp",
+			"path" : "src/raw3_raytrace/raw3_raytrace.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

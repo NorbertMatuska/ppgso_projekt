@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "task5_3d_origin.exe"
+			"path" : "gl4_transform.exe"
 		},
 		{
-			"path" : "task5_3d_origin.pdb"
+			"path" : "gl4_transform.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 308,
+				"line" : 245,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 310,
+				"line" : 247,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 309,
+				"line" : 246,
 				"parent" : 0
 			},
 			{
@@ -128,7 +128,7 @@
 			"id" : "shaders::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "task5_3d_origin::@6890427a1f51a3e7e1df",
+	"id" : "gl4_transform::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -197,8 +197,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "task5_3d_origin",
-	"nameOnDisk" : "task5_3d_origin.exe",
+	"name" : "gl4_transform",
+	"nameOnDisk" : "gl4_transform.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -219,7 +219,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/task5_3d_origin/task5_3d_origin.cpp",
+			"path" : "src/gl4_transform/gl4_transform.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

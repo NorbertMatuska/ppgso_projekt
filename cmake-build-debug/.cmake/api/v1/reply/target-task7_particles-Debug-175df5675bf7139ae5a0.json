@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "raw4_raster.exe"
+			"path" : "task7_particles.exe"
 		},
 		{
-			"path" : "raw4_raster.pdb"
+			"path" : "task7_particles.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 226,
+				"line" : 318,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 228,
+				"line" : 320,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 227,
+				"line" : 319,
 				"parent" : 0
 			},
 			{
@@ -122,9 +122,13 @@
 		{
 			"backtrace" : 3,
 			"id" : "ppgso::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "shaders::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "raw4_raster::@6890427a1f51a3e7e1df",
+	"id" : "task7_particles::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -154,6 +158,11 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "libppgso.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "libshaders.a",
 				"role" : "libraries"
 			},
 			{
@@ -188,8 +197,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "raw4_raster",
-	"nameOnDisk" : "raw4_raster.exe",
+	"name" : "task7_particles",
+	"nameOnDisk" : "task7_particles.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -210,7 +219,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/raw4_raster/raw4_raster.cpp",
+			"path" : "src/task7_particles/task7_particles.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

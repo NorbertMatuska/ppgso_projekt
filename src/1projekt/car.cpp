@@ -27,55 +27,41 @@ Car::Car(const std::string& objFilename, const glm::vec3& initialPosition, const
 }
 
 void Car::simulateCollision(Car& other, Scene& scene) {
-    // Prevent multiple collision responses in the same frame
     if (crashed || other.crashed) return;
 
-    // Mark both cars as crashed
     crashed = true;
     other.crashed = true;
 
-    // Reset animation times
     animationTime = 0.0f;
     other.animationTime = 0.0f;
 
-    // Define masses (assuming equal mass for simplicity)
     float mass1 = 1.0f;
     float mass2 = 1.0f;
 
-    // Calculate the collision normal (normalized vector from other to this)
     glm::vec3 collisionNormal = glm::normalize(position - other.position);
 
-    // Relative velocity
     glm::vec3 relativeVelocity = direction - other.direction;
 
-    // Velocity along the collision normal
     float velocityAlongNormal = glm::dot(relativeVelocity, collisionNormal);
 
-    // If velocities are separating, do not resolve
     if (velocityAlongNormal > 0)
         return;
 
-    // Coefficient of restitution (1.0 for perfectly elastic collision)
-    float restitution = 0.8f; // Adjust between 0 (inelastic) and 1 (elastic)
+    float restitution = 0.8f;
 
-    // Calculate impulse scalar
     float impulseScalar = -(1 + restitution) * velocityAlongNormal;
     impulseScalar /= (1 / mass1) + (1 / mass2);
 
-    // Apply impulse to the directions (velocities)
     glm::vec3 impulse = impulseScalar * collisionNormal;
     direction += (impulse / mass1);
     other.direction -= (impulse / mass2);
 
-    // Normalize directions to maintain consistent speed
     direction = glm::normalize(direction);
     other.direction = glm::normalize(other.direction);
 
-    // Update rotations based on new directions
     rotation = glm::degrees(atan2(direction.z, direction.x));
     other.rotation = glm::degrees(atan2(other.direction.z, other.direction.x));
 
-    // Generate splash particles at the point of collision
     glm::vec3 collisionPoint = (position + other.position) / 2.0f;
     int particlesPerCar = 100;
 
@@ -88,17 +74,14 @@ void Car::simulateCollision(Car& other, Scene& scene) {
         std::uniform_real_distribution<float> lifetimeDist(0.5f, 1.5f);
 
         for (int i = 0; i < particlesPerCar; ++i) {
-            // Slightly offset the collision point for particle distribution
             glm::vec3 particlePosition = basePosition + glm::vec3(
                 offsetDist(gen) * 0.5f,
                 glm::linearRand(0.0f, 2.0f),
                 offsetDist(gen) * 0.5f
             );
 
-            // Random color for the particle
             glm::vec3 color = glm::vec3(colorDist(gen), colorDist(gen), colorDist(gen));
 
-            // Particle velocity influenced by collision direction
             glm::vec3 velocity = glm::normalize(dir) * speedDist(gen) + glm::sphericalRand(2.0f);
 
             float lifetime = lifetimeDist(gen);
@@ -108,7 +91,6 @@ void Car::simulateCollision(Car& other, Scene& scene) {
         }
     };
 
-    // Generate particles for both cars
     generateParticles(collisionPoint, direction);
     generateParticles(collisionPoint, other.direction);
 }
@@ -201,6 +183,8 @@ bool Car::update(float dTime, Scene& scene) {
                 direction = glm::vec3(direction.z, 0.0f, -direction.x);
                 targetRotation = rotation + 90.0f;  // right turn
                 turning = true;
+                break;
+            default:
                 break;
         }
     } else if (!nearIntersection && atIntersection) {

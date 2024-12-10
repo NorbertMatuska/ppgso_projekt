@@ -4,7 +4,6 @@
 #include <shaders/texture_vert_grass_glsl.h>
 #include <shaders/texture_frag_grass_glsl.h>
 
-// Static resources
 std::unique_ptr<ppgso::Mesh> GrassTile::mesh;
 std::unique_ptr<ppgso::Shader> GrassTile::shader;
 std::unique_ptr<ppgso::Texture> GrassTile::texture;
@@ -42,7 +41,6 @@ void GrassTile::render(const Camera& camera) {
 
     glm::mat4 modelMatrix = glm::mat4(1.0f);
 
-    // Apply transformations: translation and scale
     modelMatrix = glm::translate(modelMatrix, position);
     modelMatrix = glm::scale(modelMatrix, scale);
     modelMatrix = glm::rotate(modelMatrix, glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
@@ -56,7 +54,7 @@ void GrassTile::render(const Camera& camera) {
     shader->setUniform("material.specular", glm::vec3(1.0f));
     shader->setUniform("material.shininess", 64.0f);
 
-    float tilingFactor = 50.0f; // Adjust this to control how often the grass texture tiles
+    float tilingFactor = 50.0f;
     shader->setUniform("TilingFactor", tilingFactor);
 
     mesh->render();

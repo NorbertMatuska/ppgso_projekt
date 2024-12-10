@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "raw2_raycast.exe"
+			"path" : "playground.exe"
 		},
 		{
-			"path" : "raw2_raycast.pdb"
+			"path" : "playground.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 216,
+				"line" : 324,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 218,
+				"line" : 326,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 217,
+				"line" : 325,
 				"parent" : 0
 			},
 			{
@@ -122,9 +122,13 @@
 		{
 			"backtrace" : 3,
 			"id" : "ppgso::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "shaders::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "raw2_raycast::@6890427a1f51a3e7e1df",
+	"id" : "playground::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -154,6 +158,11 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "libppgso.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "libshaders.a",
 				"role" : "libraries"
 			},
 			{
@@ -188,8 +197,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "raw2_raycast",
-	"nameOnDisk" : "raw2_raycast.exe",
+	"name" : "playground",
+	"nameOnDisk" : "playground.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -210,7 +219,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/raw2_raycast/raw2_raycast.cpp",
+			"path" : "src/playground/playground.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

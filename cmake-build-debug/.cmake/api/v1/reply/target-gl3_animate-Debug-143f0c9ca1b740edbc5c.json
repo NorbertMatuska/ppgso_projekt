@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "gl4_transform.exe"
+			"path" : "gl3_animate.exe"
 		},
 		{
-			"path" : "gl4_transform.pdb"
+			"path" : "gl3_animate.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 246,
+				"line" : 240,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 248,
+				"line" : 242,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 247,
+				"line" : 241,
 				"parent" : 0
 			},
 			{
@@ -128,7 +128,7 @@
 			"id" : "shaders::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "gl4_transform::@6890427a1f51a3e7e1df",
+	"id" : "gl3_animate::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -197,8 +197,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "gl4_transform",
-	"nameOnDisk" : "gl4_transform.exe",
+	"name" : "gl3_animate",
+	"nameOnDisk" : "gl3_animate.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -219,7 +219,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/gl4_transform/gl4_transform.cpp",
+			"path" : "src/gl3_animate/gl3_animate.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-3de9d8669336133abbfe.json",
+					"jsonFile" : "directory-.-Debug-c3e5e4ceffd506b13566.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -86,77 +86,77 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "1projekt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-1projekt-Debug-426a4863132101d18e08.json",
+					"jsonFile" : "target-1projekt-Debug-bad209b012924a97e125.json",
 					"name" : "1projekt",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "gl1_gradient::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gl1_gradient-Debug-e8a43860b0c2bbc3d803.json",
+					"jsonFile" : "target-gl1_gradient-Debug-c8fe96c63d79568cfc00.json",
 					"name" : "gl1_gradient",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "gl2_texture::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gl2_texture-Debug-5f81c4a81f0962dbda21.json",
+					"jsonFile" : "target-gl2_texture-Debug-29dd8fc731efb904fc59.json",
 					"name" : "gl2_texture",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "gl3_animate::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gl3_animate-Debug-bd499c660e8042bc4912.json",
+					"jsonFile" : "target-gl3_animate-Debug-143f0c9ca1b740edbc5c.json",
 					"name" : "gl3_animate",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "gl4_transform::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gl4_transform-Debug-180f4e0bd2655c6af37c.json",
+					"jsonFile" : "target-gl4_transform-Debug-dd5c22ed4661d72eb1ae.json",
 					"name" : "gl4_transform",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "gl5_projection::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gl5_projection-Debug-39146acced4376f8a89d.json",
+					"jsonFile" : "target-gl5_projection-Debug-4e6e30e9410178c075dc.json",
 					"name" : "gl5_projection",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "gl6_mesh::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gl6_mesh-Debug-ad505ea878444a7de48a.json",
+					"jsonFile" : "target-gl6_mesh-Debug-5bad391aa02fa52b606f.json",
 					"name" : "gl6_mesh",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "gl7_diffuse::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gl7_diffuse-Debug-367c26e090d158070f6d.json",
+					"jsonFile" : "target-gl7_diffuse-Debug-784d1c4db19c18e4a55c.json",
 					"name" : "gl7_diffuse",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "gl8_framebuffer::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gl8_framebuffer-Debug-6b1baf00a69f0734eab6.json",
+					"jsonFile" : "target-gl8_framebuffer-Debug-06b8dae0b57d3966fd86.json",
 					"name" : "gl8_framebuffer",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "gl9_scene::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gl9_scene-Debug-62df452dcb25af6a9bfd.json",
+					"jsonFile" : "target-gl9_scene-Debug-436c73729f2802287f2c.json",
 					"name" : "gl9_scene",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "playground::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-playground-Debug-019f849296f3ed5b775f.json",
+					"jsonFile" : "target-playground-Debug-1f3e77214d316c9e1732.json",
 					"name" : "playground",
 					"projectIndex" : 0
 				},
@@ -170,28 +170,28 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "raw1_gradient::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-raw1_gradient-Debug-e1bb9dbcd793d63b7b85.json",
+					"jsonFile" : "target-raw1_gradient-Debug-0792704146ae1749a91b.json",
 					"name" : "raw1_gradient",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "raw2_raycast::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-raw2_raycast-Debug-248a03a19a91e19e9743.json",
+					"jsonFile" : "target-raw2_raycast-Debug-9ec8ccba0a824d8f16f8.json",
 					"name" : "raw2_raycast",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "raw3_raytrace::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-raw3_raytrace-Debug-e3a2df2fbd5ae9577d6b.json",
+					"jsonFile" : "target-raw3_raytrace-Debug-0b573c9d29899402c5cc.json",
 					"name" : "raw3_raytrace",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "raw4_raster::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-raw4_raster-Debug-80f319aafcfed347187f.json",
+					"jsonFile" : "target-raw4_raster-Debug-f4e5068c2fb0daee69ac.json",
 					"name" : "raw4_raster",
 					"projectIndex" : 0
 				},
@@ -205,49 +205,49 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "task1_filter::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-task1_filter-Debug-b97294a6f17306cb4eeb.json",
+					"jsonFile" : "target-task1_filter-Debug-349ec7c48a7f6283d05b.json",
 					"name" : "task1_filter",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "task2_bresenham::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-task2_bresenham-Debug-93cc663ea2d72b96a54e.json",
+					"jsonFile" : "target-task2_bresenham-Debug-d2306791ce54abcfbded.json",
 					"name" : "task2_bresenham",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "task3_bezier::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-task3_bezier-Debug-ce5002a6d763128e99da.json",
+					"jsonFile" : "target-task3_bezier-Debug-10604e2d84546cabe907.json",
 					"name" : "task3_bezier",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "task4_2dshapes::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-task4_2dshapes-Debug-0c7f1340c517806bbb40.json",
+					"jsonFile" : "target-task4_2dshapes-Debug-35376d3565c28256fe66.json",
 					"name" : "task4_2dshapes",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "task5_3d_origin::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-task5_3d_origin-Debug-b43a0ee794a0ed506e2a.json",
+					"jsonFile" : "target-task5_3d_origin-Debug-6977a8df4dd32f5e3ce3.json",
 					"name" : "task5_3d_origin",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "task6_bezier_surface::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-task6_bezier_surface-Debug-0a526957194e9b225541.json",
+					"jsonFile" : "target-task6_bezier_surface-Debug-ff52108f82888972ffd1.json",
 					"name" : "task6_bezier_surface",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "task7_particles::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-task7_particles-Debug-6f4f3025cf83ec5561dd.json",
+					"jsonFile" : "target-task7_particles-Debug-175df5675bf7139ae5a0.json",
 					"name" : "task7_particles",
 					"projectIndex" : 0
 				}

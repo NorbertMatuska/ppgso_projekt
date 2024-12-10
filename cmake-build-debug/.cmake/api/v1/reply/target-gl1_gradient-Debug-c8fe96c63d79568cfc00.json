@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "playground.exe"
+			"path" : "gl1_gradient.exe"
 		},
 		{
-			"path" : "playground.pdb"
+			"path" : "gl1_gradient.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 325,
+				"line" : 230,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 327,
+				"line" : 232,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 326,
+				"line" : 231,
 				"parent" : 0
 			},
 			{
@@ -128,7 +128,7 @@
 			"id" : "shaders::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "playground::@6890427a1f51a3e7e1df",
+	"id" : "gl1_gradient::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -197,8 +197,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "playground",
-	"nameOnDisk" : "playground.exe",
+	"name" : "gl1_gradient",
+	"nameOnDisk" : "gl1_gradient.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -219,7 +219,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/playground/playground.cpp",
+			"path" : "src/gl1_gradient/gl1_gradient.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

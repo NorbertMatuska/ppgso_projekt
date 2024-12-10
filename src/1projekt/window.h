@@ -10,8 +10,26 @@
 #include "PostProcessor.h"
 #include "car.h"
 #include "animation_curve.h"
-#include "camera_keyframe.h"
 #include "keyframe.h"
+#include "plane.h"
+#include "planeCross.h"
+#include "particle.h"
+#include "splash_particle.h"
+#include "building.h"
+#include "grid.h"
+#include "GrassTile.h"
+#include "SkyBox.h"
+#include <glm/glm.hpp>
+#include <glm/gtc/random.hpp>
+#include <set>
+#include <shaders/depth_frag_glsl.h>
+#include <shaders/depth_vert_glsl.h>
+#include "PostProcessor.h"
+#include <GL/glew.h>
+#include "car.h"
+#include <random>
+#include "trailer.h"
+#include "airplane.h"
 
 class ParticleWindow : public ppgso::Window {
 private:
@@ -38,7 +56,6 @@ private:
     glm::mat4 lightSpaceMatrix;
     void initShadowMap();
     void renderDepthMap();
-    void renderSun(const glm::vec3& lightPos);
     void updateDynamicLights(ppgso::Shader& shader);
     std::vector<glm::vec3> lampPositions;
 

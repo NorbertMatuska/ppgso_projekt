@@ -15,7 +15,6 @@ class Plane final : public Renderable {
     float rotation = 0.0f;
 
 public:
-    // Ambient light color
     static glm::vec3 ambientLightColor;
     ppgso::Shader* getShader() const override;
     void renderDepth(ppgso::Shader& depthShader) override;

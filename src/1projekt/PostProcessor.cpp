@@ -1,39 +1,33 @@
 #include "PostProcessor.h"
 #include "GLFW/glfw3.h"
 #include <iostream>
-
 #include <shaders/quad_vert_glsl.h>
 #include <shaders/bright_frag_glsl.h>
 #include <shaders/blur_frag_glsl.h>
 #include <shaders/final_frag_glsl.h>
 
-
 PostProcessor::PostProcessor(unsigned int width, unsigned int height)
-        : width(width), height(height)
+    : width(width), height(height)
 {
-    // Create HDR Framebuffer
+    // HDR Framebuffer
     glGenFramebuffers(1, &hdrFBO);
     glBindFramebuffer(GL_FRAMEBUFFER, hdrFBO);
 
     glGenTextures(2, colorBuffers);
     for (unsigned int i = 0; i < 2; i++) {
         glBindTexture(GL_TEXTURE_2D, colorBuffers[i]);
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA16F, width, height, 0,
-                     GL_RGBA, GL_FLOAT, nullptr);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA16F, width, height, 0, GL_RGBA, GL_FLOAT, nullptr);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-        glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + i,
-                               GL_TEXTURE_2D, colorBuffers[i], 0);
+        glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + i, GL_TEXTURE_2D, colorBuffers[i], 0);
     }
 
-    // Create and attach depth buffer (renderbuffer)
     glGenRenderbuffers(1, &rboDepth);
     glBindRenderbuffer(GL_RENDERBUFFER, rboDepth);
     glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT24, width, height);
-    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT,
-                              GL_RENDERBUFFER, rboDepth);
+    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, rboDepth);
 
-    unsigned int attachments[2] = {GL_COLOR_ATTACHMENT0, GL_COLOR_ATTACHMENT1};
+    unsigned int attachments[2] = { GL_COLOR_ATTACHMENT0, GL_COLOR_ATTACHMENT1 };
     glDrawBuffers(2, attachments);
 
     if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
@@ -41,39 +35,39 @@ PostProcessor::PostProcessor(unsigned int width, unsigned int height)
 
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
-    // Ping-pong framebuffers for blur
+    // init ping-pong framebuffers for blur effect
     glGenFramebuffers(2, pingpongFBO);
     glGenTextures(2, pingpongColorbuffers);
     for (unsigned int i = 0; i < 2; i++) {
         glBindFramebuffer(GL_FRAMEBUFFER, pingpongFBO[i]);
         glBindTexture(GL_TEXTURE_2D, pingpongColorbuffers[i]);
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA16F, width, height, 0,
-                     GL_RGBA, GL_FLOAT, nullptr);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA16F, width, height, 0, GL_RGBA, GL_FLOAT, nullptr);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-        glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0,
-                               GL_TEXTURE_2D, pingpongColorbuffers[i], 0);
+        glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, pingpongColorbuffers[i], 0);
         if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
             std::cerr << "ERROR: Ping-pong framebuffer not complete!\n";
     }
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
-    // Load shaders using your pattern
-    if (!brightExtractShader) brightExtractShader = std::make_unique<ppgso::Shader>(quad_vert_glsl, bright_frag_glsl);
-    if (!blurShader) blurShader = std::make_unique<ppgso::Shader>(quad_vert_glsl, blur_frag_glsl);
-    if (!finalShader) finalShader = std::make_unique<ppgso::Shader>(quad_vert_glsl, final_frag_glsl);
+    if (!brightExtractShader)
+        brightExtractShader = std::make_unique<ppgso::Shader>(quad_vert_glsl, bright_frag_glsl);
+    if (!blurShader)
+        blurShader = std::make_unique<ppgso::Shader>(quad_vert_glsl, blur_frag_glsl);
+    if (!finalShader)
+        finalShader = std::make_unique<ppgso::Shader>(quad_vert_glsl, final_frag_glsl);
 
-    // Setup fullscreen quad VBO/VAO
+    // fullscreen quad
     float quadVertices[] = {
-            // Positions   // TexCoords
-            -1.0f,  1.0f,  0.0f, 1.0f,
-            -1.0f, -1.0f,  0.0f, 0.0f,
-            1.0f,  1.0f,  1.0f, 1.0f,
+        -1.0f,  1.0f,  0.0f, 1.0f,
+        -1.0f, -1.0f,  0.0f, 0.0f,
+         1.0f,  1.0f,  1.0f, 1.0f,
 
-            -1.0f, -1.0f,  0.0f, 0.0f,
-            1.0f, -1.0f,  1.0f, 0.0f,
-            1.0f,  1.0f,  1.0f, 1.0f
+        -1.0f, -1.0f,  0.0f, 0.0f,
+         1.0f, -1.0f,  1.0f, 0.0f,
+         1.0f,  1.0f,  1.0f, 1.0f
     };
+
     glGenVertexArrays(1, &quadVAO);
     glGenBuffers(1, &quadVBO);
     glBindVertexArray(quadVAO);
@@ -83,7 +77,6 @@ PostProcessor::PostProcessor(unsigned int width, unsigned int height)
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(1);
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)(2 * sizeof(float)));
-
     glBindVertexArray(0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
@@ -106,10 +99,8 @@ void PostProcessor::BeginRender() {
 }
 
 void PostProcessor::EndRender() {
-    // Apply bloom and then render to the default framebuffer
     applyBloom();
 
-    // Render final scene
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     finalShader->use();
     finalShader->setUniform("scene", 0);
@@ -117,15 +108,13 @@ void PostProcessor::EndRender() {
     finalShader->setUniform("bloom", bloomEnabled);
     finalShader->setUniform("exposure", 1.0f);
 
-    // Render grain
+    // grain effect parameters
     finalShader->setUniform("grainIntensity", 0.1f);
     finalShader->setUniform("grainScale", 100.0f);
-    finalShader->setUniform("grainTime", (float)glfwGetTime());
+    finalShader->setUniform("grainTime", static_cast<float>(glfwGetTime()));
 
-    // chromatic abberation
+    // chromatic aberration parameter
     finalShader->setUniform("chromaticAberration", 0.01f);
-
-
 
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, colorBuffers[0]);
@@ -136,7 +125,7 @@ void PostProcessor::EndRender() {
 }
 
 void PostProcessor::applyBloom() {
-    // Extract bright areas
+    // extract bright areas
     brightExtractShader->use();
     brightExtractShader->setUniform("scene", 0);
     glActiveTexture(GL_TEXTURE0);
@@ -145,7 +134,7 @@ void PostProcessor::applyBloom() {
     glClear(GL_COLOR_BUFFER_BIT);
     renderQuad();
 
-    // Blur
+    // apply gaussian blur
     blurShader->use();
     bool horizontal = true, first_iteration = true;
     unsigned int amount = 5; // blur passes

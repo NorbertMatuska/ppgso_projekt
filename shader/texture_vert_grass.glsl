@@ -8,7 +8,7 @@ uniform mat4 LightSpaceMatrix;
 uniform mat4 ModelMatrix;
 uniform mat4 ViewMatrix;
 uniform mat4 ProjectionMatrix;
-uniform float TilingFactor; // Tiling factor for texture scaling
+uniform float TilingFactor;
 
 out vec2 texCoord;
 out vec3 FragPos;

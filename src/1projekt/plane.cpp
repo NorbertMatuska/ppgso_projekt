@@ -4,7 +4,6 @@
 #include <shaders/texture_vert_glsl.h>
 #include <shaders/texture_frag_glsl.h>
 
-// Static resources
 std::unique_ptr<ppgso::Mesh> Plane::mesh;
 std::unique_ptr<ppgso::Shader> Plane::shader;
 std::unique_ptr<ppgso::Texture> Plane::texture;
@@ -41,12 +40,10 @@ void Plane::render(const Camera& camera) {
     shader->use();
     shader->setUniform("Texture", *texture);
 
-    // Set the ambient light color uniform
     shader->setUniform("AmbientLightColor", ambientLightColor);
 
     glm::mat4 modelMatrix = glm::mat4(1.0f);
 
-    // Apply transformations: position, rotation, and scale
     modelMatrix = glm::translate(modelMatrix, position);
     modelMatrix = glm::rotate(modelMatrix, glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
     modelMatrix = glm::rotate(modelMatrix, glm::radians(rotation), glm::vec3(0.0f, 0.0f, 1.0f));

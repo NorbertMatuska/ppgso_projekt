@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "gl5_projection.exe"
+			"path" : "task2_bresenham.exe"
 		},
 		{
-			"path" : "gl5_projection.pdb"
+			"path" : "task2_bresenham.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 251,
+				"line" : 292,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 253,
+				"line" : 294,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 252,
+				"line" : 293,
 				"parent" : 0
 			},
 			{
@@ -128,7 +128,7 @@
 			"id" : "shaders::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "gl5_projection::@6890427a1f51a3e7e1df",
+	"id" : "task2_bresenham::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -197,8 +197,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "gl5_projection",
-	"nameOnDisk" : "gl5_projection.exe",
+	"name" : "task2_bresenham",
+	"nameOnDisk" : "task2_bresenham.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -219,7 +219,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/gl5_projection/gl5_projection.cpp",
+			"path" : "src/task2_bresenham/task2_bresenham.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

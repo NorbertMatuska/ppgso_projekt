@@ -10,7 +10,6 @@
 class Building final : public Renderable {
     static std::unique_ptr<ppgso::Shader> shader;
 
-    // Instance-specific resources
     std::unique_ptr<ppgso::Mesh> mesh;
     std::unique_ptr<ppgso::Texture> texture;
 

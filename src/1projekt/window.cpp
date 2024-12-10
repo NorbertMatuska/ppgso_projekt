@@ -1,25 +1,4 @@
 #include "window.h"
-#include "plane.h"
-#include "planeCross.h"
-#include "particle.h"
-#include "splash_particle.h"
-#include "building.h"
-#include "grid.h"
-#include "GrassTile.h"
-#include "SkyBox.h"
-#include <glm/glm.hpp>
-#include <glm/gtc/random.hpp>
-#include <set>
-#include <shaders/depth_frag_glsl.h>
-#include <shaders/depth_vert_glsl.h>
-#include <chrono>
-#include "PostProcessor.h"
-#include <GL/glew.h>
-#include "car.h"
-#include <random>
-#include "trailer.h"
-#include "airplane.h"
-
 
 #define SIZEx 1280
 #define SIZEy 720
@@ -38,18 +17,11 @@ ParticleWindow::ParticleWindow()
     glEnable(GL_LINE_SMOOTH);
     glLineWidth(1.0f);
 
+    // init postprocessing, sun, shadow, camera animation
     postProcessor = std::make_unique<PostProcessor>(SIZEx, SIZEy);
     sunDirection = glm::normalize(glm::vec3(-0.5f, -0.1f, 0.3f));
     initShadowMap();
     initializeCameraAnimation();
-
-    int n = 3;
-    float cellSize = 10.0f;
-    float subGridSize = 3 * cellSize;
-
-    Grid grid(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.0f, 0.0f));
-    Grid gridcars(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.4f, 0.0f));
-    Grid gridtruck(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.8f, 0.0f));
 
     std::vector<std::string> skyboxFaces = {
             "skyboxes/vz_dawn_right.bmp",
@@ -69,6 +41,17 @@ ParticleWindow::ParticleWindow()
     auto airplane = std::make_unique<Airplane>();
     scene.push_back(std::move(airplane));
 
+    // ---------------
+    // CARS
+    // ---------------
+
+    int n = 3;
+    float cellSize = 10.0f;
+    float subGridSize = 3 * cellSize;
+
+    Grid grid(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.0f, 0.0f));
+    Grid gridcars(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.4f, 0.0f));
+    Grid gridtruck(n * 3, n * 3, cellSize, glm::vec3(0.0f, 0.8f, 0.0f));
 
     const int carCount = 10;
 
@@ -95,7 +78,6 @@ ParticleWindow::ParticleWindow()
         auto car = std::make_unique<Car>("models/car.obj", gridcars.getCellPosition(spawnPositions[i][0], spawnPositions[i][1]), textureFile);
         car->setScale(0.030f);
 
-        // Add car lights to the shader
         auto shader = car->getShader();
         shader->use();
         addCarLights(*shader, gridcars.getCellPosition(spawnPositions[i][0], spawnPositions[i][1]));
@@ -129,12 +111,13 @@ ParticleWindow::ParticleWindow()
 
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
-    // Iterate through each sub-grid to place buildings and roads
+    // --------------------
+    // CITY GEN
+    // --------------------
     for (int subGridRow = 0; subGridRow < n; ++subGridRow) {
         for (int subGridCol = 0; subGridCol < n; ++subGridCol) {
             glm::vec3 subGridOrigin = glm::vec3(subGridCol * subGridSize, 0.0f, subGridRow * subGridSize);
 
-            // Generate a 3x3 pattern for the current sub-grid
             for (int row = 0; row < 3; ++row) {
                 for (int col = 0; col < 3; ++col) {
                     glm::vec3 cellPosition = grid.getCellPosition(row, col) + subGridOrigin;
@@ -352,66 +335,52 @@ ParticleWindow::ParticleWindow()
 void ParticleWindow::setLightingUniforms(ppgso::Shader& shader) {
     shader.setUniform("viewPos", camera.position);
 
-    // Directional light
+    // sun light
     shader.setUniform("dirLight.direction", sunDirection);
     shader.setUniform("dirLight.ambient", glm::vec3(0.4f, 0.35f, 0.3f));
     shader.setUniform("dirLight.diffuse", glm::vec3(0.8f, 0.7f, 0.6f));
     shader.setUniform("dirLight.specular", glm::vec3(1.0f, 0.9f, 0.8f));
+}
 
-    // Point light 1
-    /*
-    shader.setUniform("pointLights[0].position", glm::vec3(10.0f, 10.0f, 10.0f));
-    shader.setUniform("pointLights[0].ambient", glm::vec3(0.2f, 0.2f, 0.2f));  // Increase ambient intensity
-    shader.setUniform("pointLights[0].diffuse", glm::vec3(1.0f, 1.0f, 1.0f));  // Increase diffuse intensity
-    shader.setUniform("pointLights[0].specular", glm::vec3(1.0f, 1.0f, 1.0f)); // Max specular intensity
-    shader.setUniform("pointLights[0].constant", 1.0f);
-    shader.setUniform("pointLights[0].linear", 0.07f);     // Adjust attenuation
-    shader.setUniform("pointLights[0].quadratic", 0.017f); // Adjust attenuation
+void ParticleWindow::addCarLights(ppgso::Shader& shader, const glm::vec3& carPosition) {
+    glm::vec3 frontLeftLight = carPosition + glm::vec3(-0.5f, 0.5f, 1.0f); // Adjust as needed
+    glm::vec3 frontRightLight = carPosition + glm::vec3(0.5f, 0.5f, 1.0f);
 
-    // Point light 2 (adjust as needed)
-    shader.setUniform("pointLights[1].position", glm::vec3(-10.0f, 10.0f, -10.0f));
-    shader.setUniform("pointLights[1].ambient", glm::vec3(0.2f, 0.2f, 0.2f));
-    shader.setUniform("pointLights[1].diffuse", glm::vec3(1.0f, 1.0f, 1.0f));
-    shader.setUniform("pointLights[1].specular", glm::vec3(1.0f, 1.0f, 1.0f));
-    shader.setUniform("pointLights[1].constant", 1.0f);
-    shader.setUniform("pointLights[1].linear", 0.07f);
-    shader.setUniform("pointLights[1].quadratic", 0.017f);
+    shader.setUniform("carLightLeft.position", frontLeftLight);
+    shader.setUniform("carLightLeft.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
+    shader.setUniform("carLightLeft.diffuse", glm::vec3(1.0f, 1.0f, 0.8f));
+    shader.setUniform("carLightLeft.specular", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader.setUniform("carLightLeft.constant", 1.0f);
+    shader.setUniform("carLightLeft.linear", 0.09f);
+    shader.setUniform("carLightLeft.quadratic", 0.032f);
 
-    //Spotlight (from the camera's perspective)
-    shader.setUniform("spotLight.position", camera.position);
-    shader.setUniform("spotLight.direction", glm::normalize(camera.target - camera.position));
-    shader.setUniform("spotLight.cutOff", glm::cos(glm::radians(12.5f)));
-    shader.setUniform("spotLight.outerCutOff", glm::cos(glm::radians(17.5f)));
-    shader.setUniform("spotLight.ambient", glm::vec3(0.0f, 0.0f, 0.0f));
-    shader.setUniform("spotLight.diffuse", glm::vec3(1.0f, 1.0f, 1.0f));
-    shader.setUniform("spotLight.specular", glm::vec3(1.0f, 1.0f, 1.0f));
-    shader.setUniform("spotLight.constant", 1.0f);
-    shader.setUniform("spotLight.linear", 0.07f);
-    shader.setUniform("spotLight.quadratic", 0.017f);
-    */
+    shader.setUniform("carLightRight.position", frontRightLight);
+    shader.setUniform("carLightRight.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
+    shader.setUniform("carLightRight.diffuse", glm::vec3(1.0f, 1.0f, 0.8f));
+    shader.setUniform("carLightRight.specular", glm::vec3(1.0f, 1.0f, 1.0f));
+    shader.setUniform("carLightRight.constant", 1.0f);
+    shader.setUniform("carLightRight.linear", 0.09f);
+    shader.setUniform("carLightRight.quadratic", 0.032f);
 }
 
 void ParticleWindow::updateDynamicLights(ppgso::Shader& shader) {
     std::vector<glm::vec3> activeLights;
-    float activationRadius = 25.0f; // Radius around the camera
+    float activationRadius = 25.0f;
 
-    // Filter lamp lights based on distance from the camera
     for (const auto &lampPos: lampPositions) {
         if (glm::distance(camera.position, lampPos) <= activationRadius) {
             activeLights.push_back(lampPos);
         }
     }
 
-    // Add car lights dynamically
     for (const auto& car : Cars) {
         glm::vec3 carPos = car->getPosition();
         if (glm::distance(camera.position, carPos) <= activationRadius) {
-            activeLights.push_back(carPos + glm::vec3(0.5f, -1.0f, 1.4f)); // Front-left light
-            activeLights.push_back(carPos + glm::vec3(-0.5f, -1.0f, 1.4f)); // Front-right light
+            activeLights.push_back(carPos + glm::vec3(0.5f, -1.0f, 1.4f));
+            activeLights.push_back(carPos + glm::vec3(-0.5f, -1.0f, 1.4f));
         }
     }
 
-    // Update uniforms for the active lights
     int lightCount = 0;
     for (const auto& activeLight : activeLights) {
         if (lightCount >= NR_POINT_LIGHTS) break;
@@ -431,60 +400,46 @@ void ParticleWindow::updateDynamicLights(ppgso::Shader& shader) {
 
 
 void ParticleWindow::initShadowMap() {
-    // Generate the framebuffer
     glGenFramebuffers(1, &depthMapFBO);
 
-    // Create the depth texture
+    // depth texture
     glGenTextures(1, &depthMap);
     glBindTexture(GL_TEXTURE_2D, depthMap);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT,
                  SHADOW_WIDTH, SHADOW_HEIGHT, 0, GL_DEPTH_COMPONENT, GL_FLOAT, nullptr);
 
-    // Set texture parameters
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER); // Important for shadows
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
 
-    // Define the border color for when sampling outside the shadow map
     float borderColor[] = {1.0f, 1.0f, 1.0f, 1.0f};
     glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, borderColor);
 
-    // Attach the depth texture to the framebuffer
     glBindFramebuffer(GL_FRAMEBUFFER, depthMapFBO);
     glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, depthMap, 0);
 
-    // We don't need a color buffer
     glDrawBuffer(GL_NONE);
     glReadBuffer(GL_NONE);
 
-    // Unbind the framebuffer
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
+
 void ParticleWindow::renderDepthMap() {
-    // Set the static depthMap in Renderable
     Renderable::depthMap = depthMap;
 
-    // Set viewport to the size of the shadow map
     glViewport(0, 0, SHADOW_WIDTH, SHADOW_HEIGHT);
-    // Bind the framebuffer
     glBindFramebuffer(GL_FRAMEBUFFER, depthMapFBO);
-    // Clear the depth buffer
     glClear(GL_DEPTH_BUFFER_BIT);
 
-    // Use the depth shader
     depthShader.use();
     depthShader.setUniform("LightSpaceMatrix", lightSpaceMatrix);
 
-    // Render the scene with the depth shader
     for (auto& object : scene) {
         object->renderDepth(depthShader);
     }
 
-    // Unbind the framebuffer
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
-
-    // Restore viewport
     glViewport(0, 0, width, height);
 }
 
@@ -492,98 +447,93 @@ void ParticleWindow::initializeCameraAnimation() {
     float subGridSize = 30.0f;
     float cameraHeight = 5.0f;
 
-    // Updated total duration to accommodate the elevation keyframe
-    cameraAnimationDuration = 82.0f; // Total duration for a complete loop
+    cameraAnimationDuration = 82.0f;
 
     int n = 3;
-    float totalMapSize = n * subGridSize; // 90.0f
+    float totalMapSize = n * subGridSize;
 
-    // Define keyframes aligned with road intersections and include elevation
-    // 1. Start at West Border
+    // 1. west
     cameraAnimationCurve.addKeyframe(Keyframe(0.0f,
-        glm::vec3(0.0f, cameraHeight, totalMapSize / 2.0f - 5.0f), // (0, 20, 45)
-        glm::vec3(0.0f, 0.0f, 0.0f))); // Yaw: 0°
+        glm::vec3(0.0f, cameraHeight, totalMapSize / 2.0f - 5.0f),
+        glm::vec3(0.0f, 0.0f, 0.0f)));
 
-    // 2. Move to Central Intersection
+    // 2. center
     cameraAnimationCurve.addKeyframe(Keyframe(10.0f,
-        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize / 2.0f - 5.0f), // (45, 20, 45)
-        glm::vec3(0.0f, 0.0f, 0.0f))); // Yaw remains 0°
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize / 2.0f - 5.0f),
+        glm::vec3(0.0f, 0.0f, 0.0f)));
 
-    // 3. Elevate to Show Plane
+    // 3. go up
     cameraAnimationCurve.addKeyframe(Keyframe(15.0f,
-    glm::vec3(totalMapSize / 2.0f - 5.0f, 50.0f, totalMapSize / 2.0f - 5.0f), // (45, 40, 45)
+    glm::vec3(totalMapSize / 2.0f - 5.0f, 50.0f, totalMapSize / 2.0f - 5.0f),
     glm::vec3(0.0f, 0.0f, 0.0f)));
 
+    // turn around
     cameraAnimationCurve.addKeyframe(Keyframe(18.0f,
-        glm::vec3(totalMapSize / 2.0f - 5.0f, 80.0f, totalMapSize / 2.0f - 5.0f), // Keep the position constant
+        glm::vec3(totalMapSize / 2.0f - 5.0f, 80.0f, totalMapSize / 2.0f - 5.0f),
         glm::vec3(-60.0f, 90.0f, 0.0f)));
 
     cameraAnimationCurve.addKeyframe(Keyframe(21.0f,
-    glm::vec3(totalMapSize / 2.0f - 5.0f, 80.0f, totalMapSize / 2.0f - 5.0f), // Keep the position constant
+    glm::vec3(totalMapSize / 2.0f - 5.0f, 80.0f, totalMapSize / 2.0f - 5.0f),
     glm::vec3(-60.0f, 180.0f, 0.0f))); // Yaw: 180°
 
-    // 3.3. Complete the rotation (Yaw: 270°)
     cameraAnimationCurve.addKeyframe(Keyframe(24.0f,
-        glm::vec3(totalMapSize / 2.0f - 5.0f, 80.0f, totalMapSize / 2.0f - 5.0f), // Keep the position constant
-        glm::vec3(-60.0f, 270.0f, 0.0f))); // Yaw: 270°
+        glm::vec3(totalMapSize / 2.0f - 5.0f, 80.0f, totalMapSize / 2.0f - 5.0f),
+        glm::vec3(-60.0f, 270.0f, 0.0f)));
 
-    // 3.4. Return to original yaw (Yaw: 360° or 0°)
+    // 4. down
     cameraAnimationCurve.addKeyframe(Keyframe(27.0f,
-        glm::vec3(totalMapSize / 2.0f - 5.0f, 80.0f, totalMapSize / 2.0f - 5.0f), // Keep the position constant
+        glm::vec3(totalMapSize / 2.0f - 5.0f, 80.0f, totalMapSize / 2.0f - 5.0f),
         glm::vec3(-60.0f, 360.0f, 0.0f)));
 
-    // 4. Return to Central Intersection
+    // 4. return to center
     cameraAnimationCurve.addKeyframe(Keyframe(30.0f,
-        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize / 2.0f - 5.0f), // (45, 20, 45)
-        glm::vec3(0.0f, 90.0f, 0.0f))); // Yaw: 90° (North)
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize / 2.0f - 5.0f),
+        glm::vec3(0.0f, 90.0f, 0.0f)));
 
-    // 5. Move to North Border
+    // 5. north
     cameraAnimationCurve.addKeyframe(Keyframe(34.0f,
-        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, 0.0f), // (45, 20, 0)
-        glm::vec3(0.0f, 90.0f, 0.0f))); // Yaw remains 90°
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, 0.0f),
+        glm::vec3(0.0f, 90.0f, 0.0f)));
 
-    // 6. Turn West at North Border Intersection
+    // 6. turn
     cameraAnimationCurve.addKeyframe(Keyframe(36.0f,
-        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, 0.0f), // (45, 20, 0)
-        glm::vec3(0.0f, 180.0f, 0.0f))); // Yaw: 180° (West)
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, 0.0f),
+        glm::vec3(0.0f, 180.0f, 0.0f)));
 
-    // 7. Move to Central Intersection
+    // 7. return to center again
     cameraAnimationCurve.addKeyframe(Keyframe(46.0f,
-        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize / 2.0f - 5.0f), // (45, 20, 45)
-        glm::vec3(0.0f, 180.0f, 0.0f))); // Yaw remains 180°
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize / 2.0f - 5.0f),
+        glm::vec3(0.0f, 180.0f, 0.0f)));
 
-    // 8. Move to East Border
+    // 8. go east
     cameraAnimationCurve.addKeyframe(Keyframe(56.0f,
-        glm::vec3(totalMapSize, cameraHeight, totalMapSize / 2.0f - 5.0f), // (90, 20, 45)
-        glm::vec3(0.0f, 180.0f, 0.0f))); // Yaw remains 180°
+        glm::vec3(totalMapSize, cameraHeight, totalMapSize / 2.0f - 5.0f),
+        glm::vec3(0.0f, 180.0f, 0.0f)));
 
-    // 9. Turn South at East Border Intersection
+    // 9. turn
     cameraAnimationCurve.addKeyframe(Keyframe(58.0f,
-        glm::vec3(totalMapSize, cameraHeight, totalMapSize / 2.0f - 5.0f), // (90, 20, 45)
-        glm::vec3(0.0f, 270.0f, 0.0f))); // Yaw: 270° (South)
+        glm::vec3(totalMapSize, cameraHeight, totalMapSize / 2.0f - 5.0f),
+        glm::vec3(0.0f, 270.0f, 0.0f)));
 
-    // 10. Move to Central Intersection
+    // 10. center
     cameraAnimationCurve.addKeyframe(Keyframe(60.0f,
-        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize / 2.0f - 5.0f), // (45, 20, 45)
-        glm::vec3(0.0f, 270.0f, 0.0f))); // Yaw remains 270°
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize / 2.0f - 5.0f),
+        glm::vec3(0.0f, 270.0f, 0.0f)));
 
-    // 11. Move to South Border
+    // 11. south
     cameraAnimationCurve.addKeyframe(Keyframe(70.0f,
-        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize), // (45, 20, 90)
-        glm::vec3(0.0f, 270.0f, 0.0f))); // Yaw remains 270°
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize),
+        glm::vec3(0.0f, 270.0f, 0.0f)));
 
-    // 12. Turn East at South Border Intersection
+    // 12. turn
     cameraAnimationCurve.addKeyframe(Keyframe(72.0f,
-        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize), // (45, 20, 90)
-        glm::vec3(0.0f, 0.0f, 0.0f))); // Yaw: 0° (East)
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize),
+        glm::vec3(0.0f, 0.0f, 0.0f)));
 
-    // 13. Loop Back to Start
+    // 13. loop back
     cameraAnimationCurve.addKeyframe(Keyframe(82.0f,
-        glm::vec3(0.0f, cameraHeight, totalMapSize / 2.0f - 5.0f), // (0, 20, 45)
-        glm::vec3(0.0f, 0.0f, 0.0f))); // Yaw: 0°
-
-    // Adjust the total animation duration to match the last keyframe
-    cameraAnimationDuration = 82.0f;
+        glm::vec3(0.0f, cameraHeight, totalMapSize / 2.0f - 5.0f),
+        glm::vec3(0.0f, 0.0f, 0.0f)));
 }
 
 
@@ -593,29 +543,23 @@ void ParticleWindow::updateCameraAnimation(float dTime) {
 
     cameraAnimationTime += dTime;
 
-    // Loop the animation seamlessly
     if (cameraAnimationTime > cameraAnimationDuration) {
         cameraAnimationTime = fmod(cameraAnimationTime, cameraAnimationDuration);
     }
 
     try {
-        // Interpolate position and rotation using AnimationCurve
         glm::vec3 newPosition = cameraAnimationCurve.getPosition(cameraAnimationTime);
         glm::vec3 newRotation = cameraAnimationCurve.getRotation(cameraAnimationTime);
 
-        // Update camera's position
         camera.position = newPosition;
-
-        // Update camera's rotation (assuming rotation.x is pitch and rotation.y is yaw)
         camera.pitch = newRotation.x;
         camera.yaw = newRotation.y;
 
-        // Apply the updates
         camera.update();
     }
     catch (const std::exception& e) {
         std::cerr << "Camera Animation error: " << e.what() << std::endl;
-        isCameraAnimating = false; // Stop animation on error
+        isCameraAnimating = false;
     }
 }
 
@@ -654,7 +598,6 @@ void ParticleWindow::onKey(int key, int scanCode, int action, int mods) {
             cameraAnimationTime = 0.0f;
             std::cout << "Camera Animation Started.\n";
         } else {
-            // Optionally, reset camera to a default position or maintain current
             camera.update();
             std::cout << "Camera Animation Stopped.\n";
         }
@@ -711,7 +654,6 @@ void ParticleWindow::updateSunPosition(float dTime) {
     float y = 10.0f;
     float z = sin(sunAngle) * radius;
 
-    // Update sunDirection with the new values
     sunDirection = glm::normalize(glm::vec3(x, y, z));
 
 /*
@@ -728,6 +670,7 @@ void ParticleWindow::onIdle() {
     float dTime = (float)glfwGetTime() - time;
     time = (float)glfwGetTime();
 
+    // wind changes direction every 5s
     windChangeTimer += dTime;
     if (windChangeTimer >= windChangeInterval) {
         windChangeTimer = 0.0f;
@@ -737,11 +680,11 @@ void ParticleWindow::onIdle() {
         wind = glm::vec3(glm::cos(windDirectionAngle), 0.0f, glm::sin(windDirectionAngle)) * windStrength;
     }
 
+    // rain particles
     particleSpawnTimer += dTime;
     while (particleSpawnTimer > particleSpawnInterval) {
         particleSpawnTimer -= particleSpawnInterval;
 
-        // Generate random positions around the camera
         float offsetX = glm::linearRand(-spawnRadius, spawnRadius);
         float offsetZ = glm::linearRand(-spawnRadius, spawnRadius);
         float spawnY = camera.position.y + 2.0f;
@@ -757,7 +700,7 @@ void ParticleWindow::onIdle() {
     updateCameraAnimation(dTime);
     updateSunPosition(dTime);
 
-    // Setup the light space matrix for shadows
+    // setup the light space matrix for shadows
     glm::vec3 lightPos = -sunDirection * 150.0f;
     float near_plane = 1.0f, far_plane = 200.0f;
     glm::mat4 lightProjection = glm::ortho(-150.0f, 150.0f, -150.0f, 150.0f, near_plane, far_plane);
@@ -766,10 +709,8 @@ void ParticleWindow::onIdle() {
 
     Renderable::lightSpaceMatrix = lightSpaceMatrix;
 
-    // 1. Render the depth map for shadows
     renderDepthMap();
 
-    // 2. Begin rendering into our HDR framebuffer using the PostProcessor
     postProcessor->BeginRender();
 
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
@@ -786,18 +727,16 @@ void ParticleWindow::onIdle() {
 
     camera.update();
 
-    // Update objects
+    // update objects
     for (auto it = scene.begin(); it != scene.end();) {
-        // Check if the object is a Particle and pass wind accordingly
         Particle* particle = dynamic_cast<Particle*>(it->get());
         if (particle) {
-            particle->setWind(wind); // Pass current wind to the particle
+            particle->setWind(wind);
             if (!particle->update(dTime, scene))
                 it = scene.erase(it);
             else
                 ++it;
         } else {
-            // Update other types of objects without wind
             if (!(*it)->update(dTime, scene))
                 it = scene.erase(it);
             else
@@ -805,7 +744,7 @@ void ParticleWindow::onIdle() {
         }
     }
 
-    // Set lighting uniforms for all shaders
+    // lighting uniforms for all shaders
     std::set<ppgso::Shader*> processedShaders;
     for (auto& object : scene) {
         auto shader = object->getShader();
@@ -814,54 +753,18 @@ void ParticleWindow::onIdle() {
             setLightingUniforms(*shader);
             updateDynamicLights(*shader);
             shader->setUniform("LightSpaceMatrix", lightSpaceMatrix);
-            shader->setUniform("ShadowMap", 1); // Assuming shadow map is on texture unit 1
+            shader->setUniform("ShadowMap", 1);
             processedShaders.insert(shader);
         }
     }
 
-    // Render all objects to the HDR buffer
+    // render all objects to the HDR buffer
     for (auto& object : scene) {
         object->render(camera);
     }
 
-    // 3. End rendering to HDR buffer, apply bloom, and render to the default framebuffer
     postProcessor->EndRender();
 
-    // After this, the bloom effect has been applied. The final image is displayed to the window.
     glfwSwapBuffers(window);
     glfwPollEvents();
 }
-
-void ParticleWindow::addCarLights(ppgso::Shader& shader, const glm::vec3& carPosition) {
-    // Define offsets for car lights (front-left and front-right)
-    glm::vec3 frontLeftLight = carPosition + glm::vec3(-0.5f, 0.5f, 1.0f); // Adjust as needed
-    glm::vec3 frontRightLight = carPosition + glm::vec3(0.5f, 0.5f, 1.0f);
-
-    // Set light properties for the front-left light
-    shader.setUniform("carLightLeft.position", frontLeftLight);
-    shader.setUniform("carLightLeft.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
-    shader.setUniform("carLightLeft.diffuse", glm::vec3(1.0f, 1.0f, 0.8f));
-    shader.setUniform("carLightLeft.specular", glm::vec3(1.0f, 1.0f, 1.0f));
-    shader.setUniform("carLightLeft.constant", 1.0f);
-    shader.setUniform("carLightLeft.linear", 0.09f);
-    shader.setUniform("carLightLeft.quadratic", 0.032f);
-
-    // Set light properties for the front-right light
-    shader.setUniform("carLightRight.position", frontRightLight);
-    shader.setUniform("carLightRight.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
-    shader.setUniform("carLightRight.diffuse", glm::vec3(1.0f, 1.0f, 0.8f));
-    shader.setUniform("carLightRight.specular", glm::vec3(1.0f, 1.0f, 1.0f));
-    shader.setUniform("carLightRight.constant", 1.0f);
-    shader.setUniform("carLightRight.linear", 0.09f);
-    shader.setUniform("carLightRight.quadratic", 0.032f);
-}
-
-
-void ParticleWindow::renderSun(const glm::vec3& lightPos) {
-    glPointSize(10.0f); // Adjust the size of the point
-    glBegin(GL_POINTS);
-    glColor3f(1.0f, 1.0f, 0.5f); // Yellowish color
-    glVertex3f(lightPos.x, lightPos.y, lightPos.z);
-    glEnd();
-}
-

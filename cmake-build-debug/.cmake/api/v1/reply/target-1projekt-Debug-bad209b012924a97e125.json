@@ -36,13 +36,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 208,
+				"line" : 207,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 207,
+				"line" : 206,
 				"parent" : 0
 			},
 			{
@@ -267,8 +267,7 @@
 				32,
 				34,
 				35,
-				36,
-				37
+				36
 			]
 		},
 		{
@@ -481,11 +480,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/1projekt/keyframe.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/1projekt/camera_keyframe.h",
 			"sourceGroupIndex" : 1
 		}
 	],

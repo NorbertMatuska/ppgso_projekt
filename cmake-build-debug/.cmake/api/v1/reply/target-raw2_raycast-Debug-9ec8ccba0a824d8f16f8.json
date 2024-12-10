@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "gl2_texture.exe"
+			"path" : "raw2_raycast.exe"
 		},
 		{
-			"path" : "gl2_texture.pdb"
+			"path" : "raw2_raycast.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 236,
+				"line" : 215,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 238,
+				"line" : 217,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 237,
+				"line" : 216,
 				"parent" : 0
 			},
 			{
@@ -122,13 +122,9 @@
 		{
 			"backtrace" : 3,
 			"id" : "ppgso::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 3,
-			"id" : "shaders::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "gl2_texture::@6890427a1f51a3e7e1df",
+	"id" : "raw2_raycast::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -158,11 +154,6 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "libppgso.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 3,
-				"fragment" : "libshaders.a",
 				"role" : "libraries"
 			},
 			{
@@ -197,8 +188,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "gl2_texture",
-	"nameOnDisk" : "gl2_texture.exe",
+	"name" : "raw2_raycast",
+	"nameOnDisk" : "raw2_raycast.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -219,7 +210,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/gl2_texture/gl2_texture.cpp",
+			"path" : "src/raw2_raycast/raw2_raycast.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

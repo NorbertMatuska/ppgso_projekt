@@ -10,8 +10,8 @@ class GrassTile final : public Renderable {
     static std::unique_ptr<ppgso::Shader> shader;
     static std::unique_ptr<ppgso::Texture> texture;
 
-    glm::vec3 position;  // Position of the grass tile
-    glm::vec3 scale = {1.0f, 1.0f, 1.0f};  // Scale of the grass tile
+    glm::vec3 position;
+    glm::vec3 scale = {1.0f, 1.0f, 1.0f};
 
 public:
     explicit GrassTile(const glm::vec3& position = {0.0f, -0.1f, 0.0f}, const glm::vec3& scale = {1.0f, 1.0f, 1.0f});
