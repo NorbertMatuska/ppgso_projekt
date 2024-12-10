@@ -1,22 +1,10 @@
 "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\matus\Desktop\PPGSO\ppgso_projekt -B C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug
--- The CXX compiler identification is GNU 13.1.0
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: D:/program files/CLion 2023.3.3/bin/mingw/bin/g++.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- Found GLFW3: C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a
 FIND_PATH C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include
--- Found GLEW: C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include  
 -- Found GLEW: C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include
 -- GLEW_LIBRARIES: C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a
--- Found GLM: C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include  
 -- GLM_INCLUDE_DIR = C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include
--- Found OpenGL: opengl32   
--- Found ASSIMP: C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include (found version "5.3.1565824753") 
--- Found OpenMP_CXX: -fopenmp (found version "4.5") 
--- Found OpenMP: TRUE (found version "4.5")  
 -- Using ASSIMP object loader
--- Configuring done (6.3s)
+-- Configuring done (1.3s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug

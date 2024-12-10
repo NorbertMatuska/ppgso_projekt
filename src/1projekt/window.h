@@ -22,6 +22,13 @@ private:
     bool firstMouse;
     float sensitivity;
 
+    float particleSpawnTimer = 0.0f;
+    const float particleSpawnInterval = 0.1f;
+    const float spawnRadius = 10.0f;
+    glm::vec3 wind;
+    float windChangeTimer = 0.0f;
+    const float windChangeInterval = 5.0f;
+
     GLuint depthMapFBO;
     GLuint depthMap;
     ppgso::Shader depthShader;

@@ -18,19 +18,27 @@ Particle::Particle(glm::vec3 p, glm::vec3 s, glm::vec3 c) {
     color = c;
     age = 0.0f;
     lifetime = 5.0f;
+    wind = glm::vec3(0.0f);
 }
 
 ppgso::Shader* Particle::getShader() const {
     return shader.get();
 }
+
 void Particle::renderDepth(ppgso::Shader& depthShader) {
 }
+
 bool Particle::update(float dTime, Scene &scene) {
+    // Apply wind as acceleration
+    speed += wind * dTime;
+
+    // Update position based on speed
     position += speed * dTime;
     age += dTime;
 
     if (position.y <= 0.5f) {
-        const int NUM_SPLASH_PARTICLES = 10;
+        // Generate splash particles
+        const int NUM_SPLASH_PARTICLES = 100;
         for (int i = 0; i < NUM_SPLASH_PARTICLES; ++i) {
             float angle = glm::linearRand(0.0f, glm::two_pi<float>());
             float speedValue = glm::linearRand(0.1f, 0.5f);
@@ -39,9 +47,10 @@ bool Particle::update(float dTime, Scene &scene) {
             auto splashParticle = std::make_unique<SplashParticle>(position, splashSpeed, splashColor, 1.0f);
             scene.push_back(std::move(splashParticle));
         }
-        return false;
+        return false; // Remove the rain particle
     }
 
+    // Update model matrix for rendering
     modelMatrix = glm::translate(glm::mat4(1.0f), position);
     modelMatrix = glm::scale(modelMatrix, glm::vec3(0.05f));
 
@@ -55,4 +64,8 @@ void Particle::render(const Camera& camera) {
     shader->setUniform("ProjectionMatrix", camera.projectionMatrix);
     shader->setUniform("OverallColor", color);
     mesh->render();
+}
+
+void Particle::setWind(const glm::vec3& windVec) {
+    wind = windVec;
 }

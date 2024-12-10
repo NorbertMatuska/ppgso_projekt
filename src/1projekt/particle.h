@@ -13,6 +13,8 @@ class Particle final : public Renderable {
     glm::vec3 position;
     glm::vec3 speed;
     glm::vec3 color;
+    glm::vec3 wind;
+
     float age;
     float lifetime;
     glm::mat4 modelMatrix;
@@ -20,11 +22,11 @@ class Particle final : public Renderable {
 public:
     Particle(glm::vec3 p, glm::vec3 s, glm::vec3 c);
 
-    bool update(float dTime, Scene &scene) override;
+    virtual bool update(float dTime, Scene &scene) override;
     void render(const Camera& camera) override;
     ppgso::Shader* getShader() const override;
     void renderDepth(ppgso::Shader& depthShader) override;
-
+    void setWind(const glm::vec3& wind);
 };
 
 #endif //PPGSO_PARTICLE_H

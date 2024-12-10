@@ -495,3 +495,367 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:196 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_af8c9
+        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_af8c9.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
+        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_af8c9.dir/assimp_version_major.cpp.obj -o cmTC_af8c9.exe -Wl,--out-implib,libcmTC_af8c9.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MAJOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 5
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:201 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_170b0
+        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_170b0.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
+        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_170b0.dir/assimp_version_minor.cpp.obj -o cmTC_170b0.exe -Wl,--out-implib,libcmTC_170b0.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MINOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 3
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:206 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_2013d
+        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_2013d.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
+        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_2013d.dir/assimp_version_revision.cpp.obj -o cmTC_2013d.exe -Wl,--out-implib,libcmTC_2013d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_REVISION"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 1565824753
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:196 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_c3b70
+        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_c3b70.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
+        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_c3b70.dir/assimp_version_major.cpp.obj -o cmTC_c3b70.exe -Wl,--out-implib,libcmTC_c3b70.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MAJOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 5
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:201 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_8e346
+        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_8e346.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
+        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_8e346.dir/assimp_version_minor.cpp.obj -o cmTC_8e346.exe -Wl,--out-implib,libcmTC_8e346.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MINOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 3
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:206 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_19dad
+        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_19dad.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
+        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_19dad.dir/assimp_version_revision.cpp.obj -o cmTC_19dad.exe -Wl,--out-implib,libcmTC_19dad.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_REVISION"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 1565824753
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:196 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_f42f5
+        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_f42f5.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
+        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_f42f5.dir/assimp_version_major.cpp.obj -o cmTC_f42f5.exe -Wl,--out-implib,libcmTC_f42f5.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MAJOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 5
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:201 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_8489d
+        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_8489d.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
+        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_8489d.dir/assimp_version_minor.cpp.obj -o cmTC_8489d.exe -Wl,--out-implib,libcmTC_8489d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MINOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 3
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:206 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_352aa
+        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_352aa.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
+        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_352aa.dir/assimp_version_revision.cpp.obj -o cmTC_352aa.exe -Wl,--out-implib,libcmTC_352aa.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_REVISION"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 1565824753
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:196 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MAJOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_0cf76
+        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_0cf76.dir/assimp_version_major.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_major.cpp
+        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_0cf76.dir/assimp_version_major.cpp.obj -o cmTC_0cf76.exe -Wl,--out-implib,libcmTC_0cf76.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MAJOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 5
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:201 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_MINOR_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_f15fa
+        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_f15fa.dir/assimp_version_minor.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_minor.cpp
+        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_f15fa.dir/assimp_version_minor.cpp.obj -o cmTC_f15fa.exe -Wl,--out-implib,libcmTC_f15fa.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_MINOR"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 3
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/FindASSIMP.cmake:206 (try_run)"
+      - "CMakeLists.txt:60 (find_package)"
+    directories:
+      source: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake"
+    buildResult:
+      variable: "ASSIMP_VERSION_REVISION_COMPILE_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/program files/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe" -v cmTC_bf5dd
+        [1/2] "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"  -isystem C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -fdiagnostics-color=always -o CMakeFiles/cmTC_bf5dd.dir/assimp_version_revision.cpp.obj -c C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/CMakeFiles/assimp_version_revision.cpp
+        [2/2] cmd.exe /C "cd . && "D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_bf5dd.dir/assimp_version_revision.cpp.obj -o cmTC_bf5dd.exe -Wl,--out-implib,libcmTC_bf5dd.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "ASSIMP_VERSION_REVISION"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 1565824753
+...

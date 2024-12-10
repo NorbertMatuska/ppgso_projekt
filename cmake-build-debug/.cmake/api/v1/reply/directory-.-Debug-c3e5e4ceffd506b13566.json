@@ -1,0 +1,479 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 143,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 207,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 212,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 217,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 222,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 227,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 232,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 237,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 242,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 247,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 252,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 257,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 262,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 267,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 282,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 289,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 294,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 299,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 304,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 309,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 315,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 320,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 326,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 333,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
+			"paths" : 
+			[
+				{
+					"from" : "dependencies/bin/mingw",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"libppgso.a"
+			],
+			"targetId" : "ppgso::@6890427a1f51a3e7e1df",
+			"targetIndex" : 11,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"1projekt.exe"
+			],
+			"targetId" : "1projekt::@6890427a1f51a3e7e1df",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"raw1_gradient.exe"
+			],
+			"targetId" : "raw1_gradient::@6890427a1f51a3e7e1df",
+			"targetIndex" : 12,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"raw2_raycast.exe"
+			],
+			"targetId" : "raw2_raycast::@6890427a1f51a3e7e1df",
+			"targetIndex" : 13,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"raw3_raytrace.exe"
+			],
+			"targetId" : "raw3_raytrace::@6890427a1f51a3e7e1df",
+			"targetIndex" : 14,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"raw4_raster.exe"
+			],
+			"targetId" : "raw4_raster::@6890427a1f51a3e7e1df",
+			"targetIndex" : 15,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"gl1_gradient.exe"
+			],
+			"targetId" : "gl1_gradient::@6890427a1f51a3e7e1df",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"gl2_texture.exe"
+			],
+			"targetId" : "gl2_texture::@6890427a1f51a3e7e1df",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"gl3_animate.exe"
+			],
+			"targetId" : "gl3_animate::@6890427a1f51a3e7e1df",
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"gl4_transform.exe"
+			],
+			"targetId" : "gl4_transform::@6890427a1f51a3e7e1df",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"gl5_projection.exe"
+			],
+			"targetId" : "gl5_projection::@6890427a1f51a3e7e1df",
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"gl6_mesh.exe"
+			],
+			"targetId" : "gl6_mesh::@6890427a1f51a3e7e1df",
+			"targetIndex" : 6,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"gl7_diffuse.exe"
+			],
+			"targetId" : "gl7_diffuse::@6890427a1f51a3e7e1df",
+			"targetIndex" : 7,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"gl8_framebuffer.exe"
+			],
+			"targetId" : "gl8_framebuffer::@6890427a1f51a3e7e1df",
+			"targetIndex" : 8,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"gl9_scene.exe"
+			],
+			"targetId" : "gl9_scene::@6890427a1f51a3e7e1df",
+			"targetIndex" : 9,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 17,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"task1_filter.exe"
+			],
+			"targetId" : "task1_filter::@6890427a1f51a3e7e1df",
+			"targetIndex" : 17,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 18,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"task2_bresenham.exe"
+			],
+			"targetId" : "task2_bresenham::@6890427a1f51a3e7e1df",
+			"targetIndex" : 18,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"task3_bezier.exe"
+			],
+			"targetId" : "task3_bezier::@6890427a1f51a3e7e1df",
+			"targetIndex" : 19,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 20,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"task4_2dshapes.exe"
+			],
+			"targetId" : "task4_2dshapes::@6890427a1f51a3e7e1df",
+			"targetIndex" : 20,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 21,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"task5_3d_origin.exe"
+			],
+			"targetId" : "task5_3d_origin::@6890427a1f51a3e7e1df",
+			"targetIndex" : 21,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 22,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"task6_bezier_surface.exe"
+			],
+			"targetId" : "task6_bezier_surface::@6890427a1f51a3e7e1df",
+			"targetIndex" : 22,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 23,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"task7_particles.exe"
+			],
+			"targetId" : "task7_particles::@6890427a1f51a3e7e1df",
+			"targetIndex" : 23,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 24,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				"playground.exe"
+			],
+			"targetId" : "playground::@6890427a1f51a3e7e1df",
+			"targetIndex" : 10,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 25,
+			"component" : "Unspecified",
+			"destination" : ".",
+			"paths" : 
+			[
+				{
+					"from" : "data",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

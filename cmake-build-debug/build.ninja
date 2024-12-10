@@ -56,8 +56,6 @@ build CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: CXX_COMPILER__shad
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/color_frag_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -66,8 +64,6 @@ build CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: CXX_COMPILER__shad
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/convolution_vert_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -76,8 +72,6 @@ build CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: CXX_COMPILER
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/convolution_frag_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -86,8 +80,6 @@ build CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: CXX_COMPILER
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/diffuse_vert_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -96,8 +88,6 @@ build CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: CXX_COMPILER__sh
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/diffuse_frag_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -106,8 +96,6 @@ build CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: CXX_COMPILER__sh
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/texture_vert_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -116,8 +104,6 @@ build CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: CXX_COMPILER__sh
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/texture_frag_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -126,8 +112,6 @@ build CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: CXX_COMPILER__sh
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/texture_vert_grass_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -136,8 +120,6 @@ build CMakeFiles/shaders.dir/shaders/texture_vert_grass_glsl.cpp.obj: CXX_COMPIL
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/texture_frag_grass_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -146,8 +128,6 @@ build CMakeFiles/shaders.dir/shaders/texture_frag_grass_glsl.cpp.obj: CXX_COMPIL
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/skybox_vert_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -156,8 +136,6 @@ build CMakeFiles/shaders.dir/shaders/skybox_vert_glsl.cpp.obj: CXX_COMPILER__sha
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/skybox_frag_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -166,8 +144,6 @@ build CMakeFiles/shaders.dir/shaders/skybox_frag_glsl.cpp.obj: CXX_COMPILER__sha
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/depth_vert_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -176,8 +152,6 @@ build CMakeFiles/shaders.dir/shaders/depth_vert_glsl.cpp.obj: CXX_COMPILER__shad
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/depth_frag_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -186,8 +160,6 @@ build CMakeFiles/shaders.dir/shaders/depth_frag_glsl.cpp.obj: CXX_COMPILER__shad
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/quad_vert_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -196,8 +168,6 @@ build CMakeFiles/shaders.dir/shaders/quad_vert_glsl.cpp.obj: CXX_COMPILER__shade
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/final_frag_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -206,8 +176,6 @@ build CMakeFiles/shaders.dir/shaders/final_frag_glsl.cpp.obj: CXX_COMPILER__shad
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/blur_frag_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -216,8 +184,6 @@ build CMakeFiles/shaders.dir/shaders/blur_frag_glsl.cpp.obj: CXX_COMPILER__shade
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 build CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.obj: CXX_COMPILER__shaders_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug/shaders/bright_frag_glsl.cpp || cmake_object_order_depends_target_shaders
   DEFINES = -DUSE_ASSIMP=1
@@ -226,8 +192,6 @@ build CMakeFiles/shaders.dir/shaders/bright_frag_glsl.cpp.obj: CXX_COMPILER__sha
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\shaders.dir
   OBJECT_FILE_DIR = CMakeFiles\shaders.dir\shaders
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
-  TARGET_PDB = libshaders.pdb
 
 
 # =============================================================================
@@ -242,9 +206,8 @@ build libshaders.a: CXX_STATIC_LIBRARY_LINKER__shaders_Debug CMakeFiles/shaders.
   OBJECT_DIR = CMakeFiles\shaders.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\shaders.dir\shaders.pdb
   TARGET_FILE = libshaders.a
-  TARGET_PDB = libshaders.pdb
+  TARGET_PDB = shaders.a.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target ppgso
@@ -262,8 +225,6 @@ build CMakeFiles/ppgso.dir/ppgso/Mesh_Assimp.cpp.obj: CXX_COMPILER__ppgso_unscan
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\ppgso.dir
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
-  TARGET_COMPILE_PDB = CMakeFiles\ppgso.dir\ppgso.pdb
-  TARGET_PDB = libppgso.pdb
 
 build CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/tiny_obj_loader.cpp || cmake_object_order_depends_target_ppgso
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -272,8 +233,6 @@ build CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj: CXX_COMPILER__ppgso_un
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\ppgso.dir
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
-  TARGET_COMPILE_PDB = CMakeFiles\ppgso.dir\ppgso.pdb
-  TARGET_PDB = libppgso.pdb
 
 build CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/shader.cpp || cmake_object_order_depends_target_ppgso
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -282,8 +241,6 @@ build CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj: CXX_COMPILER__ppgso_unscanned_D
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\ppgso.dir
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
-  TARGET_COMPILE_PDB = CMakeFiles\ppgso.dir\ppgso.pdb
-  TARGET_PDB = libppgso.pdb
 
 build CMakeFiles/ppgso.dir/ppgso/image.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/image.cpp || cmake_object_order_depends_target_ppgso
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -292,8 +249,6 @@ build CMakeFiles/ppgso.dir/ppgso/image.cpp.obj: CXX_COMPILER__ppgso_unscanned_De
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\ppgso.dir
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
-  TARGET_COMPILE_PDB = CMakeFiles\ppgso.dir\ppgso.pdb
-  TARGET_PDB = libppgso.pdb
 
 build CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/image_bmp.cpp || cmake_object_order_depends_target_ppgso
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -302,8 +257,6 @@ build CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj: CXX_COMPILER__ppgso_unscanne
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\ppgso.dir
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
-  TARGET_COMPILE_PDB = CMakeFiles\ppgso.dir\ppgso.pdb
-  TARGET_PDB = libppgso.pdb
 
 build CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/image_raw.cpp || cmake_object_order_depends_target_ppgso
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -312,8 +265,6 @@ build CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj: CXX_COMPILER__ppgso_unscanne
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\ppgso.dir
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
-  TARGET_COMPILE_PDB = CMakeFiles\ppgso.dir\ppgso.pdb
-  TARGET_PDB = libppgso.pdb
 
 build CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/texture.cpp || cmake_object_order_depends_target_ppgso
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -322,8 +273,6 @@ build CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj: CXX_COMPILER__ppgso_unscanned_
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\ppgso.dir
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
-  TARGET_COMPILE_PDB = CMakeFiles\ppgso.dir\ppgso.pdb
-  TARGET_PDB = libppgso.pdb
 
 build CMakeFiles/ppgso.dir/ppgso/window.cpp.obj: CXX_COMPILER__ppgso_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso/window.cpp || cmake_object_order_depends_target_ppgso
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -332,8 +281,6 @@ build CMakeFiles/ppgso.dir/ppgso/window.cpp.obj: CXX_COMPILER__ppgso_unscanned_D
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\ppgso.dir
   OBJECT_FILE_DIR = CMakeFiles\ppgso.dir\ppgso
-  TARGET_COMPILE_PDB = CMakeFiles\ppgso.dir\ppgso.pdb
-  TARGET_PDB = libppgso.pdb
 
 
 # =============================================================================
@@ -348,9 +295,8 @@ build libppgso.a: CXX_STATIC_LIBRARY_LINKER__ppgso_Debug CMakeFiles/ppgso.dir/pp
   OBJECT_DIR = CMakeFiles\ppgso.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\ppgso.dir\ppgso.pdb
   TARGET_FILE = libppgso.a
-  TARGET_PDB = libppgso.pdb
+  TARGET_PDB = ppgso.a.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 1projekt
@@ -368,8 +314,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj: CXX_COMPILER__1projekt_
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/camera.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -378,8 +322,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj: CXX_COMPILER__1projek
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/plane.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -388,8 +330,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj: CXX_COMPILER__1projekt
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/particle.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -398,8 +338,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj: CXX_COMPILER__1proj
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/splash_particle.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -408,8 +346,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj: CXX_COMPILER
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/window.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -418,8 +354,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj: CXX_COMPILER__1projek
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/building.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -428,8 +362,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj: CXX_COMPILER__1proj
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/scene.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/scene.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -438,8 +370,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/scene.cpp.obj: CXX_COMPILER__1projekt
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/object.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/object.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -448,8 +378,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/object.cpp.obj: CXX_COMPILER__1projek
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/grid.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/grid.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -458,8 +386,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/grid.cpp.obj: CXX_COMPILER__1projekt_
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/GrassTile.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -468,8 +394,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.obj: CXX_COMPILER__1pro
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/SkyBox.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -478,8 +402,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj: CXX_COMPILER__1projek
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/planeCross.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/planeCross.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -488,8 +410,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/planeCross.cpp.obj: CXX_COMPILER__1pr
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/car.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/car.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -498,8 +418,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/car.cpp.obj: CXX_COMPILER__1projekt_u
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/PostProcessor.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -508,8 +426,6 @@ build CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj: CXX_COMPILER__
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
 
 build CMakeFiles/1projekt.dir/src/1projekt/trailer.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/trailer.cpp || cmake_object_order_depends_target_1projekt
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -518,8 +434,14 @@ build CMakeFiles/1projekt.dir/src/1projekt/trailer.cpp.obj: CXX_COMPILER__1proje
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\1projekt.dir
   OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
-  TARGET_PDB = 1projekt.pdb
+
+build CMakeFiles/1projekt.dir/src/1projekt/airplane.cpp.obj: CXX_COMPILER__1projekt_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/1projekt/airplane.cpp || cmake_object_order_depends_target_1projekt
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
+  DEP_FILE = CMakeFiles\1projekt.dir\src\1projekt\airplane.cpp.obj.d
+  FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
+  OBJECT_DIR = CMakeFiles\1projekt.dir
+  OBJECT_FILE_DIR = CMakeFiles\1projekt.dir\src\1projekt
 
 
 # =============================================================================
@@ -529,16 +451,15 @@ build CMakeFiles/1projekt.dir/src/1projekt/trailer.cpp.obj: CXX_COMPILER__1proje
 #############################################
 # Link the executable 1projekt.exe
 
-build 1projekt.exe: CXX_EXECUTABLE_LINKER__1projekt_Debug CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/scene.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/object.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/grid.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/planeCross.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/car.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/trailer.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
+build 1projekt.exe: CXX_EXECUTABLE_LINKER__1projekt_Debug CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/camera.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/plane.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/building.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/scene.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/object.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/grid.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/GrassTile.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/planeCross.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/car.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/trailer.cpp.obj CMakeFiles/1projekt.dir/src/1projekt/airplane.cpp.obj | libppgso.a libshaders.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a || libppgso.a libshaders.a
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter
   LINK_LIBRARIES = libppgso.a  libshaders.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglfw3.a  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libglew32.a  -lopengl32  -lglu32  C:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/lib/mingw/libassimp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1projekt.dir
   POST_BUILD = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory C:/Users/matus/Desktop/PPGSO/ppgso_projekt/data/ C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug"
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\1projekt.dir\
   TARGET_FILE = 1projekt.exe
   TARGET_IMPLIB = lib1projekt.dll.a
-  TARGET_PDB = 1projekt.pdb
+  TARGET_PDB = 1projekt.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target raw1_gradient
@@ -556,8 +477,6 @@ build CMakeFiles/raw1_gradient.dir/src/raw1_gradient/raw1_gradient.cpp.obj: CXX_
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\raw1_gradient.dir
   OBJECT_FILE_DIR = CMakeFiles\raw1_gradient.dir\src\raw1_gradient
-  TARGET_COMPILE_PDB = CMakeFiles\raw1_gradient.dir\
-  TARGET_PDB = raw1_gradient.pdb
 
 
 # =============================================================================
@@ -573,10 +492,9 @@ build raw1_gradient.exe: CXX_EXECUTABLE_LINKER__raw1_gradient_Debug CMakeFiles/r
   OBJECT_DIR = CMakeFiles\raw1_gradient.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\raw1_gradient.dir\
   TARGET_FILE = raw1_gradient.exe
   TARGET_IMPLIB = libraw1_gradient.dll.a
-  TARGET_PDB = raw1_gradient.pdb
+  TARGET_PDB = raw1_gradient.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target raw2_raycast
@@ -594,8 +512,6 @@ build CMakeFiles/raw2_raycast.dir/src/raw2_raycast/raw2_raycast.cpp.obj: CXX_COM
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\raw2_raycast.dir
   OBJECT_FILE_DIR = CMakeFiles\raw2_raycast.dir\src\raw2_raycast
-  TARGET_COMPILE_PDB = CMakeFiles\raw2_raycast.dir\
-  TARGET_PDB = raw2_raycast.pdb
 
 
 # =============================================================================
@@ -611,10 +527,9 @@ build raw2_raycast.exe: CXX_EXECUTABLE_LINKER__raw2_raycast_Debug CMakeFiles/raw
   OBJECT_DIR = CMakeFiles\raw2_raycast.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\raw2_raycast.dir\
   TARGET_FILE = raw2_raycast.exe
   TARGET_IMPLIB = libraw2_raycast.dll.a
-  TARGET_PDB = raw2_raycast.pdb
+  TARGET_PDB = raw2_raycast.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target raw3_raytrace
@@ -632,8 +547,6 @@ build CMakeFiles/raw3_raytrace.dir/src/raw3_raytrace/raw3_raytrace.cpp.obj: CXX_
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\raw3_raytrace.dir
   OBJECT_FILE_DIR = CMakeFiles\raw3_raytrace.dir\src\raw3_raytrace
-  TARGET_COMPILE_PDB = CMakeFiles\raw3_raytrace.dir\
-  TARGET_PDB = raw3_raytrace.pdb
 
 
 # =============================================================================
@@ -649,10 +562,9 @@ build raw3_raytrace.exe: CXX_EXECUTABLE_LINKER__raw3_raytrace_Debug CMakeFiles/r
   OBJECT_DIR = CMakeFiles\raw3_raytrace.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\raw3_raytrace.dir\
   TARGET_FILE = raw3_raytrace.exe
   TARGET_IMPLIB = libraw3_raytrace.dll.a
-  TARGET_PDB = raw3_raytrace.pdb
+  TARGET_PDB = raw3_raytrace.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target raw4_raster
@@ -670,8 +582,6 @@ build CMakeFiles/raw4_raster.dir/src/raw4_raster/raw4_raster.cpp.obj: CXX_COMPIL
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\raw4_raster.dir
   OBJECT_FILE_DIR = CMakeFiles\raw4_raster.dir\src\raw4_raster
-  TARGET_COMPILE_PDB = CMakeFiles\raw4_raster.dir\
-  TARGET_PDB = raw4_raster.pdb
 
 
 # =============================================================================
@@ -687,10 +597,9 @@ build raw4_raster.exe: CXX_EXECUTABLE_LINKER__raw4_raster_Debug CMakeFiles/raw4_
   OBJECT_DIR = CMakeFiles\raw4_raster.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\raw4_raster.dir\
   TARGET_FILE = raw4_raster.exe
   TARGET_IMPLIB = libraw4_raster.dll.a
-  TARGET_PDB = raw4_raster.pdb
+  TARGET_PDB = raw4_raster.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target gl1_gradient
@@ -708,8 +617,6 @@ build CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.obj: CXX_COM
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl1_gradient.dir
   OBJECT_FILE_DIR = CMakeFiles\gl1_gradient.dir\src\gl1_gradient
-  TARGET_COMPILE_PDB = CMakeFiles\gl1_gradient.dir\
-  TARGET_PDB = gl1_gradient.pdb
 
 
 # =============================================================================
@@ -725,10 +632,9 @@ build gl1_gradient.exe: CXX_EXECUTABLE_LINKER__gl1_gradient_Debug CMakeFiles/gl1
   OBJECT_DIR = CMakeFiles\gl1_gradient.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\gl1_gradient.dir\
   TARGET_FILE = gl1_gradient.exe
   TARGET_IMPLIB = libgl1_gradient.dll.a
-  TARGET_PDB = gl1_gradient.pdb
+  TARGET_PDB = gl1_gradient.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target gl2_texture
@@ -746,8 +652,6 @@ build CMakeFiles/gl2_texture.dir/src/gl2_texture/gl2_texture.cpp.obj: CXX_COMPIL
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl2_texture.dir
   OBJECT_FILE_DIR = CMakeFiles\gl2_texture.dir\src\gl2_texture
-  TARGET_COMPILE_PDB = CMakeFiles\gl2_texture.dir\
-  TARGET_PDB = gl2_texture.pdb
 
 
 # =============================================================================
@@ -763,10 +667,9 @@ build gl2_texture.exe: CXX_EXECUTABLE_LINKER__gl2_texture_Debug CMakeFiles/gl2_t
   OBJECT_DIR = CMakeFiles\gl2_texture.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\gl2_texture.dir\
   TARGET_FILE = gl2_texture.exe
   TARGET_IMPLIB = libgl2_texture.dll.a
-  TARGET_PDB = gl2_texture.pdb
+  TARGET_PDB = gl2_texture.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target gl3_animate
@@ -784,8 +687,6 @@ build CMakeFiles/gl3_animate.dir/src/gl3_animate/gl3_animate.cpp.obj: CXX_COMPIL
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl3_animate.dir
   OBJECT_FILE_DIR = CMakeFiles\gl3_animate.dir\src\gl3_animate
-  TARGET_COMPILE_PDB = CMakeFiles\gl3_animate.dir\
-  TARGET_PDB = gl3_animate.pdb
 
 
 # =============================================================================
@@ -801,10 +702,9 @@ build gl3_animate.exe: CXX_EXECUTABLE_LINKER__gl3_animate_Debug CMakeFiles/gl3_a
   OBJECT_DIR = CMakeFiles\gl3_animate.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\gl3_animate.dir\
   TARGET_FILE = gl3_animate.exe
   TARGET_IMPLIB = libgl3_animate.dll.a
-  TARGET_PDB = gl3_animate.pdb
+  TARGET_PDB = gl3_animate.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target gl4_transform
@@ -822,8 +722,6 @@ build CMakeFiles/gl4_transform.dir/src/gl4_transform/gl4_transform.cpp.obj: CXX_
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl4_transform.dir
   OBJECT_FILE_DIR = CMakeFiles\gl4_transform.dir\src\gl4_transform
-  TARGET_COMPILE_PDB = CMakeFiles\gl4_transform.dir\
-  TARGET_PDB = gl4_transform.pdb
 
 
 # =============================================================================
@@ -839,10 +737,9 @@ build gl4_transform.exe: CXX_EXECUTABLE_LINKER__gl4_transform_Debug CMakeFiles/g
   OBJECT_DIR = CMakeFiles\gl4_transform.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\gl4_transform.dir\
   TARGET_FILE = gl4_transform.exe
   TARGET_IMPLIB = libgl4_transform.dll.a
-  TARGET_PDB = gl4_transform.pdb
+  TARGET_PDB = gl4_transform.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target gl5_projection
@@ -860,8 +757,6 @@ build CMakeFiles/gl5_projection.dir/src/gl5_projection/gl5_projection.cpp.obj: C
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl5_projection.dir
   OBJECT_FILE_DIR = CMakeFiles\gl5_projection.dir\src\gl5_projection
-  TARGET_COMPILE_PDB = CMakeFiles\gl5_projection.dir\
-  TARGET_PDB = gl5_projection.pdb
 
 
 # =============================================================================
@@ -877,10 +772,9 @@ build gl5_projection.exe: CXX_EXECUTABLE_LINKER__gl5_projection_Debug CMakeFiles
   OBJECT_DIR = CMakeFiles\gl5_projection.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\gl5_projection.dir\
   TARGET_FILE = gl5_projection.exe
   TARGET_IMPLIB = libgl5_projection.dll.a
-  TARGET_PDB = gl5_projection.pdb
+  TARGET_PDB = gl5_projection.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target gl6_mesh
@@ -898,8 +792,6 @@ build CMakeFiles/gl6_mesh.dir/src/gl6_mesh/gl6_mesh.cpp.obj: CXX_COMPILER__gl6_m
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl6_mesh.dir
   OBJECT_FILE_DIR = CMakeFiles\gl6_mesh.dir\src\gl6_mesh
-  TARGET_COMPILE_PDB = CMakeFiles\gl6_mesh.dir\
-  TARGET_PDB = gl6_mesh.pdb
 
 
 # =============================================================================
@@ -915,10 +807,9 @@ build gl6_mesh.exe: CXX_EXECUTABLE_LINKER__gl6_mesh_Debug CMakeFiles/gl6_mesh.di
   OBJECT_DIR = CMakeFiles\gl6_mesh.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\gl6_mesh.dir\
   TARGET_FILE = gl6_mesh.exe
   TARGET_IMPLIB = libgl6_mesh.dll.a
-  TARGET_PDB = gl6_mesh.pdb
+  TARGET_PDB = gl6_mesh.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target gl7_diffuse
@@ -936,8 +827,6 @@ build CMakeFiles/gl7_diffuse.dir/src/gl7_diffuse/gl7_diffuse.cpp.obj: CXX_COMPIL
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl7_diffuse.dir
   OBJECT_FILE_DIR = CMakeFiles\gl7_diffuse.dir\src\gl7_diffuse
-  TARGET_COMPILE_PDB = CMakeFiles\gl7_diffuse.dir\
-  TARGET_PDB = gl7_diffuse.pdb
 
 
 # =============================================================================
@@ -953,10 +842,9 @@ build gl7_diffuse.exe: CXX_EXECUTABLE_LINKER__gl7_diffuse_Debug CMakeFiles/gl7_d
   OBJECT_DIR = CMakeFiles\gl7_diffuse.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\gl7_diffuse.dir\
   TARGET_FILE = gl7_diffuse.exe
   TARGET_IMPLIB = libgl7_diffuse.dll.a
-  TARGET_PDB = gl7_diffuse.pdb
+  TARGET_PDB = gl7_diffuse.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target gl8_framebuffer
@@ -974,8 +862,6 @@ build CMakeFiles/gl8_framebuffer.dir/src/gl8_framebuffer/gl8_framebuffer.cpp.obj
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl8_framebuffer.dir
   OBJECT_FILE_DIR = CMakeFiles\gl8_framebuffer.dir\src\gl8_framebuffer
-  TARGET_COMPILE_PDB = CMakeFiles\gl8_framebuffer.dir\
-  TARGET_PDB = gl8_framebuffer.pdb
 
 
 # =============================================================================
@@ -991,10 +877,9 @@ build gl8_framebuffer.exe: CXX_EXECUTABLE_LINKER__gl8_framebuffer_Debug CMakeFil
   OBJECT_DIR = CMakeFiles\gl8_framebuffer.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\gl8_framebuffer.dir\
   TARGET_FILE = gl8_framebuffer.exe
   TARGET_IMPLIB = libgl8_framebuffer.dll.a
-  TARGET_PDB = gl8_framebuffer.pdb
+  TARGET_PDB = gl8_framebuffer.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target gl9_scene
@@ -1012,8 +897,6 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj: CXX_COMPILER__gl
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl9_scene.dir
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
-  TARGET_COMPILE_PDB = CMakeFiles\gl9_scene.dir\
-  TARGET_PDB = gl9_scene.pdb
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/object.cpp || cmake_object_order_depends_target_gl9_scene
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -1022,8 +905,6 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj: CXX_COMPILER__gl9_s
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl9_scene.dir
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
-  TARGET_COMPILE_PDB = CMakeFiles\gl9_scene.dir\
-  TARGET_PDB = gl9_scene.pdb
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/scene.cpp || cmake_object_order_depends_target_gl9_scene
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -1032,8 +913,6 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj: CXX_COMPILER__gl9_sc
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl9_scene.dir
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
-  TARGET_COMPILE_PDB = CMakeFiles\gl9_scene.dir\
-  TARGET_PDB = gl9_scene.pdb
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/camera.cpp || cmake_object_order_depends_target_gl9_scene
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -1042,8 +921,6 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj: CXX_COMPILER__gl9_s
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl9_scene.dir
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
-  TARGET_COMPILE_PDB = CMakeFiles\gl9_scene.dir\
-  TARGET_PDB = gl9_scene.pdb
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/asteroid.cpp || cmake_object_order_depends_target_gl9_scene
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -1052,8 +929,6 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj: CXX_COMPILER__gl9
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl9_scene.dir
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
-  TARGET_COMPILE_PDB = CMakeFiles\gl9_scene.dir\
-  TARGET_PDB = gl9_scene.pdb
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/generator.cpp || cmake_object_order_depends_target_gl9_scene
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -1062,8 +937,6 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj: CXX_COMPILER__gl
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl9_scene.dir
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
-  TARGET_COMPILE_PDB = CMakeFiles\gl9_scene.dir\
-  TARGET_PDB = gl9_scene.pdb
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/player.cpp || cmake_object_order_depends_target_gl9_scene
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -1072,8 +945,6 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj: CXX_COMPILER__gl9_s
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl9_scene.dir
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
-  TARGET_COMPILE_PDB = CMakeFiles\gl9_scene.dir\
-  TARGET_PDB = gl9_scene.pdb
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/projectile.cpp || cmake_object_order_depends_target_gl9_scene
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -1082,8 +953,6 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj: CXX_COMPILER__g
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl9_scene.dir
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
-  TARGET_COMPILE_PDB = CMakeFiles\gl9_scene.dir\
-  TARGET_PDB = gl9_scene.pdb
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/explosion.cpp || cmake_object_order_depends_target_gl9_scene
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -1092,8 +961,6 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj: CXX_COMPILER__gl
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl9_scene.dir
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
-  TARGET_COMPILE_PDB = CMakeFiles\gl9_scene.dir\
-  TARGET_PDB = gl9_scene.pdb
 
 build CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj: CXX_COMPILER__gl9_scene_unscanned_Debug C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/src/gl9_scene/space.cpp || cmake_object_order_depends_target_gl9_scene
   DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1
@@ -1102,8 +969,6 @@ build CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj: CXX_COMPILER__gl9_sc
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\gl9_scene.dir
   OBJECT_FILE_DIR = CMakeFiles\gl9_scene.dir\src\gl9_scene
-  TARGET_COMPILE_PDB = CMakeFiles\gl9_scene.dir\
-  TARGET_PDB = gl9_scene.pdb
 
 
 # =============================================================================
@@ -1119,10 +984,9 @@ build gl9_scene.exe: CXX_EXECUTABLE_LINKER__gl9_scene_Debug CMakeFiles/gl9_scene
   OBJECT_DIR = CMakeFiles\gl9_scene.dir
   POST_BUILD = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory C:/Users/matus/Desktop/PPGSO/ppgso_projekt/data/ C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug"
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\gl9_scene.dir\
   TARGET_FILE = gl9_scene.exe
   TARGET_IMPLIB = libgl9_scene.dll.a
-  TARGET_PDB = gl9_scene.pdb
+  TARGET_PDB = gl9_scene.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target task1_filter
@@ -1139,8 +1003,6 @@ build CMakeFiles/task1_filter.dir/src/task1_filter/task1_filter.cpp.obj: CXX_COM
   FLAGS = -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\task1_filter.dir
   OBJECT_FILE_DIR = CMakeFiles\task1_filter.dir\src\task1_filter
-  TARGET_COMPILE_PDB = CMakeFiles\task1_filter.dir\
-  TARGET_PDB = task1_filter.pdb
 
 
 # =============================================================================
@@ -1156,10 +1018,9 @@ build task1_filter.exe: CXX_EXECUTABLE_LINKER__task1_filter_Debug CMakeFiles/tas
   OBJECT_DIR = CMakeFiles\task1_filter.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\task1_filter.dir\
   TARGET_FILE = task1_filter.exe
   TARGET_IMPLIB = libtask1_filter.dll.a
-  TARGET_PDB = task1_filter.pdb
+  TARGET_PDB = task1_filter.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target task2_bresenham
@@ -1177,8 +1038,6 @@ build CMakeFiles/task2_bresenham.dir/src/task2_bresenham/task2_bresenham.cpp.obj
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\task2_bresenham.dir
   OBJECT_FILE_DIR = CMakeFiles\task2_bresenham.dir\src\task2_bresenham
-  TARGET_COMPILE_PDB = CMakeFiles\task2_bresenham.dir\
-  TARGET_PDB = task2_bresenham.pdb
 
 
 # =============================================================================
@@ -1194,10 +1053,9 @@ build task2_bresenham.exe: CXX_EXECUTABLE_LINKER__task2_bresenham_Debug CMakeFil
   OBJECT_DIR = CMakeFiles\task2_bresenham.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\task2_bresenham.dir\
   TARGET_FILE = task2_bresenham.exe
   TARGET_IMPLIB = libtask2_bresenham.dll.a
-  TARGET_PDB = task2_bresenham.pdb
+  TARGET_PDB = task2_bresenham.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target task3_bezier
@@ -1215,8 +1073,6 @@ build CMakeFiles/task3_bezier.dir/src/task3_bezier/task3_bezier.cpp.obj: CXX_COM
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\task3_bezier.dir
   OBJECT_FILE_DIR = CMakeFiles\task3_bezier.dir\src\task3_bezier
-  TARGET_COMPILE_PDB = CMakeFiles\task3_bezier.dir\
-  TARGET_PDB = task3_bezier.pdb
 
 
 # =============================================================================
@@ -1232,10 +1088,9 @@ build task3_bezier.exe: CXX_EXECUTABLE_LINKER__task3_bezier_Debug CMakeFiles/tas
   OBJECT_DIR = CMakeFiles\task3_bezier.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\task3_bezier.dir\
   TARGET_FILE = task3_bezier.exe
   TARGET_IMPLIB = libtask3_bezier.dll.a
-  TARGET_PDB = task3_bezier.pdb
+  TARGET_PDB = task3_bezier.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target task4_2dshapes
@@ -1253,8 +1108,6 @@ build CMakeFiles/task4_2dshapes.dir/src/task4_2dshapes/task4_2dshapes.cpp.obj: C
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\task4_2dshapes.dir
   OBJECT_FILE_DIR = CMakeFiles\task4_2dshapes.dir\src\task4_2dshapes
-  TARGET_COMPILE_PDB = CMakeFiles\task4_2dshapes.dir\
-  TARGET_PDB = task4_2dshapes.pdb
 
 
 # =============================================================================
@@ -1270,10 +1123,9 @@ build task4_2dshapes.exe: CXX_EXECUTABLE_LINKER__task4_2dshapes_Debug CMakeFiles
   OBJECT_DIR = CMakeFiles\task4_2dshapes.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\task4_2dshapes.dir\
   TARGET_FILE = task4_2dshapes.exe
   TARGET_IMPLIB = libtask4_2dshapes.dll.a
-  TARGET_PDB = task4_2dshapes.pdb
+  TARGET_PDB = task4_2dshapes.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target task5_3d_origin
@@ -1291,8 +1143,6 @@ build CMakeFiles/task5_3d_origin.dir/src/task5_3d_origin/task5_3d_origin.cpp.obj
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\task5_3d_origin.dir
   OBJECT_FILE_DIR = CMakeFiles\task5_3d_origin.dir\src\task5_3d_origin
-  TARGET_COMPILE_PDB = CMakeFiles\task5_3d_origin.dir\
-  TARGET_PDB = task5_3d_origin.pdb
 
 
 # =============================================================================
@@ -1308,10 +1158,9 @@ build task5_3d_origin.exe: CXX_EXECUTABLE_LINKER__task5_3d_origin_Debug CMakeFil
   OBJECT_DIR = CMakeFiles\task5_3d_origin.dir
   POST_BUILD = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory C:/Users/matus/Desktop/PPGSO/ppgso_projekt/data/ C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug"
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\task5_3d_origin.dir\
   TARGET_FILE = task5_3d_origin.exe
   TARGET_IMPLIB = libtask5_3d_origin.dll.a
-  TARGET_PDB = task5_3d_origin.pdb
+  TARGET_PDB = task5_3d_origin.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target task6_bezier_surface
@@ -1329,8 +1178,6 @@ build CMakeFiles/task6_bezier_surface.dir/src/task6_bezier_surface/task6_bezier_
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\task6_bezier_surface.dir
   OBJECT_FILE_DIR = CMakeFiles\task6_bezier_surface.dir\src\task6_bezier_surface
-  TARGET_COMPILE_PDB = CMakeFiles\task6_bezier_surface.dir\
-  TARGET_PDB = task6_bezier_surface.pdb
 
 
 # =============================================================================
@@ -1346,10 +1193,9 @@ build task6_bezier_surface.exe: CXX_EXECUTABLE_LINKER__task6_bezier_surface_Debu
   OBJECT_DIR = CMakeFiles\task6_bezier_surface.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\task6_bezier_surface.dir\
   TARGET_FILE = task6_bezier_surface.exe
   TARGET_IMPLIB = libtask6_bezier_surface.dll.a
-  TARGET_PDB = task6_bezier_surface.pdb
+  TARGET_PDB = task6_bezier_surface.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target task7_particles
@@ -1367,8 +1213,6 @@ build CMakeFiles/task7_particles.dir/src/task7_particles/task7_particles.cpp.obj
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\task7_particles.dir
   OBJECT_FILE_DIR = CMakeFiles\task7_particles.dir\src\task7_particles
-  TARGET_COMPILE_PDB = CMakeFiles\task7_particles.dir\
-  TARGET_PDB = task7_particles.pdb
 
 
 # =============================================================================
@@ -1384,10 +1228,9 @@ build task7_particles.exe: CXX_EXECUTABLE_LINKER__task7_particles_Debug CMakeFil
   OBJECT_DIR = CMakeFiles\task7_particles.dir
   POST_BUILD = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory C:/Users/matus/Desktop/PPGSO/ppgso_projekt/data/ C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug"
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\task7_particles.dir\
   TARGET_FILE = task7_particles.exe
   TARGET_IMPLIB = libtask7_particles.dll.a
-  TARGET_PDB = task7_particles.pdb
+  TARGET_PDB = task7_particles.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target playground
@@ -1405,8 +1248,6 @@ build CMakeFiles/playground.dir/src/playground/playground.cpp.obj: CXX_COMPILER_
   INCLUDES = -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug
   OBJECT_DIR = CMakeFiles\playground.dir
   OBJECT_FILE_DIR = CMakeFiles\playground.dir\src\playground
-  TARGET_COMPILE_PDB = CMakeFiles\playground.dir\
-  TARGET_PDB = playground.pdb
 
 
 # =============================================================================
@@ -1422,10 +1263,9 @@ build playground.exe: CXX_EXECUTABLE_LINKER__playground_Debug CMakeFiles/playgro
   OBJECT_DIR = CMakeFiles\playground.dir
   POST_BUILD = cmd.exe /C "cd /D C:\Users\matus\Desktop\PPGSO\ppgso_projekt\cmake-build-debug && "D:\program files\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory C:/Users/matus/Desktop/PPGSO/ppgso_projekt/data/ C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug"
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\playground.dir\
   TARGET_FILE = playground.exe
   TARGET_IMPLIB = libplayground.dll.a
-  TARGET_PDB = playground.pdb
+  TARGET_PDB = playground.exe.dbg
 
 
 #############################################
@@ -1722,14 +1562,14 @@ build all: phony libshaders.a libppgso.a 1projekt.exe raw1_gradient.exe raw2_ray
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/CMakeLists.txt C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindASSIMP.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLEW.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLFW3.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLM.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/add_resources.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake CMakeFiles/assimp_version_major.cpp CMakeFiles/assimp_version_minor.cpp CMakeFiles/assimp_version_revision.cpp D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompiler.cmake.in D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCompilerIdDetection.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompileFeatures.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineRCCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeFindBinUtils.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseLibraryArchitecture.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCCompiler.cmake.in D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystem.cmake.in D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCompilerCommon.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestRCCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-FindBinUtils.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/TI-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenGL.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Determine-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/CMakeLists.txt C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindASSIMP.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLEW.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLFW3.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLM.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/add_resources.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake CMakeFiles/assimp_version_major.cpp CMakeFiles/assimp_version_minor.cpp CMakeFiles/assimp_version_revision.cpp D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenGL.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/CMakeLists.txt C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindASSIMP.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLEW.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLFW3.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLM.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/add_resources.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake CMakeFiles/assimp_version_major.cpp CMakeFiles/assimp_version_minor.cpp CMakeFiles/assimp_version_revision.cpp D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompiler.cmake.in D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCompilerIdDetection.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompileFeatures.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineRCCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeFindBinUtils.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseLibraryArchitecture.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCCompiler.cmake.in D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystem.cmake.in D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCompilerCommon.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestRCCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-FindBinUtils.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/TI-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenGL.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Determine-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake: phony
+build C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/CMakeLists.txt C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindASSIMP.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLEW.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLFW3.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/FindGLM.cmake C$:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake/add_resources.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake CMakeFiles/assimp_version_major.cpp CMakeFiles/assimp_version_minor.cpp CMakeFiles/assimp_version_revision.cpp D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenGL.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenMP.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/program$ files/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake: phony
 
 
 #############################################

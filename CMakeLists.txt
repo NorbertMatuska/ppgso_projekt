@@ -198,6 +198,10 @@ add_executable(1projekt
         src/1projekt/PostProcessor.h
         src/1projekt/trailer.cpp
         src/1projekt/trailer.h
+        src/1projekt/airplane.cpp
+        src/1projekt/airplane.h
+        src/1projekt/animation_curve.h
+        src/1projekt/keyframe.h
 )
 target_link_libraries(1projekt ppgso shaders)
 install(TARGETS 1projekt DESTINATION .)

@@ -253,6 +253,12 @@
 },
 {
   "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
+  "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1 -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\1projekt.dir\\src\\1projekt\\airplane.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\airplane.cpp",
+  "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\1projekt\\airplane.cpp",
+  "output": "CMakeFiles\\1projekt.dir\\src\\1projekt\\airplane.cpp.obj"
+},
+{
+  "directory": "C:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug",
   "command": "\"D:\\program files\\CLion 2023.3.3\\bin\\mingw\\bin\\g++.exe\" -DGLEW_STATIC -DGLM_FORCE_RADIANS -DUSE_ASSIMP=1 -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/ppgso -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/dependencies/include -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt -IC:/Users/matus/Desktop/PPGSO/ppgso_projekt/cmake-build-debug -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\raw1_gradient.dir\\src\\raw1_gradient\\raw1_gradient.cpp.obj -c C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\raw1_gradient\\raw1_gradient.cpp",
   "file": "C:\\Users\\matus\\Desktop\\PPGSO\\ppgso_projekt\\src\\raw1_gradient\\raw1_gradient.cpp",
   "output": "CMakeFiles\\raw1_gradient.dir\\src\\raw1_gradient\\raw1_gradient.cpp.obj"

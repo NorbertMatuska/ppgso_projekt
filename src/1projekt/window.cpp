@@ -18,6 +18,7 @@
 #include "car.h"
 #include <random>
 #include "trailer.h"
+#include "airplane.h"
 
 
 #define SIZEx 1280
@@ -30,7 +31,8 @@ ParticleWindow::ParticleWindow()
         : Window{"Project_Matuska_Pacuta", SIZEx, SIZEy},
           camera{60.0f, (float)width / (float)height, 0.1f, 100.0f},
           lastX(width / 2.0f), lastY(height / 2.0f), firstMouse(true), sensitivity(0.1f),
-          depthShader(depth_vert_glsl, depth_frag_glsl) {
+          wind(0.0f, 0.0f, 0.0f),
+          depthShader(depth_vert_glsl, depth_frag_glsl){
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LESS);
     glEnable(GL_LINE_SMOOTH);
@@ -62,13 +64,10 @@ ParticleWindow::ParticleWindow()
 
     auto grassTile = std::make_unique<GrassTile>(glm::vec3(0.0f, -0.1f, 0.0f), glm::vec3(200.0f));
     scene.push_back(std::move(grassTile));
-/*
-    auto roadblock1 = std::make_unique<Building>("models/roadblock.obj", grid.getCellPosition(0, 0), "models/roadblock.bmp");
-    roadblock1->setScale(0.003f);
-    roadblock1->setRotation(glm::linearRand(-30.0f, 30.0f));
 
-    scene.push_back(std::move(roadblock1));
-*/
+    auto airplane = std::make_unique<Airplane>();
+    scene.push_back(std::move(airplane));
+
 
     const int carCount = 10;
 
@@ -583,7 +582,32 @@ void ParticleWindow::onIdle() {
     float dTime = (float)glfwGetTime() - time;
     time = (float)glfwGetTime();
 
-    // (Optional) Update sun direction if needed
+    windChangeTimer += dTime;
+    if (windChangeTimer >= windChangeInterval) {
+        windChangeTimer = 0.0f;
+
+        float windStrength = glm::linearRand(-2.0f, 2.0f);
+        float windDirectionAngle = glm::linearRand(0.0f, glm::two_pi<float>());
+        wind = glm::vec3(glm::cos(windDirectionAngle), 0.0f, glm::sin(windDirectionAngle)) * windStrength;
+    }
+
+    particleSpawnTimer += dTime;
+    while (particleSpawnTimer > particleSpawnInterval) {
+        particleSpawnTimer -= particleSpawnInterval;
+
+        // Generate random positions around the camera
+        float offsetX = glm::linearRand(-spawnRadius, spawnRadius);
+        float offsetZ = glm::linearRand(-spawnRadius, spawnRadius);
+        float spawnY = camera.position.y + 2.0f;
+
+        glm::vec3 position = glm::vec3(camera.position.x + offsetX, spawnY, camera.position.z + offsetZ);
+        glm::vec3 speed = glm::vec3(0.0f, -7.0f, 0.0f);
+        glm::vec3 color = glm::vec3(0.0f, 0.0f, 1.0f);
+
+        auto particle = std::make_unique<Particle>(position, speed, color);
+        scene.push_back(std::move(particle));
+    }
+
     updateSunPosition(dTime);
 
     // Setup the light space matrix for shadows
@@ -600,12 +624,10 @@ void ParticleWindow::onIdle() {
 
     // 2. Begin rendering into our HDR framebuffer using the PostProcessor
     postProcessor->BeginRender();
-    // Now everything drawn goes into the HDR FBO
 
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    // Handle camera input
     float cameraSpeed = 10.0f;
     glm::vec3 forward = glm::normalize(camera.target - camera.position);
     glm::vec3 right = glm::normalize(glm::cross(forward, camera.up));
@@ -619,10 +641,21 @@ void ParticleWindow::onIdle() {
 
     // Update objects
     for (auto it = scene.begin(); it != scene.end();) {
-        if (!(*it)->update(dTime, scene))
-            it = scene.erase(it);
-        else
-            ++it;
+        // Check if the object is a Particle and pass wind accordingly
+        Particle* particle = dynamic_cast<Particle*>(it->get());
+        if (particle) {
+            particle->setWind(wind); // Pass current wind to the particle
+            if (!particle->update(dTime, scene))
+                it = scene.erase(it);
+            else
+                ++it;
+        } else {
+            // Update other types of objects without wind
+            if (!(*it)->update(dTime, scene))
+                it = scene.erase(it);
+            else
+                ++it;
+        }
     }
 
     // Set lighting uniforms for all shaders
