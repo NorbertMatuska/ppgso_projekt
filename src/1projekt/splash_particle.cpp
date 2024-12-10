@@ -1,7 +1,6 @@
 #include "splash_particle.h"
 #include "camera.h"
 #include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/random.hpp>
 #include <shaders/color_vert_glsl.h>
 #include <shaders/color_frag_glsl.h>
 

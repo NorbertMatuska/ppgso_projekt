@@ -729,7 +729,7 @@ void ParticleWindow::onIdle() {
 
     // update objects
     for (auto it = scene.begin(); it != scene.end();) {
-        Particle* particle = dynamic_cast<Particle*>(it->get());
+        auto* particle = dynamic_cast<Particle*>(it->get());
         if (particle) {
             particle->setWind(wind);
             if (!particle->update(dTime, scene))

@@ -35,7 +35,7 @@ public:
 
     void render(const Camera& camera) override;
     void renderDepth(ppgso::Shader& depthShader) override;
-    bool update(float dTime, Scene& scene);
+    bool update(float dTime, Scene& scene) override;
 
     ppgso::Shader* getShader() const override;
 

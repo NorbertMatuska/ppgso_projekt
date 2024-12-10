@@ -2,7 +2,6 @@
 #include "camera.h"
 #include <shaders/skybox_vert_glsl.h>
 #include <shaders/skybox_frag_glsl.h>
-#include <glm/gtc/matrix_transform.hpp>
 #include <iostream>
 
 std::unique_ptr<ppgso::Shader> Skybox::shader;

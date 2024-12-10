@@ -234,3 +234,9 @@
 10260	12710	7555418981323129	CMakeFiles/1projekt.dir/src/1projekt/PostProcessor.cpp.obj	4da32329f2313de2
 9975	13434	7555418988560504	CMakeFiles/1projekt.dir/src/1projekt/car.cpp.obj	a552edad42365cba
 13439	15611	7555419004458245	1projekt.exe	773cdcc5103abbb9
+29	4803	7555424912061248	CMakeFiles/1projekt.dir/src/1projekt/SkyBox.cpp.obj	b6de6b2bf443e7b3
+37	4820	7555424912258705	CMakeFiles/1projekt.dir/src/1projekt/trailer.cpp.obj	b1977a2b11e477cd
+17	4976	7555424913838357	CMakeFiles/1projekt.dir/src/1projekt/splash_particle.cpp.obj	31c1e8c0cb69a82a
+9	5113	7555424915188835	CMakeFiles/1projekt.dir/src/1projekt/main.cpp.obj	a967342e30a62413
+23	6601	7555424930027562	CMakeFiles/1projekt.dir/src/1projekt/window.cpp.obj	1e10123fd8c5f8d1
+6604	9234	7555424950446752	1projekt.exe	773cdcc5103abbb9

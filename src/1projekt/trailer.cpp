@@ -9,7 +9,7 @@ std::unique_ptr<ppgso::Shader> Trailer::shader;
 glm::vec3 Trailer::ambientLightColor = glm::vec3(0.8f, 0.7f, 0.6f);
 
 Trailer::Trailer(const std::string& objFilename, const glm::vec3& initialPosition, const std::string& textureFilename)
-        : position(initialPosition), direction(1.0f, 0.0f, 0.0f), boundingBox(glm::vec3(1.0f)) {
+        : direction(1.0f, 0.0f, 0.0f), boundingBox(glm::vec3(1.0f)), position(initialPosition) {
     if (!shader) {
         shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
     }
