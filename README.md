@@ -1,10 +1,14 @@
-# PPGSO Computer Graphics Examples
+# PPGSO Computer Graphics Examples + Solution
 
 This repository contains examples for teaching computer graphics courses. The examples are separated into multiple categories and numbered for easier study. Examples that use the _gl_ prefix rely on the OpenGL API while the _raw_ prefix indicates examples that do not rely on any additional libraries.
 
 All examples are written in C++14 with simplicity in mind, performance optimizations and more sophisticated algorithms are intentionally not used. Students are expected to analyze, modify and enhance the examples as part of the learning process.
 
 To install the examples please see the [Installation instructions](#installation-instructions) section.
+
+## View our project
+
+Our project is located in 1projekt directory, if you wanna view the code. Compile the code and you can explore our city. Camera animation is toggled with the R key.
 
 
 ## Installation instructions
