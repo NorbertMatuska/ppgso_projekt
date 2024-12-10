@@ -41,6 +41,7 @@ ParticleWindow::ParticleWindow()
     postProcessor = std::make_unique<PostProcessor>(SIZEx, SIZEy);
     sunDirection = glm::normalize(glm::vec3(-0.5f, -0.1f, 0.3f));
     initShadowMap();
+    initializeCameraAnimation();
 
     int n = 3;
     float cellSize = 10.0f;
@@ -487,6 +488,136 @@ void ParticleWindow::renderDepthMap() {
     glViewport(0, 0, width, height);
 }
 
+void ParticleWindow::initializeCameraAnimation() {
+    float subGridSize = 30.0f;
+    float cameraHeight = 5.0f;
+
+    // Updated total duration to accommodate the elevation keyframe
+    cameraAnimationDuration = 82.0f; // Total duration for a complete loop
+
+    int n = 3;
+    float totalMapSize = n * subGridSize; // 90.0f
+
+    // Define keyframes aligned with road intersections and include elevation
+    // 1. Start at West Border
+    cameraAnimationCurve.addKeyframe(Keyframe(0.0f,
+        glm::vec3(0.0f, cameraHeight, totalMapSize / 2.0f - 5.0f), // (0, 20, 45)
+        glm::vec3(0.0f, 0.0f, 0.0f))); // Yaw: 0°
+
+    // 2. Move to Central Intersection
+    cameraAnimationCurve.addKeyframe(Keyframe(10.0f,
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize / 2.0f - 5.0f), // (45, 20, 45)
+        glm::vec3(0.0f, 0.0f, 0.0f))); // Yaw remains 0°
+
+    // 3. Elevate to Show Plane
+    cameraAnimationCurve.addKeyframe(Keyframe(15.0f,
+    glm::vec3(totalMapSize / 2.0f - 5.0f, 50.0f, totalMapSize / 2.0f - 5.0f), // (45, 40, 45)
+    glm::vec3(0.0f, 0.0f, 0.0f)));
+
+    cameraAnimationCurve.addKeyframe(Keyframe(18.0f,
+        glm::vec3(totalMapSize / 2.0f - 5.0f, 80.0f, totalMapSize / 2.0f - 5.0f), // Keep the position constant
+        glm::vec3(-60.0f, 90.0f, 0.0f)));
+
+    cameraAnimationCurve.addKeyframe(Keyframe(21.0f,
+    glm::vec3(totalMapSize / 2.0f - 5.0f, 80.0f, totalMapSize / 2.0f - 5.0f), // Keep the position constant
+    glm::vec3(-60.0f, 180.0f, 0.0f))); // Yaw: 180°
+
+    // 3.3. Complete the rotation (Yaw: 270°)
+    cameraAnimationCurve.addKeyframe(Keyframe(24.0f,
+        glm::vec3(totalMapSize / 2.0f - 5.0f, 80.0f, totalMapSize / 2.0f - 5.0f), // Keep the position constant
+        glm::vec3(-60.0f, 270.0f, 0.0f))); // Yaw: 270°
+
+    // 3.4. Return to original yaw (Yaw: 360° or 0°)
+    cameraAnimationCurve.addKeyframe(Keyframe(27.0f,
+        glm::vec3(totalMapSize / 2.0f - 5.0f, 80.0f, totalMapSize / 2.0f - 5.0f), // Keep the position constant
+        glm::vec3(-60.0f, 360.0f, 0.0f)));
+
+    // 4. Return to Central Intersection
+    cameraAnimationCurve.addKeyframe(Keyframe(30.0f,
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize / 2.0f - 5.0f), // (45, 20, 45)
+        glm::vec3(0.0f, 90.0f, 0.0f))); // Yaw: 90° (North)
+
+    // 5. Move to North Border
+    cameraAnimationCurve.addKeyframe(Keyframe(34.0f,
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, 0.0f), // (45, 20, 0)
+        glm::vec3(0.0f, 90.0f, 0.0f))); // Yaw remains 90°
+
+    // 6. Turn West at North Border Intersection
+    cameraAnimationCurve.addKeyframe(Keyframe(36.0f,
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, 0.0f), // (45, 20, 0)
+        glm::vec3(0.0f, 180.0f, 0.0f))); // Yaw: 180° (West)
+
+    // 7. Move to Central Intersection
+    cameraAnimationCurve.addKeyframe(Keyframe(46.0f,
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize / 2.0f - 5.0f), // (45, 20, 45)
+        glm::vec3(0.0f, 180.0f, 0.0f))); // Yaw remains 180°
+
+    // 8. Move to East Border
+    cameraAnimationCurve.addKeyframe(Keyframe(56.0f,
+        glm::vec3(totalMapSize, cameraHeight, totalMapSize / 2.0f - 5.0f), // (90, 20, 45)
+        glm::vec3(0.0f, 180.0f, 0.0f))); // Yaw remains 180°
+
+    // 9. Turn South at East Border Intersection
+    cameraAnimationCurve.addKeyframe(Keyframe(58.0f,
+        glm::vec3(totalMapSize, cameraHeight, totalMapSize / 2.0f - 5.0f), // (90, 20, 45)
+        glm::vec3(0.0f, 270.0f, 0.0f))); // Yaw: 270° (South)
+
+    // 10. Move to Central Intersection
+    cameraAnimationCurve.addKeyframe(Keyframe(60.0f,
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize / 2.0f - 5.0f), // (45, 20, 45)
+        glm::vec3(0.0f, 270.0f, 0.0f))); // Yaw remains 270°
+
+    // 11. Move to South Border
+    cameraAnimationCurve.addKeyframe(Keyframe(70.0f,
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize), // (45, 20, 90)
+        glm::vec3(0.0f, 270.0f, 0.0f))); // Yaw remains 270°
+
+    // 12. Turn East at South Border Intersection
+    cameraAnimationCurve.addKeyframe(Keyframe(72.0f,
+        glm::vec3(totalMapSize / 2.0f - 5.0f, cameraHeight, totalMapSize), // (45, 20, 90)
+        glm::vec3(0.0f, 0.0f, 0.0f))); // Yaw: 0° (East)
+
+    // 13. Loop Back to Start
+    cameraAnimationCurve.addKeyframe(Keyframe(82.0f,
+        glm::vec3(0.0f, cameraHeight, totalMapSize / 2.0f - 5.0f), // (0, 20, 45)
+        glm::vec3(0.0f, 0.0f, 0.0f))); // Yaw: 0°
+
+    // Adjust the total animation duration to match the last keyframe
+    cameraAnimationDuration = 82.0f;
+}
+
+
+void ParticleWindow::updateCameraAnimation(float dTime) {
+    if (!isCameraAnimating)
+        return;
+
+    cameraAnimationTime += dTime;
+
+    // Loop the animation seamlessly
+    if (cameraAnimationTime > cameraAnimationDuration) {
+        cameraAnimationTime = fmod(cameraAnimationTime, cameraAnimationDuration);
+    }
+
+    try {
+        // Interpolate position and rotation using AnimationCurve
+        glm::vec3 newPosition = cameraAnimationCurve.getPosition(cameraAnimationTime);
+        glm::vec3 newRotation = cameraAnimationCurve.getRotation(cameraAnimationTime);
+
+        // Update camera's position
+        camera.position = newPosition;
+
+        // Update camera's rotation (assuming rotation.x is pitch and rotation.y is yaw)
+        camera.pitch = newRotation.x;
+        camera.yaw = newRotation.y;
+
+        // Apply the updates
+        camera.update();
+    }
+    catch (const std::exception& e) {
+        std::cerr << "Camera Animation error: " << e.what() << std::endl;
+        isCameraAnimating = false; // Stop animation on error
+    }
+}
 
 void ParticleWindow::onKey(int key, int scanCode, int action, int mods) {
     if (action == GLFW_PRESS) {
@@ -515,8 +646,20 @@ void ParticleWindow::onKey(int key, int scanCode, int action, int mods) {
             auto particle = std::make_unique<SplashParticle>(position, speed, color, lt);
             scene.push_back(std::move(particle));
         }
-
     }
+
+     if (key == GLFW_KEY_R && action == GLFW_PRESS) {
+        isCameraAnimating = !isCameraAnimating;
+        if (isCameraAnimating) {
+            cameraAnimationTime = 0.0f;
+            std::cout << "Camera Animation Started.\n";
+        } else {
+            // Optionally, reset camera to a default position or maintain current
+            camera.update();
+            std::cout << "Camera Animation Stopped.\n";
+        }
+    }
+
 
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
         glfwSetWindowShouldClose(window, GLFW_TRUE);
@@ -524,6 +667,9 @@ void ParticleWindow::onKey(int key, int scanCode, int action, int mods) {
 }
 
 void ParticleWindow::onCursorPos(double xpos, double ypos) {
+    if (isCameraAnimating)
+        return;
+
     if (firstMouse) {
         lastX = static_cast<float>(xpos);
         lastY = static_cast<float>(ypos);
@@ -608,6 +754,7 @@ void ParticleWindow::onIdle() {
         scene.push_back(std::move(particle));
     }
 
+    updateCameraAnimation(dTime);
     updateSunPosition(dTime);
 
     // Setup the light space matrix for shadows

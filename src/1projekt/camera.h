@@ -17,7 +17,7 @@ public:
     float yaw;
     float pitch;
 
-    Camera(float fov = 45.0f, float ratio = 1.0f, float near = 0.1f, float far = 100.0f);
+    Camera(float fov = 45.0f, float ratio = 1.0f, float near = 0.1f, float far = 150.0f);
 
     void update();
 };

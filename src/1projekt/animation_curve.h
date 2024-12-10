@@ -7,9 +7,7 @@
 #include <algorithm>
 #include <stdexcept>
 
-/**
- * @brief Handles interpolation between keyframes using Catmull-Rom splines.
- */
+
 class AnimationCurve {
 public:
     std::vector<Keyframe> keyframes;

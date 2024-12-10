@@ -9,6 +9,9 @@
 #include "grid.h"
 #include "PostProcessor.h"
 #include "car.h"
+#include "animation_curve.h"
+#include "camera_keyframe.h"
+#include "keyframe.h"
 
 class ParticleWindow : public ppgso::Window {
 private:
@@ -38,6 +41,13 @@ private:
     void renderSun(const glm::vec3& lightPos);
     void updateDynamicLights(ppgso::Shader& shader);
     std::vector<glm::vec3> lampPositions;
+
+    bool isCameraAnimating = false;
+    float cameraAnimationTime = 0.0f;
+    float cameraAnimationDuration = 0.0f;
+    AnimationCurve cameraAnimationCurve;
+    void initializeCameraAnimation();
+    void updateCameraAnimation(float dTime);
 
 public:
     ParticleWindow();
